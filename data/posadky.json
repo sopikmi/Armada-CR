@@ -1191,7 +1191,7 @@
    "lat": 49.758,
    "lon": 16.664,
    "coord_precision": "obec",
-   "note": "Výchova budoucích poddůstojníků (maturitní a VOŠ studium).",
+   "note": "Výchova budoucích poddůstojníků (maturitní a VOŠ studium). Pobočka v Sokolově (obor strojírenství).",
    "source": "https://statnisluzba.mo.gov.cz/sites/statnisluzba/files/2026-07/datov%C3%A9_schr%C3%A1nky%201.7.2026.pdf"
   },
   {
@@ -1651,6 +1651,42 @@
    "coord_precision": "obec",
    "note": "Správa VÚ Libavá (Oderské vrchy).",
    "source": "https://statnisluzba.mo.gov.cz/sites/statnisluzba/files/2026-07/datov%C3%A9_schr%C3%A1nky%201.7.2026.pdf"
+  },
+  {
+   "name": "Vojenská střední škola a VOŠ MO – pobočka Sokolov",
+   "short": "VSŠ Sokolov",
+   "type": "vycvik",
+   "parent": "VSŠ a VOŠ MO",
+   "town": "Sokolov",
+   "lat": 50.181,
+   "lon": 12.64,
+   "coord_precision": "obec",
+   "note": "Pobočka vojenské střední školy z Moravské Třebové v areálu Integrované střední školy technické a ekonomické (Jednoty 1620); otevřena 1. 10. 2020, obor strojírenství – specialista vzdušných sil; v brožuře MO z 8/2025 stále uvedena.",
+   "source": "https://doarmady.mo.gov.cz/file/edee/ke-stazeni/student-vojenske-skoly/brozury/vojenska-stredni-skola-a-vyssi-odborna-skola-mo.pdf"
+  },
+  {
+   "name": "Dělostřelecká tvrz Smolkov – armádní sklad",
+   "short": "Smolkov",
+   "type": "logistika",
+   "parent": "neuvedeno",
+   "town": "Háj ve Slezsku",
+   "lat": 49.899,
+   "lon": 18.094,
+   "coord_precision": "obec",
+   "note": "Předválečná tvrz (stavba 1936–1938) v lesích u Háje ve Slezsku; armáda v ní skladuje materiál, uvnitř stálá teplota a vlhkost. Údaj z roku 2021.",
+   "source": "https://www.seznamzpravy.cz/clanek/pevnost-smolkov-stale-slouzi-armade-vojaci-v-ni-skladuji-material-174403"
+  },
+  {
+   "name": "Dělostřelecká tvrz Adam – armádní sklad",
+   "short": "Adam",
+   "type": "logistika",
+   "parent": "neuvedeno",
+   "town": "Mladkov",
+   "lat": 50.098,
+   "lon": 16.629,
+   "coord_precision": "obec",
+   "note": "Předválečná tvrz na kótě 765 nad Mladkovem (Orlické hory), vytesaná ve skále; armádě slouží dodnes jako sklad (stav 6/2026).",
+   "source": "https://www.seznamzpravy.cz/clanek/magazin-historie-tvrz-vytesana-do-skaly-podzemni-pevnost-na-adamu-slouzi-armade-dodnes-306639"
   }
  ]
 }
