@@ -1699,6 +1699,42 @@
    "coord_precision": "obec",
    "note": "Podle Novinek (4/2022) největší sklad AČR: mobilizační zásoba zhruba 120 tanků T-72 a několik set BVP. Článek ho zmiňuje v souvislosti s dodávkami techniky Ukrajině v roce 2022, místo nakládky ale neuvádí. MO jej v roce 2011 uvádělo jako Zásobovací středisko Rančířov; současný nadřízený útvar veřejně neuvádí.",
    "source": "https://www.novinky.cz/clanek/domaci-jake-tanky-a-bojova-vozidla-posilaji-cesi-na-ukrajinu-40392892"
+  },
+  {
+   "name": "Vojenský objekt K-116 v Prokopském údolí",
+   "short": "K-116",
+   "type": "ostatni",
+   "parent": "neuvedeno (utajeno)",
+   "town": "Praha 5 – Prokopské údolí",
+   "lat": 50.04,
+   "lon": 14.372,
+   "coord_precision": "obec",
+   "note": "Podzemní objekt v bývalém lomu a nedokončené válečné továrně, armáda jej převzala koncem 60. let; dodnes střežený, účel utajen (spekuluje se o záložním velitelství). Poloha jen orientační.",
+   "source": "https://www.denik.cz/cestujeme-doma/pet-zakazanych-mist-cesko.html"
+  },
+  {
+   "name": "Utajený objekt U Němých (Brdy)",
+   "short": "U Němých",
+   "type": "ostatni",
+   "parent": "neuvedeno (utajeno)",
+   "town": "Brdy (bývalý VÚ Brdy)",
+   "lat": 49.73,
+   "lon": 13.86,
+   "coord_precision": "obec",
+   "note": "Po zrušení újezdu v roce 2016 zůstal v užívání armády a veřejnosti nepřístupný; uvádí se podzemní prostory, účel neznámý. Poloha jen orientační (střed Brd).",
+   "source": "https://www.armyweb.cz/clanek/tajemna-mista-utajene-vojenske-objekty-v-brdech"
+  },
+  {
+   "name": "Posádkové cvičiště Jince (dopadová plocha Brda)",
+   "short": "PC Jince",
+   "type": "vycvik",
+   "parent": "neuvedeno",
+   "town": "Jince",
+   "lat": 49.77,
+   "lon": 13.95,
+   "coord_precision": "obec",
+   "note": "Část bývalého VÚ Brdy, kterou armáda využívá i po zrušení újezdu; veřejnosti nepřístupná. Výcvik 13. dělostřeleckého pluku.",
+   "source": "https://www.armyweb.cz/clanek/tajemna-mista-utajene-vojenske-objekty-v-brdech"
   }
  ]
 }
