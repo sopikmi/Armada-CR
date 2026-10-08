@@ -574,8 +574,9 @@
   {
    "key": "natodays",
    "group": "Akce",
-   "label": "Dny NATO Ostrava",
+   "label": "Dny NATO",
    "file": "natodays-1.jpg",
+   "note": "Výsadkáři s vlajkou ČR, Dny NATO Ostrava 2021.",
    "title": "NATO Days Ostrava 2021 - para.jpg",
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/NATO_Days_Ostrava_2021_-_para.jpg/1280px-NATO_Days_Ostrava_2021_-_para.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "source": "https://commons.wikimedia.org/wiki/File:NATO_Days_Ostrava_2021_-_para.jpg",
@@ -584,64 +585,6 @@
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "description": "NATO Days Ostrava 2021, Czech Republic. Paratroopers from Czechia",
    "date": "2021-09-19 16:36:15"
-  },
-  {
-   "key": "natodays",
-   "group": "Akce",
-   "label": "Dny NATO Ostrava",
-   "file": "natodays-2.jpg",
-   "title": "Czech T-72 at the 2017 NATO Days in Ostrava.jpg",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Czech_T-72_at_the_2017_NATO_Days_in_Ostrava.jpg/1280px-Czech_T-72_at_the_2017_NATO_Days_in_Ostrava.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "source": "https://commons.wikimedia.org/wiki/File:Czech_T-72_at_the_2017_NATO_Days_in_Ostrava.jpg",
-   "author": "BRFBlake",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "description": "Czech T-72 at the 2017 NATO Days in Ostrava",
-   "date": "2017-09-16 10:56:00"
-  },
-  {
-   "key": "natodays",
-   "group": "Akce",
-   "label": "Dny NATO Ostrava",
-   "file": "natodays-3.jpg",
-   "title": "RAF Red Arrows perform at NATO Days in Ostrava (9334198).jpg",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/RAF_Red_Arrows_perform_at_NATO_Days_in_Ostrava_%289334198%29.jpg/1280px-RAF_Red_Arrows_perform_at_NATO_Days_in_Ostrava_%289334198%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "source": "https://commons.wikimedia.org/wiki/File:RAF_Red_Arrows_perform_at_NATO_Days_in_Ostrava_(9334198).jpg",
-   "author": "U.S. Air Force photo by Capt. Cody A Burt",
-   "license": "Public domain",
-   "licenseUrl": "",
-   "description": "The RAF Red Arrows perform a maneuver with their Hawk T1 aircraft at the NATO Days air show in Ostrava, Czech Republic, Sept. 20, 2025. The air show is led by the Czech Republic’s Air Force and includes the RAF and U.S. Air Force along with many other NATO Allies and partners. This event bolsters ti",
-   "date": "Taken on 20 September 2025"
-  },
-  {
-   "key": "prehlidka",
-   "group": "Akce",
-   "label": "Vojenská přehlídka 2018, Praha",
-   "file": "prehlidka-1.jpg",
-   "note": "Přehlídka ke 100. výročí republiky, 28. 10. 2018.",
-   "title": "Mattis Observes Czech Centennial Parade in Prague (4853205).jpg",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Mattis_Observes_Czech_Centennial_Parade_in_Prague_%284853205%29.jpg/1280px-Mattis_Observes_Czech_Centennial_Parade_in_Prague_%284853205%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "source": "https://commons.wikimedia.org/wiki/File:Mattis_Observes_Czech_Centennial_Parade_in_Prague_(4853205).jpg",
-   "author": "Petty Officer 2nd Class Lisa Ferdinando",
-   "license": "Public domain",
-   "licenseUrl": "",
-   "description": "Czech service members participate in a parade marking the Czech centennial, Prague, Czech Republic, Oct. 28, 2018. U.S. Secretary of Defense James N. Mattis observed from the viewing stand; members of the Nebraska and Texas National Guards marched in a Joint Color Guard. (DOD photo by Lisa Ferdinand",
-   "date": "Taken on 28 October 2018"
-  },
-  {
-   "key": "prehlidka",
-   "group": "Akce",
-   "label": "Vojenská přehlídka 2018, Praha",
-   "file": "prehlidka-2.jpg",
-   "note": "Přehlídka ke 100. výročí republiky, 28. 10. 2018.",
-   "title": "Mattis Observes Czech Centennial Parade in Prague (4853208).jpg",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mattis_Observes_Czech_Centennial_Parade_in_Prague_%284853208%29.jpg/1280px-Mattis_Observes_Czech_Centennial_Parade_in_Prague_%284853208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "source": "https://commons.wikimedia.org/wiki/File:Mattis_Observes_Czech_Centennial_Parade_in_Prague_(4853208).jpg",
-   "author": "Petty Officer 2nd Class Lisa Ferdinando",
-   "license": "Public domain",
-   "licenseUrl": "",
-   "description": "Czech service members participate in a parade marking the Czech centennial, Prague, Czech Republic, Oct. 28, 2018. U.S. Secretary of Defense James N. Mattis observed from the viewing stand; members of the Nebraska and Texas National Guards marched in a Joint Color Guard. (DOD photo by Lisa Ferdinand",
-   "date": "Taken on 28 October 2018"
   }
  ]
 }
