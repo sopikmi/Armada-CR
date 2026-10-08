@@ -42,7 +42,7 @@ def clean(s):
     return html.unescape(re.sub(r"\s+", " ", s)).strip()
 
 
-def search(query, limit):
+def search(query, limit, exclude=(), used=()):
     params = {
         "action": "query", "format": "json", "generator": "search",
         "gsrsearch": f"{query} filetype:bitmap", "gsrnamespace": 6,
@@ -59,6 +59,9 @@ def search(query, limit):
         if not ALLOWED.match(lic) or ii.get("mime") not in ("image/jpeg", "image/png"):
             continue
         if ii.get("width", 0) < 800:
+            continue
+        t = p["title"].removeprefix("File:")
+        if t in used or any(x.lower() in t.lower() for x in exclude):
             continue
         out.append({
             "title": p["title"].removeprefix("File:"),
@@ -77,11 +80,11 @@ def search(query, limit):
 
 def main():
     cfg = json.loads((FOTO / "queries.json").read_text(encoding="utf-8"))
-    db, keep = [], set()
+    db, keep, used = [], set(), set()
     for item in cfg["items"]:
         print(f"[{item['key']}] {item['query']}")
         try:
-            hits = search(item["query"], item.get("limit", 2))
+            hits = search(item["query"], item.get("limit", 2), item.get("exclude", []), used)
         except Exception as e:  # noqa: BLE001
             print(f"  chyba hledání: {e}", file=sys.stderr)
             continue
@@ -95,6 +98,7 @@ def main():
                 print(f"  chyba stahování {h['title']}: {e}", file=sys.stderr)
                 continue
             keep.add(name)
+            used.add(h["title"])
             db.append({"key": item["key"], "group": item["group"], "label": item["label"], "file": name, **h})
             print(f"  ✓ {name}  ({h['license']}, {h['author'][:40]})")
             time.sleep(0.5)

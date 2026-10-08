@@ -163,7 +163,7 @@
     $("#gallery").innerHTML = `<p class="note">${PHOTOS.length} fotek z Wikimedia Commons s volnou licencí, uloženo v repozitáři ${meta.generated ? "(" + esc(meta.generated) + ")" : ""}. Klikněte pro zvětšení.</p>` +
       groups.map(gr => `<div class="gal-group"><h3>${esc(gr)}</h3><div class="gal">${PHOTOS.filter(p => p.group === gr).map(p => {
         const i = byKey(p.key).indexOf(p);
-        return `<figure><button type="button" onclick="ACR_LB('${p.key}',${i})" aria-label="Zvětšit: ${esc(p.label)}"><img src="foto/${p.file}" alt="${esc(p.label)}" loading="lazy"></button><figcaption><b>${esc(p.label)}</b>${credit(p)}</figcaption></figure>`;
+        return `<figure><button type="button" onclick="ACR_LB('${p.key}',${i})" aria-label="Zvětšit: ${esc(p.label)}"><img src="foto/${p.file}" alt="${esc(p.label)}" loading="lazy"></button><figcaption><b>${esc(p.label)}</b>${esc(p.title.replace(/\.[a-z]+$/i, ""))}<br>${credit(p)}</figcaption></figure>`;
       }).join("")}</div></div>`).join("");
   }
 
