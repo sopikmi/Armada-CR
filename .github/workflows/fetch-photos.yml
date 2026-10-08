@@ -6,26 +6,39 @@ on:
     branches: [main]
     paths:
       - foto/queries.json
+      - foto/candidates.json
       - scripts/fetch_photos.py
 
 permissions:
   contents: write
+
+concurrency:
+  group: fotky
+  cancel-in-progress: false
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Stáhnout fotky
+      - run: pip install pillow
+      - name: Kandidáti pro ruční výběr (jen když se změnil candidates.json)
+        run: |
+          if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -q '^foto/candidates.json$'; then
+            python3 scripts/fetch_photos.py kandidati
+          fi
+      - name: Fotky pro web
         run: python3 scripts/fetch_photos.py
       - name: Uložit do repozitáře
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add foto
+          git add -A foto _kandidati 2>/dev/null || git add -A foto
           git diff --cached --quiet && echo "Beze změn" && exit 0
           git commit -m "Fotky: aktualizace databáze z Wikimedia Commons"
           git push

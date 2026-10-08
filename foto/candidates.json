@@ -1,0 +1,234 @@
+{
+ "_info": "Hledání kandidátů pro ruční výběr fotek (náhledy do _kandidati/). Vybrané soubory se pak zapíší do foto/queries.json jako \"files\".",
+ "items": [
+  {
+   "key": "leopard2a4",
+   "queries": [
+    "Leopard 2A4 Czech Army",
+    "Leopard 2A4 Přáslavice",
+    "Leopard 2A4 NATO Days Ostrava",
+    "Leopard 2A4 Army of the Czech Republic"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "leopard2a8",
+   "queries": [
+    "Leopard 2A8 Czech",
+    "Leopard 2A8"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "t72",
+   "queries": [
+    "T-72M4 CZ",
+    "T-72M4CZ"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "cv90",
+   "queries": [
+    "CV90 Czech Army",
+    "CV90 MkIV CZ",
+    "CV90 IDET"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "bvp2",
+   "queries": [
+    "BVP-2 Army of the Czech Republic",
+    "BVP-2 Czech"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "pandur",
+   "queries": [
+    "Pandur II CZ",
+    "Pandur II Army of the Czech Republic",
+    "Pandur 8x8 Czech"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "titus",
+   "queries": [
+    "Tatra Titus Czech Army",
+    "TITUS 6x6"
+   ],
+   "limit": 5
+  },
+  {
+   "key": "caesar",
+   "queries": [
+    "CAESAR 8x8 Tatra",
+    "Caesar howitzer Czech",
+    "CAESAR CZ IDET",
+    "Caesar 8x8 NATO Days",
+    "CAESAR 8x8 Denmark"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "dana",
+   "queries": [
+    "ShKH vz. 77 Dana Czech Army",
+    "DANA howitzer",
+    "Dana vz. 77 NATO Days",
+    "152mm ShKH DANA",
+    "ShKH Dana Jince"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "spyder",
+   "queries": [
+    "Spyder Czech Army",
+    "SPYDER air defence Czech",
+    "Spyder MR"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "kub",
+   "queries": [
+    "2K12 Kub Czech Army",
+    "2K12 Kub Strakonice"
+   ],
+   "limit": 5
+  },
+  {
+   "key": "rbs70",
+   "queries": [
+    "RBS 70 Czech Army"
+   ],
+   "limit": 4
+  },
+  {
+   "key": "gripen",
+   "queries": [
+    "JAS 39 Gripen Czech Air Force",
+    "Gripen Čáslav"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "f35",
+   "queries": [
+    "F-35A Lightning II",
+    "F-35A Lightning II takeoff"
+   ],
+   "limit": 5
+  },
+  {
+   "key": "l159",
+   "queries": [
+    "L-159 Czech Air Force",
+    "L-159 ALCA Čáslav",
+    "Aero L-159A"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "c390",
+   "queries": [
+    "C-390 Czech Air Force",
+    "Embraer C-390 Czech"
+   ],
+   "limit": 5
+  },
+  {
+   "key": "c295",
+   "queries": [
+    "C-295 Czech Air Force"
+   ],
+   "limit": 4
+  },
+  {
+   "key": "venom",
+   "queries": [
+    "UH-1Y Venom Czech Air Force",
+    "UH-1Y Czech"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "viper",
+   "queries": [
+    "AH-1Z Viper Czech Air Force",
+    "AH-1Z Czech"
+   ],
+   "limit": 6
+  },
+  {
+   "key": "mi171",
+   "queries": [
+    "Mi-171Sh Czech Air Force"
+   ],
+   "limit": 5
+  },
+  {
+   "key": "w3a",
+   "queries": [
+    "W-3A Sokol Czech Air Force"
+   ],
+   "limit": 4
+  },
+  {
+   "key": "bren",
+   "queries": [
+    "CZ BREN 2 Czech Army",
+    "CZ 805 BREN Czech soldier",
+    "CZ BREN 2"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "hradni",
+   "queries": [
+    "Prague Castle Guard",
+    "Hradní stráž",
+    "Changing of the guard Prague Castle"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "vp",
+   "queries": [
+    "Vojenská policie Czech",
+    "Czech Military Police",
+    "Military Police Czech Republic"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "vojaci",
+   "queries": [
+    "Czech Army soldiers",
+    "Army of the Czech Republic exercise",
+    "Czech soldiers NATO exercise",
+    "Czech Armed Forces training"
+   ],
+   "limit": 10
+  },
+  {
+   "key": "natodays",
+   "queries": [
+    "NATO Days Ostrava",
+    "Dny NATO Ostrava"
+   ],
+   "limit": 8
+  },
+  {
+   "key": "prehlidka",
+   "queries": [
+    "Czech military parade 2018 Prague",
+    "vojenská přehlídka 2018 Praha"
+   ],
+   "limit": 6
+  }
+ ]
+}
