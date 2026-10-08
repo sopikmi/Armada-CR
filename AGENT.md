@@ -27,7 +27,7 @@ Tento soubor je závazný návod pro každou aktualizaci (ruční i automatickou
   pak renomovaná média citující primární zdroj (ČTK, ČT24, Seznam Zprávy, E15, Ekonomický deník, CZ Defence).
 - Při WebFetch si vyžádej **doslovnou citaci** věty s číslem a datem.
 - Čísla nikdy nedomýšlej ani nepřebírej z paměti. Co nejde ověřit, označ `~` (přibližně) nebo `nezveřejněno`.
-- **Kontrola konzistence:** počty techniky v `ACR.TECH`, `ACR.PROJ`, popisech útvarů v `ACR.UNITS` a v `ACR.ISSUES` se musí shodovat
+- **Kontrola konzistence:** počty techniky v `ACR.TECH`, `ACR.PROJ`, poznámkách v `data/posadky.json` a v `ACR.ISSUES` se musí shodovat
   (např. Leopard 2A4 = 42 všude). Součet `ACR.AZ` musí odpovídat KPI aktivní zálohy. Když zdroje nesouhlasí, uveď obě čísla a rozdíl vysvětli v poznámce.
 - Rozlišuj **objednáno / dodáno / ve službě**, **celý rezort / jen armáda pod NGŠ**, **s DPH / bez DPH**.
 
