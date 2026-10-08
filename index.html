@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Armáda ČR v mapě a číslech</title>
+<meta name="description" content="Armáda České republiky: počty vojáků a záloh, organizační struktura, dislokace útvarů a vojenské újezdy na mapě, technika s fotkami, modernizace, zákony, strategie a kontroverze.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="lbl">Ozbrojené síly České republiky · přehled z veřejných zdrojů</div>
+      <h1>Armáda <span>ČR</span></h1>
+      <p class="sub">Počty vojáků a záloh, struktura, dislokace útvarů a vojenské újezdy, technika, modernizace, zákony a strategické dokumenty – včetně Hradní stráže, Vojenské policie a aktivní zálohy. Každé číslo má odkaz na zdroj a datum.</p>
+    </div>
+    <div class="sheet">
+      LIST <b>01 / AČR</b><br>
+      STAV K <b data-updated></b><br>
+      MĚŘÍTKO <b>orientační</b><br>
+      ZÓNA <b>33U / 34U</b>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Obsah">
+  <div class="wrap">
+    <a href="#prehled">Přehled</a><a href="#personal">Personál</a><a href="#struktura">Struktura</a><a href="#mapa">Dislokace</a><a href="#technika">Technika</a><a href="#modernizace">Modernizace</a><a href="#foto">Fotky</a><a href="#dokumenty">Zákony a strategie</a><a href="#diskuse">Kontroverze</a><a href="#media">Videa a podcasty</a><a href="#zdroje">Zdroje</a>
+  </div>
+</nav>
+
+<main>
+<section id="prehled"><div class="wrap">
+  <div class="sec-head"><span class="lbl">01</span><h2>Základní údaje</h2></div>
+  <div class="stats" id="kpi"></div>
+  <div class="cols">
+    <div class="prose"><h3>Velení</h3><p style="margin-top:6px">Vrchním velitelem ozbrojených sil je prezident republiky (Petr Pavel). Armádu řídí ministr obrany (Jaromír Zůna, SPD) a velí jí náčelník Generálního štábu. Gen. Karla Řehku, který armádu vedl od poloviny roku 2022, má nahradit genpor. Miroslav Hlaváč, kterého vláda navrhla v květnu 2026; jmenuje prezident. <span class="upd">ověřit</span></p></div>
+    <div class="prose"><h3>Co do přehledu patří</h3><p style="margin-top:6px">Pozemní a vzdušné síly, teritoriální síly, síly podpory a výcviku, speciální a kybernetické síly. Hradní stráž je útvar AČR v působnosti Kanceláře prezidenta. Vojenská policie je samostatný útvar podřízený ministrovi obrany. Aktivní záloha doplňuje útvary a krajská vojenská velitelství.</p></div>
+  </div>
+</div></section>
+
+<section id="personal"><div class="wrap">
+  <div class="sec-head"><span class="lbl">02</span><h2>Personál a naplněnost</h2><span class="note">oficiální čísla MO z odpovědí na žádosti o informace</span></div>
+  <div class="cols" style="margin-top:0">
+    <div>
+      <h3 style="margin-bottom:10px">Vojáci z povolání v rezortu MO</h3>
+      <div class="chart-box" id="trend"></div>
+      <p class="note" style="margin-top:8px">Stav k 31. 12.; *rok 2025 k 1. 10. 2025. Za šest let +3 254 vojáků, tempo se po roce 2024 zrychlilo. Pod náčelníkem GŠ (bez MO, VZ a dalších) bylo k 15. 12. 2025 24 712 vojáků.</p>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Aktivní záloha podle podřízenosti</h3>
+      <div class="tbl-wrap"><table class="mini" style="min-width:0"><thead><tr><th>Součást</th><th style="text-align:right">Počet</th><th style="text-align:right">Podíl</th></tr></thead><tbody id="az"></tbody></table></div>
+      <p class="note" style="margin-top:8px">Stav k 1. 10. 2025. Průvodní dopis MO uvádí 4 745; tabulka v příloze včetně přípravné služby sčítá 4 849. Naplněnost záloh je podle zpravodaje AZ INFO kolem 50 %.</p>
+    </div>
+  </div>
+  <p class="note" style="margin-top:16px">Naplněnost jednotlivých útvarů (počty podle tabulek) ministerstvo nezveřejňuje.</p>
+</div></section>
+
+<section id="struktura"><div class="wrap">
+  <div class="sec-head"><span class="lbl">03</span><h2>Organizační struktura</h2><span class="note">zjednodušeno, hlavní útvary</span></div>
+  <div class="org">
+    <div class="org-row">
+      <div class="node top"><div class="t">Prezident republiky</div><div class="s">vrchní velitel ozbrojených sil</div></div>
+      <div class="node top"><div class="t">Ministerstvo obrany</div><div class="s">ministr obrany · sekce, Vojenské zpravodajství, Vojenská policie</div></div>
+      <div class="node top"><div class="t">Generální štáb AČR</div><div class="s">náčelník GŠ · Praha-Dejvice</div></div>
+    </div>
+    <div class="org-row">
+      <div class="branch"><div class="node"><div class="t">Velitelství pozemních sil</div><div class="s">Olomouc</div></div>
+        <ul><li>4. brigáda rychlého nasazení – Žatec</li><li>7. mechanizovaná brigáda – Hranice</li><li>13. dělostřelecký pluk – Jince</li><li>43. výsadkový pluk – Chrudim</li><li>102. průzkumný prapor – Prostějov</li><li>15. ženijní pluk – Bechyně</li><li>31. pluk RCHBO – Liberec</li><li>53. pluk průzkumu a EB – Opava</li></ul></div>
+      <div class="branch"><div class="node"><div class="t">Velitelství vzdušných sil</div><div class="s">Praha</div></div>
+        <ul><li>21. základna taktického letectva – Čáslav</li><li>22. základna vrtulníkového letectva – Náměšť n. O.</li><li>24. základna dopravního letectva – Praha-Kbely</li><li>25. protiletadlový raketový pluk – Strakonice</li><li>26. pluk velení, řízení a průzkumu – Stará Boleslav</li></ul></div>
+      <div class="branch"><div class="node"><div class="t">Teritoriální síly, podpora, výcvik</div><div class="s">různé</div></div>
+        <ul><li>14 krajských vojenských velitelství</li><li>601. skupina speciálních sil – Prostějov</li><li>14. pluk logistické podpory – Pardubice</li><li>Velitelství výcviku – VA Vyškov</li><li>Univerzita obrany – Brno</li><li>Velitelství kybernetických sil a informačních operací</li><li>Agentura vojenského zdravotnictví</li></ul></div>
+    </div>
+    <div class="org-row">
+      <div class="node ext"><div class="t">Hradní stráž</div><div class="s">útvar AČR v působnosti Kanceláře prezidenta · ostraha a čestné úkoly na Pražském hradě a v Lánech</div></div>
+      <div class="node ext"><div class="t">Vojenská policie</div><div class="s">samostatný útvar podřízený ministrovi obrany · policejní a ochranná činnost v rezortu</div></div>
+      <div class="node ext"><div class="t">Aktivní záloha</div><div class="s">přidělena k útvarům a krajským velitelstvím · 4 849 osob, cíl 10 000 do 2030</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="mapa"><div class="wrap">
+  <div class="sec-head"><span class="lbl">04</span><h2>Dislokace a vojenské prostory</h2><span class="note">polohy na úrovni posádek · klikněte na značku</span></div>
+  <div class="chips" role="group" aria-label="Filtr mapy" id="mapchips">
+    <button class="chip" type="button" id="f-all" data-f="all" aria-pressed="true">Vše</button>
+    <button class="chip" type="button" id="f-land" data-f="land" aria-pressed="false">Pozemní</button>
+    <button class="chip" type="button" id="f-air" data-f="air" aria-pressed="false">Vzdušné</button>
+    <button class="chip" type="button" id="f-sup" data-f="sup" aria-pressed="false">Podpora a velení</button>
+    <button class="chip" type="button" id="f-area" data-f="area" aria-pressed="false">Vojenské újezdy</button>
+  </div>
+  <div id="lmap" role="region" aria-label="Mapa útvarů AČR"></div>
+  <div class="legend" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:12px">
+    <span><svg class="nato" width="28" height="20" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/><path d="M-12 -8L12 8M12 -8L-12 8"/></svg>pěchota / mechanizované</span>
+    <span><svg class="nato" width="28" height="20" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/><path d="M-8 0Q-4 -5 0 0Q4 5 8 0"/></svg>letectvo</span>
+    <span><svg class="nato" width="28" height="20" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/><path d="M-8 6Q0 -6 8 6"/></svg>protivzdušná obrana</span>
+    <span><svg class="nato tmp" width="28" height="20" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/></svg>dočasné umístění</span>
+    <span><svg width="28" height="20"><circle cx="14" cy="10" r="8" fill="rgba(90,106,54,.18)" stroke="#5A6A36" stroke-dasharray="3 2"/></svg>vojenský újezd (plocha orientačně)</span>
+  </div>
+  <p class="note" style="margin-top:10px">Újezdy jsou zakreslené jako kruhy odpovídající výměře, ne jako skutečné hranice; přesné hranice ukáže odkaz na Mapy.com v bublině. Podkladová mapa © OpenStreetMap.</p>
+</div></section>
+
+<section id="technika"><div class="wrap">
+  <div class="sec-head"><span class="lbl">05</span><h2>Přehled techniky</h2><span class="note">počty v kusech · „~“ = přibližně, oficiálně nezveřejněno</span></div>
+  <div class="chips" role="group" aria-label="Kategorie techniky" id="tchips"></div>
+  <div class="tbl-wrap"><table><thead><tr><th>Foto</th><th>Systém</th><th>Kategorie</th><th>Počet</th><th>Původ</th><th>Stav</th><th>Poznámka a zdroj</th></tr></thead><tbody id="tbody"></tbody></table></div>
+</div></section>
+
+<section id="modernizace"><div class="wrap">
+  <div class="sec-head"><span class="lbl">06</span><h2>Modernizační projekty</h2></div>
+  <div class="proj" id="proj"></div>
+</div></section>
+
+<section id="foto"><div class="wrap">
+  <div class="sec-head"><span class="lbl">07</span><h2>Fotogalerie</h2><span class="note">fotky uložené v repozitáři, s autorem a licencí</span></div>
+  <div id="gallery"><p class="empty">Načítám fotky…</p></div>
+</div></section>
+
+<section id="dokumenty"><div class="wrap">
+  <div class="sec-head"><span class="lbl">08</span><h2>Zákony, strategie, NATO</h2></div>
+  <h3 style="margin-bottom:10px">Zákonné normy</h3>
+  <div class="docs" id="laws"></div>
+  <h3 style="margin:28px 0 10px">Strategické dokumenty</h3>
+  <div class="docs" id="strat"></div>
+</div></section>
+
+<section id="diskuse"><div class="wrap">
+  <div class="sec-head"><span class="lbl">09</span><h2>Diskuse a kontroverze</h2></div>
+  <div id="issues"></div>
+  <p class="note" style="margin-top:12px">Červená = otevřený problém nebo spor o fakta, žlutá = sporné rozhodnutí, modrá = probíhající veřejná debata.</p>
+</div></section>
+
+<section id="media"><div class="wrap">
+  <div class="sec-head"><span class="lbl">10</span><h2>Videa, podcasty, weby</h2></div>
+  <div class="media" id="media"></div>
+</div></section>
+
+<section id="zdroje"><div class="wrap">
+  <div class="sec-head"><span class="lbl">11</span><h2>Zdroje</h2></div>
+  <ol class="src-list" id="sources"></ol>
+</div></section>
+</main>
+
+<footer><div class="wrap">Data z veřejných zdrojů k <span data-updated></span>. Polohy útvarů jsou orientační (posádky). Fotky: Wikimedia Commons, autoři a licence u každé fotky. Mapa © OpenStreetMap. Zdrojový kód: <a href="https://github.com/sopikmi/Armada-CR">github.com/sopikmi/Armada-CR</a>.</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

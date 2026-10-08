@@ -1,0 +1,31 @@
+{
+  "_info": "Seznam hledání pro stažení fotek z Wikimedia Commons. key = klíč, na který odkazuje index.html (tabulka techniky a galerie). Úprava tohoto souboru spustí workflow, který fotky stáhne znovu.",
+  "items": [
+    {"key": "leopard2a4", "group": "Tanky", "label": "Leopard 2A4 v AČR", "query": "Leopard 2A4 Czech Army", "limit": 3},
+    {"key": "leopard2a8", "group": "Tanky", "label": "Leopard 2A8", "query": "Leopard 2A8", "limit": 2},
+    {"key": "t72", "group": "Tanky", "label": "T-72M4 CZ", "query": "T-72M4 CZ", "limit": 2},
+    {"key": "cv90", "group": "Bojová vozidla", "label": "CV90", "query": "CV90 Czech", "limit": 3},
+    {"key": "bvp2", "group": "Bojová vozidla", "label": "BVP-2", "query": "BVP-2 Czech Army", "limit": 2},
+    {"key": "pandur", "group": "Bojová vozidla", "label": "Pandur II 8×8", "query": "Pandur II Czech Army", "limit": 3},
+    {"key": "titus", "group": "Bojová vozidla", "label": "Tatra Titus", "query": "Tatra Titus", "limit": 2},
+    {"key": "caesar", "group": "Dělostřelectvo", "label": "CAESAR 8×8", "query": "CAESAR 8x8 Tatra", "limit": 2},
+    {"key": "dana", "group": "Dělostřelectvo", "label": "ShKH Dana vz. 77", "query": "ShKH vz. 77 Dana", "limit": 2},
+    {"key": "spyder", "group": "Protivzdušná obrana", "label": "SPYDER", "query": "SPYDER air defense system", "limit": 2},
+    {"key": "kub", "group": "Protivzdušná obrana", "label": "2K12 KUB", "query": "2K12 Kub Czech", "limit": 2},
+    {"key": "rbs70", "group": "Protivzdušná obrana", "label": "RBS-70", "query": "RBS 70 Czech", "limit": 2},
+    {"key": "gripen", "group": "Letectvo", "label": "JAS-39 Gripen", "query": "JAS 39 Gripen Czech Air Force", "limit": 3},
+    {"key": "f35", "group": "Letectvo", "label": "F-35A Lightning II", "query": "F-35A Lightning II", "limit": 2},
+    {"key": "l159", "group": "Letectvo", "label": "L-159 ALCA", "query": "Aero L-159 ALCA", "limit": 3},
+    {"key": "c390", "group": "Letectvo", "label": "Embraer C-390", "query": "C-390 Millennium Czech", "limit": 2},
+    {"key": "c295", "group": "Letectvo", "label": "CASA C-295", "query": "C-295 Czech Air Force", "limit": 2},
+    {"key": "venom", "group": "Vrtulníky", "label": "UH-1Y Venom", "query": "UH-1Y Venom Czech", "limit": 2},
+    {"key": "viper", "group": "Vrtulníky", "label": "AH-1Z Viper", "query": "AH-1Z Viper Czech", "limit": 2},
+    {"key": "mi171", "group": "Vrtulníky", "label": "Mi-171Š", "query": "Mi-171Sh Czech Air Force", "limit": 2},
+    {"key": "w3a", "group": "Vrtulníky", "label": "W-3A Sokol", "query": "W-3A Sokol Czech", "limit": 2},
+    {"key": "bren", "group": "Ruční zbraně", "label": "CZ BREN 2", "query": "CZ BREN 2", "limit": 2},
+    {"key": "hradni", "group": "Útvary", "label": "Hradní stráž", "query": "Prague Castle Guard", "limit": 3},
+    {"key": "vp", "group": "Útvary", "label": "Vojenská policie", "query": "Czech Military Police vojenská policie", "limit": 2},
+    {"key": "vojaci", "group": "Útvary", "label": "Vojáci AČR na cvičení", "query": "Czech Army soldiers exercise", "limit": 3},
+    {"key": "natodays", "group": "Akce", "label": "Dny NATO Ostrava", "query": "NATO Days Ostrava", "limit": 3}
+  ]
+}
