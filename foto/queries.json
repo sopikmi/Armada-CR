@@ -227,22 +227,11 @@
   {
    "key": "natodays",
    "group": "Akce",
-   "label": "Dny NATO Ostrava",
+   "label": "Dny NATO",
    "files": [
-    "NATO Days Ostrava 2021 - para.jpg",
-    "Czech T-72 at the 2017 NATO Days in Ostrava.jpg",
-    "RAF Red Arrows perform at NATO Days in Ostrava (9334198).jpg"
-   ]
-  },
-  {
-   "key": "prehlidka",
-   "group": "Akce",
-   "label": "Vojenská přehlídka 2018, Praha",
-   "files": [
-    "Mattis Observes Czech Centennial Parade in Prague (4853205).jpg",
-    "Mattis Observes Czech Centennial Parade in Prague (4853208).jpg"
+    "NATO Days Ostrava 2021 - para.jpg"
    ],
-   "note": "Přehlídka ke 100. výročí republiky, 28. 10. 2018."
+   "note": "Výsadkáři s vlajkou ČR, Dny NATO Ostrava 2021."
   }
  ]
 }

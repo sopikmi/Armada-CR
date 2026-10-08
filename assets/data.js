@@ -32,6 +32,11 @@ ACR.SOURCES = {
   vop_cv90: ["VOP CZ: zahájení výroby CV90", "https://vop.cz/en/news/vop-cz-begins-production-of-cv90-armoured-vehicles-for-the-czech-army/"],
   acr_gs: ["Armáda ČR – Generální štáb (struktura, 2026)", "https://acr.mo.gov.cz/scripts/detail.php?pgid=638"],
   acr_rakovnik: ["Armáda ČR: z praporu se stal pluk – Rakovník (10/2026)", "https://acr.mo.gov.cz/informacni-servis/zpravodajstvi/z-praporu-se-stal-pluk--rakovnik-je-domovem-nove-logisticke-jednotky-armady-ceske-republiky-266273/"],
+  ffef26: ["Militär Aktuell: Future Forces Exhibition & Forum 2026, Praha", "https://militaeraktuell.at/en/future-forces-exhibition-forum-2026-europes-security-forum-in-prague/"],
+  idet27: ["BVV: prospekt IDET 2027 (PDF)", "https://www.bvv.cz/veletrhy/idet/2027/pdf/155x155mm_IDET_2027_prospekt.pdf"],
+  zakon245: ["Zákon 245/2000 Sb. o státních svátcích a významných dnech", "https://www.zakonyprolidi.cz/cs/2000-245"],
+  bahna26: ["VePozS: Bahna 2026", "https://vepozs.mo.gov.cz/node/569"],
+  ct_natodays25: ["ČT24 (21. 9. 2025): Dny NATO v Mošnově", "https://ct24.ceskatelevize.cz/clanek/domaci/v-mosnove-pokracuji-dny-nato-365261"],
   wiki: ["Wikipedie: Armáda České republiky", "https://cs.wikipedia.org/wiki/Arm%C3%A1da_%C4%8Cesk%C3%A9_republiky"]
 };
 
@@ -121,6 +126,26 @@ ACR.PROJ = [
   ["2024 → 2028", "Embraer C-390", "2 střední transportní letouny, první dodán 7/2026.", "11,3 mld", "", "av_c390"],
   ["2026 → 2028", "Rekonstrukce Čáslavi", "Příprava základny pro F-35; až 1,6 mld Kč může uhradit NATO.", "5,33 mld", "bez DPH", "nv_caslav"],
   ["2026 → 2028", "Drony", "3 000 bezpilotních systémů, pět veřejných zakázek.", "—", "nezveřejněno", "sz_drony"]
+];
+
+/* ---------- AKCE A MILNÍKY do konce 2027 ----------
+ * Každá akce jen jednou. [řazení YYYY-MM-DD, datum k zobrazení, název, místo, popis, zdroj, druh (akce|milnik|vyroci), stav (potvrzeno|ocekavano), foto key]
+ * Prošlé položky (datum < dnes) se na webu skryjí automaticky.
+ */
+ACR.EVENTS = [
+  ["2026-10-21", "21.–23. 10. 2026", "Future Forces Exhibition & Forum", "Praha, PVA Expo Letňany", "Mezinárodní veletrh a konference o obraně a bezpečnosti s účastí AČR a MO.", "ffef26", "akce", "potvrzeno"],
+  ["2026-10-28", "28. 10. 2026", "Den vzniku samostatného Československa", "Praha, Pražský hrad", "Státní svátek: jmenování generálů a vyznamenání prezidentem, slavnostní nástup Hradní stráže.", "zakon245", "vyroci", "potvrzeno", "hradni"],
+  ["2026-11-11", "11. 11. 2026", "Den válečných veteránů", "celá republika, Praha – Vítkov", "Významný den; pietní akty AČR a sbírka Českého červeného kříže a spolků veteránů.", "zakon245", "vyroci", "potvrzeno"],
+  ["2026-12-31", "do konce 2026", "První CV90 MkIV pro 7. mb", "Švédsko / VOP CZ Šenov", "Armáda má v roce 2026 převzít prvních 10 vozidel CV90; jako první je dostává 74. mechanizovaný prapor.", "ed_cv90", "milnik", "potvrzeno", "cv90"],
+  ["2026-12-31", "do konce 2026", "Kompletní flotila 42 Leopardů 2A4", "73. tankový prapor, Přáslavice", "Dodávka posledních ze 14 dokoupených tanků.", "fo_2a4", "milnik", "potvrzeno", "leopard2a4"],
+  ["2027-04-01", "duben 2027", "CAESAR: začátek vojskových zkoušek", "13. dělostřelecký pluk, Jince", "Podle aktualizovaného harmonogramu po odstranění nedostatků dodavatelem; dokončení dodávek 6/2028.", "ed_caesar", "milnik", "ocekavano", "caesar"],
+  ["2027-05-26", "26.–28. 5. 2027", "IDET 2027", "Brno, Výstaviště", "Mezinárodní veletrh obranné a bezpečnostní techniky, souběžně PYROS a ISET.", "idet27", "akce", "potvrzeno", "spyder"],
+  ["2027-06-15", "červen 2027", "Bahna – Den pozemního vojska", "Strašice, vojenský areál", "Největší ukázka pozemních sil pro veřejnost; koná se tradičně v červnu, termín 2027 zatím nezveřejněn.", "bahna26", "akce", "ocekavano"],
+  ["2027-06-30", "30. 6. 2027", "Den ozbrojených sil ČR", "celá republika", "Významný den připomínající bitvu u Zborova a vznik ozbrojených sil.", "zakon245", "vyroci", "potvrzeno"],
+  ["2027-09-18", "září 2027", "Dny NATO a Dny Vzdušných sil AČR", "Ostrava-Mošnov", "Největší bezpečnostní show v Evropě; koná se tradičně třetí víkend v září, termín 2027 zatím nezveřejněn.", "ct_natodays25", "akce", "ocekavano", "natodays"],
+  ["2027-10-01", "říjen 2027", "SPYDER: první ostré střelby", "25. protiletadlový raketový pluk", "Plánované ostré střelby nového systému PVO; integrace do sítě do roku 2028.", "ex_spyder", "milnik", "ocekavano", "spyder"],
+  ["2027-12-31", "2027–2028", "Druhý Embraer C-390", "24. základna dopravního letectva, Kbely", "Dodávka druhého transportního letounu.", "av_c390", "milnik", "ocekavano", "c390"],
+  ["2027-12-31", "od 2027", "Gripeny: nová smlouva, 12 letounů", "21. zTL (dočasně Pardubice)", "Začíná prodloužený pronájem do 2035 se 12 letouny místo 14.", "fb_gripen", "milnik", "potvrzeno", "gripen"]
 ];
 
 /* ---------- ZÁKONY A STRATEGIE ---------- */

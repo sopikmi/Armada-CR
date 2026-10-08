@@ -178,3 +178,28 @@ img{max-width:100%}
 .ulist{max-height:640px;overflow:auto}
 .ulist td{font-size:13px}
 .ulist td:first-child{white-space:nowrap}
+/* akce */
+.ev-year{margin-top:18px}
+.ev-year h3{font-size:28px;margin-bottom:10px;color:var(--friendly)}
+.ev-list{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.ev{background:var(--paper);display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px;padding:14px 16px;align-items:start}
+.ev:not(:has(.ev-img)){grid-template-columns:minmax(0,1fr)}
+.ev-img{all:unset;cursor:zoom-in;display:block;aspect-ratio:4/3;max-width:100%;overflow:hidden;background:var(--olive-soft)}
+.ev-img:focus-visible{outline:2px solid var(--friendly)}
+.ev-img img{width:100%;height:100%;object-fit:cover;display:block}
+.ev-body{display:grid;gap:4px;min-width:0}
+.ev-date{font:600 13px var(--mono);color:var(--friendly);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ev h4{margin:0;font:600 21px/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.ev-place{font-size:13px;color:var(--muted)}
+.ev p{font-size:14px}
+.ev-k{font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:4px 6px;background:var(--friendly-soft);color:var(--friendly)}
+.ev-k.milnik{background:var(--olive-soft);color:var(--olive)}
+.ev-k.vyroci{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.ev-k.exp{background:var(--hostile-soft);color:var(--warn)}
+@media (max-width:560px){.ev{grid-template-columns:1fr}}
+.gal button{position:relative}
+.cnt{position:absolute;right:8px;bottom:8px;font:600 12px var(--mono);background:rgba(16,20,17,.82);color:#F6F7F1;padding:5px 8px}
+.plink{font:600 12px var(--mono);background:var(--friendly-soft);color:var(--friendly);border:1px solid transparent;padding:5px 8px;cursor:pointer;white-space:nowrap}
+.plink:hover{border-color:var(--friendly)}
+#lb .nav{position:absolute;top:50%;transform:translateY(-50%);font:600 34px/1 var(--mono);background:rgba(246,247,241,.9);color:#1C221E;border:0;width:48px;height:64px;cursor:pointer}
+#lb .prev{left:12px}#lb .next{right:12px}

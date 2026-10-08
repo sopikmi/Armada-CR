@@ -45,20 +45,36 @@
   let PHOTOS = [];
   const byKey = k => PHOTOS.filter(p => p.key === k);
   const credit = p => `${esc(p.author)} · <a href="${p.licenseUrl || p.source}" target="_blank" rel="noopener">${esc(p.license)}</a> · <a href="${p.source}" target="_blank" rel="noopener">Wikimedia Commons</a>`;
-  function lightbox(p) {
+  /* prohlížeč: všechny fotky jednoho tématu, šipkami dál */
+  function lightbox(key, start) {
+    const set = byKey(key);
+    if (!set.length) return;
+    let i = Math.max(0, Math.min(start || 0, set.length - 1));
     const lb = document.createElement("div");
     lb.id = "lb";
     lb.setAttribute("role", "dialog");
-    lb.setAttribute("aria-label", p.label);
-    lb.innerHTML = `<button class="x" type="button">Zavřít ✕</button><figure><img src="foto/${p.file}" alt="${esc(p.label)}"><figcaption><b>${esc(p.label)}</b>${p.note ? " – " + esc(p.note) : ""} · ${credit(p)}</figcaption></figure>`;
+    lb.setAttribute("aria-label", set[0].label);
+    const draw = () => {
+      const p = set[i];
+      lb.innerHTML = `<button class="x" type="button">Zavřít ✕</button>` +
+        (set.length > 1 ? `<button class="nav prev" type="button" aria-label="Předchozí">‹</button><button class="nav next" type="button" aria-label="Další">›</button>` : "") +
+        `<figure><img src="foto/${p.file}" alt="${esc(p.label)}"><figcaption><b>${esc(p.label)}</b>${set.length > 1 ? ` · ${i + 1} / ${set.length}` : ""}${p.note ? " – " + esc(p.note) : ""}<br>${credit(p)}</figcaption></figure>`;
+      lb.querySelector(".x").focus();
+    };
+    const go = d => { i = (i + d + set.length) % set.length; draw(); };
     const close = () => { lb.remove(); document.removeEventListener("keydown", onKey); };
-    const onKey = e => { if (e.key === "Escape") close(); };
-    lb.addEventListener("click", e => { if (e.target === lb || e.target.classList.contains("x")) close(); });
+    const onKey = ev => { if (ev.key === "Escape") close(); if (ev.key === "ArrowRight") go(1); if (ev.key === "ArrowLeft") go(-1); };
+    lb.addEventListener("click", ev => {
+      if (ev.target === lb || ev.target.classList.contains("x")) close();
+      else if (ev.target.classList.contains("next")) go(1);
+      else if (ev.target.classList.contains("prev")) go(-1);
+    });
     document.addEventListener("keydown", onKey);
     document.body.appendChild(lb);
-    lb.querySelector(".x").focus();
+    draw();
   }
-  window.ACR_LB = (key, i) => { const p = byKey(key)[i || 0]; if (p) lightbox(p); };
+  const photoLink = (key, text) => { const n = byKey(key).length; return n ? `<button type="button" class="plink" onclick="ACR_LB('${key}')">${text || "fotky"} (${n})</button>` : ""; };
+  window.ACR_LB = (key, i) => lightbox(key, i);
 
   /* ---------- technika ---------- */
   const stLbl = {ok: "ve službě", ord: "objednáno / dodávky", old: "dosluhuje"};
@@ -67,7 +83,7 @@
   function renderTech() {
     $("#tbody").innerHTML = ACR.TECH.filter(t => curCat === "Vše" || t[1] === curCat).map(t => {
       const ph = t[7] ? byKey(t[7])[0] : null;
-      const img = ph ? `<img class="thumb" src="foto/${ph.file}" alt="${esc(t[0])}" loading="lazy" onclick="ACR_LB('${t[7]}')">` :
+      const img = ph ? photoLink(t[7]) :
         `<a href="https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(t[0] + " Czech")}&title=Special:MediaSearch&type=image" target="_blank" rel="noopener">hledat ↗</a>`;
       return `<tr><td>${img}</td><td><b>${esc(t[0])}</b></td><td>${esc(t[1])}</td><td class="n">${esc(t[2])}</td><td>${esc(t[3])}</td><td><span class="st ${t[4]}">${stLbl[t[4]]}</span></td><td>${esc(t[5])} ${src(t[6])}</td></tr>`;
     }).join("");
@@ -82,6 +98,19 @@
 
   /* ---------- modernizace ---------- */
   $("#proj").innerHTML = ACR.PROJ.map(p => `<div class="p"><div><div class="yr">${esc(p[0])}</div><h3 style="margin-top:4px">${esc(p[1])}</h3></div><p style="font-size:14px">${esc(p[2])} ${src(p[5])}</p><div class="money">${esc(p[3])} ${p[3] !== "—" ? '<span style="font-size:13px">Kč</span>' : ""}<small>${esc(p[4])}</small></div></div>`).join("");
+
+  /* ---------- akce a milníky ---------- */
+  function renderEvents() {
+    const today = new Date().toISOString().slice(0, 10);
+    const kind = {akce: "akce", milnik: "milník", vyroci: "výročí"};
+    const ev = ACR.EVENTS.filter(e => e[0] >= today).sort((a, b) => a[0].localeCompare(b[0]));
+    const years = [...new Set(ev.map(e => e[0].slice(0, 4)))];
+    $("#events").innerHTML = years.map(y => `<div class="ev-year"><h3>${y}</h3><div class="ev-list">${ev.filter(e => e[0].startsWith(y)).map(e => {
+      const ph = e[8] ? byKey(e[8])[0] : null;
+      const img = ph && ph.group === "Akce" ? `<button type="button" class="ev-img" onclick="ACR_LB('${e[8]}')" aria-label="Fotka: ${esc(e[2])}"><img src="foto/${ph.file}" alt="" loading="lazy"></button>` : "";
+      return `<article class="ev">${img}<div class="ev-body"><div class="ev-date">${esc(e[1])} <span class="ev-k ${e[6]}">${kind[e[6]]}</span>${e[7] === "ocekavano" ? '<span class="ev-k exp">termín neověřen</span>' : ""}</div><h4>${esc(e[2])}</h4><div class="ev-place">${esc(e[3])}</div><p>${esc(e[4])} ${src(e[5])} ${ph && ph.group !== "Akce" ? photoLink(e[8]) : ""}</p></div></article>`;
+    }).join("")}</div></div>`).join("") || '<p class="empty">Žádné nadcházející akce.</p>';
+  }
 
   /* ---------- dokumenty ---------- */
   const doc = (y, t, d, h) => `<div class="doc"><span class="y">${esc(y)}</span><b>${esc(t)}</b><span style="font-size:14px">${esc(d)}</span><a href="${h}" target="_blank" rel="noopener" style="font-size:13px">Otevřít ↗</a></div>`;
@@ -163,7 +192,7 @@
   let map, UNITS = [], markers = new Map(), areaLayers = [], curType = "all";
   function popupUnit(u) {
     const ph = u.photo ? byKey(u.photo)[0] : null;
-    const img = ph ? `<img src="foto/${ph.file}" alt="" style="width:100%;max-width:260px;display:block;margin:6px 0;cursor:zoom-in" onclick="ACR_LB('${u.photo}')">` : "";
+    const img = ph ? `<div style="margin:6px 0">${photoLink(u.photo)}</div>` : "";
     const prec = u.coord_precision === "kasarna" ? "poloha objektu" : "poloha obce (orientačně)";
     return `<b>${esc(u.name)}</b><br><span style="font-size:12px;color:#59625A">${esc(u.short)} · ${esc(u.town)} · podřízen: ${esc(u.parent)}</span>${img}<p style="margin:6px 0">${esc(u.note)}</p><span style="font-size:11px;color:#59625A">${prec}</span><br><a href="${u.source}" target="_blank" rel="noopener">zdroj ↗</a> · <a href="https://mapy.com/cs/?q=${encodeURIComponent(u.name + " " + u.town)}" target="_blank" rel="noopener">Mapy.com ↗</a>`;
   }
@@ -235,11 +264,13 @@
       $("#gallery").innerHTML = '<p class="empty">Fotky se právě stahují do repozitáře (GitHub Actions → „Stáhnout fotky z Wikimedia Commons“). Za pár minut obnovte stránku.</p>';
       return;
     }
-    const groups = [...new Set(PHOTOS.map(p => p.group))];
-    $("#gallery").innerHTML = `<p class="note">${PHOTOS.length} fotek z Wikimedia Commons s volnou licencí, uloženo v repozitáři ${meta.generated ? "(" + esc(meta.generated) + ")" : ""}. Klikněte pro zvětšení.</p>` +
-      groups.map(gr => `<div class="gal-group"><h3>${esc(gr)}</h3><div class="gal">${PHOTOS.filter(p => p.group === gr).map(p => {
-        const i = byKey(p.key).indexOf(p);
-        return `<figure><button type="button" onclick="ACR_LB('${p.key}',${i})" aria-label="Zvětšit: ${esc(p.label)}"><img src="foto/${p.file}" alt="${esc(p.label)}" loading="lazy"></button><figcaption><b>${esc(p.label)}</b>${esc(p.note || p.title.replace(/\.[a-z]+$/i, ""))}<br>${credit(p)}</figcaption></figure>`;
+    const GAL = PHOTOS.filter(p => p.group !== "Akce");
+    const keys = [...new Set(GAL.map(p => p.key))];
+    const groups = [...new Set(GAL.map(p => p.group))];
+    $("#gallery").innerHTML = `<p class="note">${keys.length} témat, ${GAL.length} fotek z Wikimedia Commons s volnou licencí. Náhled ukazuje hlavní fotku, po kliknutí další.</p>` +
+      groups.map(gr => `<div class="gal-group"><h3>${esc(gr)}</h3><div class="gal">${keys.filter(k => byKey(k)[0].group === gr).map(k => {
+        const set = byKey(k), p = set[0];
+        return `<figure><button type="button" onclick="ACR_LB('${k}',0)" aria-label="Otevřít fotky: ${esc(p.label)}"><img src="foto/${p.file}" alt="${esc(p.label)}" loading="lazy">${set.length > 1 ? `<span class="cnt">+${set.length - 1}</span>` : ""}</button><figcaption><b>${esc(p.label)}</b>${esc(p.note || "")}${p.note ? "<br>" : ""}${credit(p)}</figcaption></figure>`;
       }).join("")}</div></div>`).join("");
   }
 
@@ -250,6 +281,7 @@
       PHOTOS = meta.photos || [];
       renderGallery(meta);
       renderTech();
+      renderEvents();
       return fetch("data/posadky.json", {cache: "no-cache"}).then(r => r.json());
     })
     .then(initUnits)
