@@ -50,7 +50,7 @@
     lb.id = "lb";
     lb.setAttribute("role", "dialog");
     lb.setAttribute("aria-label", p.label);
-    lb.innerHTML = `<button class="x" type="button">Zavřít ✕</button><figure><img src="foto/${p.file}" alt="${esc(p.label)}"><figcaption><b>${esc(p.label)}</b> – ${credit(p)}</figcaption></figure>`;
+    lb.innerHTML = `<button class="x" type="button">Zavřít ✕</button><figure><img src="foto/${p.file}" alt="${esc(p.label)}"><figcaption><b>${esc(p.label)}</b>${p.note ? " – " + esc(p.note) : ""} · ${credit(p)}</figcaption></figure>`;
     const close = () => { lb.remove(); document.removeEventListener("keydown", onKey); };
     const onKey = e => { if (e.key === "Escape") close(); };
     lb.addEventListener("click", e => { if (e.target === lb || e.target.classList.contains("x")) close(); });
@@ -100,28 +100,82 @@
   const SYM = {
     inf: '<path d="M-12 -8L12 8M12 -8L-12 8"/>',
     arm: '<path d="M-12 -8L12 8M12 -8L-12 8"/><ellipse rx="7" ry="4"/>',
+    tank: '<ellipse rx="8" ry="4.5"/>',
     art: '<circle r="2.6" style="fill:var(--friendly);stroke:none"/>',
     ad: '<path d="M-8 6Q0 -6 8 6"/>',
     air: '<path d="M-8 0Q-4 -5 0 0Q4 5 8 0"/>',
+    radar: '<path d="M-6 5Q0 -7 6 5M0 5V-2"/>',
     rec: '<path d="M-12 8L12 -8"/>',
+    uav: '<path d="M-8 -3L0 3L8 -3"/><path d="M-12 8L12 -8"/>',
     sof: '<path d="M-12 8L12 -8M-6 -2H6"/>',
     eng: '<path d="M-6 3V-3H6V3M0 -3V3"/>',
     cbrn: '<path d="M-6 5L0 -5L6 5Z"/>',
     ew: '<path d="M-7 -4L0 4L7 -4"/>',
     log: '<path d="M-12 4H12"/>',
     hq: '<path d="M-12 -2H12"/>',
+    med: '<path d="M0 -5V5M-5 0H5"/>',
+    edu: '<path d="M-7 3L0 -4L7 3"/>',
     guard: '<path d="M-5 -4H5V4H-5Z"/>',
-    mp: '<text text-anchor="middle" y="3">MP</text>'
+    mp: '<text text-anchor="middle" y="3">MP</text>',
+    ter: '<text text-anchor="middle" y="3">T</text>',
+    cyber: '<text text-anchor="middle" y="3">0101</text>',
+    sp: '<text text-anchor="middle" y="3">s.p.</text>',
+    misc: '<circle r="2" style="fill:var(--friendly);stroke:none"/>',
+    uj: '<path d="M-12 8L-4 -8M-4 8L4 -8M4 8L12 -8"/>'
   };
-  const icon = (sym, tmp) => L.divIcon({
+  const TYPES = {
+    velitelstvi: "Velitelství", pozemni: "Pozemní síly", vzdusne: "Vzdušné síly", specialni: "Speciální síly",
+    teritorialni: "Teritoriální síly", logistika: "Logistika", zdravotnictvi: "Zdravotnictví", vycvik: "Výcvik a školství",
+    hradni: "Hradní stráž", vp: "Vojenská policie", ostatni: "Ostatní složky", podnik: "Státní podniky", ujezd: "Újezdní úřady"
+  };
+  function symOf(u) {
+    const n = u.name.toLowerCase();
+    if (u.type === "hradni") return "guard";
+    if (u.type === "vp") return "mp";
+    if (u.type === "specialni") return "sof";
+    if (u.type === "zdravotnictvi") return "med";
+    if (u.type === "vycvik") return "edu";
+    if (u.type === "podnik") return "sp";
+    if (u.type === "ujezd") return "uj";
+    if (u.type === "teritorialni") return n.includes("pluk") ? "log" : "ter";
+    if (u.type === "logistika") return "log";
+    if (/kybernet|informační/.test(n)) return "cyber";
+    if (u.type === "velitelstvi") return "hq";
+    if (/tankov/.test(n)) return "tank";
+    if (/mechaniz|motoriz|brigáda rychlého/.test(n)) return n.includes("mechanizovaná brigáda") ? "arm" : "inf";
+    if (/výsadk/.test(n)) return "inf";
+    if (/protiletad/.test(n)) return "ad";
+    if (/radiotech|řízení a uvědom|velení, řízení/.test(n)) return "radar";
+    if (/dělostř/.test(n)) return "art";
+    if (/ženij/.test(n)) return "eng";
+    if (/rchbo|radiační|zbraní hromad/.test(n)) return "cbrn";
+    if (/bezpilot/.test(n)) return "uav";
+    if (/elektronick/.test(n)) return "ew";
+    if (/průzkum/.test(n)) return "rec";
+    if (/logist|zásob|oprav/.test(n)) return "log";
+    if (u.type === "vzdusne") return "air";
+    return "misc";
+  }
+  const icon = (sym, approx) => L.divIcon({
     className: "", iconSize: [28, 20], iconAnchor: [14, 10],
-    html: `<svg class="nato${tmp ? " tmp" : ""}" width="28" height="20" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/>${SYM[sym] || ""}</svg>`
+    html: `<svg class="nato${approx ? " approx" : ""}" width="28" height="20" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/>${SYM[sym] || ""}</svg>`
   });
-  let map, layers = {land: [], air: [], sup: [], area: []};
+  let map, UNITS = [], markers = new Map(), areaLayers = [], curType = "all";
   function popupUnit(u) {
-    const ph = u[8] ? byKey(u[8])[0] : null;
-    const img = ph ? `<img src="foto/${ph.file}" alt="" style="width:100%;max-width:260px;display:block;margin:6px 0;cursor:zoom-in" onclick="ACR_LB('${u[8]}')">` : "";
-    return `<b>${esc(u[1])}</b><br><span style="font-size:12px;color:#59625A">${esc(u[2])}</span>${img}<p style="margin:6px 0">${esc(u[7])}</p><a href="${mapy(u[2])}" target="_blank" rel="noopener">Mapy.com ↗</a> · <a href="${wiki(u[1])}" target="_blank" rel="noopener">Wikipedie ↗</a>`;
+    const ph = u.photo ? byKey(u.photo)[0] : null;
+    const img = ph ? `<img src="foto/${ph.file}" alt="" style="width:100%;max-width:260px;display:block;margin:6px 0;cursor:zoom-in" onclick="ACR_LB('${u.photo}')">` : "";
+    const prec = u.coord_precision === "kasarna" ? "poloha objektu" : "poloha obce (orientačně)";
+    return `<b>${esc(u.name)}</b><br><span style="font-size:12px;color:#59625A">${esc(u.short)} · ${esc(u.town)} · podřízen: ${esc(u.parent)}</span>${img}<p style="margin:6px 0">${esc(u.note)}</p><span style="font-size:11px;color:#59625A">${prec}</span><br><a href="${u.source}" target="_blank" rel="noopener">zdroj ↗</a> · <a href="https://mapy.com/cs/?q=${encodeURIComponent(u.name + " " + u.town)}" target="_blank" rel="noopener">Mapy.com ↗</a>`;
+  }
+  /* body se stejnou polohou rozprostřít do kruhu, aby se nepřekrývaly */
+  function spread(units) {
+    const groups = {};
+    units.forEach(u => { const k = u.lat.toFixed(3) + "," + u.lon.toFixed(3); (groups[k] = groups[k] || []).push(u); });
+    Object.values(groups).forEach(g => {
+      if (g.length < 2) { g[0]._ll = [g[0].lat, g[0].lon]; return; }
+      const r = 0.006 + g.length * 0.0012;
+      g.forEach((u, i) => { const a = 2 * Math.PI * i / g.length; u._ll = [u.lat + r * Math.sin(a), u.lon + r * 1.55 * Math.cos(a)]; });
+    });
   }
   function initMap() {
     if (!window.L) { $("#lmap").innerHTML = '<p class="empty">Mapu se nepodařilo načíst (knihovna Leaflet).</p>'; return; }
@@ -130,28 +184,50 @@
       maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
     ACR.AREAS.forEach(a => {
-      const c = L.circle([a[2], a[3]], {
+      areaLayers.push(L.circle([a[2], a[3]], {
         radius: Math.sqrt(a[4] / Math.PI) * 1000,
         color: a[6] ? "#A8382C" : "#5A6A36", weight: 1.5, dashArray: "4 3", fillOpacity: a[6] ? 0 : .18
-      }).bindPopup(`<b>Vojenský újezd ${esc(a[0])}</b><br><span style="font-size:12px">${esc(a[1])} · ~${a[4]} km²</span><p style="margin:6px 0">${esc(a[5])}</p><a href="${mapy("Vojenský újezd " + a[0])}" target="_blank" rel="noopener">Hranice na Mapy.com ↗</a> · <a href="${wiki("Vojenský újezd " + a[0])}" target="_blank" rel="noopener">Wikipedie ↗</a>`).addTo(map);
-      layers.area.push(c);
+      }).bindPopup(`<b>Vojenský újezd ${esc(a[0])}</b><br><span style="font-size:12px">${esc(a[1])} · ~${a[4]} km²</span><p style="margin:6px 0">${esc(a[5])}</p><a href="${mapy("Vojenský újezd " + a[0])}" target="_blank" rel="noopener">Hranice na Mapy.com ↗</a> · <a href="${wiki("Vojenský újezd " + a[0])}" target="_blank" rel="noopener">Wikipedie ↗</a>`).addTo(map));
     });
-    ACR.UNITS.forEach(u => {
-      const m = L.marker([u[3], u[4]], {icon: icon(u[6], u[9]), title: u[1], keyboard: true}).bindPopup(popupUnit(u), {maxWidth: 300}).addTo(map);
-      layers[u[5]].push(m);
+    spread(UNITS);
+    UNITS.forEach(u => {
+      const m = L.marker(u._ll, {icon: icon(symOf(u), u.coord_precision !== "kasarna"), title: `${u.short} – ${u.name} (${u.town})`, keyboard: true})
+        .bindPopup(popupUnit(u), {maxWidth: 300}).addTo(map);
+      markers.set(u, m);
     });
   }
-  function filter(f) {
-    Object.entries(layers).forEach(([k, arr]) => arr.forEach(l => {
-      const show = f === "all" || f === k;
-      if (show && !map.hasLayer(l)) l.addTo(map);
-      if (!show && map.hasLayer(l)) map.removeLayer(l);
+  function applyFilter() {
+    const q = ($("#usearch").value || "").trim().toLowerCase();
+    const match = u => (curType === "all" || curType === u.type) &&
+      (!q || (u.name + " " + u.short + " " + u.town + " " + u.parent + " " + u.note).toLowerCase().includes(q));
+    if (map) {
+      markers.forEach((m, u) => { const s = match(u); if (s && !map.hasLayer(m)) m.addTo(map); if (!s && map.hasLayer(m)) map.removeLayer(m); });
+      areaLayers.forEach(l => { const s = (curType === "all" || curType === "ujezd") && !q; if (s && !map.hasLayer(l)) l.addTo(map); if (!s && map.hasLayer(l)) map.removeLayer(l); });
+    }
+    const rows = UNITS.filter(match).sort((a, b) => a.town.localeCompare(b.town, "cs") || a.name.localeCompare(b.name, "cs"));
+    $("#ucount").textContent = `${rows.length} z ${UNITS.length}`;
+    $("#ubody").innerHTML = rows.map(u => `<tr><td>${esc(u.town)}</td><td><b>${esc(u.short)}</b></td><td><a href="#mapa" data-uid="${UNITS.indexOf(u)}">${esc(u.name)}</a></td><td>${esc(TYPES[u.type] || u.type)}</td><td>${esc(u.parent)}</td><td>${esc(u.note)} <a href="${u.source}" target="_blank" rel="noopener">zdroj ↗</a></td></tr>`).join("");
+  }
+  function initUnits(data) {
+    UNITS = data.items || [];
+    const counts = {};
+    UNITS.forEach(u => (counts[u.type] = (counts[u.type] || 0) + 1));
+    const chips = [["all", `Vše (${UNITS.length})`], ...Object.keys(TYPES).filter(t => counts[t]).map(t => [t, `${TYPES[t]} (${counts[t]})`])];
+    $("#mapchips").innerHTML = chips.map(([f, l], i) => `<button class="chip" type="button" id="mf-${f}" data-f="${f}" aria-pressed="${i === 0}">${esc(l)}</button>`).join("");
+    $("#mapchips").querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+      $("#mapchips").querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+      curType = b.dataset.f; applyFilter();
     }));
+    $("#usearch").addEventListener("input", applyFilter);
+    $("#ubody").addEventListener("click", e => {
+      const a = e.target.closest("[data-uid]"); if (!a || !map) return;
+      const u = UNITS[+a.dataset.uid], m = markers.get(u);
+      if (!map.hasLayer(m)) m.addTo(map);
+      map.setView(u._ll, 12); m.openPopup();
+    });
+    initMap();
+    applyFilter();
   }
-  document.querySelectorAll("#mapchips .chip").forEach(b => b.addEventListener("click", () => {
-    document.querySelectorAll("#mapchips .chip").forEach(x => x.setAttribute("aria-pressed", x === b));
-    if (map) filter(b.dataset.f);
-  }));
 
   /* ---------- galerie ---------- */
   function renderGallery(meta) {
@@ -163,7 +239,7 @@
     $("#gallery").innerHTML = `<p class="note">${PHOTOS.length} fotek z Wikimedia Commons s volnou licencí, uloženo v repozitáři ${meta.generated ? "(" + esc(meta.generated) + ")" : ""}. Klikněte pro zvětšení.</p>` +
       groups.map(gr => `<div class="gal-group"><h3>${esc(gr)}</h3><div class="gal">${PHOTOS.filter(p => p.group === gr).map(p => {
         const i = byKey(p.key).indexOf(p);
-        return `<figure><button type="button" onclick="ACR_LB('${p.key}',${i})" aria-label="Zvětšit: ${esc(p.label)}"><img src="foto/${p.file}" alt="${esc(p.label)}" loading="lazy"></button><figcaption><b>${esc(p.label)}</b>${esc(p.title.replace(/\.[a-z]+$/i, ""))}<br>${credit(p)}</figcaption></figure>`;
+        return `<figure><button type="button" onclick="ACR_LB('${p.key}',${i})" aria-label="Zvětšit: ${esc(p.label)}"><img src="foto/${p.file}" alt="${esc(p.label)}" loading="lazy"></button><figcaption><b>${esc(p.label)}</b>${esc(p.note || p.title.replace(/\.[a-z]+$/i, ""))}<br>${credit(p)}</figcaption></figure>`;
       }).join("")}</div></div>`).join("");
   }
 
@@ -174,6 +250,8 @@
       PHOTOS = meta.photos || [];
       renderGallery(meta);
       renderTech();
-      initMap();
-    });
+      return fetch("data/posadky.json", {cache: "no-cache"}).then(r => r.json());
+    })
+    .then(initUnits)
+    .catch(e => { console.error(e); $("#lmap").innerHTML = '<p class="empty">Seznam posádek se nepodařilo načíst.</p>'; });
 })();

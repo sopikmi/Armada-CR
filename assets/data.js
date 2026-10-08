@@ -30,6 +30,8 @@ ACR.SOURCES = {
   e15_vyzbroj: ["E15 (19. 2. 2025): stav výzbroje", "https://www.e15.cz/domaci/ceske-zbrane-patri-spis-do-muzea-nebo-do-srotu-armada-stale-ceka-na-nove-tanky-a-dela-1422419"],
   ct_cv90: ["ČT24: Švédové ukázali první CV90 pro českou armádu", "https://ct24.ceskatelevize.cz/clanek/domaci/svedove-ukazali-prvniho-obrnence-cv90-pro-ceskou-armadu-364478"],
   vop_cv90: ["VOP CZ: zahájení výroby CV90", "https://vop.cz/en/news/vop-cz-begins-production-of-cv90-armoured-vehicles-for-the-czech-army/"],
+  acr_gs: ["Armáda ČR – Generální štáb (struktura, 2026)", "https://acr.mo.gov.cz/scripts/detail.php?pgid=638"],
+  acr_rakovnik: ["Armáda ČR: z praporu se stal pluk – Rakovník (10/2026)", "https://acr.mo.gov.cz/informacni-servis/zpravodajstvi/z-praporu-se-stal-pluk--rakovnik-je-domovem-nove-logisticke-jednotky-armady-ceske-republiky-266273/"],
   wiki: ["Wikipedie: Armáda České republiky", "https://cs.wikipedia.org/wiki/Arm%C3%A1da_%C4%8Cesk%C3%A9_republiky"]
 };
 
@@ -65,38 +67,9 @@ ACR.AZ = [
   ["Posádkové velitelství Praha", 3]
 ];
 
-/* ---------- MAPA: útvary ----------
- * [id, název, místo, lat, lon, typ(land|air|sup), symbol, popis, foto key, dočasně?]
- * Polohy na úrovni posádky (města), ne přesných kasáren.
+/* ---------- MAPA ----------
+ * Útvary a posádky jsou v data/posadky.json (každá položka se zdrojem).
  */
-ACR.UNITS = [
-  ["gs", "Generální štáb AČR", "Praha-Dejvice", 50.104, 14.393, "sup", "hq", "Nejvyšší velitelský orgán armády. Náčelníka jmenuje prezident na návrh vlády."],
-  ["hs", "Hradní stráž", "Praha – Pražský hrad", 50.090, 14.400, "sup", "guard", "Útvar AČR v působnosti Kanceláře prezidenta republiky. Ostraha sídel prezidenta (Pražský hrad, Lány), čestné stráže a střídání stráží. V aktivní záloze má 20 lidí (10/2025).", "hradni"],
-  ["vp", "Vojenská policie – velitelství", "Praha", 50.060, 14.470, "sup", "mp", "Samostatný útvar podřízený ministrovi obrany; policejní, kriminální a ochranná služba v rezortu, krajská velitelství VP. V aktivní záloze 84 lidí (10/2025).", "vp"],
-  ["vps", "Velitelství pozemních sil", "Olomouc", 49.594, 17.251, "land", "hq", "Velí pozemním silám."],
-  ["4brn", "4. brigáda rychlého nasazení", "Žatec", 50.327, 13.546, "land", "inf", "Kolová brigáda na Pandurech II: 41. mpr Žatec, 42. mpr Tábor, 43. výsadkový pluk Chrudim, 44. lmpr Jindřichův Hradec.", "pandur"],
-  ["42", "42. mechanizovaný prapor", "Tábor", 49.414, 14.658, "land", "inf", "Součást 4. brn, Pandur II.", "pandur"],
-  ["43", "43. výsadkový pluk", "Chrudim", 49.951, 15.795, "land", "inf", "Výsadkové jednotky, součást 4. brn.", "vojaci"],
-  ["44", "44. lehký motorizovaný prapor", "Jindřichův Hradec", 49.144, 15.003, "land", "inf", "Součást 4. brn."],
-  ["7mb", "7. mechanizovaná brigáda", "Hranice", 49.548, 17.735, "land", "arm", "Těžká brigáda – jádro české těžké brigády pro NATO. BVP-2 nahrazují CV90, tanky Leopard 2A4 a od 2028 Leopard 2A8. 71. mpr Hranice, 72. mpr a 73. tankový prapor Přáslavice, 74. lmpr Bučovice.", "cv90"],
-  ["73", "72. mpr a 73. tankový prapor", "Přáslavice", 49.590, 17.390, "land", "arm", "Tankový prapor s Leopardy 2A4 (42 kusů do konce 2026), později 2A8.", "leopard2a4"],
-  ["74", "74. lehký motorizovaný prapor", "Bučovice", 49.149, 17.002, "land", "inf", "Součást 7. mb."],
-  ["13dp", "13. dělostřelecký pluk", "Jince", 49.786, 13.978, "land", "art", "Houfnice Dana 152 mm; čeká na 62 houfnic CAESAR 155 mm (zpoždění, dokončení podle harmonogramu 6/2028).", "dana"],
-  ["102", "102. průzkumný prapor", "Prostějov", 49.472, 17.110, "land", "rec", "Hloubkový průzkum."],
-  ["601", "601. skupina speciálních sil", "Prostějov", 49.455, 17.125, "land", "sof", "Speciální síly AČR; operace v Afghánistánu, Mali a dalších."],
-  ["15zp", "15. ženijní pluk", "Bechyně", 49.295, 14.468, "sup", "eng", "Ženijní podpora, pomoc při povodních a katastrofách."],
-  ["31", "31. pluk RCHBO", "Liberec", 50.767, 15.056, "sup", "cbrn", "Radiační, chemická a biologická ochrana; specializace, kterou si AČR v NATO buduje dlouhodobě."],
-  ["53", "53. pluk průzkumu a EB", "Opava", 49.938, 17.902, "sup", "ew", "Průzkum a elektronický boj."],
-  ["14plp", "14. pluk logistické podpory", "Pardubice", 50.040, 15.780, "sup", "log", "Logistika a zabezpečení."],
-  ["21", "21. základna taktického letectva", "Čáslav", 49.940, 15.390, "air", "air", "Domovská základna Gripenů a L-159 a budoucí základna F-35A. V letech 2026–2028 probíhá rekonstrukce za 5,33 mld Kč bez DPH; letadla jsou dočasně v Pardubicích a Náměšti.", "gripen"],
-  ["21p", "Gripeny – dočasně Pardubice", "Pardubice (letiště)", 50.014, 15.739, "air", "air", "14 JAS-39 Gripen dočasně během rekonstrukce Čáslavi (od jara 2026).", "gripen", true],
-  ["22", "22. základna vrtulníkového letectva", "Náměšť nad Oslavou", 49.166, 16.125, "air", "air", "UH-1Y Venom, AH-1Z Viper, Mi-171Š. Od března 2026 dočasně i 24 letounů L-159.", "viper"],
-  ["24", "24. základna dopravního letectva", "Praha-Kbely", 50.121, 14.543, "air", "air", "CASA C-295, Airbus A319, Embraer C-390 (první kus od 7/2026).", "c390"],
-  ["25", "25. protiletadlový raketový pluk", "Strakonice", 49.261, 13.902, "air", "ad", "2K12 KUB a RBS-70; přezbrojení na 4 baterie SPYDER (vojskové zkoušky splněny 9/2026, ostré střelby plán 10/2027).", "spyder"],
-  ["26", "26. pluk velení, řízení a průzkumu", "Stará Boleslav", 50.190, 14.680, "air", "ad", "Radiolokační průzkum a řízení vzdušného prostoru."],
-  ["vyskov", "Velitelství výcviku – Vojenská akademie", "Vyškov", 49.278, 16.999, "sup", "hq", "Šestitýdenní základní výcvik všech rekrutů, kurzy a poddůstojnická škola.", "vojaci"],
-  ["uo", "Univerzita obrany", "Brno", 49.195, 16.608, "sup", "hq", "Vojenská vysoká škola; ve školním roce 2024/25 1 067 studentů. Fakulta vojenského zdravotnictví je v Hradci Králové."]
-];
 
 /* vojenské újezdy: [název, oblast, lat, lon, km² (orientačně), popis, zrušen?] */
 ACR.AREAS = [
@@ -176,7 +149,7 @@ ACR.ISSUES = [
   ["", "Rozpočet 2026: 2 % HDP, nebo 1,73 %?", "Kapitola MO má 154,8 mld Kč, asi 1,73 % HDP. Vláda vykazuje 184 mld Kč a 2,06 % díky obranným výdajům jiných resortů. Opozice tvrdí, že proti návrhu předchozí vlády bylo kráceno 21 mld Kč; prezident i opozice pochybují, že NATO tyto výdaje uzná.", "sz_drony"],
   ["", "CAESAR: zaplaceno 7,2 mld, dodáno nic", "První čtyři houfnice měly přijít v dubnu 2026. Výrobce odstraňuje nedostatky, vojskové zkoušky nejdřív v dubnu 2027; ministerstvo jedná o penále, odstoupení od smlouvy označuje za krajní variantu.", "ed_caesar"],
   ["w", "Průhlednost počtů", "V roce 2024 ministerstvo přestalo počty běžně zveřejňovat; data dnes vycházejí hlavně z odpovědí na žádosti o informace. Cíl 30 000 se v různých zdrojích vztahuje jednou k celému rezortu, jindy k armádě.", "sz_cisla"],
-  ["w", "Výměna náčelníka GŠ", "Vláda v květnu 2026 navrhla genpor. Miroslava Hlaváče jako nástupce gen. Karla Řehky; ministr Zůna (SPD) hlasoval proti, šéf SPD Okamura vyjádřil výhrady.", "sz_ngs"],
+  ["w", "Výměna náčelníka GŠ", "Od 1. 7. 2026 vede armádu genpor. Miroslav Hlaváč místo gen. Karla Řehky. Při květnovém hlasování vlády byl ministr Zůna (SPD) proti a šéf SPD Okamura vyjádřil výhrady.", "acr_gs"],
   ["w", "Nákupy bez tendru", "F-35, Leopard 2A8 i CV90 pořízeny mezivládními dohodami nebo jednacím řízením. Kritici upozorňují na cenu a transparentnost, zastánci na rychlost a interoperabilitu.", "ctk_2a8"],
   ["w", "Mezera v letectvu", "Rekonstrukce Čáslavi vyhnala letadla do Pardubic a Náměšti; Gripeny se zmenší na 12 kusů, než dorazí F-35 (v Česku od 2031).", "nv_caslav"],
   ["n", "Aktivní záloha na polovině", "4 849 záložníků proti cíli 10 000; nábor se zdvojnásobil, ale naplněnost zůstává kolem 50 %. Debata o povinných cvičeních po vzoru severských a pobaltských zemí.", "az_info"],

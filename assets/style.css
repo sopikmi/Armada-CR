@@ -172,3 +172,9 @@ body{margin:0}
 .empty{border:1px dashed var(--line);padding:18px;background:var(--paper);font-size:14px}
 .upd{display:inline-block;font:600 11px var(--mono);letter-spacing:.06em;color:var(--warn);text-transform:uppercase}
 img{max-width:100%}
+.nato.approx rect{stroke-dasharray:none}
+.ulist-head{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:22px 0 10px}
+.ulist-head input{font:15px var(--body);padding:9px 12px;border:1px solid var(--line);background:var(--paper);color:var(--fg);min-width:0;flex:1 1 260px;max-width:420px}
+.ulist{max-height:640px;overflow:auto}
+.ulist td{font-size:13px}
+.ulist td:first-child{white-space:nowrap}

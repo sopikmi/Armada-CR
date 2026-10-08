@@ -9,7 +9,7 @@ Tento soubor je závazný návod pro každou aktualizaci (ruční i automatickou
 | Čísla v přehledu (KPI) | `assets/data.js` → `ACR.KPI` |
 | Vývoj počtu vojáků | `ACR.VZP_TREND` |
 | Aktivní záloha podle součástí | `ACR.AZ` |
-| Útvary na mapě | `ACR.UNITS` (lat, lon na úrovni posádky) |
+| Útvary, zařízení a posádky (mapa + seznam) | `data/posadky.json` (name, short, type, parent, town, lat, lon, coord_precision, note, source, volitelně photo) |
 | Vojenské újezdy | `ACR.AREAS` |
 | Technika | `ACR.TECH` |
 | Modernizace | `ACR.PROJ` |
@@ -31,11 +31,21 @@ Tento soubor je závazný návod pro každou aktualizaci (ruční i automatickou
   (např. Leopard 2A4 = 42 všude). Součet `ACR.AZ` musí odpovídat KPI aktivní zálohy. Když zdroje nesouhlasí, uveď obě čísla a rozdíl vysvětli v poznámce.
 - Rozlišuj **objednáno / dodáno / ve službě**, **celý rezort / jen armáda pod NGŠ**, **s DPH / bez DPH**.
 
+## Posádky (data/posadky.json)
+- Každá položka musí mít zdroj (`source`). Útvary nevymýšlej; zrušené nebo přejmenované útvary uprav podle aktuálního stavu a změnu uveď v `note`.
+- `coord_precision`: `kasarna` jen když souřadnice odpovídají konkrétnímu objektu, jinak `obec`.
+- `type` je jeden z: velitelstvi, pozemni, vzdusne, specialni, teritorialni, logistika, zdravotnictvi, vycvik, hradni, vp, ostatni, podnik, ujezd.
+
 ## Fotky
 - Jen Wikimedia Commons s volnou licencí (CC BY, CC BY-SA, CC0, public domain); u každé fotky se zobrazuje autor a licence.
-- Nové fotky = přidat položku do `foto/queries.json` (key, group, label, query, limit) a pushnout;
-  workflow „Stáhnout fotky z Wikimedia Commons“ je stáhne a commitne. Lze ho spustit i ručně (Actions → Run workflow).
-- `key` musí odpovídat poslednímu poli v `ACR.TECH` nebo `ACR.UNITS`, aby se fotka zobrazila v tabulce a na mapě.
+- Fotky se vybírají **ručně**: v `foto/queries.json` má každá položka `files` = přesné názvy souborů na Commons.
+  Automatické hledání (`query`) používej jen výjimečně – vrací i nesouvisející nebo cizí fotky.
+- Postup výběru: doplň hledání do `foto/candidates.json` a pushni → workflow uloží náhledy do `_kandidati/`.
+  Prohlédni je (kontaktní arch), vyber, zapiš názvy do `files`, `_kandidati/` smaž a pushni.
+- Kontroly: žádná fotka dvakrát, žádné téměř stejné záběry (skript navíc porovnává perceptuální hash),
+  na fotce musí být to, co říká popisek. Cizí armáda jen tehdy, když česká fotka neexistuje, a pak to uveď v `note`
+  (např. CAESAR dánské armády). Fotky s vojáky cizí armády v popředí nepoužívej.
+- `key` musí odpovídat poslednímu poli v `ACR.TECH` nebo poli `photo` v `data/posadky.json`.
 - Obrázky z cizích webů nevkládej (autorská práva); fotky z army.cz / mo.gov.cz jen odkazem.
 
 ## Postup aktualizace

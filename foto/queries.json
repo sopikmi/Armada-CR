@@ -1,198 +1,248 @@
 {
- "_info": "Seznam hledání pro stažení fotek z Wikimedia Commons. key = klíč, na který odkazuje index.html (tabulka techniky a galerie). Úprava tohoto souboru spustí workflow, který fotky stáhne znovu. Volitelně \"exclude\": seznam částí názvů souborů, které se nemají použít (špatné trefy). Stejný soubor se nepoužije dvakrát.",
+ "_info": "Ručně vybrané fotky z Wikimedia Commons (pole files = přesné názvy souborů). Úprava tohoto souboru spustí workflow, který fotky stáhne. Nové kandidáty lze hledat přes foto/candidates.json (náhledy se uloží do _kandidati/). Pravidla: AGENT.md.",
  "items": [
   {
    "key": "leopard2a4",
    "group": "Tanky",
    "label": "Leopard 2A4 v AČR",
-   "query": "Leopard 2A4 Czech",
-   "limit": 3,
-   "exclude": [
-    "Parola",
-    "museum"
+   "files": [
+    "Convoy of Liberty- 80th Year Liberation Anniversary of Pilsen (9017584).jpg",
+    "Lešany - vojenské muzeum, Tankový den 2024, ukázky, Leopard 2A4, obr05.jpg"
    ]
   },
   {
    "key": "leopard2a8",
    "group": "Tanky",
    "label": "Leopard 2A8",
-   "query": "Leopard 2A8",
-   "limit": 2
+   "files": [
+    "LEOPARD 2A8 (Edited).png"
+   ],
+   "note": "Typ objednaný AČR, dodávky od 2028; nejde o český exemplář."
   },
   {
    "key": "t72",
    "group": "Tanky",
    "label": "T-72M4 CZ",
-   "query": "T-72M4 CZ",
-   "limit": 2
+   "files": [
+    "T-72M4CZ 040.jpg",
+    "T-72M4CZ 053.jpg"
+   ]
   },
   {
    "key": "cv90",
    "group": "Bojová vozidla",
-   "label": "CV90",
-   "query": "CV90 Czech",
-   "limit": 3
+   "label": "CV90 CZ",
+   "files": [
+    "CV90 CZ - IDET 2017.JPG"
+   ],
+   "note": "Předváděcí vozidlo CV90 CZ na veletrhu IDET 2017."
   },
   {
    "key": "bvp2",
    "group": "Bojová vozidla",
    "label": "BVP-2",
-   "query": "BVP-2 Czech Army",
-   "limit": 2
+   "files": [
+    "BVP-2 (1).jpg",
+    "Akce Cihelna 2014 H07. BVP-2.jpg"
+   ]
   },
   {
    "key": "pandur",
    "group": "Bojová vozidla",
    "label": "Pandur II 8×8",
-   "query": "Pandur II Czech Army",
-   "limit": 3
+   "files": [
+    "Pandur II 8x8 KBVP (3).jpg",
+    "U S and Czech Scouts Train During Saber Strike 22 (7076433) (cropped).jpg"
+   ]
   },
   {
    "key": "titus",
    "group": "Bojová vozidla",
    "label": "Tatra Titus",
-   "query": "Tatra Titus",
-   "limit": 2
+   "files": [
+    "Czech Nexter Titus left side Ostrava 2021.jpg"
+   ]
   },
   {
    "key": "caesar",
    "group": "Dělostřelectvo",
-   "label": "CAESAR 8×8 (podvozek Tatra)",
-   "query": "CAESAR 8x8 Tatra",
-   "limit": 2
+   "label": "CAESAR 8×8",
+   "files": [
+    "Artillerisystemet Caesar 8X8 155 mm Haubits ved Danish Air Show.jpg"
+   ],
+   "note": "Dánská armáda – stejná verze na podvozku Tatra, jakou objednala AČR (zatím nedodána)."
   },
   {
    "key": "dana",
    "group": "Dělostřelectvo",
    "label": "ShKH Dana vz. 77",
-   "query": "ShKH vz. 77 Dana",
-   "limit": 2
+   "files": [
+    "Czech Army 152mm howitzer (10958577354).jpg",
+    "131121-A-KH850-004 (11045794563).jpg"
+   ]
   },
   {
    "key": "spyder",
    "group": "Protivzdušná obrana",
    "label": "SPYDER",
-   "query": "SPYDER air defense system",
-   "limit": 2
+   "files": [
+    "SPYDER System CZ.jpg",
+    "SPYDER System.jpg"
+   ],
+   "note": "Veletrh IDET 2025."
   },
   {
    "key": "kub",
    "group": "Protivzdušná obrana",
    "label": "2K12 KUB",
-   "query": "2K12 Kub Czech",
-   "limit": 2
+   "files": [
+    "2K12 KUB (rockets).jpg"
+   ]
   },
   {
    "key": "rbs70",
    "group": "Protivzdušná obrana",
    "label": "RBS-70",
-   "query": "RBS 70 Czech",
-   "limit": 2
+   "files": [
+    "RBS-70 – Army of the Czech Republic.JPG"
+   ]
   },
   {
    "key": "gripen",
    "group": "Letectvo",
    "label": "JAS-39 Gripen",
-   "query": "JAS 39 Gripen Czech Air Force",
-   "limit": 3
+   "files": [
+    "Saab JAS-39 Gripen of the Czech Air Force taking off from AFB Čáslav.jpg",
+    "Air-to-air with a Czech Saab Gripen with AFB Čáslav in the background.jpg"
+   ]
   },
   {
    "key": "f35",
    "group": "Letectvo",
    "label": "F-35A Lightning II",
-   "query": "F-35A Lightning II",
-   "limit": 2
+   "files": [
+    "A U.S. Air Force F-35A Lightning II from the 6th Weapons Squadron takes off for a mission at Nellis Air Force Base, Nevada, April 8, 2026.jpg"
+   ],
+   "note": "Letoun USAF – stejný typ, jaký pořizuje AČR."
   },
   {
    "key": "l159",
    "group": "Letectvo",
    "label": "L-159 ALCA",
-   "query": "Aero L-159 ALCA",
-   "limit": 3
+   "files": [
+    "Aero-Vodochody L-159A ALCA ‘6060’ (45929674121).jpg",
+    "Aero L-159A ALCA ‘6053’ (53472804840).jpg"
+   ]
   },
   {
    "key": "c390",
    "group": "Letectvo",
    "label": "Embraer C-390",
-   "query": "C-390 Millennium Czech",
-   "limit": 2
+   "files": [
+    "16 07 2026 Slavnostní převzetí letounu Embraer C-390, vodní brána (2).jpg"
+   ],
+   "note": "Slavnostní převzetí na letišti Kbely, 16. 7. 2026."
   },
   {
    "key": "c295",
    "group": "Letectvo",
    "label": "CASA C-295",
-   "query": "C-295 Czech Air Force",
-   "limit": 2
+   "files": [
+    "CASA C-295 of Czech Air Force at SIAF 2017.jpg",
+    "CASA C-295 (Czech Air Force) (15094753595).jpg"
+   ]
   },
   {
    "key": "venom",
    "group": "Vrtulníky",
    "label": "UH-1Y Venom",
-   "query": "UH-1Y Venom Czech",
-   "limit": 2
+   "files": [
+    "CzechAirForce UH-1Y.jpg"
+   ]
   },
   {
    "key": "viper",
    "group": "Vrtulníky",
    "label": "AH-1Z Viper",
-   "query": "AH-1Z Viper Czech",
-   "limit": 2
+   "files": [
+    "Bell AH-1Z Viper CzAF 0487 at NATO Days 2023.jpg",
+    "Bell AH-1Z Viper CzAF 0487 flying at NATO Days 2023.jpg"
+   ]
   },
   {
    "key": "mi171",
    "group": "Vrtulníky",
    "label": "Mi-171Š",
-   "query": "Mi-171Sh Czech Air Force",
-   "limit": 2
+   "files": [
+    "Mi-171Sh Czech Air Force at SIAF 2017.jpg",
+    "Czech Air Force Mil Mi-171Sh Hip (52221990109).jpg"
+   ]
   },
   {
    "key": "w3a",
    "group": "Vrtulníky",
    "label": "W-3A Sokol",
-   "query": "W-3A Sokol Czech",
-   "limit": 2
+   "files": [
+    "Czech Air Force PZL W-3A Sokół 0713 Royal International Air Tattoo 2025 04.jpg"
+   ]
   },
   {
    "key": "bren",
    "group": "Ruční zbraně",
    "label": "CZ BREN",
-   "query": "CZ BREN 2",
-   "limit": 2
+   "files": [
+    "A Czech soldier provides cover while fellow soldiers conduct attack training during exercise Combined Resolve 2013 at the 7th Army Joint Multinational Training Command's Hohenfels Training Area in Hohenfels 131115-A-BS310-189.jpg",
+    "A Czech soldier provides cover for fellow troops during exercise Combined Resolve Nov. 11, 2013, at the Joint Multinational Readiness Center in Hohenfels, Germany 131111-A-WB953-977.jpg"
+   ],
+   "note": "Vojáci AČR na cvičení Combined Resolve, Hohenfels 2013."
   },
   {
    "key": "hradni",
    "group": "Útvary",
    "label": "Hradní stráž",
-   "query": "Prague Castle Guard",
-   "limit": 3
+   "files": [
+    "Guard at the Prague castle, Prague - 7620 (cropped).jpg",
+    "2014 Praga, Hradczany, odprawa warty.JPG",
+    "Prague Castle Guard - winter 2012.JPG"
+   ]
   },
   {
    "key": "vp",
    "group": "Útvary",
    "label": "Vojenská policie",
-   "query": "Czech Military Police vojenská policie",
-   "limit": 2,
-   "exclude": [
-    "Znak"
+   "files": [
+    "Military police czech 2904.JPG",
+    "Afghan National Police officers prepare to engage their targets under the guidance of Czech military police instructors during a small arms practice range at Forward Operating Base Shank, Logar province 120222-A-RR514-055.jpg"
    ]
   },
   {
    "key": "vojaci",
    "group": "Útvary",
    "label": "Vojáci AČR na cvičení",
-   "query": "Czech Army soldiers exercise",
-   "limit": 3
+   "files": [
+    "Czech soldiers run to a rally point after exiting U.S. Army UH-60 Black Hawk helicopters during an air insertion exercise mission at the Joint Multinational Readiness Center in Hohenfels, Germany, Nov. 11, 2013 131111-A-WB953-922.jpg",
+    "Task Force Pegasus Begins POWERFUL WORD 2024 Multinational Exercise in Czech Republic (8679785).jpg"
+   ]
   },
   {
    "key": "natodays",
    "group": "Akce",
    "label": "Dny NATO Ostrava",
-   "query": "NATO Days Ostrava",
-   "limit": 3,
-   "exclude": [
-    "An-124",
-    "Ruslan"
+   "files": [
+    "NATO Days Ostrava 2021 - para.jpg",
+    "Czech T-72 at the 2017 NATO Days in Ostrava.jpg",
+    "RAF Red Arrows perform at NATO Days in Ostrava (9334198).jpg"
    ]
+  },
+  {
+   "key": "prehlidka",
+   "group": "Akce",
+   "label": "Vojenská přehlídka 2018, Praha",
+   "files": [
+    "Mattis Observes Czech Centennial Parade in Prague (4853205).jpg",
+    "Mattis Observes Czech Centennial Parade in Prague (4853208).jpg"
+   ],
+   "note": "Přehlídka ke 100. výročí republiky, 28. 10. 2018."
   }
  ]
 }
