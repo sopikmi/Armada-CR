@@ -50,7 +50,7 @@ section{padding-block:44px;border-bottom:1px solid var(--line)}
 .note{font-size:13px;color:var(--muted)}
 
 /* čísla */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .stat{background:var(--paper);padding:16px;display:flex;flex-direction:column;gap:4px;min-width:0}
 .stat .v{font:700 40px/1 var(--display);font-variant-numeric:tabular-nums}
 .stat .d{font-size:13px;color:var(--muted)}
