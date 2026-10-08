@@ -1687,6 +1687,18 @@
    "coord_precision": "obec",
    "note": "Předválečná tvrz na kótě 765 nad Mladkovem (Orlické hory), vytesaná ve skále; armádě slouží dodnes jako sklad (stav 6/2026).",
    "source": "https://www.seznamzpravy.cz/clanek/magazin-historie-tvrz-vytesana-do-skaly-podzemni-pevnost-na-adamu-slouzi-armade-dodnes-306639"
+  },
+  {
+   "name": "Armádní sklad Rančířov (u Jihlavy)",
+   "short": "Rančířov",
+   "type": "logistika",
+   "parent": "neuvedeno",
+   "town": "Rančířov",
+   "lat": 49.346,
+   "lon": 15.57,
+   "coord_precision": "obec",
+   "note": "Podle Novinek (4/2022) největší sklad AČR: mobilizační zásoba zhruba 120 tanků T-72 a několik set BVP; odtud šla v roce 2022 část techniky pro Ukrajinu. MO jej v roce 2011 uvádělo jako Zásobovací středisko Rančířov. Současný nadřízený útvar MO veřejně neuvádí.",
+   "source": "https://www.novinky.cz/clanek/domaci-jake-tanky-a-bojova-vozidla-posilaji-cesi-na-ukrajinu-40392892"
   }
  ]
 }
