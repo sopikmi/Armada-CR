@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vojenská muzea a VHÚ</title>
+<meta name="description" content="Muzea Vojenského historického ústavu Praha, posádková muzea, další vojenská muzea v ČR a databáze pro pátrání po vojenských předcích.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="tabs" aria-label="Části webu">
+  <div class="wrap">
+    <a href="index.html">Armáda ČR</a><a href="mise.html">Zahraniční mise</a><a href="prumysl.html">Zbrojní průmysl</a><a href="muzea.html" aria-current="page">Muzea a VHÚ</a><a href="tyden/index.html">Archiv týdenních přehledů</a>
+  </div>
+</nav>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="lbl">Vojenský historický ústav Praha · muzea a databáze · stav k <span data-updated></span></div>
+      <h1>Muzea <span>a VHÚ</span></h1>
+      <p class="sub">Tři velká muzea VHÚ se vstupem zdarma, národní památníky, 22 posádkových muzeí u útvarů a databáze, ve kterých lze pátrat po vojácích a padlých.</p>
+    </div>
+  </div>
+</header>
+<nav class="toc" aria-label="Obsah"><div class="wrap"><a href="#vhu">Muzea VHÚ</a><a href="#mapa">Mapa</a><a href="#posadkova">Posádková muzea</a><a href="#dalsi">Další muzea</a><a href="#databaze">Databáze a archivy</a><a href="#zdroje">Zdroje</a></div></nav>
+<main>
+<section id="vhu"><div class="wrap">
+  <div class="sec-head"><span class="lbl">01</span><h2>Muzea a památníky VHÚ</h2><span class="note">otevírací doba podle webu VHÚ – před návštěvou ji ověřte</span></div>
+  <div class="cards" id="vhucards"></div>
+</div></section>
+
+<section id="mapa"><div class="wrap">
+  <div class="sec-head"><span class="lbl">02</span><h2>Mapa muzeí</h2><span class="note">modře VHÚ, olivově posádková, šedě ostatní · polohy orientační</span></div>
+  <div id="wmap" role="region" aria-label="Mapa vojenských muzeí"></div>
+</div></section>
+
+<section id="posadkova"><div class="wrap">
+  <div class="sec-head"><span class="lbl">03</span><h2>Posádková muzea pod záštitou VHÚ</h2><span class="note">expozice u útvarů, návštěvy často po dohodě</span></div>
+  <div class="tbl-wrap"><table><thead><tr><th>Muzeum</th><th>Posádka</th><th>Útvar / téma</th><th>Odkaz</th></tr></thead><tbody id="pos"></tbody></table></div>
+</div></section>
+
+<section id="dalsi"><div class="wrap">
+  <div class="sec-head"><span class="lbl">04</span><h2>Další vojenská muzea</h2><span class="note">mimo VHÚ, výběr</span></div>
+  <div class="docs" id="other"></div>
+</div></section>
+
+<section id="databaze"><div class="wrap">
+  <div class="sec-head"><span class="lbl">05</span><h2>Databáze a archivy</h2><span class="note">pátrání po předcích, padlých a válečných hrobech</span></div>
+  <div class="media" id="db"></div>
+</div></section>
+
+<section id="zdroje"><div class="wrap">
+  <div class="sec-head"><span class="lbl">06</span><h2>Zdroje</h2></div>
+  <ol class="src-list" id="sources"></ol>
+</div></section>
+</main>
+<footer><div class="wrap">Data z veřejných zdrojů k <span data-updated></span>. Fotky: Wikimedia Commons, autoři a licence u každé fotky. Mapa © OpenStreetMap. <a href="https://github.com/sopikmi/Armada-CR">github.com/sopikmi/Armada-CR</a></div></footer>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/basemap.js"></script>
+<script src="assets/muzea-data.js"></script>
+<script src="assets/page.js"></script>
+<script>
+(function () {
+  const P = PAGE, $ = P.$, esc = P.esc, S = MUZ.SOURCES, src = k => P.src(S, k);
+  document.querySelectorAll("[data-updated]").forEach(e => (e.textContent = MUZ.UPDATED));
+  $("#other").innerHTML = MUZ.OTHER.map(m => `<div class="doc"><span class="y">${esc(m[1])}</span><b>${esc(m[0])}</b><span style="font-size:14px">${esc(m[4])}</span>${src(m[5])}</div>`).join("");
+  $("#pos").innerHTML = MUZ.POSADKOVA.map(m => `<tr><td><b>${esc(m[0])}</b></td><td>${esc(m[1])}</td><td>${esc(m[2])}</td><td><a href="${m[3]}" target="_blank" rel="noopener">VHÚ ↗</a></td></tr>`).join("");
+  const groups = [...new Set(MUZ.DB.map(d => d[0]))];
+  $("#db").innerHTML = groups.map(g => `<div><span class="lbl">${esc(g)}</span><ul>${MUZ.DB.filter(d => d[0] === g).map(d => `<li><a href="${d[4]}" target="_blank" rel="noopener">${esc(d[1])} ↗</a><small>${esc(d[2])} · ${esc(d[3])}</small></li>`).join("")}</ul></div>`).join("");
+  $("#sources").innerHTML = Object.values(S).map(s => `<li><a href="${s[1]}" target="_blank" rel="noopener">${esc(s[0])}</a></li>`).join("");
+  P.ready.then(() => {
+    $("#vhucards").innerHTML = MUZ.VHU.map(m => `<article class="card">${m[8] ? P.photoCard(m[8]) : ""}<h3>${esc(m[0])}</h3><div class="small">${esc(m[1])}</div><dl><dt>Otevřeno</dt><dd>${esc(m[4])}</dd><dt>Vstupné</dt><dd>${esc(m[5])}</dd><dt>Expozice</dt><dd>${esc(m[6])}</dd></dl><div class="small">${src(m[7])}</div></article>`).join("");
+    if (!window.L) return;
+    const map = L.map("wmap", {scrollWheelZoom: false}).setView([49.85, 15.4], 7);
+    if (window.BASEMAP) BASEMAP.cz(map, "");
+    const mk = (lat, lon, col, html) => L.marker([lat, lon], {icon: L.divIcon({className: "", iconSize: [16, 16], iconAnchor: [8, 8], html: `<svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${col}" stroke="var(--paper)" stroke-width="2"/></svg>`})}).bindPopup(html, {maxWidth: 260}).addTo(map);
+    MUZ.VHU.forEach(m => mk(m[2], m[3], "var(--friendly)", `<b>${esc(m[0])}</b><br><span style="font-size:12px">${esc(m[1])}</span><p style="margin:6px 0">${esc(m[6])}</p>${src(m[7])}`));
+    MUZ.OTHER.forEach(m => mk(m[2], m[3], "var(--muted)", `<b>${esc(m[0])}</b><br><span style="font-size:12px">${esc(m[1])}</span><p style="margin:6px 0">${esc(m[4])}</p>${src(m[5])}`));
+    /* posádková muzea – poloha podle posádky z data/posadky.json */
+    fetch("data/posadky.json").then(r => r.json()).then(d => {
+      const towns = {};
+      d.items.forEach(u => { const t = u.town.split(/[ (–]/)[0]; if (!towns[t]) towns[t] = [u.lat, u.lon]; });
+      towns["Sedlec-Vícenice"] = towns["Sedlec"] || [49.166, 16.125];
+      towns["Litoměřice"] = [50.534, 14.131];
+      towns["Dobruška"] = towns["Dobruška"] || [50.292, 16.160];
+      MUZ.POSADKOVA.forEach((m, i) => { const c = towns[m[1]] || towns[m[1].split(" ")[0]]; if (c) mk(c[0] + 0.004 * (i % 3), c[1] + 0.006 * (i % 2), "var(--olive)", `<b>${esc(m[0])}</b><br><span style="font-size:12px">${esc(m[2])}</span><br><a href="${m[3]}" target="_blank" rel="noopener">VHÚ ↗</a>`); });
+    }).catch(() => {});
+  });
+})();
+</script>
+</body>
+</html>

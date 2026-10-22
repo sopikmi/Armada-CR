@@ -284,44 +284,6 @@
    "note": "Odstřelovač 4. brigády rychlého nasazení."
   },
   {
-   "key": "m_afg",
-   "group": "Zahraniční mise",
-   "label": "Afghánistán 2002–2021",
-   "files": [
-    "Czech soldiers assigned to Provincial Reconstruction Team Logar patrol a valley in Tang-e-Waghjan.jpg",
-    "Czech BVP2 Infantry Combat Vehicle in Afghanistan.JPG",
-    "Czech soldiers train Afghan military police DVIDS233422.jpg"
-   ],
-   "note": "Hlídka PRT Lógar (2010), BVP-2 na základně v Lógaru (2010), výcvik afghánské policie."
-  },
-  {
-   "key": "m_lat",
-   "group": "Zahraniční mise",
-   "label": "Lotyšsko – eFP",
-   "files": [
-    "Baltic Warrior 2023 (7795660).jpg"
-   ],
-   "note": "Čeští vojáci na soutěži Baltic Warrior 2023, Ādaži."
-  },
-  {
-   "key": "m_svk",
-   "group": "Zahraniční mise",
-   "label": "Slovensko – Lešť",
-   "files": [
-    "Slovak Shield 22 (7226135).jpg"
-   ],
-   "note": "Zahájení cvičení Slovak Shield 2022, Lešť (vojáci USA, ČR, Maďarska a Slovenska)."
-  },
-  {
-   "key": "m_iraq",
-   "group": "Zahraniční mise",
-   "label": "Irák – poradní mise",
-   "files": [
-    "Coalition Forces test their mettle for a Dutch Qualification Badge (9415391).jpg"
-   ],
-   "note": "Český poradce u iráckého společného operačního velení."
-  },
-  {
    "key": "i_skyfox",
    "group": "Zbrojní průmysl",
    "label": "Aero L-39NG / Skyfox",
@@ -370,6 +332,169 @@
    "label": "Česká zbrojovka, Uherský Brod",
    "files": [
     "Česká Zbrojovka, Uherský Brod, okres Uherské Hradiště.jpg"
+   ]
+  },
+  {
+   "key": "z_vps",
+   "group": "Znaky",
+   "label": "Znak Pozemních sil AČR",
+   "files": [
+    "Emblem of Czech Land Forces.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_vzs",
+   "group": "Znaky",
+   "label": "Znak Vzdušných sil AČR",
+   "files": [
+    "Emblem of Czech Air Force.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_4brn",
+   "group": "Znaky",
+   "label": "Znak 4. brigády rychlého nasazení",
+   "files": [
+    "Znak 4. brigády rychlého nasazení.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_43",
+   "group": "Znaky",
+   "label": "Znak 43. výsadkového pluku",
+   "files": [
+    "Znak 43. výsadkového pluku.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_13",
+   "group": "Znaky",
+   "label": "Znak 13. dělostřeleckého pluku",
+   "files": [
+    "13. dělostřelecký pluk.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_31",
+   "group": "Znaky",
+   "label": "Znak 31. pluku RCHBO",
+   "files": [
+    "Znak 31. pluk radiační, chemické a biologické ochrany.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_601",
+   "group": "Znaky",
+   "label": "Znak 601. skupiny speciálních sil",
+   "files": [
+    "601 skupina speciálních sil.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_rss",
+   "group": "Znaky",
+   "label": "Znak Ředitelství speciálních sil",
+   "files": [
+    "Znak Ředitelství speciálních sil.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_73",
+   "group": "Znaky",
+   "label": "Znak 73. tankového praporu",
+   "files": [
+    "Znak 73. tankového praporu.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_vp",
+   "group": "Znaky",
+   "label": "Znak Vojenské policie",
+   "files": [
+    "Vojenská policie CoA 2022.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_ters",
+   "group": "Znaky",
+   "label": "Znak Velitelství teritoriálních sil",
+   "files": [
+    "VelitelstviTeritorialnichSil.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_kys",
+   "group": "Znaky",
+   "label": "Znak Velitelství kybernetických sil a informačních operací",
+   "files": [
+    "Znak Velitelství kybernetických sil a informačních operací.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "m_vhu",
+   "group": "Muzea",
+   "label": "Armádní muzeum Žižkov",
+   "files": [
+    "Armádní muzeum v Praze na Žižkově.jpg"
+   ]
+  },
+  {
+   "key": "m_kbely",
+   "group": "Muzea",
+   "label": "Letecké muzeum Kbely",
+   "files": [
+    "Letecké muzeum Kbely (212).jpg",
+    "Letecké muzeum Kbely (38).jpg"
+   ]
+  },
+  {
+   "key": "m_lesany",
+   "group": "Muzea",
+   "label": "Vojenské technické muzeum Lešany",
+   "files": [
+    "Lesany military museum 4107.JPG",
+    "Lešany - vojenské muzeum, Tankový den 2024, ukázky, Hetzer, obr01.jpg"
+   ]
+  },
+  {
+   "key": "m_krypta",
+   "group": "Muzea",
+   "label": "Národní památník hrdinů heydrichiády",
+   "files": [
+    "Národní památník hrdinů heydrichiády, 1.jpeg",
+    "Krypta, Národní památník hrdinů heydrichiády.jpg"
+   ]
+  },
+  {
+   "key": "m_vitkov",
+   "group": "Muzea",
+   "label": "Národní památník na Vítkově",
+   "files": [
+    "Národní památník na Vítkově (CZ) - Народни споменик на Виткову (SR) 17.jpg"
    ]
   }
  ]

@@ -69,7 +69,7 @@ def record(p):
         "licenseUrl": clean(meta.get("LicenseUrl", {}).get("value", "")),
         "description": clean(meta.get("ImageDescription", {}).get("value", ""))[:300],
         "date": clean(meta.get("DateTimeOriginal", {}).get("value", ""))[:40],
-        "_ok": bool(ALLOWED.match(lic)) and ii.get("mime") in ("image/jpeg", "image/png"),
+        "_ok": bool(ALLOWED.match(lic)) and ii.get("mime") in ("image/jpeg", "image/png", "image/svg+xml"),
         "_w": ii.get("width", 0),
     }
 
@@ -81,8 +81,9 @@ def query(params, width):
     return sorted(data.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
 
 
-def search(q, n, width, min_w=800):
-    pages = query({"generator": "search", "gsrsearch": f"{q} filetype:bitmap",
+def search(q, n, width, min_w=800, svg=False):
+    ft = "filetype:bitmap|drawing" if svg else "filetype:bitmap"
+    pages = query({"generator": "search", "gsrsearch": f"{q} {ft}",
                    "gsrnamespace": 6, "gsrlimit": min(max(n * 3, 10), 50)}, width)
     return [r for r in map(record, pages) if r["_ok"] and r["_w"] >= min_w]
 
@@ -129,7 +130,7 @@ def run_foto():
         try:
             if item.get("files"):
                 print(f"[{key}] {len(item['files'])} vybraných souborů")
-                cands = by_titles(item["files"], 1280)
+                cands = by_titles(item["files"], item.get("width", 1280))
                 want = len(cands)
             else:
                 print(f"[{key}] hledání: {item['query']}")
@@ -153,7 +154,7 @@ def run_foto():
                 print(f"  chyba stahování {c['title']}: {e}", file=sys.stderr)
                 continue
             h = ahash(data)
-            if similar(h, hashes):
+            if not item.get("nodedupe") and similar(h, hashes):
                 print(f"  – přeskočeno (téměř stejná fotka): {c['title']}")
                 continue
             n += 1
@@ -162,7 +163,7 @@ def run_foto():
             (FOTO / name).write_bytes(data)
             keep.add(name)
             used.add(c["title"])
-            if h is not None:
+            if h is not None and not item.get("nodedupe"):
                 hashes.append(h)
             db.append({"key": key, "group": item["group"], "label": item["label"], "file": name,
                        **({"note": item["note"]} if item.get("note") else {}), **clean_rec(c)})
@@ -187,7 +188,7 @@ def run_kandidati():
         for q in item["queries"]:
             print(f"[{item['key']}] {q}")
             try:
-                res = search(q, item.get("limit", 12), 400, min_w=1000)
+                res = search(q, item.get("limit", 12), 400, min_w=item.get("min_w", 1000), svg=item.get("svg", False))
             except Exception as e:  # noqa: BLE001
                 print(f"  chyba: {e}", file=sys.stderr)
                 continue

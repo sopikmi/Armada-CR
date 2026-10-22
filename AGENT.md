@@ -17,7 +17,7 @@ Tento soubor je závazný návod pro každou aktualizaci (ruční i automatickou
 | Kontroverze | `ACR.ISSUES` |
 | Videa, podcasty, weby | `ACR.MEDIA` |
 | Zdroje | `ACR.SOURCES` (klíč → [popis s datem, URL]) |
-| Datum aktualizace | `ACR.UPDATED`, `MISE.UPDATED`, `PRU.UPDATED` |
+| Datum aktualizace | `ACR.UPDATED`, `MISE.UPDATED`, `PRU.UPDATED`, `MUZ.UPDATED` |
 | Pěchotní výzbroj | `ACR.INF` |
 | Taktika a doktrína | `ACR.TACTICS` |
 | Smlouvy, členství, afilace | `ACR.TREATIES` |
@@ -26,6 +26,11 @@ Tento soubor je závazný návod pro každou aktualizaci (ruční i automatickou
 | Zahraniční mise (stránka `mise.html`) | `assets/mise-data.js` → `MISE.KPI`, `MISE.NOW`, `MISE.PAST`, `MISE.SOURCES` |
 | Zbrojní průmysl (stránka `prumysl.html`) | `assets/prumysl-data.js` → `PRU.KPI`, `PRU.EXPORT`, `PRU.DEST`, `PRU.FIRMS`, `PRU.CAP`; shrnutí přímo v `prumysl.html` (sekce Shrnutí) |
 | Fotky | `foto/queries.json` (co hledat); `foto/index.json` a soubory generuje workflow |
+| Organizační struktura (diagram) | `ACR.ORG` → `top`, `branches`, `ext`; uzel `{n, t, z (klíč znaku ve skupině Znaky), s (značka NATO), c (podřízené)}` |
+| Znaky útvarů | `foto/queries.json`, skupina „Znaky“ (width 300, nodedupe); bez znaku se kreslí značka NATO |
+| Technické parametry (pop-up u techniky a zbraní) | 9. sloupec v `ACR.TECH` / `ACR.INF` = klíč do `data/specs.json`; seznam článků `data/specs_list.json`; `data/specs.json` generuje workflow `fetch-specs.yml` (anglická Wikipedie, CC BY-SA) – ručně neupravuj |
+| Muzea a VHÚ (stránka `muzea.html`) | `assets/muzea-data.js` → `MUZ.VHU`, `MUZ.POSADKOVA`, `MUZ.OTHER`, `MUZ.DB`, `MUZ.SOURCES`, `MUZ.UPDATED` |
+| Podkladová mapa | `assets/basemap.js` + `assets/geo/cz.json` (hranice, kraje, řeky, města) a `assets/geo/world.json` (státy, Natural Earth); OpenStreetMap je volitelná vrstva |
 
 ## Pravidla ověřování čísel (závazná)
 - Každé číslo musí mít **zdroj** v `ACR.SOURCES` a **datum**, ke kterému platí. Popis zdroje obsahuje datum článku.
@@ -44,6 +49,8 @@ Tento soubor je závazný návod pro každou aktualizaci (ruční i automatickou
 - `type` je jeden z: velitelstvi, pozemni, vzdusne, specialni, teritorialni, logistika, zdravotnictvi, vycvik, hradni, vp, ostatni, podnik, ujezd.
 
 ## Fotky
+- Na stránce Zahraniční mise se fotky nezobrazují (rozhodnutí 22. 10. 2026).
+- Fotky muzeí jen na `muzea.html`, znaky útvarů jen v organizační struktuře.
 - Jen Wikimedia Commons s volnou licencí (CC BY, CC BY-SA, CC0, public domain); u každé fotky se zobrazuje autor a licence.
 - Fotky se vybírají **ručně**: v `foto/queries.json` má každá položka `files` = přesné názvy souborů na Commons.
   Automatické hledání (`query`) používej jen výjimečně – vrací i nesouvisející nebo cizí fotky.
@@ -70,7 +77,7 @@ Běh je bez obsluhy: nikoho se neptej, nic nevymýšlej, co nejde ověřit, nech
    a přidej řádek nahoru mezi `<!--ARCHIVE_START-->` a `<!--ARCHIVE_END-->` v `tyden/index.html`.
 5. **Data:** promítni ověřené novinky do `assets/data.js` (KPI, technika, modernizace, kontroverze, akce – prošlé akce se skryjí samy, nové přidej),
    `assets/mise-data.js` (rotace, jednotky, počty) a `assets/prumysl-data.js` (nové výsledky firem, export). U každé změny uprav zdroj a datum.
-   Nové posádky nebo změny útvarů do `data/posadky.json`. Aktualizuj `ACR.UPDATED`, `MISE.UPDATED`, `PRU.UPDATED`.
+   Nové posádky nebo změny útvarů do `data/posadky.json`. Aktualizuj `ACR.UPDATED`, `MISE.UPDATED`, `PRU.UPDATED`, `MUZ.UPDATED`.
 6. **Fotky:** jen pokud přibyla důležitá nová technika – postup v sekci Fotky (kandidáti → ruční výběr). Žádná fotka dvakrát.
 7. **Kontrola:** `node --check` na všechny skripty v `assets/`, načtení datových souborů v Node bez chyby, každý klíč zdroje existuje,
    značky v `index.html` a `tyden/index.html` jsou zachované, konzistence čísel napříč soubory.

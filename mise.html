@@ -14,17 +14,16 @@
 <body>
 <nav class="tabs" aria-label="Části webu">
   <div class="wrap">
-    <a href="index.html">Armáda ČR</a><a href="mise.html" aria-current="page">Zahraniční mise</a><a href="prumysl.html">Zbrojní průmysl</a><a href="tyden/index.html">Archiv týdenních přehledů</a>
+    <a href="index.html">Armáda ČR</a><a href="mise.html" aria-current="page">Zahraniční mise</a><a href="prumysl.html">Zbrojní průmysl</a><a href="muzea.html">Muzea a VHÚ</a><a href="tyden/index.html">Archiv týdenních přehledů</a>
   </div>
 </nav>
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="lbl">Armáda České republiky · nasazení v zahraničí</div>
+      <div class="lbl">Armáda České republiky · nasazení v zahraničí · stav k <span data-updated></span></div>
       <h1>Zahraniční <span>mise</span></h1>
       <p class="sub">Kde dnes slouží čeští vojáci, s jakými jednotkami a technikou, co přinese mandát 2027–2028 a jak vypadaly historické operace od Pouštní bouře po Mali.</p>
     </div>
-    <div class="sheet">LIST <b>02 / MISE</b><br>STAV K <b data-updated></b><br>MANDÁT <b>do 2028</b></div>
   </div>
 </header>
 <nav class="toc" aria-label="Obsah"><div class="wrap"><a href="#cisla">Čísla</a><a href="#mapa">Mapa</a><a href="#aktualni">Aktuální mise</a><a href="#mandat">Mandát 2027–28</a><a href="#historie">Historické mise</a><a href="#zdroje">Zdroje</a></div></nav>
@@ -59,8 +58,7 @@
 
 <section id="historie"><div class="wrap">
   <div class="sec-head"><span class="lbl">05</span><h2>Historické mise</h2><span class="note">„celkem“ = kolik vojáků se v operaci vystřídalo</span></div>
-  <div class="cards" id="pastph" style="margin-bottom:16px"></div>
-  <div class="tbl-wrap"><table><thead><tr><th>Operace</th><th>Období</th><th>Země</th><th>Vojáků celkem</th><th>Jednotky a technika</th><th>Padlí</th><th>Fotky / zdroj</th></tr></thead><tbody id="past"></tbody></table></div>
+  <div class="tbl-wrap"><table><thead><tr><th>Operace</th><th>Období</th><th>Země</th><th>Vojáků celkem</th><th>Jednotky a technika</th><th>Padlí</th><th>Zdroj</th></tr></thead><tbody id="past"></tbody></table></div>
 </div></section>
 
 <section id="zdroje"><div class="wrap">
@@ -68,8 +66,9 @@
   <ol class="src-list" id="sources"></ol>
 </div></section>
 </main>
-<footer><div class="wrap">Data z veřejných zdrojů k <span data-updated></span>. Fotky: Wikimedia Commons, autoři a licence u každé fotky. Mapa © OpenStreetMap. <a href="https://github.com/sopikmi/Armada-CR">github.com/sopikmi/Armada-CR</a></div></footer>
+<footer><div class="wrap">Data z veřejných zdrojů k <span data-updated></span>. Mapa © OpenStreetMap. <a href="https://github.com/sopikmi/Armada-CR">github.com/sopikmi/Armada-CR</a></div></footer>
 <script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/basemap.js"></script>
 <script src="assets/mise-data.js"></script>
 <script src="assets/page.js"></script>
 <script>
@@ -79,23 +78,15 @@
   $("#mandat-src").innerHTML = ["mandat", "mandat2", "mo_vybor"].map(k => P.src(S, k, S[k][0])).join(" · ");
   $("#sources").innerHTML = Object.values(S).map(s => `<li><a href="${s[1]}" target="_blank" rel="noopener">${esc(s[0])}</a></li>`).join("");
   P.ready.then(() => {
-    $("#now").innerHTML = MISE.NOW.map(m => {
-      /* fotka se ukazuje jen u misí s vlastními snímky; snímky techniky z hlavní stránky jen odkazem */
-      const own = m[11] && P.byKey(m[11])[0] && P.byKey(m[11])[0].group === "Zahraniční mise";
-      return `<article class="card">${own ? P.photoCard(m[11]) : ""}<span class="y">od ${esc(m[5])} ${m[12] === "paus" ? '<span class="badge paus">přerušeno</span>' : '<span class="badge">probíhá</span>'}</span><h3>${esc(m[2])}</h3><div class="small">${esc(m[1])}</div><dl><dt>Jednotka</dt><dd>${esc(m[6])}</dd><dt>Technika</dt><dd>${esc(m[7])}</dd><dt>Počet</dt><dd>${esc(m[8])}</dd><dt>Rotace</dt><dd>${esc(m[9])}</dd></dl><div class="small">${src(m[10])} ${!own && m[11] ? P.photoLink(m[11]) : ""}</div></article>`;
-    }).join("");
-    $("#past").innerHTML = MISE.PAST.map(m => {
-      const own = m[9] && P.byKey(m[9])[0] && P.byKey(m[9])[0].group === "Zahraniční mise";
-      return `<tr><td><b>${esc(m[0])}</b></td><td class="n">${esc(m[1])}</td><td>${esc(m[2])}</td><td class="n">${esc(m[5])}</td><td>${esc(m[6])}</td><td class="n">${esc(m[7])}</td><td>${m[9] && !own ? P.photoLink(m[9]) : ""} ${src(m[8])}</td></tr>`;
-    }).join("");
-    $("#pastph").innerHTML = MISE.PAST.filter(m => m[9] && P.byKey(m[9])[0] && P.byKey(m[9])[0].group === "Zahraniční mise").map(m => `<article class="card">${P.photoCard(m[9])}<span class="y">${esc(m[1])} <span class="badge hist">ukončeno</span></span><h3>${esc(m[0])}</h3><div class="small">${esc(m[6])}</div></article>`).join("");
+    $("#now").innerHTML = MISE.NOW.map(m => `<article class="card"><span class="y">od ${esc(m[5])} ${m[12] === "paus" ? '<span class="badge paus">přerušeno</span>' : '<span class="badge">probíhá</span>'}</span><h3>${esc(m[2])}</h3><div class="small">${esc(m[1])}</div><dl><dt>Jednotka</dt><dd>${esc(m[6])}</dd><dt>Technika</dt><dd>${esc(m[7])}</dd><dt>Počet</dt><dd>${esc(m[8])}</dd><dt>Rotace</dt><dd>${esc(m[9])}</dd></dl><div class="small">${src(m[10])}</div></article>`).join("");
+    $("#past").innerHTML = MISE.PAST.map(m => `<tr><td><b>${esc(m[0])}</b></td><td class="n">${esc(m[1])}</td><td>${esc(m[2])}</td><td class="n">${esc(m[5])}</td><td>${esc(m[6])}</td><td class="n">${esc(m[7])}</td><td>${src(m[8])}</td></tr>`).join("");
     initMap();
   });
   let map, layers = {now: [], past: []};
   function initMap() {
     if (!window.L) return;
     map = L.map("wmap", {scrollWheelZoom: false, worldCopyJump: true}).setView([42, 22], 4);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 12, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+    if (window.BASEMAP) BASEMAP.world(map, "");
     const mk = (lat, lon, cls, html) => L.marker([lat, lon], {icon: L.divIcon({className: "", iconSize: [18, 18], iconAnchor: [9, 9], html: `<svg width="18" height="18" viewBox="0 0 18 18"><rect x="2" y="2" width="14" height="14" fill="${cls === "now" ? "var(--friendly)" : "var(--paper)"}" stroke="${cls === "now" ? "var(--paper)" : "var(--muted)"}" stroke-width="2"/></svg>`})}).bindPopup(html, {maxWidth: 280}).addTo(map);
     MISE.NOW.forEach(m => layers.now.push(mk(m[3], m[4], "now", `<b>${esc(m[2])}</b><br><span style="font-size:12px">${esc(m[1])}</span><p style="margin:6px 0">${esc(m[6])}</p>Počet: ${esc(m[8])}<br>${src(m[10])}`)));
     MISE.PAST.forEach(m => layers.past.push(mk(m[3], m[4], "past", `<b>${esc(m[0])}</b><br><span style="font-size:12px">${esc(m[1])} · ${esc(m[2])}</span><p style="margin:6px 0">${esc(m[6])}</p>Vojáků celkem: ${esc(m[5])}<br>${src(m[8])}`)));

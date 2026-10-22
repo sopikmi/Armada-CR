@@ -1,247 +1,278 @@
 {
- "_info": "Hledání kandidátů pro ruční výběr fotek (náhledy do _kandidati/). Vybrané soubory se pak zapíší do foto/queries.json jako \"files\".",
+ "_info": "Hledání kandidátů pro ruční výběr (náhledy do _kandidati/). svg=true hledá i kresby (znaky), min_w = minimální šířka. ",
  "items": [
   {
-   "key": "w_bren2",
+   "key": "z_acr",
    "queries": [
-    "CZ BREN 2 Czech Army",
-    "CZ BREN 2 Army of the Czech Republic soldier",
-    "Czech soldier BREN 2"
+    "Army of the Czech Republic emblem",
+    "Armáda České republiky znak",
+    "Czech Armed Forces emblem"
    ],
-   "limit": 10
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_bren2br",
+   "key": "z_gs",
    "queries": [
-    "CZ BREN 2 BR",
-    "CZ BREN 2 PPS"
+    "Generální štáb Armády České republiky znak",
+    "General Staff Czech Armed Forces emblem"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_805",
+   "key": "z_vps",
    "queries": [
-    "CZ 805 BREN Czech soldier",
-    "CZ 805 G1 grenade launcher"
+    "Velitelství pozemních sil znak",
+    "Czech Land Forces emblem"
    ],
-   "limit": 8
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_p10",
+   "key": "z_vzs",
    "queries": [
-    "CZ P-10 C",
-    "CZ P-10 pistol"
+    "Vzdušné síly Armády České republiky znak",
+    "Czech Air Force emblem",
+    "Czech Air Force roundel"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_evo",
+   "key": "z_4brn",
    "queries": [
-    "CZ Scorpion EVO 3 Czech army",
-    "Scorpion EVO 3 A1"
+    "4. brigáda rychlého nasazení znak",
+    "4th Rapid Deployment Brigade Czech emblem"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_minimi",
+   "key": "z_7mb",
    "queries": [
-    "FN Minimi Czech Army",
-    "Czech soldier Minimi machine gun",
-    "FN Minimi 7.62 Czech"
+    "7. mechanizovaná brigáda znak",
+    "7th Mechanized Brigade Czech emblem"
    ],
-   "limit": 8
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_m2",
+   "key": "z_43",
    "queries": [
-    "M2 Browning Czech Army",
-    "Czech soldiers .50 caliber"
+    "43. výsadkový pluk znak",
+    "43rd Airborne Regiment Czech emblem"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_cg",
+   "key": "z_13",
    "queries": [
-    "Carl Gustaf Czech Army",
-    "Czech paratroopers Carl Gustav 43rd"
+    "13. dělostřelecký pluk znak",
+    "13th Artillery Regiment Czech"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_rpg",
+   "key": "z_15",
    "queries": [
-    "RPG-7 Czech Army",
-    "Czech soldier RPG-7"
+    "15. ženijní pluk znak"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_sniper",
+   "key": "z_31",
    "queries": [
-    "Czech sniper rifle Army",
-    "Czech Army sniper Barrett",
-    "Czech sniper Sako TRG",
-    "Accuracy International Czech Army"
+    "31. pluk radiační chemické a biologické ochrany znak"
    ],
-   "limit": 10
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_mortar",
+   "key": "z_53",
    "queries": [
-    "Czech Army mortar 120 mm",
-    "Czech soldiers mortar 60 mm",
-    "Czech mortar exercise"
+    "53. pluk průzkumu a elektronického boje znak"
    ],
-   "limit": 8
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "w_spike",
+   "key": "z_14",
    "queries": [
-    "Spike LR Czech Army",
-    "Pandur Spike"
+    "14. pluk logistické podpory znak"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_lit",
+   "key": "z_601",
    "queries": [
-    "Czech soldiers Lithuania eFP",
-    "Czech Army Rukla",
-    "Czech troops Lithuania"
+    "601. skupina speciálních sil znak",
+    "601st Special Forces Group emblem"
    ],
-   "limit": 8
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_svk",
+   "key": "z_21",
    "queries": [
-    "Czech soldiers Slovakia Lešť",
-    "Multinational Battlegroup Slovakia Czech",
-    "Czech Pandur Slovakia"
+    "21. základna taktického letectva znak",
+    "21st Tactical Air Force Base Čáslav emblem"
    ],
-   "limit": 8
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_lat",
+   "key": "z_22",
    "queries": [
-    "Czech soldiers Latvia eFP",
-    "Czech Army Ādaži"
+    "22. základna vrtulníkového letectva znak",
+    "22nd Helicopter Air Force Base emblem"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_sinai",
+   "key": "z_24",
    "queries": [
-    "MFO Sinai Czech CASA",
-    "Czech Air Force MFO"
+    "24. základna dopravního letectva znak"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_afg",
+   "key": "z_25",
    "queries": [
-    "Czech soldiers Afghanistan",
-    "Czech Army Afghanistan ISAF",
-    "Czech PRT Logar"
+    "25. protiletadlový raketový pluk znak"
    ],
-   "limit": 10
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_kfor",
+   "key": "z_26",
    "queries": [
-    "Czech KFOR soldiers",
-    "Czech Army Kosovo"
+    "26. pluk velení řízení a průzkumu znak"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_mali",
+   "key": "z_hs",
    "queries": [
-    "Czech soldiers Mali EUTM",
-    "Czech Army Mali Takuba"
+    "Hradní stráž znak",
+    "Prague Castle Guard emblem"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_iraq",
+   "key": "z_vp",
    "queries": [
-    "Czech soldiers Iraq",
-    "Czech field hospital Basra 2003"
+    "Vojenská policie ČR znak",
+    "Znak Vojenské policie"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_balkan",
+   "key": "z_102",
    "queries": [
-    "Czech soldiers SFOR Bosnia",
-    "Czech IFOR"
+    "102. průzkumný prapor znak"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "m_kuwait",
+   "key": "z_ters",
    "queries": [
-    "Czechoslovak chemical unit Desert Storm",
-    "Czech soldiers Kuwait 1991"
+    "Teritoriální síly Armády České republiky znak",
+    "Velitelství teritoriálních sil znak"
    ],
-   "limit": 5
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "i_skyfox",
+   "key": "z_kys",
    "queries": [
-    "L-39 Skyfox",
-    "Aero L-39NG"
+    "Velitelství kybernetických sil a informačních operací znak"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": true,
+   "min_w": 200
   },
   {
-   "key": "i_dana",
+   "key": "m_vhu",
    "queries": [
-    "Dita howitzer Excalibur",
-    "Morana howitzer",
-    "DANA M2 Excalibur"
+    "Armádní muzeum Žižkov",
+    "Army Museum Žižkov"
    ],
-   "limit": 6
+   "limit": 6,
+   "svg": false,
+   "min_w": 1000
   },
   {
-   "key": "i_tatra",
+   "key": "m_kbely",
    "queries": [
-    "Tatra Force military truck",
-    "Tatra T815-7 army"
+    "Letecké muzeum Kbely",
+    "Kbely Aviation Museum"
    ],
-   "limit": 6
+   "limit": 8,
+   "svg": false,
+   "min_w": 1000
   },
   {
-   "key": "i_ammo",
+   "key": "m_lesany",
    "queries": [
-    "155mm artillery shells Czech",
-    "MSM Group ammunition",
-    "Sellier Bellot ammunition"
+    "Vojenské technické muzeum Lešany",
+    "Military Technical Museum Lešany"
    ],
-   "limit": 6
+   "limit": 8,
+   "svg": false,
+   "min_w": 1000
   },
   {
-   "key": "i_idet",
+   "key": "m_krypta",
    "queries": [
-    "IDET Brno exhibition",
-    "IDET 2025"
+    "Národní památník hrdinů heydrichiády",
+    "Crypt Saints Cyril Methodius Prague Anthropoid"
    ],
-   "limit": 6
+   "limit": 5,
+   "svg": false,
+   "min_w": 1000
   },
   {
-   "key": "i_era",
+   "key": "m_vitkov",
    "queries": [
-    "ERA Vera-NG passive surveillance",
-    "Vera NG radar"
+    "Národní památník na Vítkově",
+    "National Monument Vitkov"
    ],
-   "limit": 4
-  },
-  {
-   "key": "i_cz",
-   "queries": [
-    "Česká zbrojovka Uherský Brod",
-    "CZ factory Uhersky Brod"
-   ],
-   "limit": 4
+   "limit": 5,
+   "svg": false,
+   "min_w": 1000
   }
  ]
 }

@@ -85,7 +85,7 @@
       const ph = t[7] ? byKey(t[7])[0] : null;
       const img = ph ? photoLink(t[7]) :
         `<a href="https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(t[0] + " Czech")}&title=Special:MediaSearch&type=image" target="_blank" rel="noopener">hledat ↗</a>`;
-      return `<tr><td>${img}</td><td><b>${esc(t[0])}</b></td><td>${esc(t[1])}</td><td class="n">${esc(t[2])}</td><td>${esc(t[3])}</td><td><span class="st ${t[4]}">${stLbl[t[4]]}</span></td><td>${esc(t[5])} ${src(t[6])}</td></tr>`;
+      return `<tr><td>${img}</td><td><button type="button" class="spec-btn" onclick="ACR_SPEC('T',${ACR.TECH.indexOf(t)})"><b>${esc(t[0])}</b><span>parametry ›</span></button></td><td>${esc(t[1])}</td><td class="n">${esc(t[2])}</td><td>${esc(t[3])}</td><td><span class="st ${t[4]}">${stLbl[t[4]]}</span></td><td>${esc(t[5])} ${src(t[6])}</td></tr>`;
     }).join("");
   }
   $("#tchips").innerHTML = cats.map((c, i) => `<button class="chip" type="button" id="tc${i}" aria-pressed="${i === 0}">${esc(c)}</button>`).join("");
@@ -96,12 +96,61 @@
   }));
   renderTech();
 
+  /* ---------- technické detaily (okno) ---------- */
+  let SPECS = {items: {}};
+  window.ACR_SPEC = (type, i) => {
+    const t = (type === "T" ? ACR.TECH : ACR.INF)[i];
+    if (!t) return;
+    const sp = SPECS.items[t[8]] || null;
+    const st = {ok: "ve službě", ord: "objednáno / dodávky", old: "dosluhuje"}[t[4]];
+    const facts = type === "T"
+      ? [["Kategorie", t[1]], ["Počet v AČR", t[2]], ["Původ", t[3]], ["Stav", st]]
+      : [["Kategorie", t[1]], ["Ráže", t[2]], ["Výrobce / původ", t[3]], ["Stav", st]];
+    const rows = (sp ? sp.fields : []).map(f => `<tr><th>${esc(f[0])}</th><td>${esc(f[1])}</td></tr>`).join("");
+    const dlg = document.createElement("div");
+    dlg.id = "lb";
+    dlg.className = "spec";
+    dlg.setAttribute("role", "dialog");
+    dlg.setAttribute("aria-label", t[0]);
+    dlg.innerHTML = `<div class="spec-panel"><button class="x" type="button">Zavřít ✕</button>
+      <span class="lbl">${esc(t[1])}</span><h3>${esc(t[0])}</h3>
+      <dl class="spec-facts">${facts.map(f => `<dt>${esc(f[0])}</dt><dd>${esc(f[1])}</dd>`).join("")}</dl>
+      <p>${esc(t[5])} ${src(t[6])}</p>
+      ${t[7] && byKey(t[7]).length ? `<p>${photoLink(t[7])}</p>` : ""}
+      ${sp ? `<h4>Technické parametry${sp.label && sp.label !== t[0] ? ` – ${esc(sp.label)}` : ""}</h4>${rows ? `<div class="tbl-wrap"><table class="spec-tbl"><tbody>${rows}</tbody></table></div>` : `<p class="small">Wikipedie pro tento typ neuvádí strukturované parametry.</p>`}
+      <p class="small">Parametry: anglická Wikipedie (CC BY-SA 4.0), staženo ${esc(SPECS.generated || "")}. Mohou se týkat jiné verze, než jakou používá AČR.</p>
+      <p class="spec-links">${sp.cs_url ? `<a href="${sp.cs_url}" target="_blank" rel="noopener">Wikipedie česky ↗</a>` : ""}<a href="${sp.url}" target="_blank" rel="noopener">Wikipedie anglicky ↗</a>${ACR.SOURCES[t[6]] ? `<a href="${ACR.SOURCES[t[6]][1]}" target="_blank" rel="noopener">zdroj k AČR ↗</a>` : ""}</p>` : `<p class="small">Technické parametry zatím nejsou k dispozici.</p>`}</div>`;
+    const close = () => { dlg.remove(); document.removeEventListener("keydown", onKey); };
+    const onKey = ev => { if (ev.key === "Escape") close(); };
+    dlg.addEventListener("click", ev => { if (ev.target === dlg || ev.target.classList.contains("x")) close(); });
+    document.addEventListener("keydown", onKey);
+    document.body.appendChild(dlg);
+    dlg.querySelector(".x").focus();
+  };
+
+  /* ---------- organizační struktura ---------- */
+  function renderOrg() {
+    const el = $("#orgchart");
+    if (!el || !ACR.ORG) return;
+    const mark = (z, s, big) => {
+      const ph = z ? byKey(z)[0] : null;
+      if (ph) return `<img class="emb${big ? " big" : ""}" src="foto/${ph.file}" alt="znak" title="${esc(ph.label)} – ${esc(ph.author)}, ${esc(ph.license)}" loading="lazy">`;
+      return `<svg class="nato" width="34" height="24" viewBox="-14 -10 28 20"><rect x="-12" y="-8" width="24" height="16"/>${SYM[s] || ""}</svg>`;
+    };
+    const node = (u, big) => `<div class="onode${big ? " big" : ""}">${mark(u.z, u.s || "misc", big)}<div><b>${esc(u.n)}</b><span>${esc(u.t || "")}</span></div></div>`;
+    const kids = c => c && c.length ? `<details><summary>${c.length} podřízené</summary><ul>${c.map(k => `<li>${node(k)}</li>`).join("")}</ul></details>` : "";
+    el.innerHTML = `<div class="org-top">${ACR.ORG.top.map(u => node(u, true)).join('<span class="org-arrow" aria-hidden="true">→</span>')}</div>
+      <div class="org-branches">${ACR.ORG.branches.map(b => `<div class="org-col">${node(b, true)}<ul>${(b.c || []).map(u => `<li>${node(u)}${kids(u.c)}</li>`).join("")}</ul></div>`).join("")}</div>
+      <div class="org-ext"><span class="lbl">Mimo velení GŠ</span>${ACR.ORG.ext.map(u => node(u)).join("")}</div>
+      <p class="small">Znaky útvarů: Wikimedia Commons (autor a licence v popisku po najetí myší). Kde znak chybí, je uvedena značka NATO podle druhu vojska.</p>`;
+  }
+
   /* ---------- pěchotní výzbroj ---------- */
   function renderInf() {
     if (!$("#infbody")) return;
     $("#infbody").innerHTML = ACR.INF.map(t => {
       const lnk = t[7] ? photoLink(t[7]) : "";
-      return `<tr><td>${lnk || "—"}</td><td><b>${esc(t[0])}</b></td><td>${esc(t[1])}</td><td>${esc(t[2])}</td><td>${esc(t[3])}</td><td><span class="st ${t[4]}">${stLbl[t[4]]}</span></td><td>${esc(t[5])} ${src(t[6])}</td></tr>`;
+      return `<tr><td>${lnk || "—"}</td><td><button type="button" class="spec-btn" onclick="ACR_SPEC('I',${ACR.INF.indexOf(t)})"><b>${esc(t[0])}</b><span>parametry ›</span></button></td><td>${esc(t[1])}</td><td>${esc(t[2])}</td><td>${esc(t[3])}</td><td><span class="st ${t[4]}">${stLbl[t[4]]}</span></td><td>${esc(t[5])} ${src(t[6])}</td></tr>`;
     }).join("");
   }
 
@@ -221,9 +270,7 @@
   function initMap() {
     if (!window.L) { $("#lmap").innerHTML = '<p class="empty">Mapu se nepodařilo načíst (knihovna Leaflet).</p>'; return; }
     map = L.map("lmap", {scrollWheelZoom: false}).setView([49.8, 15.5], 7);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    if (window.BASEMAP) BASEMAP.cz(map, "");
     ACR.AREAS.forEach(a => {
       areaLayers.push(L.circle([a[2], a[3]], {
         radius: Math.sqrt(a[4] / Math.PI) * 1000,
@@ -276,7 +323,7 @@
       $("#gallery").innerHTML = '<p class="empty">Fotky se právě stahují do repozitáře (GitHub Actions → „Stáhnout fotky z Wikimedia Commons“). Za pár minut obnovte stránku.</p>';
       return;
     }
-    const GAL = PHOTOS.filter(p => !["Akce", "Zahraniční mise", "Zbrojní průmysl"].includes(p.group));
+    const GAL = PHOTOS.filter(p => !["Akce", "Zahraniční mise", "Zbrojní průmysl", "Znaky", "Muzea"].includes(p.group));
     const keys = [...new Set(GAL.map(p => p.key))];
     const groups = [...new Set(GAL.map(p => p.group))];
     $("#gallery").innerHTML = `<p class="note">${keys.length} témat, ${GAL.length} fotek z Wikimedia Commons s volnou licencí. Náhled ukazuje hlavní fotku, po kliknutí další.</p>` +
@@ -295,6 +342,8 @@
       renderTech();
       renderEvents();
       renderInf();
+      renderOrg();
+      fetch("data/specs.json", {cache: "no-cache"}).then(r => (r.ok ? r.json() : null)).then(j => { if (j) SPECS = j; }).catch(() => {});
       return fetch("data/posadky.json", {cache: "no-cache"}).then(r => r.json());
     })
     .then(initUnits)

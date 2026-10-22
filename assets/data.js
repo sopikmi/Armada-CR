@@ -114,29 +114,29 @@ ACR.AREAS = [
  * [systém, kategorie, počet, původ, stav(ok|ord|old), poznámka, zdroj, foto key]
  */
 ACR.TECH = [
-  ["Leopard 2A4", "Tanky", "42", "Německo / Švýcarsko", "ok", "28 jako kompenzace od Německa za tanky pro Ukrajinu, 14 dokoupeno (ex-švýcarské, ~161 mil. €). Flotila kompletní od 7/2026 u 73. tpr Přáslavice; k tomu 2 vyprošťovací Büffel 3.", "vepozs_2a4", "leopard2a4"],
-  ["Leopard 2A8", "Tanky", "44", "Německo", "ord", "Smlouva 11. 9. 2025, 34,25 mld Kč s DPH. První tanky 2028, dodávky do 2031. S opcemi a podpůrnými verzemi 61–77 kusů.", "ctk_2a8", "leopard2a8"],
-  ["T-72M4CZ", "Tanky", "~30", "ČR (modernizace)", "old", "Dosluhují, provozuschopná je jen část.", "e15_vyzbroj", "t72"],
-  ["CV90 MkIV", "Bojová vozidla", "246", "Švédsko / ČR", "ord", "59,7 mld Kč, 7 verzí; 39 kusů ze Švédska, 207 z VOP CZ. K 13. 10. 2026 žádné převzato; česká konfigurace poprvé představena na Future Forces Forum 21. 10. 2026. Zařazení kolem roku 2030.", "hn_akvizice", "cv90"],
-  ["BVP-2", "Bojová vozidla", "~200", "ČSSR", "old", "40 let stará vozidla, nahradí je CV90.", "e15_vyzbroj", "bvp2"],
-  ["Pandur II 8×8", "Bojová vozidla", "127", "Rakousko / ČR", "ok", "107 z roku 2006 (72 bojových s věží RCWS-30) + 20 velitelských a spojovacích. Nemodernizují se; připravuje se náhrada až 250 vozidly (Pandur EVO, Patria, Boxer).", "hn_akvizice", "pandur"],
-  ["Tatra Titus 6×6", "Bojová vozidla", "62", "ČR / Francie", "ok", "Velitelské, spojovací a dělostřelecké verze, dodáno do 6/2024.", "czd_pandur", "titus"],
-  ["CAESAR 8×8 CZ", "Dělostřelectvo", "62", "Francie / ČR", "ord", "52 + 10 dodatkem, 10,3 mld Kč, zaplaceno přes 7,2 mld. Žádný kus nedodán, dodavatel v prodlení; nový termín zařazení 2028.", "hn_akvizice", "caesar"],
-  ["ShKH Dana vz. 77", "Dělostřelectvo", "nezveřejněno", "ČSSR", "old", "152 mm, nahradí je CAESAR.", "e15_vyzbroj", "dana"],
-  ["SPYDER", "Protivzdušná obrana", "4 baterie", "Izrael / ČR", "ord", "Každá baterie 9 vozidel a 4 odpalovací zařízení. Vojskové zkoušky splněny, ostré střelby plán 10/2027, integrace do 2028. Česko je první zemí NATO s tímto systémem.", "ex_spyder", "spyder"],
-  ["2K12 KUB", "Protivzdušná obrana", "4 baterie", "SSSR", "old", "25. plrp Strakonice, nahradí SPYDER.", "e15_vyzbroj", "kub"],
-  ["RBS-70", "Protivzdušná obrana", "32", "Švédsko", "ok", "Přenosné protiletadlové komplety krátkého dosahu.", "e15_vyzbroj", "rbs70"],
-  ["JAS-39C/D Gripen", "Letectvo", "14 → 12", "Švédsko", "ok", "Pronájem prodloužen do 2035 (smlouva 1. 9. 2025, 16,7 mld Kč s DPH + ~4 mld modernizace); po roce 2027 12 kusů. Dočasně Pardubice.", "fb_gripen", "gripen"],
-  ["F-35A Lightning II", "Letectvo", "24", "USA / Itálie", "ord", "Celkem ~106 mld Kč (letouny, výzbroj, výcvik, podpora) + rekonstrukce Čáslavi. První kusy 2029 (výcvik v USA), v Česku od 2031, všechny do 2035.", "nv_caslav", "f35"],
-  ["L-159 ALCA", "Letectvo", "24", "ČR", "ok", "Lehký bitevník a cvičný letoun; dočasně v Náměšti. Dlouhodobě je mají nahradit drony.", "nv_caslav", "l159"],
-  ["Embraer C-390", "Letectvo", "2", "Brazílie", "ord", "11,3 mld Kč. První přistál v Praze 6. 7. 2026, druhý 2027–2028.", "av_c390", "c390"],
-  ["CASA C-295", "Letectvo", "4", "Španělsko", "ok", "Taktický transport, Kbely.", "wiki", "c295"],
-  ["UH-1Y Venom", "Vrtulníky", "10", "USA", "ok", "8 nakoupeno + 2 darem od USA. V červenci 2026 se jeden zřítil v Náměšti (1 mrtvá, 4 zranění); provoz H-1 obnoven od konce srpna.", "ctk_venom", "venom"],
-  ["AH-1Z Viper", "Vrtulníky", "10", "USA", "ok", "4 nakoupeny + 6 darem od USA. Nahradily Mi-24/35. Rotace ~100 vojáků v Polsku (Heli Unit).", "ct_h1", "viper"],
-  ["Mi-171Š", "Vrtulníky", "~16", "Rusko", "old", "Transportní; po modernizaci slouží nejméně do 2035, náhrada se připravuje.", "hn_akvizice", "mi171"],
-  ["W-3A Sokol", "Vrtulníky", "~10", "Polsko", "ok", "Pátrání a záchrana, doprava.", "wiki", "w3a"],
-  ["CZ BREN 2 / CZ P-10 C", "Ruční zbraně", "—", "ČR", "ok", "Standardní útočná puška a pistole AČR; podrobně v sekci Pěchotní výzbroj.", "vepozs_zbrane", "w_bren2"],
-  ["Airbus A319CJ", "Letectvo", "2", "EU", "ok", "Vládní letka od 2007; plán čtyř nových letadel (A319CJ, business jet, L-410), specifikace se zpracovávají.", "blesk_airbus", null],
+  ["Leopard 2A4", "Tanky", "42", "Německo / Švýcarsko", "ok", "28 jako kompenzace od Německa za tanky pro Ukrajinu, 14 dokoupeno (ex-švýcarské, ~161 mil. €). Flotila kompletní od 7/2026 u 73. tpr Přáslavice; k tomu 2 vyprošťovací Büffel 3.", "vepozs_2a4", "leopard2a4", "leopard2"],
+  ["Leopard 2A8", "Tanky", "44", "Německo", "ord", "Smlouva 11. 9. 2025, 34,25 mld Kč s DPH. První tanky 2028, dodávky do 2031. S opcemi a podpůrnými verzemi 61–77 kusů.", "ctk_2a8", "leopard2a8", "leopard2a8"],
+  ["T-72M4CZ", "Tanky", "~30", "ČR (modernizace)", "old", "Dosluhují, provozuschopná je jen část.", "e15_vyzbroj", "t72", "t72cz"],
+  ["CV90 MkIV", "Bojová vozidla", "246", "Švédsko / ČR", "ord", "59,7 mld Kč, 7 verzí; 39 kusů ze Švédska, 207 z VOP CZ. K 13. 10. 2026 žádné převzato; česká konfigurace poprvé představena na Future Forces Forum 21. 10. 2026. Zařazení kolem roku 2030.", "hn_akvizice", "cv90", "cv90"],
+  ["BVP-2", "Bojová vozidla", "~200", "ČSSR", "old", "40 let stará vozidla, nahradí je CV90.", "e15_vyzbroj", "bvp2", "bmp2"],
+  ["Pandur II 8×8", "Bojová vozidla", "127", "Rakousko / ČR", "ok", "107 z roku 2006 (72 bojových s věží RCWS-30) + 20 velitelských a spojovacích. Nemodernizují se; připravuje se náhrada až 250 vozidly (Pandur EVO, Patria, Boxer).", "hn_akvizice", "pandur", "pandur2"],
+  ["Tatra Titus 6×6", "Bojová vozidla", "62", "ČR / Francie", "ok", "Velitelské, spojovací a dělostřelecké verze, dodáno do 6/2024.", "czd_pandur", "titus", "titus"],
+  ["CAESAR 8×8 CZ", "Dělostřelectvo", "62", "Francie / ČR", "ord", "52 + 10 dodatkem, 10,3 mld Kč, zaplaceno přes 7,2 mld. Žádný kus nedodán, dodavatel v prodlení; nový termín zařazení 2028.", "hn_akvizice", "caesar", "caesar"],
+  ["ShKH Dana vz. 77", "Dělostřelectvo", "nezveřejněno", "ČSSR", "old", "152 mm, nahradí je CAESAR.", "e15_vyzbroj", "dana", "dana"],
+  ["SPYDER", "Protivzdušná obrana", "4 baterie", "Izrael / ČR", "ord", "Každá baterie 9 vozidel a 4 odpalovací zařízení. Vojskové zkoušky splněny, ostré střelby plán 10/2027, integrace do 2028. Česko je první zemí NATO s tímto systémem.", "ex_spyder", "spyder", "spyder"],
+  ["2K12 KUB", "Protivzdušná obrana", "4 baterie", "SSSR", "old", "25. plrp Strakonice, nahradí SPYDER.", "e15_vyzbroj", "kub", "kub"],
+  ["RBS-70", "Protivzdušná obrana", "32", "Švédsko", "ok", "Přenosné protiletadlové komplety krátkého dosahu.", "e15_vyzbroj", "rbs70", "rbs70"],
+  ["JAS-39C/D Gripen", "Letectvo", "14 → 12", "Švédsko", "ok", "Pronájem prodloužen do 2035 (smlouva 1. 9. 2025, 16,7 mld Kč s DPH + ~4 mld modernizace); po roce 2027 12 kusů. Dočasně Pardubice.", "fb_gripen", "gripen", "gripen"],
+  ["F-35A Lightning II", "Letectvo", "24", "USA / Itálie", "ord", "Celkem ~106 mld Kč (letouny, výzbroj, výcvik, podpora) + rekonstrukce Čáslavi. První kusy 2029 (výcvik v USA), v Česku od 2031, všechny do 2035.", "nv_caslav", "f35", "f35"],
+  ["L-159 ALCA", "Letectvo", "24", "ČR", "ok", "Lehký bitevník a cvičný letoun; dočasně v Náměšti. Dlouhodobě je mají nahradit drony.", "nv_caslav", "l159", "l159"],
+  ["Embraer C-390", "Letectvo", "2", "Brazílie", "ord", "11,3 mld Kč. První přistál v Praze 6. 7. 2026, druhý 2027–2028.", "av_c390", "c390", "c390"],
+  ["CASA C-295", "Letectvo", "4", "Španělsko", "ok", "Taktický transport, Kbely.", "wiki", "c295", "c295"],
+  ["UH-1Y Venom", "Vrtulníky", "10", "USA", "ok", "8 nakoupeno + 2 darem od USA. V červenci 2026 se jeden zřítil v Náměšti (1 mrtvá, 4 zranění); provoz H-1 obnoven od konce srpna.", "ctk_venom", "venom", "venom"],
+  ["AH-1Z Viper", "Vrtulníky", "10", "USA", "ok", "4 nakoupeny + 6 darem od USA. Nahradily Mi-24/35. Rotace ~100 vojáků v Polsku (Heli Unit).", "ct_h1", "viper", "viper"],
+  ["Mi-171Š", "Vrtulníky", "~16", "Rusko", "old", "Transportní; po modernizaci slouží nejméně do 2035, náhrada se připravuje.", "hn_akvizice", "mi171", "mi17"],
+  ["W-3A Sokol", "Vrtulníky", "~10", "Polsko", "ok", "Pátrání a záchrana, doprava.", "wiki", "w3a", "w3"],
+  ["CZ BREN 2 / CZ P-10 C", "Ruční zbraně", "—", "ČR", "ok", "Standardní útočná puška a pistole AČR; podrobně v sekci Pěchotní výzbroj.", "vepozs_zbrane", "w_bren2", "bren2"],
+  ["Airbus A319CJ", "Letectvo", "2", "EU", "ok", "Vládní letka od 2007; plán čtyř nových letadel (A319CJ, business jet, L-410), specifikace se zpracovávají.", "blesk_airbus", null, "a319"],
   ["Drony (různé typy)", "Bezpilotní systémy", "3 000", "—", "ord", "Cíl do 2028, pět souběžných zakázek; typy a ceny nezveřejněny.", "sz_drony", null]
 ];
 
@@ -145,19 +145,19 @@ ACR.TECH = [
  * Počty kusů MO u ručních zbraní nezveřejňuje (kromě Minimi).
  */
 ACR.INF = [
-  ["CZ BREN 2", "útočná puška", "5,56 × 45 mm NATO (i 7,62 × 39 mm)", "Česká zbrojovka", "ok", "Standardní útočná puška; nástupce CZ 805 BREN. Modulární, varianty s různou délkou hlavně.", "az_pechota", "w_bren2"],
-  ["CZ BREN 2 PPS", "přesná puška", "7,62 × 51 mm NATO", "Česká zbrojovka", "ok", "Pro přesné střelce v bojových jednotkách; prodlužuje účinný dostřel družstva.", "vepozs_zbrane", "w_bren2"],
-  ["CZ 805 BREN A1", "útočná puška", "5,56 × 45 mm NATO", "Česká zbrojovka", "ok", "Zavedena od 2011, postupně nahrazována verzí BREN 2.", "vepozs_zbrane", "w_805a1"],
-  ["CZ 805 G1", "podvěsný granátomet", "40 mm", "Česká zbrojovka", "ok", "Proti cílům v zákopech a za překážkami.", "vepozs_zbrane", "w_805g1"],
-  ["CZ P-10 C / F", "pistole", "9 × 19 mm", "Česká zbrojovka", "ok", "Základní služební pistole; doplňuje ji CZ 75 SP-01 Phantom.", "az_pechota", "w_p10"],
-  ["CZ Scorpion EVO 3 A1", "samopal", "9 × 19 mm", "Česká zbrojovka", "ok", "Osádky vozidel, speciální a policejní složky.", "az_pechota", "w_evo"],
-  ["FN Minimi (7,62 a 5,56)", "lehký kulomet", "7,62 × 51 / 5,56 × 45 mm", "FN Herstal (Belgie)", "ok", "Pořízeno 2021–2025 až 950 ks, z toho 12 ks 5,56 mm; nahrazuje UK vz. 59.", "czd_minimi", "w_minimi"],
-  ["M2 Browning", "těžký kulomet", "12,7 × 99 mm", "USA", "ok", "Na vozidlech a lafetách; dosluhují sovětské DŠK a NSV.", "az_pechota", null],
-  ["Carl Gustaf", "bezzákluzový kanon", "84 mm", "Saab (Švédsko)", "ok", "Používají mj. výsadkáři 43. výsadkového pluku.", "vepozs_zbrane", null],
-  ["RPG-7", "protitanková zbraň", "40 mm (granát nadráže)", "SSSR / licence", "old", "S optickým zaměřovačem, obsluha dvojice vojáků.", "vepozs_zbrane", null],
-  ["Spike LR", "protitanková řízená střela", "—", "Rafael (Izrael)", "ok", "Na Pandurech II s věží RCWS-30.", "czd_pandur", null],
-  ["Odstřelovací pušky (AI AWM, Sako TRG, Barrett M82, ZVI Falcon, CheyTac, Desert Tech HTI)", "odstřelovací a protimateriálové pušky", "7,62 mm až 12,7 mm", "různé", "ok", "Široké spektrum typů v malých počtech; dosluhují SVD Dragunov.", "az_pechota", "w_sniper"],
-  ["Sa vz. 58, UK vz. 59, Škorpion vz. 61", "starší zbraně", "7,62 mm / 7,65 mm", "ČSSR", "old", "Ve skladech a u záloh; ve výzbroji bojových útvarů nahrazeny.", "az_pechota", null]
+  ["CZ BREN 2", "útočná puška", "5,56 × 45 mm NATO (i 7,62 × 39 mm)", "Česká zbrojovka", "ok", "Standardní útočná puška; nástupce CZ 805 BREN. Modulární, varianty s různou délkou hlavně.", "az_pechota", "w_bren2", "bren2"],
+  ["CZ BREN 2 PPS", "přesná puška", "7,62 × 51 mm NATO", "Česká zbrojovka", "ok", "Pro přesné střelce v bojových jednotkách; prodlužuje účinný dostřel družstva.", "vepozs_zbrane", "w_bren2", "bren2"],
+  ["CZ 805 BREN A1", "útočná puška", "5,56 × 45 mm NATO", "Česká zbrojovka", "ok", "Zavedena od 2011, postupně nahrazována verzí BREN 2.", "vepozs_zbrane", "w_805a1", "bren805"],
+  ["CZ 805 G1", "podvěsný granátomet", "40 mm", "Česká zbrojovka", "ok", "Proti cílům v zákopech a za překážkami.", "vepozs_zbrane", "w_805g1", "bren805"],
+  ["CZ P-10 C / F", "pistole", "9 × 19 mm", "Česká zbrojovka", "ok", "Základní služební pistole; doplňuje ji CZ 75 SP-01 Phantom.", "az_pechota", "w_p10", "p10"],
+  ["CZ Scorpion EVO 3 A1", "samopal", "9 × 19 mm", "Česká zbrojovka", "ok", "Osádky vozidel, speciální a policejní složky.", "az_pechota", "w_evo", "evo3"],
+  ["FN Minimi (7,62 a 5,56)", "lehký kulomet", "7,62 × 51 / 5,56 × 45 mm", "FN Herstal (Belgie)", "ok", "Pořízeno 2021–2025 až 950 ks, z toho 12 ks 5,56 mm; nahrazuje UK vz. 59.", "czd_minimi", "w_minimi", "minimi"],
+  ["M2 Browning", "těžký kulomet", "12,7 × 99 mm", "USA", "ok", "Na vozidlech a lafetách; dosluhují sovětské DŠK a NSV.", "az_pechota", null, "m2"],
+  ["Carl Gustaf", "bezzákluzový kanon", "84 mm", "Saab (Švédsko)", "ok", "Používají mj. výsadkáři 43. výsadkového pluku.", "vepozs_zbrane", null, "cg"],
+  ["RPG-7", "protitanková zbraň", "40 mm (granát nadráže)", "SSSR / licence", "old", "S optickým zaměřovačem, obsluha dvojice vojáků.", "vepozs_zbrane", null, "rpg7"],
+  ["Spike LR", "protitanková řízená střela", "—", "Rafael (Izrael)", "ok", "Na Pandurech II s věží RCWS-30.", "czd_pandur", null, "spike"],
+  ["Odstřelovací pušky (AI AWM, Sako TRG, Barrett M82, ZVI Falcon, CheyTac, Desert Tech HTI)", "odstřelovací a protimateriálové pušky", "7,62 mm až 12,7 mm", "různé", "ok", "Široké spektrum typů v malých počtech; dosluhují SVD Dragunov.", "az_pechota", "w_sniper", "awm"],
+  ["Sa vz. 58, UK vz. 59, Škorpion vz. 61", "starší zbraně", "7,62 mm / 7,65 mm", "ČSSR", "old", "Ve skladech a u záloh; ve výzbroji bojových útvarů nahrazeny.", "az_pechota", null, "vz58"]
 ];
 
 /* ---------- TAKTIKA A DOKTRÍNA ---------- [titulek, text, zdroj] */
@@ -180,6 +180,61 @@ ACR.TREATIES = [
   ["2027–2028", "Mandát zahraničních operací", "mandát", "Až 1 600 vojáků na východním křídle NATO v devíti zemích, až 2 000 spojeneckých vojáků na území ČR (ne trvale).", "czd_mandat"],
   ["—", "Formáty spolupráce", "regionální", "Visegrádská skupina, Slavkovský formát, Bukurešťská devítka a Středoevropská obranná spolupráce (CEDC).", "https://cs.wikipedia.org/wiki/Visegr%C3%A1dsk%C3%A1_skupina"]
 ];
+
+/* ---------- ORGANIZAČNÍ STRUKTURA (vizuální strom) ----------
+ * uzel: {n: název, t: posádka, z: klíč znaku (foto/index.json, skupina Znaky), s: NATO symbol, c: podřízené}
+ */
+ACR.ORG = {
+  top: [
+    {n: "Prezident republiky", t: "vrchní velitel ozbrojených sil", z: null, s: "hq"},
+    {n: "Ministerstvo obrany", t: "Praha · ministr obrany", z: null, s: "hq"},
+    {n: "Generální štáb AČR", t: "Praha-Dejvice · náčelník GŠ", z: "z_gs", s: "hq"}
+  ],
+  branches: [
+    {n: "Velitelství pozemních sil", t: "Olomouc", z: "z_vps", s: "hq", c: [
+      {n: "4. brigáda rychlého nasazení", t: "Žatec", z: "z_4brn", s: "inf", c: [{n: "41. mechanizovaný prapor", t: "Žatec"}, {n: "42. mechanizovaný prapor", t: "Tábor"}, {n: "44. lehký motorizovaný prapor", t: "Jindřichův Hradec"}]},
+      {n: "7. mechanizovaná brigáda", t: "Hranice", z: "z_7mb", s: "arm", c: [{n: "71. mechanizovaný prapor", t: "Hranice"}, {n: "72. mechanizovaný prapor", t: "Přáslavice"}, {n: "73. tankový prapor", t: "Přáslavice", z: "z_73", s: "tank"}, {n: "74. mechanizovaný prapor", t: "Bučovice"}]},
+      {n: "43. výsadkový pluk", t: "Chrudim", z: "z_43", s: "inf"},
+      {n: "13. dělostřelecký pluk", t: "Jince", z: "z_13", s: "art", c: [{n: "131. dělostřelecký oddíl", t: "Jince"}, {n: "132. dělostřelecký oddíl", t: "Jince"}]},
+      {n: "15. ženijní pluk", t: "Bechyně", z: "z_15", s: "eng", c: [{n: "151. ženijní prapor", t: "Bechyně"}, {n: "152. ženijní prapor", t: "Bechyně"}, {n: "153. ženijní prapor", t: "Olomouc"}]},
+      {n: "31. pluk RCHBO", t: "Liberec", z: "z_31", s: "cbrn", c: [{n: "311. prapor RCHBO", t: "Liberec"}, {n: "312. prapor RCHBO", t: "Liberec"}, {n: "314. centrum výstrahy ZHN", t: "Hostivice"}]},
+      {n: "53. pluk průzkumu a EB", t: "Opava", z: "z_53", s: "ew", c: [{n: "102. průzkumný prapor", t: "Prostějov", z: "z_102"}, {n: "532. prapor elektronického boje", t: "Opava"}, {n: "533. prapor bezpilotních systémů", t: "Prostějov"}]},
+      {n: "14. pluk logistické podpory", t: "Pardubice", z: "z_14", s: "log", c: [{n: "141. zásobovací prapor", t: "Pardubice"}, {n: "142. prapor oprav", t: "Klatovy"}, {n: "143. zásobovací prapor", t: "Lipník nad Bečvou"}]}
+    ]},
+    {n: "Velitelství vzdušných sil", t: "Praha", z: "z_vzs", s: "hq", c: [
+      {n: "21. základna taktického letectva", t: "Čáslav (dočasně Pardubice a Náměšť)", z: "z_21", s: "air"},
+      {n: "22. základna vrtulníkového letectva", t: "Náměšť nad Oslavou", z: "z_22", s: "air"},
+      {n: "24. základna dopravního letectva", t: "Praha-Kbely", z: "z_24", s: "air"},
+      {n: "25. protiletadlový raketový pluk", t: "Strakonice", z: "z_25", s: "ad"},
+      {n: "26. pluk velení, řízení a průzkumu", t: "Stará Boleslav", z: "z_26", s: "radar", c: [{n: "261. středisko řízení (CRC)", t: "Hlavenec"}, {n: "262. radiotechnický prapor (7 rot)", t: "Hlavenec"}, {n: "263. prapor podpory", t: "Hlavenec"}]}
+    ]},
+    {n: "Velitelství teritoriálních sil", t: "Tábor", z: "z_ters", s: "hq", c: [
+      {n: "14 krajských vojenských velitelství", t: "krajská města", s: "ter"},
+      {n: "14 praporů územní obrany (111.–241.)", t: "při KVV, převážně aktivní záloha", s: "inf"},
+      {n: "Pluk podpory nasaditelných sil", t: "Rakovník", s: "log"}
+    ]},
+    {n: "Velitelství informačních a kybernetických sil", t: "Brno", z: "z_kys", s: "cyber", c: [
+      {n: "91. skupina informačního boje", t: "Olomouc", s: "cyber"},
+      {n: "92. skupina kybernetického boje", t: "Brno", s: "cyber"}
+    ]},
+    {n: "Ředitelství speciálních sil MO", t: "Praha", z: "z_rss", s: "sof", c: [
+      {n: "601. skupina speciálních sil", t: "Prostějov", z: "z_601", s: "sof"},
+      {n: "Centrum podpory speciálních sil", t: "Olomouc", s: "sof"}
+    ]},
+    {n: "Velitelství, výcvik a agentury", t: "různé posádky", z: null, s: "hq", c: [
+      {n: "Velitelství pro operace", t: "Praha", s: "hq"},
+      {n: "Velitelství výcviku – Vojenská akademie", t: "Vyškov", s: "edu"},
+      {n: "Agentura logistiky", t: "Stará Boleslav", s: "log"},
+      {n: "Agentura komunikačních a informačních systémů", t: "Praha", s: "misc"},
+      {n: "Agentura vojenského zdravotnictví", t: "Hradec Králové", s: "med"}
+    ]}
+  ],
+  ext: [
+    {n: "Hradní stráž", t: "Praha · v působnosti Kanceláře prezidenta", z: "z_hs", s: "guard"},
+    {n: "Vojenská policie", t: "Praha · podřízena ministrovi obrany", z: "z_vp", s: "mp"},
+    {n: "Vojenské zpravodajství", t: "Praha · podřízeno ministrovi obrany", z: null, s: "misc"}
+  ]
+};
 
 /* ---------- MODERNIZACE ---------- [období, název, popis, částka, poznámka, zdroj] */
 ACR.PROJ = [
