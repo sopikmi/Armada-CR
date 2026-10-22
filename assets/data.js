@@ -181,6 +181,61 @@ ACR.TREATIES = [
   ["—", "Formáty spolupráce", "regionální", "Visegrádská skupina, Slavkovský formát, Bukurešťská devítka a Středoevropská obranná spolupráce (CEDC).", "https://cs.wikipedia.org/wiki/Visegr%C3%A1dsk%C3%A1_skupina"]
 ];
 
+/* ---------- ORGANIZAČNÍ STRUKTURA (vizuální strom) ----------
+ * uzel: {n: název, t: posádka, z: klíč znaku (foto/index.json, skupina Znaky), s: NATO symbol, c: podřízené}
+ */
+ACR.ORG = {
+  top: [
+    {n: "Prezident republiky", t: "vrchní velitel ozbrojených sil", z: null, s: "hq"},
+    {n: "Ministerstvo obrany", t: "Praha · ministr obrany", z: null, s: "hq"},
+    {n: "Generální štáb AČR", t: "Praha-Dejvice · náčelník GŠ", z: "z_gs", s: "hq"}
+  ],
+  branches: [
+    {n: "Velitelství pozemních sil", t: "Olomouc", z: "z_vps", s: "hq", c: [
+      {n: "4. brigáda rychlého nasazení", t: "Žatec", z: "z_4brn", s: "inf", c: [{n: "41. mechanizovaný prapor", t: "Žatec"}, {n: "42. mechanizovaný prapor", t: "Tábor"}, {n: "44. lehký motorizovaný prapor", t: "Jindřichův Hradec"}]},
+      {n: "7. mechanizovaná brigáda", t: "Hranice", z: "z_7mb", s: "arm", c: [{n: "71. mechanizovaný prapor", t: "Hranice"}, {n: "72. mechanizovaný prapor", t: "Přáslavice"}, {n: "73. tankový prapor", t: "Přáslavice"}, {n: "74. mechanizovaný prapor", t: "Bučovice"}]},
+      {n: "43. výsadkový pluk", t: "Chrudim", z: "z_43", s: "inf"},
+      {n: "13. dělostřelecký pluk", t: "Jince", z: "z_13", s: "art", c: [{n: "131. dělostřelecký oddíl", t: "Jince"}, {n: "132. dělostřelecký oddíl", t: "Jince"}]},
+      {n: "15. ženijní pluk", t: "Bechyně", z: "z_15", s: "eng", c: [{n: "151. ženijní prapor", t: "Bechyně"}, {n: "152. ženijní prapor", t: "Bechyně"}, {n: "153. ženijní prapor", t: "Olomouc"}]},
+      {n: "31. pluk RCHBO", t: "Liberec", z: "z_31", s: "cbrn", c: [{n: "311. prapor RCHBO", t: "Liberec"}, {n: "312. prapor RCHBO", t: "Liberec"}, {n: "314. centrum výstrahy ZHN", t: "Hostivice"}]},
+      {n: "53. pluk průzkumu a EB", t: "Opava", z: "z_53", s: "ew", c: [{n: "102. průzkumný prapor", t: "Prostějov", z: "z_102"}, {n: "532. prapor elektronického boje", t: "Opava"}, {n: "533. prapor bezpilotních systémů", t: "Prostějov"}]},
+      {n: "14. pluk logistické podpory", t: "Pardubice", z: "z_14", s: "log", c: [{n: "141. zásobovací prapor", t: "Pardubice"}, {n: "142. prapor oprav", t: "Klatovy"}, {n: "143. zásobovací prapor", t: "Lipník nad Bečvou"}]}
+    ]},
+    {n: "Velitelství vzdušných sil", t: "Praha", z: "z_vzs", s: "hq", c: [
+      {n: "21. základna taktického letectva", t: "Čáslav (dočasně Pardubice a Náměšť)", z: "z_21", s: "air"},
+      {n: "22. základna vrtulníkového letectva", t: "Náměšť nad Oslavou", z: "z_22", s: "air"},
+      {n: "24. základna dopravního letectva", t: "Praha-Kbely", z: "z_24", s: "air"},
+      {n: "25. protiletadlový raketový pluk", t: "Strakonice", z: "z_25", s: "ad"},
+      {n: "26. pluk velení, řízení a průzkumu", t: "Stará Boleslav", z: "z_26", s: "radar", c: [{n: "261. středisko řízení (CRC)", t: "Hlavenec"}, {n: "262. radiotechnický prapor (7 rot)", t: "Hlavenec"}, {n: "263. prapor podpory", t: "Hlavenec"}]}
+    ]},
+    {n: "Velitelství teritoriálních sil", t: "Tábor", z: "z_ters", s: "hq", c: [
+      {n: "14 krajských vojenských velitelství", t: "krajská města", s: "ter"},
+      {n: "14 praporů územní obrany (111.–241.)", t: "při KVV, převážně aktivní záloha", s: "inf"},
+      {n: "Pluk podpory nasaditelných sil", t: "Rakovník", s: "log"}
+    ]},
+    {n: "Velitelství informačních a kybernetických sil", t: "Brno", z: "z_kys", s: "cyber", c: [
+      {n: "91. skupina informačního boje", t: "Olomouc", s: "cyber"},
+      {n: "92. skupina kybernetického boje", t: "Brno", s: "cyber"}
+    ]},
+    {n: "Ředitelství speciálních sil MO", t: "Praha", z: null, s: "sof", c: [
+      {n: "601. skupina speciálních sil", t: "Prostějov", z: "z_601", s: "sof"},
+      {n: "Centrum podpory speciálních sil", t: "Olomouc", s: "sof"}
+    ]},
+    {n: "Velitelství, výcvik a agentury", t: "různé posádky", z: null, s: "hq", c: [
+      {n: "Velitelství pro operace", t: "Praha", s: "hq"},
+      {n: "Velitelství výcviku – Vojenská akademie", t: "Vyškov", s: "edu"},
+      {n: "Agentura logistiky", t: "Stará Boleslav", s: "log"},
+      {n: "Agentura komunikačních a informačních systémů", t: "Praha", s: "misc"},
+      {n: "Agentura vojenského zdravotnictví", t: "Hradec Králové", s: "med"}
+    ]}
+  ],
+  ext: [
+    {n: "Hradní stráž", t: "Praha · v působnosti Kanceláře prezidenta", z: "z_hs", s: "guard"},
+    {n: "Vojenská policie", t: "Praha · podřízena ministrovi obrany", z: "z_vp", s: "mp"},
+    {n: "Vojenské zpravodajství", t: "Praha · podřízeno ministrovi obrany", z: null, s: "misc"}
+  ]
+};
+
 /* ---------- MODERNIZACE ---------- [období, název, popis, částka, poznámka, zdroj] */
 ACR.PROJ = [
   ["2023 → 2035", "F-35A Lightning II", "24 stíhaček páté generace. Prvních 12 se vyrobí v USA, dalších 12 v italském Cameri. Do jejich příchodu slouží Gripeny.", "~106 mld", "bez infrastruktury", "nv_caslav"],

@@ -119,6 +119,12 @@ def main():
         print(f"[{it['key']}] {title}")
         try:
             d = api({"action": "parse", "page": title, "prop": "wikitext", "redirects": 1})
+            if "parse" not in d:
+                hit = api({"action": "query", "list": "search", "srsearch": it.get("search", title), "srlimit": 1})["query"]["search"]
+                if not hit:
+                    raise RuntimeError("článek nenalezen")
+                print(f"  → hledáním: {hit[0]['title']}")
+                d = api({"action": "parse", "page": hit[0]["title"], "prop": "wikitext", "redirects": 1})
             wt = d["parse"]["wikitext"]
             real = d["parse"]["title"]
             ll = api({"action": "query", "titles": real, "prop": "langlinks", "lllang": "cs", "redirects": 1})

@@ -25,8 +25,9 @@
   },
   {
    "key": "titus",
-   "en": "Titus (vehicle)",
-   "label": "Tatra Titus"
+   "en": "Nexter Titus",
+   "label": "Tatra Titus",
+   "search": "Titus armoured vehicle Nexter Tatra"
   },
   {
    "key": "caesar",
@@ -34,12 +35,14 @@
   },
   {
    "key": "dana",
-   "en": "Vz. 77 DANA",
-   "label": "ShKH vz. 77 Dana"
+   "en": "ShKH vz. 77 DANA",
+   "label": "ShKH vz. 77 Dana",
+   "search": "vz. 77 DANA self-propelled howitzer"
   },
   {
    "key": "spyder",
-   "en": "Spyder (air defense system)"
+   "en": "SPYDER",
+   "search": "Spyder Rafael surface-to-air missile system"
   },
   {
    "key": "kub",

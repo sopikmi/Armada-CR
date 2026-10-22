@@ -41,4 +41,5 @@ jobs:
           git add -A foto _kandidati 2>/dev/null || git add -A foto
           git diff --cached --quiet && echo "Beze změn" && exit 0
           git commit -m "Fotky: aktualizace databáze z Wikimedia Commons"
+          git pull --rebase
           git push
