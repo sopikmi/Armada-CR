@@ -270,9 +270,7 @@
   function initMap() {
     if (!window.L) { $("#lmap").innerHTML = '<p class="empty">Mapu se nepodařilo načíst (knihovna Leaflet).</p>'; return; }
     map = L.map("lmap", {scrollWheelZoom: false}).setView([49.8, 15.5], 7);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    if (window.BASEMAP) BASEMAP.cz(map, "");
     ACR.AREAS.forEach(a => {
       areaLayers.push(L.circle([a[2], a[3]], {
         radius: Math.sqrt(a[4] / Math.PI) * 1000,

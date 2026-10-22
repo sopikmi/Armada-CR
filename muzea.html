@@ -60,6 +60,7 @@
 </main>
 <footer><div class="wrap">Data z veřejných zdrojů k <span data-updated></span>. Fotky: Wikimedia Commons, autoři a licence u každé fotky. Mapa © OpenStreetMap. <a href="https://github.com/sopikmi/Armada-CR">github.com/sopikmi/Armada-CR</a></div></footer>
 <script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/basemap.js"></script>
 <script src="assets/muzea-data.js"></script>
 <script src="assets/page.js"></script>
 <script>
@@ -75,7 +76,7 @@
     $("#vhucards").innerHTML = MUZ.VHU.map(m => `<article class="card">${m[8] ? P.photoCard(m[8]) : ""}<h3>${esc(m[0])}</h3><div class="small">${esc(m[1])}</div><dl><dt>Otevřeno</dt><dd>${esc(m[4])}</dd><dt>Vstupné</dt><dd>${esc(m[5])}</dd><dt>Expozice</dt><dd>${esc(m[6])}</dd></dl><div class="small">${src(m[7])}</div></article>`).join("");
     if (!window.L) return;
     const map = L.map("wmap", {scrollWheelZoom: false}).setView([49.85, 15.4], 7);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 17, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+    if (window.BASEMAP) BASEMAP.cz(map, "");
     const mk = (lat, lon, col, html) => L.marker([lat, lon], {icon: L.divIcon({className: "", iconSize: [16, 16], iconAnchor: [8, 8], html: `<svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${col}" stroke="var(--paper)" stroke-width="2"/></svg>`})}).bindPopup(html, {maxWidth: 260}).addTo(map);
     MUZ.VHU.forEach(m => mk(m[2], m[3], "var(--friendly)", `<b>${esc(m[0])}</b><br><span style="font-size:12px">${esc(m[1])}</span><p style="margin:6px 0">${esc(m[6])}</p>${src(m[7])}`));
     MUZ.OTHER.forEach(m => mk(m[2], m[3], "var(--muted)", `<b>${esc(m[0])}</b><br><span style="font-size:12px">${esc(m[1])}</span><p style="margin:6px 0">${esc(m[4])}</p>${src(m[5])}`));

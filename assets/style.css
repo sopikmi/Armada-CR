@@ -290,3 +290,26 @@ nav.tabs a[aria-current="page"]{opacity:1;border-bottom-color:var(--friendly)}
 .hero-tabs a span{font-size:13px;color:var(--muted)}
 .hero-tabs a:hover{border-color:var(--friendly)}
 nav.tabs a{font-size:14px;padding:14px 16px}
+/* vlastní podkladová mapa (assets/basemap.js) */
+.bm-map{background:var(--bm-sea)}
+:root{--bm-sea:#CFDDEB;--bm-land:#F8F8F2;--bm-nb:#E4E6DC;--bm-river:#5E8FC7;--bm-border:#1C221E}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bm-sea:#16212C;--bm-land:#262C27;--bm-nb:#1C211D;--bm-river:#4F7FB5;--bm-border:#E4E8DF}}
+:root[data-theme="dark"]{--bm-sea:#16212C;--bm-land:#262C27;--bm-nb:#1C211D;--bm-river:#4F7FB5;--bm-border:#E4E8DF}
+.bm-sea{fill:var(--bm-sea);fill-opacity:1;stroke:none}
+.bm-nb{fill:var(--bm-nb);fill-opacity:1;stroke:var(--muted);stroke-width:1;stroke-opacity:.6}
+.bm-land{fill:var(--bm-nb);fill-opacity:1;stroke:var(--muted);stroke-width:.7;stroke-opacity:.7}
+.bm-cz{fill:var(--bm-land);fill-opacity:1;stroke:none}
+.bm-kr{fill:none;stroke:var(--muted);stroke-width:1;stroke-opacity:.55;stroke-dasharray:4 3}
+.bm-czline{fill:none;stroke:var(--bm-border);stroke-width:2.2;stroke-opacity:.85}
+.bm-world .bm-cz,.bm-map .bm-land+.bm-cz{stroke:var(--bm-border)}
+.bm-r{fill:none;stroke:var(--bm-river);stroke-width:1.6;stroke-opacity:.8}
+.bm-city{fill:var(--fg);fill-opacity:1;stroke:var(--bm-land);stroke-width:1.5}
+.bm-lbl{white-space:nowrap}
+.bm-lbl span{display:inline-block;transform:translate(6px,-50%);font:600 12px/1 var(--body);color:var(--fg);
+  text-shadow:0 0 3px var(--bm-land),0 0 3px var(--bm-land),0 0 2px var(--bm-land)}
+.bm-lbl.c.r2 span{font-weight:500;font-size:11px;color:var(--muted)}
+.bm-lbl.nb span,.bm-lbl.w span{transform:translate(-50%,-50%);font:600 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-shadow:0 0 3px var(--bm-nb),0 0 3px var(--bm-nb)}
+.bmz2 .bm-lbl.w,.bmz3 .bm-lbl.w{display:none}
+.bmz6 .bm-lbl.c.r2{display:none}
+.bm-osm .leaflet-pane.leaflet-bm-pane,.bm-osm .leaflet-bmlbl-pane{display:none}
+.leaflet-control-layers{font:13px var(--body);background:var(--paper);color:var(--fg);border:1px solid var(--line)!important}
