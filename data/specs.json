@@ -387,6 +387,59 @@
     ]
    ]
   },
+  "titus": {
+   "label": "Tatra Titus",
+   "title": "Nexter Titus",
+   "url": "https://en.wikipedia.org/wiki/Nexter_Titus",
+   "cs_url": "https://cs.wikipedia.org/wiki/Titus_%28obrn%C4%9Bn%C3%A9_vozidlo%29",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Infantry Mobility Vehicle"
+    ],
+    [
+     "Původ",
+     "France/Czech Republic"
+    ],
+    [
+     "Výrobce",
+     "Nexter and Tatra Defence Vehicle"
+    ],
+    [
+     "Výroba",
+     "2013-present"
+    ],
+    [
+     "Osádka",
+     "3+10"
+    ],
+    [
+     "Hmotnost",
+     "17 t"
+    ],
+    [
+     "Hlavní výzbroj",
+     "Remote weapon station (varies by customer/requirement)"
+    ],
+    [
+     "Motor",
+     "Cummins"
+    ],
+    [
+     "Výkon",
+     "400 hp"
+    ],
+    [
+     "Rychlost",
+     "110 km/h"
+    ],
+    [
+     "Dojezd",
+     "700 km"
+    ]
+   ]
+  },
   "caesar": {
    "label": "CAESAR self-propelled howitzer",
    "title": "CAESAR self-propelled howitzer",
@@ -461,6 +514,172 @@
     [
      "Kadence",
      "6 rounds per minute"
+    ]
+   ]
+  },
+  "dana": {
+   "label": "ShKH vz. 77 Dana",
+   "title": "152 mm SpGH DANA",
+   "url": "https://en.wikipedia.org/wiki/152_mm_SpGH_DANA",
+   "cs_url": "https://cs.wikipedia.org/wiki/ShKH_vz._77",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Self-propelled gun"
+    ],
+    [
+     "Původ",
+     "Czechoslovak Socialist Republic"
+    ],
+    [
+     "Výrobce",
+     "ZTS Dubnica nad Váhom (SK)Excalibur Army (CZ)"
+    ],
+    [
+     "Konstruktér",
+     "Konštrukta Trenčín"
+    ],
+    [
+     "Výroba",
+     "1980–present"
+    ],
+    [
+     "Vyrobeno",
+     "750+"
+    ],
+    [
+     "Osádka",
+     "5"
+    ],
+    [
+     "Hmotnost",
+     "29.25 t"
+    ],
+    [
+     "Délka",
+     "11.156 m"
+    ],
+    [
+     "Šířka",
+     "3 m"
+    ],
+    [
+     "Výška",
+     "3.63 m(with AAMG)"
+    ],
+    [
+     "Hlavní výzbroj",
+     "152 mm howitzer (approx. 36.6 calibre)(60 rounds)"
+    ],
+    [
+     "Sekundární výzbroj",
+     "12.7 mm DShK(2,000 rounds)"
+    ],
+    [
+     "Motor",
+     "Tatra T2-930-34"
+    ],
+    [
+     "Výkon",
+     "253.7 kW"
+    ],
+    [
+     "Rychlost",
+     "80 km/h"
+    ],
+    [
+     "Dojezd",
+     "600 km"
+    ],
+    [
+     "Dosah",
+     "18.7 km"
+    ],
+    [
+     "Náboj",
+     "HE, HEAT"
+    ],
+    [
+     "Ráže",
+     "152.4 mm"
+    ],
+    [
+     "Kadence",
+     "4 rpm (semi-automatic); 2 rpm (manual)"
+    ],
+    [
+     "Úsťová rychlost",
+     "693 m/s (HE)"
+    ],
+    [
+     "Max. dostřel",
+     "20 km"
+    ],
+    [
+     "Mířidla",
+     "ZZ-73 with PG1-M-D collimator (indirect fire); OP5-38-D (direct fire)"
+    ],
+    [
+     "Náměr",
+     "-4° to +70°"
+    ],
+    [
+     "Odměr",
+     "±220°"
+    ]
+   ]
+  },
+  "spyder": {
+   "label": "SPYDER",
+   "title": "SPYDER",
+   "url": "https://en.wikipedia.org/wiki/SPYDER",
+   "cs_url": "https://cs.wikipedia.org/wiki/SPYDER",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Short and medium range air defence system"
+    ],
+    [
+     "Původ",
+     "Israel"
+    ],
+    [
+     "Výrobce",
+     "Rafael Advanced Defense Systems"
+    ],
+    [
+     "Konstruktér",
+     "Rafael Advanced Defense Systems"
+    ],
+    [
+     "Výroba",
+     "2005–present"
+    ],
+    [
+     "Hmotnost",
+     "105 kg (Python-5)118 kg (Derby)"
+    ],
+    [
+     "Délka",
+     "3.1 m (Python-5)3.62 m (Derby)"
+    ],
+    [
+     "Hlavní výzbroj",
+     "×4 Python-5 or Derby missiles in any combination per MFU"
+    ],
+    [
+     "Rychlost",
+     "Mach 4"
+    ],
+    [
+     "Dojezd",
+     "Python-5: 40 kmDerby: 80 km"
+    ],
+    [
+     "Navádění",
+     "Infrared homing and electro-optical imaging (Python-5)Active radar homing (Derby)"
     ]
    ]
   },
