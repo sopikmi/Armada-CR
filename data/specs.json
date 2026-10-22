@@ -1,0 +1,2167 @@
+{
+ "generated": "2026-10-22",
+ "source": "Wikipedie (CC BY-SA 4.0)",
+ "items": {
+  "leopard2": {
+   "label": "Leopard 2 (obecně, údaje dle verze uvedené ve Wikipedii)",
+   "title": "Leopard 2",
+   "url": "https://en.wikipedia.org/wiki/Leopard_2",
+   "cs_url": "https://cs.wikipedia.org/wiki/Leopard_2",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Main battle tank"
+    ],
+    [
+     "Původ",
+     "West Germany"
+    ],
+    [
+     "Konstruktér",
+     "KraussMaffei"
+    ],
+    [
+     "Vývoj",
+     "1970s"
+    ],
+    [
+     "Výroba",
+     "1979–present"
+    ],
+    [
+     "Vyrobeno",
+     "3,600"
+    ],
+    [
+     "Osádka",
+     "4"
+    ],
+    [
+     "Délka",
+     "2A4: 9.97 m (gun forward) 2A6: 10.97 m"
+    ],
+    [
+     "Šířka",
+     "2A4: 3.7 m 2A6: 3.75 m"
+    ],
+    [
+     "Výška",
+     "2A4: 2.8 m 2A6: 3 m"
+    ],
+    [
+     "Pancéřování",
+     "2A6: 3rd generation composite; including high-hardness steel, tungsten and plastic filler with ceramic component."
+    ],
+    [
+     "Hlavní výzbroj",
+     "1 × Rh-120 L/44 120 mm or Rh-120 L/55 120 mm Rheinmetall Rh-120 (42 rounds)"
+    ],
+    [
+     "Sekundární výzbroj",
+     "2 × 7.62 mm MG3A1 or 2 × 7.62 mm FN MAG (4,750 rounds)"
+    ],
+    [
+     "Motor",
+     "MTU MB 873 Ka-501 liquid-cooled V12 twin-turbo diesel engine"
+    ],
+    [
+     "Výkon",
+     "1100 kW at 2,600 rpm"
+    ],
+    [
+     "Měrný výkon",
+     "2A6: 17.8 kW/t 2A7V: 16.6 kW/t"
+    ],
+    [
+     "Podvozek",
+     "Torsion bar suspension"
+    ],
+    [
+     "Rychlost",
+     "70 kph"
+    ]
+   ]
+  },
+  "t72cz": {
+   "label": "T-72M4CZ",
+   "title": "T-72M4CZ",
+   "url": "https://en.wikipedia.org/wiki/T-72M4CZ",
+   "cs_url": "https://cs.wikipedia.org/wiki/T-72M4CZ",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Main battle tank"
+    ],
+    [
+     "Původ",
+     "Czech Republic"
+    ],
+    [
+     "Konstruktér",
+     "Nimda group"
+    ],
+    [
+     "Výroba",
+     "2003-2006"
+    ],
+    [
+     "Vyrobeno",
+     "27 T-72M4 CZ3 T-72M4 CZ-W3 VT-72M4 CZ"
+    ],
+    [
+     "Osádka",
+     "3 (commander, driver and gunner)"
+    ],
+    [
+     "Hmotnost",
+     "48 tonnes"
+    ],
+    [
+     "Délka",
+     "7.9 m"
+    ],
+    [
+     "Šířka",
+     "3.6 m"
+    ],
+    [
+     "Výška",
+     "2.2 m"
+    ],
+    [
+     "Pancéřování",
+     "Composite armour 570 mm (22.4 in) front of the turret"
+    ],
+    [
+     "Hlavní výzbroj",
+     "125 mm 2A46M smoothbore tank gun"
+    ],
+    [
+     "Sekundární výzbroj",
+     "7.62 mm PKMT coaxial machine gun, 12.7 mm NSVT AA machine gun on commander's ring-mount"
+    ],
+    [
+     "Motor",
+     "diesel Perkins Condor CV 12 1000 TCA"
+    ],
+    [
+     "Výkon",
+     "1006 hp (746 kW)"
+    ],
+    [
+     "Měrný výkon",
+     "21 hp/tonne (15,5 kW/tonne)"
+    ],
+    [
+     "Podvozek",
+     "torsion bar"
+    ],
+    [
+     "Rychlost",
+     "64 km/h"
+    ]
+   ]
+  },
+  "cv90": {
+   "label": "Combat Vehicle 90",
+   "title": "Combat Vehicle 90",
+   "url": "https://en.wikipedia.org/wiki/Combat_Vehicle_90",
+   "cs_url": "https://cs.wikipedia.org/wiki/CV90",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Infantry fighting vehicle"
+    ],
+    [
+     "Původ",
+     "Sweden"
+    ],
+    [
+     "Výrobce",
+     "BAE Systems AB"
+    ],
+    [
+     "Konstruktér",
+     "Hägglunds/Bofors"
+    ],
+    [
+     "Vývoj",
+     "late 1980s"
+    ],
+    [
+     "Výroba",
+     "1993–present"
+    ],
+    [
+     "Vyrobeno",
+     "1,400"
+    ],
+    [
+     "Osádka",
+     "3 (commander, gunner, driver); 7–8 troopers"
+    ],
+    [
+     "Hmotnost",
+     "23–38 tonnes (Mk 0 to Mk IV)"
+    ],
+    [
+     "Délka",
+     "6.8 m"
+    ],
+    [
+     "Šířka",
+     "3.2 m"
+    ],
+    [
+     "Výška",
+     "2.8 m"
+    ],
+    [
+     "Pancéřování",
+     "front against 30 mm APFSDS, all-round protection against 14.5 mm AP rounds, integration of Iron Fist APS"
+    ],
+    [
+     "Podvozek",
+     "torsion bar or active suspension"
+    ],
+    [
+     "Rychlost",
+     "70 km/h"
+    ],
+    [
+     "Dojezd",
+     "offroad 320 km, onroad 900 km"
+    ]
+   ]
+  },
+  "bmp2": {
+   "label": "BVP-2 (BMP-2)",
+   "title": "BMP-2",
+   "url": "https://en.wikipedia.org/wiki/BMP-2",
+   "cs_url": "https://cs.wikipedia.org/wiki/BMP-2",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Infantry fighting vehicle"
+    ],
+    [
+     "Původ",
+     "Soviet Union"
+    ],
+    [
+     "Výrobce",
+     "Kurganmashzavod, Ordnance Factory Medak, ZTS Detva"
+    ],
+    [
+     "Výroba",
+     "1979–present"
+    ],
+    [
+     "Vyrobeno",
+     "20,000+ (USSR), 26,000–35,000 (licence-built variants included)"
+    ],
+    [
+     "Osádka",
+     "3 (+7 passengers)"
+    ],
+    [
+     "Hmotnost",
+     "14.3 t"
+    ],
+    [
+     "Délka",
+     "6.735 m"
+    ],
+    [
+     "Šířka",
+     "3.15 m"
+    ],
+    [
+     "Výška",
+     "2.45 m"
+    ],
+    [
+     "Pancéřování",
+     "33 mm (max)"
+    ],
+    [
+     "Hlavní výzbroj",
+     "30 mm 2A42 autocannon; 9M113 Konkurs ATGM"
+    ],
+    [
+     "Sekundární výzbroj",
+     "7.62 mm PKT machine gun"
+    ],
+    [
+     "Motor",
+     "diesel UTD-20/3"
+    ],
+    [
+     "Výkon",
+     "300 hp (225 kW)"
+    ],
+    [
+     "Měrný výkon",
+     "21 hp/tonne"
+    ],
+    [
+     "Podvozek",
+     "torsion bar"
+    ],
+    [
+     "Rychlost",
+     "65 km/h (road) 45 km/h (off-road) 7 km/h (water)"
+    ],
+    [
+     "Dojezd",
+     "600 km"
+    ]
+   ]
+  },
+  "pandur2": {
+   "label": "Pandur II (8×8)",
+   "title": "Pandur II (8×8)",
+   "url": "https://en.wikipedia.org/wiki/Pandur_II_%288%C3%978%29",
+   "cs_url": "https://cs.wikipedia.org/wiki/Pandur_II",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Armoured personnel carrier"
+    ],
+    [
+     "Původ",
+     "Austria"
+    ],
+    [
+     "Výrobce",
+     "Steyr-Daimler-Puch and; Czechoslovak Group (licensed production for Central and Eastern Europe + Asia)"
+    ],
+    [
+     "Výroba",
+     "2001–present"
+    ],
+    [
+     "Osádka",
+     "3 (APC version)"
+    ],
+    [
+     "Výsadek",
+     "11 (APC version)"
+    ],
+    [
+     "Hmotnost",
+     "17.3 t (with minimal protection) or 22 t (with additional protection) *turret not included; 20.1 t (amphibious limit)"
+    ],
+    [
+     "Délka",
+     "7350 mm"
+    ],
+    [
+     "Šířka",
+     "2670 mm"
+    ],
+    [
+     "Výška",
+     "2080 mm"
+    ],
+    [
+     "Motor",
+     "Cummins ISLe 450 HPCR, 8.9l; in-line 6 turbo-diesel engine"
+    ],
+    [
+     "Výkon",
+     "335 kW 1628 Nm"
+    ],
+    [
+     "Rychlost",
+     "(road); ≤ (water)"
+    ],
+    [
+     "Dojezd",
+     "Approx. 700 km"
+    ]
+   ]
+  },
+  "caesar": {
+   "label": "CAESAR self-propelled howitzer",
+   "title": "CAESAR self-propelled howitzer",
+   "url": "https://en.wikipedia.org/wiki/CAESAR_self-propelled_howitzer",
+   "cs_url": "https://cs.wikipedia.org/wiki/CAESAR",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Self-propelled cannon"
+    ],
+    [
+     "Původ",
+     "France"
+    ],
+    [
+     "Výrobce",
+     "KNDS France"
+    ],
+    [
+     "Vývoj",
+     "1992–1999"
+    ],
+    [
+     "Výroba",
+     "2004–present"
+    ],
+    [
+     "Osádka",
+     "5–6 (3, emergency)"
+    ],
+    [
+     "Hmotnost",
+     "*Mk1 (Sherpa 5 6×6): 17.7 t; Mk1 (Tatra 815-7 8×8): 28.7 to 30.2 t; Mk2 (6×6): < 26.7 t"
+    ],
+    [
+     "Délka",
+     "*Mk1 (Sherpa 5 6×6): 10 m; Mk1 (Tatra 817 8×8): 10 m; Mk2 (6×6): 10 m"
+    ],
+    [
+     "Šířka",
+     "*Mk1 (Sherpa 5 6×6): 2.55 m; Mk1 (Tatra 817 8×8): 2.8 m; Mk2 (6×6): 2.55 m"
+    ],
+    [
+     "Výška",
+     "*Mk1 (Sherpa 5 6×6): 3.7 m; Mk1 (Tatra 817 8×8): 3.1 m; Mk2 (6×6): 3.6 m"
+    ],
+    [
+     "Hlavní výzbroj",
+     "155 mm, L/52 calibre"
+    ],
+    [
+     "Sekundární výzbroj",
+     "None"
+    ],
+    [
+     "Motor",
+     "Diesel"
+    ],
+    [
+     "Rychlost",
+     "On-road: 100 km/hOff-road: 50 km/h"
+    ],
+    [
+     "Dojezd",
+     "600 km"
+    ],
+    [
+     "Dosah",
+     "*ERFB: 4.5 to 40 km; Rocket assisted shell: 55 km; Excalibur shell: 46 km"
+    ],
+    [
+     "Kadence",
+     "6 rounds per minute"
+    ]
+   ]
+  },
+  "kub": {
+   "label": "2K12 Kub",
+   "title": "2K12 Kub",
+   "url": "https://en.wikipedia.org/wiki/2K12_Kub",
+   "cs_url": "https://cs.wikipedia.org/wiki/2K12_Kub",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Tracked medium-range surface-to-air missile system"
+    ],
+    [
+     "Původ",
+     "Soviet Union"
+    ],
+    [
+     "Výrobce",
+     "Ulyanovsk Mechanical Plant (SURNs); ZiK (TELs)"
+    ],
+    [
+     "Konstruktér",
+     "NIIP/Vympel; MMZ (GM chassis)"
+    ],
+    [
+     "Vývoj",
+     "1958–1967"
+    ],
+    [
+     "Výroba",
+     "1968–1985"
+    ],
+    [
+     "Vyrobeno",
+     "500 launchers, 10,000 missiles"
+    ],
+    [
+     "Hlavní výzbroj",
+     "3 3M9M4(or variants) guided missiles"
+    ],
+    [
+     "Motor",
+     "Integral rocket motor/ramjet booster and sustainer motor"
+    ],
+    [
+     "Navádění",
+     "Command guidance with terminal semi-active radar homing (SARH)"
+    ]
+   ]
+  },
+  "rbs70": {
+   "label": "RBS 70",
+   "title": "RBS 70",
+   "url": "https://en.wikipedia.org/wiki/RBS_70",
+   "cs_url": "https://cs.wikipedia.org/wiki/Robotsystem_70",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Short-range Air Defense (SHORAD)Man-portable air-defence system (MANPADS)"
+    ],
+    [
+     "Původ",
+     "Sweden"
+    ],
+    [
+     "Výrobce",
+     "Bofors Defence (1980s–2000) Saab Bofors Dynamics (since 2000)"
+    ],
+    [
+     "Hmotnost",
+     "87 kg (stand + sight + missile)"
+    ],
+    [
+     "Délka",
+     "1.32 m"
+    ],
+    [
+     "Motor",
+     "Booster and sustainer with smokeless solid propellant"
+    ],
+    [
+     "Rychlost",
+     "Mach 1.6 (Mark 0/1) Mach 2 (5 km in 12 seconds) (Mark 2/BOLIDE)"
+    ],
+    [
+     "Dojezd",
+     "250 m – 9 km"
+    ],
+    [
+     "Navádění",
+     "Laser beam riding missile"
+    ]
+   ]
+  },
+  "gripen": {
+   "label": "Saab JAS 39 Gripen",
+   "title": "Saab JAS 39 Gripen",
+   "url": "https://en.wikipedia.org/wiki/Saab_JAS_39_Gripen",
+   "cs_url": "https://cs.wikipedia.org/wiki/Saab_JAS-39_Gripen",
+   "note": null,
+   "fields": [
+    [
+     "Výrobce",
+     "Saab AB"
+    ],
+    [
+     "Zavedení",
+     "9 June 1996"
+    ],
+    [
+     "První let",
+     "9 December 1988"
+    ],
+    [
+     "Vyrobeno",
+     "~300 (2023)"
+    ],
+    [
+     "Osádka",
+     "1 JAS 39C / 2 JAS 39D"
+    ],
+    [
+     "Délka (m)",
+     "14.9"
+    ],
+    [
+     "Rozpětí (m)",
+     "8.4"
+    ],
+    [
+     "Výška (m)",
+     "4.5"
+    ],
+    [
+     "Prázdná hmotnost (kg)",
+     "6800"
+    ],
+    [
+     "Max. vzletová hmotnost (kg)",
+     "14000"
+    ],
+    [
+     "Motor",
+     "Volvo RM12"
+    ],
+    [
+     "Tah s přídavným spalováním (kN)",
+     "80.5"
+    ],
+    [
+     "Tah (kN)",
+     "54"
+    ],
+    [
+     "Max. rychlost (Mach)",
+     "2 (2 Mach) at (50,000 ft); 1.2 Mach at sea level"
+    ],
+    [
+     "Bojový rádius (km)",
+     "800"
+    ],
+    [
+     "Přeletový dolet (km)",
+     "3200"
+    ],
+    [
+     "Dostup (m)",
+     "15,240"
+    ],
+    [
+     "Kanóny",
+     "1 × 27 mm Mauser BK-27 revolver cannon with 120 rounds (single-seat models only)"
+    ],
+    [
+     "Závěsníky",
+     "8 (two hardpoints under fuselage, two under each wing, and one on each wing tip, with one of these for FLIR/ECM/LD/Recon pod)"
+    ]
+   ]
+  },
+  "f35": {
+   "label": "Lockheed Martin F-35 Lightning II",
+   "title": "Lockheed Martin F-35 Lightning II",
+   "url": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II",
+   "cs_url": "https://cs.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II",
+   "note": null,
+   "fields": [
+    [
+     "Výrobce",
+     "Lockheed Martin"
+    ],
+    [
+     "Zavedení",
+     "F-35B: 31 July 2015 (USMC); F-35A: 2 August 2016 (USAF); F-35C: 28 February 2019 (USN)"
+    ],
+    [
+     "První let",
+     "(F-35A)"
+    ],
+    [
+     "Vyrobeno",
+     "1,375+"
+    ],
+    [
+     "Osádka",
+     "1"
+    ],
+    [
+     "Motor",
+     "Pratt & Whitney F135-PW-100"
+    ],
+    [
+     "Tah s přídavným spalováním (kN)",
+     "191"
+    ],
+    [
+     "Tah (kN)",
+     "125"
+    ],
+    [
+     "Max. rychlost (Mach)",
+     "1.6 at high altitude (1,228 mph / 1,976 km/h); Mach 1.06, 700 knots at sea level"
+    ],
+    [
+     "Kanóny",
+     "1 × 25 mm GAU-22/A 4-barrel rotary cannon, 180 rounds"
+    ],
+    [
+     "Závěsníky",
+     "4 × internal stations, 6 × external stations on wings"
+    ]
+   ]
+  },
+  "l159": {
+   "label": "Aero L-159 ALCA",
+   "title": "Aero L-159 ALCA",
+   "url": "https://en.wikipedia.org/wiki/Aero_L-159_ALCA",
+   "cs_url": "https://cs.wikipedia.org/wiki/Aero_L-159_Alca",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "*L-159A: Light combat aircraft; L-159T: Advanced jet trainer and light combat aircraft"
+    ],
+    [
+     "Výrobce",
+     "Aero Vodochody"
+    ],
+    [
+     "Zavedení",
+     "April 2000"
+    ],
+    [
+     "První let",
+     "4 August 1997"
+    ],
+    [
+     "Vyrobeno",
+     "L-159A: 72"
+    ],
+    [
+     "Osádka",
+     "1 (L-159A), 2 (L-159B, L-159T1/T2)"
+    ],
+    [
+     "Délka (m)",
+     "12.72"
+    ],
+    [
+     "Rozpětí (m)",
+     "9.54"
+    ],
+    [
+     "Výška (m)",
+     "4.87"
+    ],
+    [
+     "Prázdná hmotnost (kg)",
+     "4,350"
+    ],
+    [
+     "Max. vzletová hmotnost (kg)",
+     "8,000"
+    ],
+    [
+     "Motor",
+     "Honeywell/ITEC F124-GA-100"
+    ],
+    [
+     "Tah (kN)",
+     "28.2"
+    ],
+    [
+     "Max. rychlost (km/h)",
+     "936"
+    ],
+    [
+     "Dolet (km)",
+     "1,570"
+    ],
+    [
+     "Bojový rádius (km)",
+     "565"
+    ],
+    [
+     "Dostup (m)",
+     "13,200"
+    ],
+    [
+     "Kanóny",
+     "up to 3 × ZVI PL-20 Plamen 2×20 mm gun pods"
+    ],
+    [
+     "Závěsníky",
+     "7 in total: 3 under each wing (outer pylons only for AAMs) and 1 under the fuselage holding up to 2,340 kg (5,159 lb)"
+    ],
+    [
+     "Rakety",
+     "LAU-5002 rocket pods (each with 6 × CRV7 70 mm rockets); LAU-5003 rocket pods (each with 19 × CRV7 70 mm rockets)"
+    ],
+    [
+     "Řízené střely",
+     "Air-to-air missiles:; AIM-9L/M Sidewinder; AIM-120 AMRAAM (fitted for but not with); Air-to-ground missiles:; AGM-65 Maverick"
+    ]
+   ]
+  },
+  "c390": {
+   "label": "Embraer C-390 Millennium",
+   "title": "Embraer C-390 Millennium",
+   "url": "https://en.wikipedia.org/wiki/Embraer_C-390_Millennium",
+   "cs_url": "https://cs.wikipedia.org/wiki/Embraer_C-390_Millennium",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Military transport, aerial refuelling aircraft"
+    ],
+    [
+     "Výrobce",
+     "Embraer"
+    ],
+    [
+     "Zavedení",
+     "2019"
+    ],
+    [
+     "První let",
+     "3 February 2015"
+    ],
+    [
+     "Vyrobeno",
+     "16 (including 3 prototypes)"
+    ],
+    [
+     "Osádka",
+     "3 (two pilots, one loadmaster)"
+    ],
+    [
+     "Kapacita",
+     "26,000 kg / 80 troops / 74 stretchers and 8 attendants / 66 paratroopers / 7 463L master pallets / 6 463L master pallets and 36 troops"
+    ],
+    [
+     "Délka (m)",
+     "35.2"
+    ],
+    [
+     "Rozpětí (m)",
+     "35.05"
+    ],
+    [
+     "Výška (m)",
+     "11.84"
+    ],
+    [
+     "Prázdná hmotnost (kg)",
+     "35000"
+    ],
+    [
+     "Motor",
+     "IAE V2500-E5"
+    ],
+    [
+     "Max. rychlost (km/h)",
+     "988"
+    ],
+    [
+     "Závěsníky",
+     "3"
+    ]
+   ]
+  },
+  "c295": {
+   "label": "Airbus C295",
+   "title": "Airbus C295",
+   "url": "https://en.wikipedia.org/wiki/Airbus_C295",
+   "cs_url": "https://cs.wikipedia.org/wiki/Airbus_C295",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Military transport aircraft"
+    ],
+    [
+     "Výrobce",
+     "CASAEADSAirbus Defence and SpaceIndonesian AerospaceTata Advanced Systems"
+    ],
+    [
+     "Zavedení",
+     "2001"
+    ],
+    [
+     "První let",
+     "28 November 1997"
+    ],
+    [
+     "Vyrobeno",
+     "241"
+    ]
+   ]
+  },
+  "venom": {
+   "label": "Bell UH-1Y Venom",
+   "title": "Bell UH-1Y Venom",
+   "url": "https://en.wikipedia.org/wiki/Bell_UH-1Y_Venom",
+   "cs_url": "https://cs.wikipedia.org/wiki/Bell_UH-1Y_Venom",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Utility helicopter"
+    ],
+    [
+     "Výrobce",
+     "Bell Textron"
+    ],
+    [
+     "Zavedení",
+     "8 August 2008"
+    ],
+    [
+     "První let",
+     "20 December 2001"
+    ],
+    [
+     "Vyrobeno",
+     "160"
+    ],
+    [
+     "Osádka",
+     "2 (pilot and co-pilot)"
+    ],
+    [
+     "Kapacita",
+     "6660 lb / up to ten crashworthy passenger seats / six litters / equivalent cargo"
+    ],
+    [
+     "Motor",
+     "General Electric T700-GE-401C"
+    ]
+   ]
+  },
+  "viper": {
+   "label": "Bell AH-1Z Viper",
+   "title": "Bell AH-1Z Viper",
+   "url": "https://en.wikipedia.org/wiki/Bell_AH-1Z_Viper",
+   "cs_url": "https://cs.wikipedia.org/wiki/Bell_AH-1Z_Viper",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Attack helicopter"
+    ],
+    [
+     "Výrobce",
+     "Bell Helicopter"
+    ],
+    [
+     "Zavedení",
+     "30 September 2010"
+    ],
+    [
+     "První let",
+     "8 December 2000"
+    ],
+    [
+     "Vyrobeno",
+     "195"
+    ],
+    [
+     "Osádka",
+     "Two: pilot and co-pilot/gunner (CPG)"
+    ],
+    [
+     "Motor",
+     "General Electric T700-GE-401C"
+    ],
+    [
+     "Kanóny",
+     "1 × 20 mm (0.787 in) M197 three-barreled rotary cannon in the A/A49E-7 turret (750 round ammo capacity)"
+    ],
+    [
+     "Závěsníky",
+     "6 total pylon stations on stub wings"
+    ]
+   ]
+  },
+  "mi17": {
+   "label": "Mi-171Š (Mi-17)",
+   "title": "Mil Mi-17",
+   "url": "https://en.wikipedia.org/wiki/Mil_Mi-17",
+   "cs_url": "https://cs.wikipedia.org/wiki/Mil_Mi-17",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Utility, transport, armed capable helicopter"
+    ],
+    [
+     "Zavedení",
+     "1977 (Mi-8MT), 1981 (Mi-17)"
+    ],
+    [
+     "První let",
+     "1975"
+    ],
+    [
+     "Vyrobeno",
+     "Approx. 12,000 as of 2007"
+    ],
+    [
+     "Osádka",
+     "3 (pilot, copilot, engineer)"
+    ],
+    [
+     "Kapacita",
+     "24 troops / 12 stretchers / 4000 kg cargo internally / 5000 kg externally slung."
+    ],
+    [
+     "Délka (m)",
+     "18.465"
+    ],
+    [
+     "Výška (m)",
+     "5.65"
+    ],
+    [
+     "Prázdná hmotnost (kg)",
+     "7489"
+    ],
+    [
+     "Max. vzletová hmotnost (kg)",
+     "13000"
+    ],
+    [
+     "Motor",
+     "Klimov VK-2500PS-03"
+    ],
+    [
+     "Max. rychlost (km/h)",
+     "280"
+    ],
+    [
+     "Cestovní rychlost (km/h)",
+     "260"
+    ],
+    [
+     "Dolet (km)",
+     "800"
+    ],
+    [
+     "Dostup (m)",
+     "6000"
+    ]
+   ]
+  },
+  "w3": {
+   "label": "W-3A Sokol",
+   "title": "PZL W-3 Sokół",
+   "url": "https://en.wikipedia.org/wiki/PZL_W-3_Sok%C3%B3%C5%82",
+   "cs_url": "https://cs.wikipedia.org/wiki/PZL_W-3_Sok%C3%B3%C5%82",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Multipurpose utility helicopter"
+    ],
+    [
+     "Výrobce",
+     "PZL-Świdnik"
+    ],
+    [
+     "Zavedení",
+     "1987"
+    ],
+    [
+     "První let",
+     "16 November 1979"
+    ],
+    [
+     "Vyrobeno",
+     "149 (as of 2011)Lorencowicz, Wojciech. Pierwszy śmigłowiec Sokół w Ameryce Południowej (First Sokół helicopter in South America) in: Lotnictwo 2-3/2011, p. 30-32."
+    ],
+    [
+     "Osádka",
+     "2"
+    ],
+    [
+     "Kapacita",
+     "12 passengers or four stretcher cases and one attendant / 2100 kg payload"
+    ],
+    [
+     "Délka (m)",
+     "14.21"
+    ],
+    [
+     "Výška (m)",
+     "5.14"
+    ],
+    [
+     "Prázdná hmotnost (kg)",
+     "3850"
+    ],
+    [
+     "Max. vzletová hmotnost (kg)",
+     "6400"
+    ],
+    [
+     "Motor",
+     "Pratt & Whitney Rzeszów PZL-10B"
+    ],
+    [
+     "Výkon (kW)",
+     "671"
+    ],
+    [
+     "Cestovní rychlost (km/h)",
+     "238"
+    ],
+    [
+     "Dolet (km)",
+     "745"
+    ],
+    [
+     "Přeletový dolet (km)",
+     "1224"
+    ],
+    [
+     "Dostup (m)",
+     "4910"
+    ]
+   ]
+  },
+  "a319": {
+   "label": "Airbus A319",
+   "title": "Airbus A319",
+   "url": "https://en.wikipedia.org/wiki/Airbus_A319",
+   "cs_url": null,
+   "note": null,
+   "fields": [
+    [
+     "Výrobce",
+     "Airbus"
+    ],
+    [
+     "Zavedení",
+     "25 April 1996 with Swissair"
+    ],
+    [
+     "První let",
+     "25 August 1995"
+    ],
+    [
+     "Vyrobeno",
+     "1,516"
+    ]
+   ]
+  },
+  "bren2": {
+   "label": "CZ 805 BREN",
+   "title": "CZ 805 BREN",
+   "url": "https://en.wikipedia.org/wiki/CZ_805_BREN",
+   "cs_url": "https://cs.wikipedia.org/wiki/CZ_805_BREN",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Assault rifleCarbineBattle rifleDesignated marksman rifle"
+    ],
+    [
+     "Původ",
+     "Czech Republic"
+    ],
+    [
+     "Výrobce",
+     "Česká zbrojovka Uherský Brod"
+    ],
+    [
+     "Vývoj",
+     "2009"
+    ],
+    [
+     "Výroba",
+     "2009–present"
+    ],
+    [
+     "Hmotnost",
+     "3.6 kg3.15 kg (CZ 807)3.78 - 4.6 kg (CZ BREN 2 BR)"
+    ],
+    [
+     "Délka",
+     "CZ 805 BREN A1:; (buttstock extended); (buttstock folded); CZ 805 BREN A2:; (buttstock extended); (buttstock folded); CZ 807:"
+    ],
+    [
+     "Délka hlavně",
+     "360 mm (CZ 805 BREN A1)277 mm (CZ 805 BREN A2)408 mm (CZ 807)407 mm (CZ BREN 2 BR)457 mm (CZ BREN 2 DMR)"
+    ],
+    [
+     "Dosah",
+     "500 m (CZ 805 BREN A1)400 m (CZ 805 BREN A2)450 m CZ 807 in 5.56×45mm NATO350 m CZ 807 in 7.62×39mm600 m (CZ BREN 2 BR)800 m (CZ BREN 2 DMR)"
+    ],
+    [
+     "Náboj",
+     "5.56×45mm NATO.300 AAC Blackout7.62×39mm7.62×51mm NATO"
+    ],
+    [
+     "Princip",
+     "Gas-operated short-stroke piston, rotating bolt"
+    ],
+    [
+     "Kadence",
+     "760 (±100) rounds/min850 (±100) rounds/min (CZ BREN 2)800 (±100) rounds/min (CZ BREN 2 BR)"
+    ],
+    [
+     "Zásobování",
+     "30-round proprietary 5.56×45mm NATO detachable box magazine or STANAG magazines30-round proprietary 7.62×39mm detachable box magazine (CZ 807)25-round proprietary 7.62×51mm NATO detachable box magazine (CZ BREN 2 BR, CZ BREN 2 DMR)"
+    ],
+    [
+     "Mířidla",
+     "Picatinny rail for various optical sights and Picatinny attachable iron sights"
+    ]
+   ]
+  },
+  "bren805": {
+   "label": "CZ 805 BREN",
+   "title": "CZ 805 BREN",
+   "url": "https://en.wikipedia.org/wiki/CZ_805_BREN",
+   "cs_url": "https://cs.wikipedia.org/wiki/CZ_805_BREN",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Assault rifleCarbineBattle rifleDesignated marksman rifle"
+    ],
+    [
+     "Původ",
+     "Czech Republic"
+    ],
+    [
+     "Výrobce",
+     "Česká zbrojovka Uherský Brod"
+    ],
+    [
+     "Vývoj",
+     "2009"
+    ],
+    [
+     "Výroba",
+     "2009–present"
+    ],
+    [
+     "Hmotnost",
+     "3.6 kg3.15 kg (CZ 807)3.78 - 4.6 kg (CZ BREN 2 BR)"
+    ],
+    [
+     "Délka",
+     "CZ 805 BREN A1:; (buttstock extended); (buttstock folded); CZ 805 BREN A2:; (buttstock extended); (buttstock folded); CZ 807:"
+    ],
+    [
+     "Délka hlavně",
+     "360 mm (CZ 805 BREN A1)277 mm (CZ 805 BREN A2)408 mm (CZ 807)407 mm (CZ BREN 2 BR)457 mm (CZ BREN 2 DMR)"
+    ],
+    [
+     "Dosah",
+     "500 m (CZ 805 BREN A1)400 m (CZ 805 BREN A2)450 m CZ 807 in 5.56×45mm NATO350 m CZ 807 in 7.62×39mm600 m (CZ BREN 2 BR)800 m (CZ BREN 2 DMR)"
+    ],
+    [
+     "Náboj",
+     "5.56×45mm NATO.300 AAC Blackout7.62×39mm7.62×51mm NATO"
+    ],
+    [
+     "Princip",
+     "Gas-operated short-stroke piston, rotating bolt"
+    ],
+    [
+     "Kadence",
+     "760 (±100) rounds/min850 (±100) rounds/min (CZ BREN 2)800 (±100) rounds/min (CZ BREN 2 BR)"
+    ],
+    [
+     "Zásobování",
+     "30-round proprietary 5.56×45mm NATO detachable box magazine or STANAG magazines30-round proprietary 7.62×39mm detachable box magazine (CZ 807)25-round proprietary 7.62×51mm NATO detachable box magazine (CZ BREN 2 BR, CZ BREN 2 DMR)"
+    ],
+    [
+     "Mířidla",
+     "Picatinny rail for various optical sights and Picatinny attachable iron sights"
+    ]
+   ]
+  },
+  "p10": {
+   "label": "CZ P-10",
+   "title": "CZ P-10",
+   "url": "https://en.wikipedia.org/wiki/CZ_P-10",
+   "cs_url": "https://cs.wikipedia.org/wiki/CZ_P-10_C",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Semi-automatic pistol"
+    ],
+    [
+     "Původ",
+     "Czech Republic"
+    ],
+    [
+     "Výrobce",
+     "Česká zbrojovka Uherský Brod"
+    ],
+    [
+     "Vývoj",
+     "2014-2025"
+    ],
+    [
+     "Výroba",
+     "2017-present"
+    ],
+    [
+     "Hmotnost",
+     "740 g (P-10C)"
+    ],
+    [
+     "Délka",
+     "190 mm (P-10C)"
+    ],
+    [
+     "Délka hlavně",
+     "102 mm (P-10C)"
+    ],
+    [
+     "Šířka",
+     "32 mm"
+    ],
+    [
+     "Výška",
+     "132 mm (P-10C)"
+    ],
+    [
+     "Náboj",
+     "9x19mm.40 S&W.380 Auto"
+    ],
+    [
+     "Zásobování",
+     "12 rounds (.40 S&W) (P-10C) 15 rounds (9mm and .380) (P-10C)"
+    ],
+    [
+     "Mířidla",
+     "Metal Three-Dot"
+    ]
+   ]
+  },
+  "evo3": {
+   "label": "CZ Scorpion Evo 3",
+   "title": "CZ Scorpion Evo 3",
+   "url": "https://en.wikipedia.org/wiki/CZ_Scorpion_Evo_3",
+   "cs_url": "https://cs.wikipedia.org/wiki/CZ_Scorpion_EVO_3",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Submachine gun"
+    ],
+    [
+     "Původ",
+     "Czech Republic"
+    ],
+    [
+     "Výrobce",
+     "Česká zbrojovka Uherský Brod"
+    ],
+    [
+     "Výroba",
+     "2009–present"
+    ],
+    [
+     "Hmotnost",
+     "2.61 kg with no magazine"
+    ],
+    [
+     "Délka",
+     "675 mm (stock unfolded), 420 mm (stock folded)"
+    ],
+    [
+     "Délka hlavně",
+     "196 mm pistol,412 mm carbine/rifle"
+    ],
+    [
+     "Šířka",
+     "60 mm"
+    ],
+    [
+     "Výška",
+     "215 mm with sights folded and no magazine"
+    ],
+    [
+     "Náboj",
+     "9×19mm Parabellum; .22 long rifle"
+    ],
+    [
+     "Princip",
+     "Blowback"
+    ],
+    [
+     "Kadence",
+     "1150 rounds/min"
+    ],
+    [
+     "Úsťová rychlost",
+     "370 m/s"
+    ],
+    [
+     "Zásobování",
+     "10-, 20-, 30-, 35-round detachable box magazine, 50-round drum magazine, 100-round Beta C-Mag."
+    ],
+    [
+     "Mířidla",
+     "Picatinny Rails for optics, backup iron sights"
+    ]
+   ]
+  },
+  "minimi": {
+   "label": "FN Minimi",
+   "title": "FN Minimi",
+   "url": "https://en.wikipedia.org/wiki/FN_Minimi",
+   "cs_url": "https://cs.wikipedia.org/wiki/FN_MINIMI",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Light machine gunSquad automatic weapon"
+    ],
+    [
+     "Původ",
+     "Belgium"
+    ],
+    [
+     "Výrobce",
+     "FN HerstalFN USAThales AustraliaBerettaBofors Carl GustavCaracal InternationalPindadSumitomo Heavy Industries"
+    ],
+    [
+     "Konstruktér",
+     "Ernest Vervier"
+    ],
+    [
+     "Vývoj",
+     "Early 1970s"
+    ],
+    [
+     "Výroba",
+     "1977–present"
+    ],
+    [
+     "Hmotnost",
+     "7.1 kg"
+    ],
+    [
+     "Délka",
+     "1040 mm"
+    ],
+    [
+     "Délka hlavně",
+     "465 mm"
+    ],
+    [
+     "Šířka",
+     "110 mm"
+    ],
+    [
+     "Dosah",
+     "300 - sight adjustments"
+    ],
+    [
+     "Náboj",
+     "5.56×45mm NATO / 7.62×51mm NATO"
+    ],
+    [
+     "Princip",
+     "Gas-actuated, open bolt"
+    ],
+    [
+     "Kadence",
+     "700–1,150 rounds/min"
+    ],
+    [
+     "Úsťová rychlost",
+     "925 m/s"
+    ],
+    [
+     "Zásobování",
+     "100 or 200-round belt contained in a 100-round or 200-round soft pouch, or 200-round box or 30-round M16-type STANAG magazine to 60-round STANAG casket magazine"
+    ],
+    [
+     "Mířidla",
+     "Rear aperture, front post"
+    ]
+   ]
+  },
+  "m2": {
+   "label": "M2 Browning",
+   "title": "M2 Browning",
+   "url": "https://en.wikipedia.org/wiki/M2_Browning",
+   "cs_url": "https://cs.wikipedia.org/wiki/M2_Browning",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Heavy machine gun"
+    ],
+    [
+     "Původ",
+     "United States"
+    ],
+    [
+     "Výrobce",
+     "Active; Fabrique Nationale; General Dynamics; Ohio Ordnance Works Inc.; U.S. Ordnance; Former; Manroy Engineering; Sabre Defence Industries; Colt's Patent Firearms Manufacturing Company; High Standard Firearms; Savage Arms Corporation; Buff"
+    ],
+    [
+     "Konstruktér",
+     "John Browning"
+    ],
+    [
+     "Vývoj",
+     "1918"
+    ],
+    [
+     "Výroba",
+     "1921–present (M2HB/M2A1)"
+    ],
+    [
+     "Vyrobeno",
+     "3 million"
+    ],
+    [
+     "Hmotnost",
+     "(AN/M2); with tripod and traverse and elevation mechanism (T&E); 24 lb barrel weight"
+    ],
+    [
+     "Délka",
+     "1654 mm 1429 mm (AN/M2)"
+    ],
+    [
+     "Délka hlavně",
+     "1143 mm 910 mm (AN/M2)"
+    ],
+    [
+     "Dosah",
+     "1800 m"
+    ],
+    [
+     "Náboj",
+     ".50 BMG (12.7×99mm NATO)"
+    ],
+    [
+     "Princip",
+     "Short recoil-operated"
+    ],
+    [
+     "Kadence",
+     "450–600 rounds/min (M2HB); 750–850 rounds/min (AN/M2); 1,200–1,300 rounds/min (AN/M3). In 1939, H. Arnold sought a cyclic rate greater that 1000 rounds/minute. The T25E3 gun was standardized as M3, and 2,400 had been made by September 1945."
+    ],
+    [
+     "Úsťová rychlost",
+     "2910 ft/s (M33 ball), 78 ft from muzzle 3050 ft/s in manual"
+    ],
+    [
+     "Max. dostřel",
+     "7400 m"
+    ],
+    [
+     "Zásobování",
+     "Belt-fed (M2 or M9 links)"
+    ]
+   ]
+  },
+  "cg": {
+   "label": "Carl Gustaf",
+   "title": "Carl Gustaf 8.4 cm recoilless rifle",
+   "url": "https://en.wikipedia.org/wiki/Carl_Gustaf_8.4_cm_recoilless_rifle",
+   "cs_url": "https://cs.wikipedia.org/wiki/Panc%C3%A9%C5%99ovka_Carl_Gustav",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Shoulder-fired recoilless rifle(crew-served multi-role infantry support gun)"
+    ],
+    [
+     "Původ",
+     "Sweden"
+    ],
+    [
+     "Výrobce",
+     "Saab Bofors Dynamics (formerly Carl Gustafs Stads Gevärsfaktori), Howa (license)."
+    ],
+    [
+     "Konstruktér",
+     "Hugo Abramson, Sigfrid Akselson and Harald Jentzen"
+    ],
+    [
+     "Vývoj",
+     "* M1: 1946; M2: 1964; M3: 1986; M4: 2014"
+    ],
+    [
+     "Osádka",
+     "Two (gunner and loader), but may be used by a single operator at a reduced rate of fire."
+    ],
+    [
+     "Hmotnost",
+     "M2: 14.2 kghttp://www.sadefensejournal.com/wp/?p=3977 Small Arms Defense Journal. \"THE NEW CARL-GUSTAF M4: LIGHTER–BETTER–SMARTER.\" 2 June 2017M3: 10 kg M4/M3A1: 6.6 kg"
+    ],
+    [
+     "Délka",
+     "(M2) 1130 mm; (M4/M3A1) 950 mm (37 in)"
+    ],
+    [
+     "Dosah",
+     "* 350 to against moving vehiclesUser Handbook for the Gun, 84mm, INF, ATK, L14A1, Director of Army Equipment Policy. 1968. page 2; 500 m against stationary vehicles; 1000 m using smoke and high explosive rounds; 2500 m using rocket-boosted "
+    ],
+    [
+     "Náboj",
+     "84 × 245 mm R RCL"
+    ],
+    [
+     "Ráže",
+     "84 mm"
+    ],
+    [
+     "Princip",
+     "Recoilless, single-shot, breechloader, laterally, percussion fired"
+    ],
+    [
+     "Kadence",
+     "6 rounds per minute"
+    ],
+    [
+     "Úsťová rychlost",
+     "230–255 m/s"
+    ],
+    [
+     "Zásobování",
+     "Hinged breech"
+    ],
+    [
+     "Mířidla",
+     "Open (iron) sights; optical 3× laser rangefinder; image intensification system"
+    ]
+   ]
+  },
+  "rpg7": {
+   "label": "RPG-7",
+   "title": "RPG-7",
+   "url": "https://en.wikipedia.org/wiki/RPG-7",
+   "cs_url": "https://cs.wikipedia.org/wiki/RPG-7",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Hand-held rocket launcher"
+    ],
+    [
+     "Původ",
+     "Soviet Union"
+    ],
+    [
+     "Výrobce",
+     "Bazalt and Degtyarev plant (Russia)"
+    ],
+    [
+     "Konstruktér",
+     "Bazalt"
+    ],
+    [
+     "Vývoj",
+     "1958"
+    ],
+    [
+     "Výroba",
+     "1958–present"
+    ],
+    [
+     "Vyrobeno",
+     "9,000,000+"
+    ],
+    [
+     "Délka",
+     "950 mm"
+    ],
+    [
+     "Dosah",
+     "330 m (PG-7V)"
+    ],
+    [
+     "Náboj",
+     "85 mm"
+    ],
+    [
+     "Ráže",
+     "40 mm"
+    ],
+    [
+     "Max. dostřel",
+     "700 m (OG-7V) (self detonates at c. 920 m)"
+    ]
+   ]
+  },
+  "spike": {
+   "label": "Spike (missile)",
+   "title": "Spike (missile)",
+   "url": "https://en.wikipedia.org/wiki/Spike_%28missile%29",
+   "cs_url": "https://cs.wikipedia.org/wiki/Spike_%28st%C5%99ela%29",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Anti-tank guided missile"
+    ],
+    [
+     "Původ",
+     "Israel"
+    ],
+    [
+     "Výrobce",
+     "Rafael Advanced Defense Systems & EUROSPIKE GmbH; Rafael Advanced Defense Systems; Diehl Defence; Rheinmetall Defence Electronics; ST Engineering (Singapore)"
+    ],
+    [
+     "Konstruktér",
+     "Rafael Advanced Defense Systems"
+    ],
+    [
+     "Vývoj",
+     "Late 1970s (Spike NLOS)"
+    ],
+    [
+     "Výroba",
+     "Spike NLOS : Since early 1980s; Spike MR/LR/ER : Since 1997; Spike SR : Since 2012"
+    ],
+    [
+     "Vyrobeno",
+     "40,000 (2023)(7,000 fired)"
+    ],
+    [
+     "Hmotnost",
+     "*Spike ER from Helicopter :; Missile Round:34 kg; Launcher:55 kg; Launcher + 4 Missiles:187 kg; Spike MR/LR from Tripod :; Missile Round:14 kg; Command & Launch Unit:5 kg; Tripod:2.8 kg; Battery:1 kg; Thermal Sight:4 kg; Spike SR :; Missile"
+    ],
+    [
+     "Délka",
+     "Spike MR/LR :; Spike ER :"
+    ],
+    [
+     "Motor",
+     "Solid-propellant rocket"
+    ],
+    [
+     "Dosah",
+     "*Spike SR :50 -; Spike MR :200 -; Spike LR :200 -; Spike LR 2 :200 -; Spike ER :400 -; Spike ER 2 :400 -; Spike NLOS :Land: 600 -Air: 600 -"
+    ],
+    [
+     "Kadence",
+     "Ready to launch: 30 s; Time to reload: 15 s"
+    ],
+    [
+     "Mířidla",
+     "10× Optical sight"
+    ],
+    [
+     "Navádění",
+     "*Target Acquisition:; Infrared seeker; CCD; Missile Guidance:; IIR homing; CCD; CCD+IIR"
+    ]
+   ]
+  },
+  "awm": {
+   "label": "Accuracy International AWM",
+   "title": "Accuracy International AWM",
+   "url": "https://en.wikipedia.org/wiki/Accuracy_International_AWM",
+   "cs_url": "https://cs.wikipedia.org/wiki/Accuracy_International_AWM",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Bolt action sniper rifle"
+    ],
+    [
+     "Původ",
+     "United Kingdom"
+    ],
+    [
+     "Výrobce",
+     "Accuracy International"
+    ],
+    [
+     "Výroba",
+     "1996–2013"
+    ],
+    [
+     "Délka",
+     "1270 mm"
+    ],
+    [
+     "Délka hlavně",
+     "686 mm"
+    ],
+    [
+     "Dosah",
+     "1100 m (.300 Winchester Magnum)1500 m (.338 Lapua Magnum)"
+    ],
+    [
+     "Náboj",
+     ".300 Winchester Magnum.338 Lapua Magnum"
+    ],
+    [
+     "Úsťová rychlost",
+     "936 m/s"
+    ],
+    [
+     "Zásobování",
+     "5-round detachable box magazine"
+    ],
+    [
+     "Mířidla",
+     "Detachable aperture type iron sightsDay or night optics"
+    ]
+   ]
+  },
+  "trg": {
+   "label": "Sako TRG",
+   "title": "Sako TRG",
+   "url": "https://en.wikipedia.org/wiki/Sako_TRG",
+   "cs_url": "https://cs.wikipedia.org/wiki/Sako_TRG",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Sniper rifle"
+    ],
+    [
+     "Původ",
+     "Finland"
+    ],
+    [
+     "Výrobce",
+     "Sako"
+    ],
+    [
+     "Vývoj",
+     "1989 (TRG-21 / TRG-41)1999 (TRG-22 / TRG-42)2011 (TRG M10)2024 (TRG-62 A1)"
+    ],
+    [
+     "Výroba",
+     "1989–1999 (TRG-21 / TRG-41)1999–present (TRG-22 / TRG-42)2011–present (TRG M10)2024–present (TRG-62 A1)"
+    ],
+    [
+     "Hmotnost",
+     "4.7 kg empty (TRG-22 black)4.9 kg empty (TRG-22 green/tan/dark earth)5.2 kg empty (TRG-22 fold. stock 510 mm barrel)5.4 kg empty (TRG-22 fold. stock 660 mm barrel)5.1 kg empty (TRG-42 black)5.3 kg empty (TRG-42 green/tan/dark earth)5.8 kg e"
+    ],
+    [
+     "Délka",
+     "1000 mm (TRG-22 510 mm barrel)1150 mm (TRG-22)1020 mm (TRG-42 folded stock 510 mm barrel)1200 mm (TRG-42)"
+    ],
+    [
+     "Délka hlavně",
+     "510 mm (TRG-22 and TRG-42 folded stock)660 mm (TRG-22)690 mm (TRG-42))762 mm (TRG-62 A1)"
+    ],
+    [
+     "Dosah",
+     "800 m (TRG-22 .308 Winchester)1100 m (TRG-42 .300 Winchester Magnum)1500 m (TRG-42 .338 Lapua Magnum)2000 m (TRG-62 A1 .375 CheyTac)"
+    ],
+    [
+     "Náboj",
+     ".260 Remington(TRG-22)6.5mm Creedmoor(TRG-22 A1).308 Winchester (7.62×51mm NATO)(TRG-21, TRG-22).300 Winchester Magnum(TRG-41, TRG-42).338 Lapua Magnum(TRG-41, TRG-42) .375 CheyTac (9.5×77mm) (TRG-62 A1)"
+    ],
+    [
+     "Princip",
+     "Bolt-action"
+    ],
+    [
+     "Zásobování",
+     "5-round detachable box magazine (.338 Lapua Magnum)7-round detachable box magazine (.300 Winchester Magnum and .375 CheyTac)10-round detachable box magazine (.308 Winchester)"
+    ],
+    [
+     "Mířidla",
+     "Aperture rear (with flip-up open tritium night/combat sight); day or night optics"
+    ]
+   ]
+  },
+  "m82": {
+   "label": "Barrett M82",
+   "title": "Barrett M82",
+   "url": "https://en.wikipedia.org/wiki/Barrett_M82",
+   "cs_url": "https://cs.wikipedia.org/wiki/Barrett_M82",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Anti-materiel rifle"
+    ],
+    [
+     "Původ",
+     "United States"
+    ],
+    [
+     "Výrobce",
+     "Barrett Firearms Manufacturing"
+    ],
+    [
+     "Konstruktér",
+     "Ronnie Barrett"
+    ],
+    [
+     "Vývoj",
+     "1982"
+    ],
+    [
+     "Výroba",
+     "1982–present"
+    ],
+    [
+     "Hmotnost",
+     "29.7 lbs to 32.7 lbs"
+    ],
+    [
+     "Délka",
+     "48 in to 57 in"
+    ],
+    [
+     "Délka hlavně",
+     "20 in to 29 in"
+    ],
+    [
+     "Dosah",
+     "1800 m"
+    ],
+    [
+     "Náboj",
+     "*.50 BMG; .416 Barrett"
+    ],
+    [
+     "Princip",
+     "Recoil-operatedrotating bolt"
+    ],
+    [
+     "Úsťová rychlost",
+     "853 m/s"
+    ],
+    [
+     "Zásobování",
+     "5- or 10-round detachable box magazine"
+    ],
+    [
+     "Mířidla",
+     "Iron sights or various optics on MIL-STD-1913 rail"
+    ]
+   ]
+  },
+  "vz58": {
+   "label": "Vz. 58",
+   "title": "Vz. 58",
+   "url": "https://en.wikipedia.org/wiki/Vz._58",
+   "cs_url": "https://cs.wikipedia.org/wiki/Samopal_vzor_58",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Assault rifle"
+    ],
+    [
+     "Původ",
+     "Czechoslovakia"
+    ],
+    [
+     "Výrobce",
+     "Česká zbrojovka Uherský Brod"
+    ],
+    [
+     "Konstruktér",
+     "Jiří Čermák"
+    ],
+    [
+     "Vývoj",
+     "1956–1958"
+    ],
+    [
+     "Výroba",
+     "1959–1982"
+    ],
+    [
+     "Vyrobeno",
+     "Approx. 920,000"
+    ],
+    [
+     "Hmotnost",
+     "2.91 kg"
+    ],
+    [
+     "Délka",
+     "vz. 58 P:; vz. 58 V stock extended / stock folded; with bayonet fixed"
+    ],
+    [
+     "Délka hlavně",
+     "390 mm"
+    ],
+    [
+     "Šířka",
+     "stock extended; stock folded"
+    ],
+    [
+     "Výška",
+     "255 mm"
+    ],
+    [
+     "Dosah",
+     "100–800 m sight adjustments"
+    ],
+    [
+     "Náboj",
+     "7.62×39mm"
+    ],
+    [
+     "Princip",
+     "Gas-operated, hinged locking piece assisted breechblock"
+    ],
+    [
+     "Kadence",
+     "800 rounds/min"
+    ],
+    [
+     "Úsťová rychlost",
+     "705 m/sMuzzle energy: 1988 J"
+    ],
+    [
+     "Max. dostřel",
+     "2,800 m"
+    ],
+    [
+     "Zásobování",
+     "Staggered 30-round detachable box magazine, weight 0.19 kg unloaded"
+    ],
+    [
+     "Mířidla",
+     "Open-type iron sights with sliding rear tangent and shrouded front post353 mm sight radius"
+    ]
+   ]
+  },
+  "l39ng": {
+   "label": "L-39 Skyfox",
+   "title": "Aero L-39 Skyfox",
+   "url": "https://en.wikipedia.org/wiki/Aero_L-39_Skyfox",
+   "cs_url": "https://cs.wikipedia.org/wiki/Aero_L-39_Skyfox",
+   "note": null,
+   "fields": [
+    [
+     "Výrobce",
+     "Aero Vodochody"
+    ],
+    [
+     "První let",
+     "14 September 2015 (L-39CW)22 December 2018 (L-39NG)"
+    ],
+    [
+     "Vyrobeno",
+     "~ 24 (2025)"
+    ],
+    [
+     "Osádka",
+     "2"
+    ],
+    [
+     "Délka (m)",
+     "11.83"
+    ],
+    [
+     "Rozpětí (m)",
+     "9.37"
+    ],
+    [
+     "Prázdná hmotnost (kg)",
+     "3,100"
+    ],
+    [
+     "Max. vzletová hmotnost (kg)",
+     "5,800"
+    ],
+    [
+     "Motor",
+     "Williams International FJ44-4M"
+    ],
+    [
+     "Tah (kN)",
+     "16.89"
+    ],
+    [
+     "Max. rychlost (km/h)",
+     "900"
+    ],
+    [
+     "Dolet (km)",
+     "2,590"
+    ],
+    [
+     "Dostup (m)",
+     "11,500"
+    ]
+   ]
+  },
+  "leopard2a8": {
+   "label": "Leopard 2",
+   "title": "Leopard 2",
+   "url": "https://en.wikipedia.org/wiki/Leopard_2",
+   "cs_url": "https://cs.wikipedia.org/wiki/Leopard_2",
+   "note": null,
+   "fields": [
+    [
+     "Typ",
+     "Main battle tank"
+    ],
+    [
+     "Původ",
+     "West Germany"
+    ],
+    [
+     "Konstruktér",
+     "KraussMaffei"
+    ],
+    [
+     "Vývoj",
+     "1970s"
+    ],
+    [
+     "Výroba",
+     "1979–present"
+    ],
+    [
+     "Vyrobeno",
+     "3,600"
+    ],
+    [
+     "Osádka",
+     "4"
+    ],
+    [
+     "Délka",
+     "2A4: 9.97 m (gun forward) 2A6: 10.97 m"
+    ],
+    [
+     "Šířka",
+     "2A4: 3.7 m 2A6: 3.75 m"
+    ],
+    [
+     "Výška",
+     "2A4: 2.8 m 2A6: 3 m"
+    ],
+    [
+     "Pancéřování",
+     "2A6: 3rd generation composite; including high-hardness steel, tungsten and plastic filler with ceramic component."
+    ],
+    [
+     "Hlavní výzbroj",
+     "1 × Rh-120 L/44 120 mm or Rh-120 L/55 120 mm Rheinmetall Rh-120 (42 rounds)"
+    ],
+    [
+     "Sekundární výzbroj",
+     "2 × 7.62 mm MG3A1 or 2 × 7.62 mm FN MAG (4,750 rounds)"
+    ],
+    [
+     "Motor",
+     "MTU MB 873 Ka-501 liquid-cooled V12 twin-turbo diesel engine"
+    ],
+    [
+     "Výkon",
+     "1100 kW at 2,600 rpm"
+    ],
+    [
+     "Měrný výkon",
+     "2A6: 17.8 kW/t 2A7V: 16.6 kW/t"
+    ],
+    [
+     "Podvozek",
+     "Torsion bar suspension"
+    ],
+    [
+     "Rychlost",
+     "70 kph"
+    ]
+   ]
+  }
+ }
+}
