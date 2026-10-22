@@ -281,3 +281,12 @@ nav.tabs a[aria-current="page"]{opacity:1;border-bottom-color:var(--friendly)}
 .org-col details .onode b{font-size:13px}
 .org-ext{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;align-items:center;border-top:1px dashed var(--line);padding-top:14px}
 .org-ext .onode{border-style:dashed;border-color:var(--olive)}
+/* rozcestník záložek v úvodu hlavní stránky */
+.hero-grid{grid-template-columns:1fr}
+.hero-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:18px}
+.hero-tabs a{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border:1px solid var(--line);border-left:4px solid var(--friendly);background:var(--paper);color:var(--fg);text-decoration:none}
+.hero-tabs a b{font:700 19px/1.1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.hero-tabs a b::after{content:" →";color:var(--friendly)}
+.hero-tabs a span{font-size:13px;color:var(--muted)}
+.hero-tabs a:hover{border-color:var(--friendly)}
+nav.tabs a{font-size:14px;padding:14px 16px}
