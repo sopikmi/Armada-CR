@@ -193,7 +193,7 @@ ACR.ORG = {
   branches: [
     {n: "Velitelství pozemních sil", t: "Olomouc", z: "z_vps", s: "hq", c: [
       {n: "4. brigáda rychlého nasazení", t: "Žatec", z: "z_4brn", s: "inf", c: [{n: "41. mechanizovaný prapor", t: "Žatec"}, {n: "42. mechanizovaný prapor", t: "Tábor"}, {n: "44. lehký motorizovaný prapor", t: "Jindřichův Hradec"}]},
-      {n: "7. mechanizovaná brigáda", t: "Hranice", z: "z_7mb", s: "arm", c: [{n: "71. mechanizovaný prapor", t: "Hranice"}, {n: "72. mechanizovaný prapor", t: "Přáslavice"}, {n: "73. tankový prapor", t: "Přáslavice"}, {n: "74. mechanizovaný prapor", t: "Bučovice"}]},
+      {n: "7. mechanizovaná brigáda", t: "Hranice", z: "z_7mb", s: "arm", c: [{n: "71. mechanizovaný prapor", t: "Hranice"}, {n: "72. mechanizovaný prapor", t: "Přáslavice"}, {n: "73. tankový prapor", t: "Přáslavice", z: "z_73", s: "tank"}, {n: "74. mechanizovaný prapor", t: "Bučovice"}]},
       {n: "43. výsadkový pluk", t: "Chrudim", z: "z_43", s: "inf"},
       {n: "13. dělostřelecký pluk", t: "Jince", z: "z_13", s: "art", c: [{n: "131. dělostřelecký oddíl", t: "Jince"}, {n: "132. dělostřelecký oddíl", t: "Jince"}]},
       {n: "15. ženijní pluk", t: "Bechyně", z: "z_15", s: "eng", c: [{n: "151. ženijní prapor", t: "Bechyně"}, {n: "152. ženijní prapor", t: "Bechyně"}, {n: "153. ženijní prapor", t: "Olomouc"}]},
@@ -217,7 +217,7 @@ ACR.ORG = {
       {n: "91. skupina informačního boje", t: "Olomouc", s: "cyber"},
       {n: "92. skupina kybernetického boje", t: "Brno", s: "cyber"}
     ]},
-    {n: "Ředitelství speciálních sil MO", t: "Praha", z: null, s: "sof", c: [
+    {n: "Ředitelství speciálních sil MO", t: "Praha", z: "z_rss", s: "sof", c: [
       {n: "601. skupina speciálních sil", t: "Prostějov", z: "z_601", s: "sof"},
       {n: "Centrum podpory speciálních sil", t: "Olomouc", s: "sof"}
     ]},

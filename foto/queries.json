@@ -371,6 +371,169 @@
    "files": [
     "Česká Zbrojovka, Uherský Brod, okres Uherské Hradiště.jpg"
    ]
+  },
+  {
+   "key": "z_vps",
+   "group": "Znaky",
+   "label": "Znak Pozemních sil AČR",
+   "files": [
+    "Emblem of Czech Land Forces.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_vzs",
+   "group": "Znaky",
+   "label": "Znak Vzdušných sil AČR",
+   "files": [
+    "Emblem of Czech Air Force.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_4brn",
+   "group": "Znaky",
+   "label": "Znak 4. brigády rychlého nasazení",
+   "files": [
+    "Znak 4. brigády rychlého nasazení.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_43",
+   "group": "Znaky",
+   "label": "Znak 43. výsadkového pluku",
+   "files": [
+    "Znak 43. výsadkového pluku.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_13",
+   "group": "Znaky",
+   "label": "Znak 13. dělostřeleckého pluku",
+   "files": [
+    "13. dělostřelecký pluk.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_31",
+   "group": "Znaky",
+   "label": "Znak 31. pluku RCHBO",
+   "files": [
+    "Znak 31. pluk radiační, chemické a biologické ochrany.svg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_601",
+   "group": "Znaky",
+   "label": "Znak 601. skupiny speciálních sil",
+   "files": [
+    "601 skupina speciálních sil.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_rss",
+   "group": "Znaky",
+   "label": "Znak Ředitelství speciálních sil",
+   "files": [
+    "Znak Ředitelství speciálních sil.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_73",
+   "group": "Znaky",
+   "label": "Znak 73. tankového praporu",
+   "files": [
+    "Znak 73. tankového praporu.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_vp",
+   "group": "Znaky",
+   "label": "Znak Vojenské policie",
+   "files": [
+    "Vojenská policie CoA 2022.png"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_ters",
+   "group": "Znaky",
+   "label": "Znak Velitelství teritoriálních sil",
+   "files": [
+    "VelitelstviTeritorialnichSil.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "z_kys",
+   "group": "Znaky",
+   "label": "Znak Velitelství kybernetických sil a informačních operací",
+   "files": [
+    "Znak Velitelství kybernetických sil a informačních operací.jpg"
+   ],
+   "width": 300,
+   "nodedupe": true
+  },
+  {
+   "key": "m_vhu",
+   "group": "Muzea",
+   "label": "Armádní muzeum Žižkov",
+   "files": [
+    "Armádní muzeum v Praze na Žižkově.jpg"
+   ]
+  },
+  {
+   "key": "m_kbely",
+   "group": "Muzea",
+   "label": "Letecké muzeum Kbely",
+   "files": [
+    "Letecké muzeum Kbely (212).jpg",
+    "Letecké muzeum Kbely (38).jpg"
+   ]
+  },
+  {
+   "key": "m_lesany",
+   "group": "Muzea",
+   "label": "Vojenské technické muzeum Lešany",
+   "files": [
+    "Lesany military museum 4107.JPG",
+    "Lešany - vojenské muzeum, Tankový den 2024, ukázky, Hetzer, obr01.jpg"
+   ]
+  },
+  {
+   "key": "m_krypta",
+   "group": "Muzea",
+   "label": "Národní památník hrdinů heydrichiády",
+   "files": [
+    "Národní památník hrdinů heydrichiády, 1.jpeg",
+    "Krypta, Národní památník hrdinů heydrichiády.jpg"
+   ]
+  },
+  {
+   "key": "m_vitkov",
+   "group": "Muzea",
+   "label": "Národní památník na Vítkově",
+   "files": [
+    "Národní památník na Vítkově (CZ) - Народни споменик на Виткову (SR) 17.jpg"
+   ]
   }
  ]
 }
