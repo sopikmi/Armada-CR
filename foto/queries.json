@@ -165,8 +165,7 @@
    "group": "Vrtulníky",
    "label": "AH-1Z Viper",
    "files": [
-    "Bell AH-1Z Viper CzAF 0487 at NATO Days 2023.jpg",
-    "Bell AH-1Z Viper CzAF 0487 flying at NATO Days 2023.jpg"
+    "Bell AH-1Z Viper CzAF 0487 at NATO Days 2023.jpg"
    ]
   },
   {
@@ -185,16 +184,6 @@
    "files": [
     "Czech Air Force PZL W-3A Sokół 0713 Royal International Air Tattoo 2025 04.jpg"
    ]
-  },
-  {
-   "key": "bren",
-   "group": "Ruční zbraně",
-   "label": "CZ BREN",
-   "files": [
-    "A Czech soldier provides cover while fellow soldiers conduct attack training during exercise Combined Resolve 2013 at the 7th Army Joint Multinational Training Command's Hohenfels Training Area in Hohenfels 131115-A-BS310-189.jpg",
-    "A Czech soldier provides cover for fellow troops during exercise Combined Resolve Nov. 11, 2013, at the Joint Multinational Readiness Center in Hohenfels, Germany 131111-A-WB953-977.jpg"
-   ],
-   "note": "Vojáci AČR na cvičení Combined Resolve, Hohenfels 2013."
   },
   {
    "key": "hradni",
@@ -220,7 +209,6 @@
    "group": "Útvary",
    "label": "Vojáci AČR na cvičení",
    "files": [
-    "Czech soldiers run to a rally point after exiting U.S. Army UH-60 Black Hawk helicopters during an air insertion exercise mission at the Joint Multinational Readiness Center in Hohenfels, Germany, Nov. 11, 2013 131111-A-WB953-922.jpg",
     "Task Force Pegasus Begins POWERFUL WORD 2024 Multinational Exercise in Czech Republic (8679785).jpg"
    ]
   },
@@ -232,6 +220,157 @@
     "NATO Days Ostrava 2021 - para.jpg"
    ],
    "note": "Výsadkáři s vlajkou ČR, Dny NATO Ostrava 2021."
+  },
+  {
+   "key": "w_bren2",
+   "group": "Pěchotní výzbroj",
+   "label": "CZ BREN 2 (PPS a BR)",
+   "files": [
+    "CZ BREN 2 DMR IDET 2023.jpg"
+   ],
+   "note": "Přesná puška CZ BREN 2 PPS (vpředu) a CZ BREN 2 BR, veletrh IDET 2023."
+  },
+  {
+   "key": "w_805a1",
+   "group": "Pěchotní výzbroj",
+   "label": "CZ 805 BREN A1",
+   "files": [
+    "A Czech soldier provides cover for fellow troops during exercise Combined Resolve Nov. 11, 2013, at the Joint Multinational Readiness Center in Hohenfels, Germany 131111-A-WB953-977.jpg",
+    "Czech Soldiers of the 74th Light Motorized Battalion, 7th Mechanized Brigade.jpg"
+   ],
+   "note": "Vojáci AČR s puškami CZ 805 BREN A1 na cvičeních (2013)."
+  },
+  {
+   "key": "w_805g1",
+   "group": "Pěchotní výzbroj",
+   "label": "Granátomet CZ 805 G1",
+   "files": [
+    "CZ 805 G1.jpg"
+   ]
+  },
+  {
+   "key": "w_p10",
+   "group": "Pěchotní výzbroj",
+   "label": "Pistole CZ P-10 C",
+   "files": [
+    "CZ P-10 C right.jpg"
+   ]
+  },
+  {
+   "key": "w_evo",
+   "group": "Pěchotní výzbroj",
+   "label": "Samopal CZ Scorpion EVO 3 A1",
+   "files": [
+    "Scorpion EVO 3 A1 left.jpg"
+   ]
+  },
+  {
+   "key": "w_minimi",
+   "group": "Pěchotní výzbroj",
+   "label": "Kulomet FN Minimi",
+   "files": [
+    "Saber Junction (4804615).jpg"
+   ],
+   "note": "Voják AČR na cvičení Saber Junction 18."
+  },
+  {
+   "key": "w_sniper",
+   "group": "Pěchotní výzbroj",
+   "label": "Odstřelovači AČR",
+   "files": [
+    "Czech Sniper (8052013).jpg",
+    "A Czech sniper packs up his gear after (5598656).jpg"
+   ],
+   "note": "Odstřelovač 4. brigády rychlého nasazení."
+  },
+  {
+   "key": "m_afg",
+   "group": "Zahraniční mise",
+   "label": "Afghánistán 2002–2021",
+   "files": [
+    "Czech soldiers assigned to Provincial Reconstruction Team Logar patrol a valley in Tang-e-Waghjan.jpg",
+    "Czech BVP2 Infantry Combat Vehicle in Afghanistan.JPG",
+    "Czech soldiers train Afghan military police DVIDS233422.jpg"
+   ],
+   "note": "Hlídka PRT Lógar (2010), BVP-2 na základně v Lógaru (2010), výcvik afghánské policie."
+  },
+  {
+   "key": "m_lat",
+   "group": "Zahraniční mise",
+   "label": "Lotyšsko – eFP",
+   "files": [
+    "Baltic Warrior 2023 (7795660).jpg"
+   ],
+   "note": "Čeští vojáci na soutěži Baltic Warrior 2023, Ādaži."
+  },
+  {
+   "key": "m_svk",
+   "group": "Zahraniční mise",
+   "label": "Slovensko – Lešť",
+   "files": [
+    "Slovak Shield 22 (7226135).jpg"
+   ],
+   "note": "Zahájení cvičení Slovak Shield 2022, Lešť (vojáci USA, ČR, Maďarska a Slovenska)."
+  },
+  {
+   "key": "m_iraq",
+   "group": "Zahraniční mise",
+   "label": "Irák – poradní mise",
+   "files": [
+    "Coalition Forces test their mettle for a Dutch Qualification Badge (9415391).jpg"
+   ],
+   "note": "Český poradce u iráckého společného operačního velení."
+  },
+  {
+   "key": "i_skyfox",
+   "group": "Zbrojní průmysl",
+   "label": "Aero L-39NG / Skyfox",
+   "files": [
+    "L-39NG 0475.jpg"
+   ],
+   "note": "První předsériový L-39NG, Dny NATO."
+  },
+  {
+   "key": "i_dana",
+   "group": "Zbrojní průmysl",
+   "label": "Excalibur Army – DANA M2 a MORANA",
+   "files": [
+    "Excalibur Army DANA M2 (2).jpg",
+    "MORANA 155mm SPGH.jpg"
+   ]
+  },
+  {
+   "key": "i_tatra",
+   "group": "Zbrojní průmysl",
+   "label": "Tatra Force 8×8",
+   "files": [
+    "Lešany - vojenské muzeum, Tankový den 2024, ukázky, Tatra Force 8x8 valník, obr02 (cropped).jpg"
+   ]
+  },
+  {
+   "key": "i_era",
+   "group": "Zbrojní průmysl",
+   "label": "ERA – pasivní systém VERA-NG",
+   "files": [
+    "VERA-NG IDET 2017.jpg"
+   ]
+  },
+  {
+   "key": "i_pandurevo",
+   "group": "Zbrojní průmysl",
+   "label": "Pandur EVO (CSG)",
+   "files": [
+    "Pandur Evo 3.jpg"
+   ],
+   "note": "Veletrh IDET 2025."
+  },
+  {
+   "key": "i_cz",
+   "group": "Zbrojní průmysl",
+   "label": "Česká zbrojovka, Uherský Brod",
+   "files": [
+    "Česká Zbrojovka, Uherský Brod, okres Uherské Hradiště.jpg"
+   ]
   }
  ]
 }
