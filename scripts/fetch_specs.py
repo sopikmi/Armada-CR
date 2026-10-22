@@ -61,28 +61,61 @@ def api(params):
             time.sleep(3 * (attempt + 1))
 
 
-def clean(node):
-    txt = mw.parse(str(node))
-    for t in txt.filter_templates(recursive=False):
+TR = [("–present", "–dosud"), ("-present", "–dosud"), (" present", " dosud"), ("Czech Republic", "Česko"), ("Czechoslovakia", "Československo"),
+      ("Soviet Union", "SSSR"), ("United States", "USA"), ("United Kingdom", "Spojené království"), ("West Germany", "Západní Německo"),
+      ("Germany", "Německo"), ("Sweden", "Švédsko"), ("Austria", "Rakousko"), ("France", "Francie"), ("Israel", "Izrael"), ("Belgium", "Belgie"),
+      ("Finland", "Finsko"), ("Brazil", "Brazílie"), ("Poland", "Polsko"), ("Spain", "Španělsko"), ("Russia", "Rusko"),
+      ("Main battle tank", "hlavní bojový tank"), ("Infantry fighting vehicle", "bojové vozidlo pěchoty"), ("Armoured personnel carrier", "obrněný transportér"),
+      ("Assault rifle", "útočná puška"), ("Submachine gun", "samopal"), ("Semi-automatic pistol", "samonabíjecí pistole"), ("Heavy machine gun", "těžký kulomet"),
+      ("Light machine gun", "lehký kulomet"), ("Sniper rifle", "odstřelovací puška"), ("Anti-materiel rifle", "protimateriálová puška"),
+      ("Anti-tank guided missile", "protitanková řízená střela"), ("Utility helicopter", "víceúčelový vrtulník"), ("Attack helicopter", "bitevní vrtulník"),
+      ("Military transport aircraft", "vojenský transportní letoun"), ("Light combat aircraft", "lehký bojový letoun"), ("Multirole combat aircraft", "víceúčelový bojový letoun"),
+      ("Self-propelled howitzer", "samohybná houfnice"), ("Self-propelled cannon", "samohybné dělo"), ("rounds/min", "ran/min")]
+
+
+def _flat(code):
+    """Nahradí šablony textem (od nejvnitřnějších), odstraní reference."""
+    for t in reversed(code.filter_templates(recursive=True)):
         name = str(t.name).strip().lower()
-        if name in ("convert", "cvt"):
-            try:
+        try:
+            if name in ("convert", "cvt"):
                 v = str(t.get(1).value).strip()
-                u = str(t.get(2).value).strip()
-                txt.replace(t, f"{v} {u}")
+                u = str(t.get(2).value).strip() if t.has(2) else ""
+                if u in ("-", "to", "and", "–") and t.has(3):
+                    v = f"{v}–{str(t.get(3).value).strip()}"
+                    u = str(t.get(4).value).strip() if t.has(4) else ""
+                code.replace(t, f"{v} {u}".strip())
+            elif name in ("ubl", "unbulleted list", "plainlist", "flatlist", "hlist", "bulleted list", "ublist", "plain list", "flat list"):
+                items = [mw.parse(str(p.value)).strip_code().strip() for p in t.params if not p.showkey]
+                code.replace(t, "; ".join(i for i in items if i))
+            elif name.startswith("efn") or name.startswith("ref") or name in ("sfn", "citation needed", "cn", "dead link", "when", "clarify"):
+                code.remove(t)
+            elif name in ("nowrap", "small", "nobr", "abbr", "lang"):
+                code.replace(t, str(t.get(1).value) if t.has(1) else "")
+            else:
+                code.replace(t, " ".join(str(p.value).strip() for p in t.params if not p.showkey))
+        except (ValueError, IndexError):
+            try:
+                code.remove(t)
             except ValueError:
-                txt.remove(t)
-        elif name in ("ubl", "unbulleted list", "plainlist", "flatlist", "hlist"):
-            items = [mw.parse(str(p.value)).strip_code().strip() for p in t.params if not p.showkey]
-            txt.replace(t, "; ".join(i for i in items if i))
-        elif name.startswith("efn") or name in ("sfn", "refn", "citation needed", "cn"):
-            txt.remove(t)
+                pass
+    return code
+
+
+def clean(node):
+    raw = str(node)
+    raw = re.sub(r"<ref[^>]*?/>|<ref.*?</ref>", "", raw, flags=re.S)
+    raw = re.sub(r"<br\s*/?>", "; ", raw, flags=re.I)
+    txt = _flat(mw.parse(raw))
     s = txt.strip_code(normalize=True, collapse=True)
-    s = re.sub(r"<ref[^>]*?/>|<ref.*?</ref>", "", s, flags=re.S)
     s = re.sub(r"\[\d+\]", "", s)
     s = re.sub(r"\s*\n\s*\*?\s*", "; ", s)
-    s = re.sub(r"\s{2,}", " ", s).strip(" ;,")
-    return s[:240]
+    s = re.sub(r"(;\s*){2,}", "; ", s)
+    s = re.sub(r"\(\s*\)", "", s)
+    s = re.sub(r"\s{2,}", " ", s).strip(" ;,:")
+    for a, b in TR:
+        s = s.replace(a, b)
+    return s[:260]
 
 
 def extract(wikitext):
