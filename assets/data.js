@@ -4,7 +4,7 @@
  */
 window.ACR = {};
 
-ACR.UPDATED = "8. 10. 2026";
+ACR.UPDATED = "22. 10. 2026";
 
 ACR.SOURCES = {
   mo_pocty: ["MO ČR – odpověď na žádost o informace: počty vojáků (11/2025, PDF)", "https://statnisluzba.mo.gov.cz/sites/statnisluzba/files/2025-11/Po%C4%8Dty%20voj%C3%A1k%C5%AF.pdf"],
@@ -37,23 +37,48 @@ ACR.SOURCES = {
   zakon245: ["Zákon 245/2000 Sb. o státních svátcích a významných dnech", "https://www.zakonyprolidi.cz/cs/2000-245"],
   bahna26: ["VePozS: Bahna 2026", "https://vepozs.mo.gov.cz/node/569"],
   ct_natodays25: ["ČT24 (21. 9. 2025): Dny NATO v Mošnově", "https://ct24.ceskatelevize.cz/clanek/domaci/v-mosnove-pokracuji-dny-nato-365261"],
+  ir_nabor26: ["iROZHLAS (7. 9. 2026): Zůna hlásil 3 000 nových vojáků, armáda přijala méně", "https://www.irozhlas.cz/zpravy-domov/zuna-hlasil-tri-tisice-novych-vojaku-sama-armada-jich-ale-prijala-mene-cisty_2609070500_hrk"],
+  ed_rozp27: ["Ekonomický deník (21. 10. 2026): rozpočet obrany 2027 – 190 miliard", "https://ekonomickydenik.cz/rozpocet-obrana-2027-zuna-190-miliard/"],
+  ed_kvacr: ["Ekonomický deník (20. 5. 2026): Babiš není spokojen s vizí armády do 2040", "https://ekonomickydenik.cz/babis-neni-spokojen-s-vizi-armady-do-roku-2040/"],
+  ctk_kvacr: ["ČTK (20. 10. 2026): Bezpečnostní rada projednala armádní koncepci", "https://www.ceskenoviny.cz/zpravy/bezpecnostni-rada-projednala-armadni-koncepci-pristi-tyden-ji-probere-vlada/2889964"],
+  dn_haratek: ["Deník N (15. 10. 2026): Odvolejte šéfa kybernetických sil, nařídil Zůna", "https://denikn.cz/2221268/odvolejte-sefa-kybernetickych-sil-naridil-zuna-podle-sefa-armady-ma-general-duveru-a-zustava/"],
+  mo_fff26: ["MO ČR (21. 10. 2026): Praha hostí Future Forces Forum", "https://mocr.mo.gov.cz/informacni-servis/zpravodajstvi/praha-hosti-future-forces-forum--obranne-technologie-predstavuje-vice-nez-530-vystavovatelu-266518/"],
+  hn_akvizice: ["Hospodářské noviny (13. 10. 2026): Akviziční dekáda mění výzbroj české armády", "https://archiv.hn.cz/c1-67944150-akvizicni-dekada-meni-vyzbroj-ceske-armady-po-stihackach-a-obrnencich-chce-transportery"],
+  blesk_airbus: ["Blesk / ČTK (21. 10. 2026): armáda chystá čtyři nová vládní letadla", "https://www.blesk.cz/clanek/zpravy-politika/850991/nova-letadla-pro-vladu-i-prezidenta-potvrdil-zuna-airbusy-starnou-a-zlobi.html"],
+  ns_mrap: ["Newstream (1. 10. 2026): obrana odpískala nákup obrněnců za téměř 25 miliard", "https://www.newstream.cz/politika/obrana-odpiskala-nakup-obrnencu-za-temer-25-miliard-tendr-se-pripravoval-osm-let"],
+  ctk_venom: ["ČTK (8/2026): vrtulníky Venom a Viper se připraví k obnově provozu", "https://www.ceskenoviny.cz/zpravy/armada-vrtulniky-venom-a-viper-se-postupne-pripravi-k-obnove-provozu/2863223"],
+  vepozs_2a4: ["VePozS (10. 7. 2026): Přáslavický prapor má kompletní flotilu Leopard 2A4", "https://vepozs.mo.gov.cz/en/news/historic-milestone-czech-defence-praslavice-battalion-full-leopard-2a4-fleet"],
+  az_info26: ["AZ INFO 1/2026 – zpravodaj aktivní zálohy (PDF)", "https://aktivnizaloha.mo.gov.cz/sites/aktivnizaloha/files/2026-04/AZ%20INFO_1_2026.pdf"],
+  az_jednotky: ["Aktivní záloha – přehled jednotek AZ", "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"],
+  ct_caesar26: ["ČT24 (10. 5. 2026): čekání armády na děla Caesar se prodlužuje", "https://ct24.ceskatelevize.cz/clanek/domaci/cekani-armady-na-moderni-dela-caesar-se-prodluzuje-373271"],
+  vepozs_zbrane: ["Velitelství pozemních sil: pěchotní zbraně", "https://vepozs.mo.gov.cz/technika-vyzbroj-pozemnich-sil-acr/pechotni-zbrane"],
+  az_pechota: ["Armádní zpravodaj (18. 7. 2023): pěchotní zbraně AČR", "https://armadnizpravodaj.cz/vyzbroj/pechotni-zbrane-acr/"],
+  czd_minimi: ["CZ Defence (14. 10. 2020): armáda nakupuje kulomety Minimi", "https://www.czdefence.cz/clanek/armada-nakupuje-proverene-kulomety-minimi"],
+  demagog_4brn: ["Demagog.cz: 4. brn spolupracuje s německou tankovou divizí, podléhá českému velení", "https://demagog.cz/diskuze/ceska-brigada-rychleho-nasazeni-spolupracuje-s-nemeckou-tankovou-divizi-stale-ale-podleha-ceskemu-veleni"],
+  mo_7mb: ["MO ČR (12/2025): 7. mb certifikována pro operace vysoké intenzity (MND-NE)", "https://acr.mo.gov.cz/en/ministry-of-defence/newsroom/news/7mechbde-passed-nato-tests--certified-to-control-high-intensity-operations--261764/"],
+  eu_dca: ["EuroZprávy (16. 8. 2023): ratifikace obranné dohody s USA dokončena", "https://eurozpravy.cz/domaci/cesko-ma-platnou-obrannou-smlouvu-s-usa-proces-ratifikace-zavrsil-fiala.ejtyxa8i"],
+  az_mandat: ["Armádní zpravodaj (3. 10. 2026): Česko sníží počet vojáků na východním křídle o 400", "https://armadnizpravodaj.cz/zpravodajstvi/cesko-snizi-pocet-vojaku-na-vychodnim-kridle-nato-o-400/"],
+  czd_mandat: ["CZ Defence (16. 9. 2026): Výbor pro obranu řešil mandát zahraničních operací", "https://www.czdefence.cz/clanek/vybor-pro-obranu-resil-zahranicni-operace-akvizice-i-dalsi-smerovani-armady-klicovy-mandat-osobne-obhajoval-ministr-zuna"],
+  e24_mi: ["Echo24 (28. 5. 2026): muniční iniciativa letos dodala půl milionu kusů", "https://m.echo24.cz/a/HPTeT/zpravy-svet-municni-inicativa-poslala-pul-milionu-kusu-munice-macinka"],
+  respekt_mi: ["Respekt / ČTK (16. 2. 2026): iniciativa dodala 4,4 milionu kusů munice", "https://www.respekt.cz/informacni-servis/prezident-municni-iniciativa-od-sveho-vzniku-dodala-na-ukrajinu-4-4-milionu-kusu-munice-2026-02-16-12-27"],
   wiki: ["Wikipedie: Armáda České republiky", "https://cs.wikipedia.org/wiki/Arm%C3%A1da_%C4%8Cesk%C3%A9_republiky"]
 };
 
 /* ---------- PERSONÁL ---------- */
 ACR.KPI = [
-  {lbl: "Vojáci z povolání – celý rezort", v: "29 153", d: "včetně Vojenského zpravodajství, Vojenské policie a Hradní stráže", date: "k 1. 10. 2025", src: "mo_pocty"},
-  {lbl: "Vojáci pod náčelníkem GŠ", v: "24 712", d: "samotná armáda; za rok 2025 +1 050 (nastoupilo 1 895, odešlo 1 107)", date: "k 15. 12. 2025", src: "mo_rekrut"},
-  {lbl: "Aktivní záloha", v: "4 849", d: "naplněnost asi 50 % požadavku; cíl 10 000 do roku 2030", date: "k 1. 10. 2025", src: "mo_az", bar: [4849, 10000]},
-  {lbl: "Cíl 2030", v: "30 000", d: "vojáků z povolání + 10 000 záloh; obranné plánování NATO ukazuje potřebu přes 37 000", date: "koncepce", src: "sz_cisla", bar: [29153, 30000]},
-  {lbl: "Nábor 2025", v: "2 035", d: "povoláno vojáků z povolání (+381 studentů Univerzity obrany); přihlášek 7 223", date: "k 12/2025", src: "mo_rekrut"},
-  {lbl: "Nábor 2026 – cíl", v: "2 250", d: "nových vojáků; v březnu splněno na 65,5 %", date: "03/2026", src: "sz_nabor26"},
-  {lbl: "Rozpočet MO 2026", v: "154,8 mld Kč", d: "kapitola MO ≈ 1,73 % HDP; vláda vykazuje 184 mld Kč (2,06 % HDP) včetně jiných resortů", date: "2026", src: "sz_drony"},
-  {lbl: "Investice 2026", v: "56 mld Kč", d: "dvě akvizice přesunuty na 2027; klíčové roky modernizace 2027–2029", date: "2026", src: "ed_rozpocet"}
+  {lbl: "Vojáci z povolání – celý rezort", v: "30 097", d: "včetně Vojenského zpravodajství, Vojenské policie a Hradní stráže (údaj premiéra)", date: "k 1. 8. 2026", src: "ir_nabor26"},
+  {lbl: "Vojáci v Armádě ČR", v: "26 407", d: "bez MO, VZ a dalších; v roce 2026 nastoupilo 2 394, odešlo 519, čistě +1 875", date: "k 20. 8. 2026", src: "ir_nabor26"},
+  {lbl: "Cíl KVAČR 2040", v: "32 000", d: "vojáků z povolání podle nové koncepce; vláda ji má projednat v týdnu od 26. 10. 2026", date: "koncepce 2040", src: "ed_kvacr", bar: [26407, 32000]},
+  {lbl: "Aktivní záloha", v: "4 849", d: "poslední zveřejněný stav; cíl 10 000 do roku 2030, v roce 2026 cílová naplněnost 75 % u operačních útvarů a 44 % u teritoriálních sil", date: "k 1. 10. 2025", src: "mo_az", bar: [4849, 10000]},
+  {lbl: "Nábor 2027 – plán", v: "3 550", d: "nových vojáků z povolání; rozpočet počítá s 33 044 místy vojáků", date: "návrh rozpočtu 2027", src: "ed_rozp27"},
+  {lbl: "Rozpočet MO 2027 – návrh", v: "190,9 mld Kč", d: "o 36,1 mld Kč (23 %) více než 2026; obranné výdaje celkem 2,04 % HDP", date: "návrh 10/2026", src: "ed_rozp27"},
+  {lbl: "Investice 2027 – návrh", v: "81,8 mld Kč", d: "programové financování, 42,9 % výdajů MO; v roce 2026 56 mld Kč", date: "návrh 10/2026", src: "ed_rozp27"},
+  {lbl: "Rozpočet MO 2026", v: "154,8 mld Kč", d: "kapitola MO ≈ 1,73 % HDP; vláda vykazuje 184 mld Kč (2,06 % HDP) včetně jiných resortů", date: "2026", src: "sz_drony"}
 ];
 
 /* vojáci z povolání v rezortu MO, stav k 31. 12. (2025 k 1. 10.) – zdroj mo_pocty */
-ACR.VZP_TREND = [[2019, 25899], [2020, 26621], [2021, 26928], [2022, 27197], [2023, 27826], [2024, 28285], [2025, 29153]];
+ACR.VZP_TREND = [[2019, 25899], [2020, 26621], [2021, 26928], [2022, 27197], [2023, 27826], [2024, 28285], [2025, 29153], [2026, 30097]];
+/* 2026 = k 1. 8. 2026 podle premiéra (ir_nabor26) */
 
 /* aktivní záloha podle podřízenosti, k 1. 10. 2025 – zdroj mo_az */
 ACR.AZ = [
@@ -89,14 +114,14 @@ ACR.AREAS = [
  * [systém, kategorie, počet, původ, stav(ok|ord|old), poznámka, zdroj, foto key]
  */
 ACR.TECH = [
-  ["Leopard 2A4", "Tanky", "42", "Německo / Švýcarsko", "ok", "28 jako kompenzace od Německa za tanky pro Ukrajinu, 14 dokoupeno (ex-švýcarské, ~161 mil. €); kompletní do konce 2026. K tomu 2 vyprošťovací Büffel 3.", "fo_2a4", "leopard2a4"],
+  ["Leopard 2A4", "Tanky", "42", "Německo / Švýcarsko", "ok", "28 jako kompenzace od Německa za tanky pro Ukrajinu, 14 dokoupeno (ex-švýcarské, ~161 mil. €). Flotila kompletní od 7/2026 u 73. tpr Přáslavice; k tomu 2 vyprošťovací Büffel 3.", "vepozs_2a4", "leopard2a4"],
   ["Leopard 2A8", "Tanky", "44", "Německo", "ord", "Smlouva 11. 9. 2025, 34,25 mld Kč s DPH. První tanky 2028, dodávky do 2031. S opcemi a podpůrnými verzemi 61–77 kusů.", "ctk_2a8", "leopard2a8"],
   ["T-72M4CZ", "Tanky", "~30", "ČR (modernizace)", "old", "Dosluhují, provozuschopná je jen část.", "e15_vyzbroj", "t72"],
-  ["CV90 MkIV", "Bojová vozidla", "246", "Švédsko / ČR", "ord", "59,7 mld Kč, 7 verzí; 39 kusů ze Švédska, 207 z VOP CZ. Prvních 10 v roce 2026, dodávky do 2030.", "ed_cv90", "cv90"],
+  ["CV90 MkIV", "Bojová vozidla", "246", "Švédsko / ČR", "ord", "59,7 mld Kč, 7 verzí; 39 kusů ze Švédska, 207 z VOP CZ. K 13. 10. 2026 žádné převzato; česká konfigurace poprvé představena na Future Forces Forum 21. 10. 2026. Zařazení kolem roku 2030.", "hn_akvizice", "cv90"],
   ["BVP-2", "Bojová vozidla", "~200", "ČSSR", "old", "40 let stará vozidla, nahradí je CV90.", "e15_vyzbroj", "bvp2"],
-  ["Pandur II 8×8", "Bojová vozidla", "127", "Rakousko / ČR", "ok", "107 z roku 2006 (72 bojových s věží RCWS-30) + 20 velitelských a spojovacích. Plánuje se modernizace a další kusy.", "czd_pandur", "pandur"],
+  ["Pandur II 8×8", "Bojová vozidla", "127", "Rakousko / ČR", "ok", "107 z roku 2006 (72 bojových s věží RCWS-30) + 20 velitelských a spojovacích. Nemodernizují se; připravuje se náhrada až 250 vozidly (Pandur EVO, Patria, Boxer).", "hn_akvizice", "pandur"],
   ["Tatra Titus 6×6", "Bojová vozidla", "62", "ČR / Francie", "ok", "Velitelské, spojovací a dělostřelecké verze, dodáno do 6/2024.", "czd_pandur", "titus"],
-  ["CAESAR 8×8 CZ", "Dělostřelectvo", "62", "Francie / ČR", "ord", "52 + 10 dodatkem, 10,3 mld Kč. K 8/2026 nedodán žádný kus, dodavatel je v prodlení; dokončení podle harmonogramu 6/2028.", "ed_caesar", "caesar"],
+  ["CAESAR 8×8 CZ", "Dělostřelectvo", "62", "Francie / ČR", "ord", "52 + 10 dodatkem, 10,3 mld Kč, zaplaceno přes 7,2 mld. Žádný kus nedodán, dodavatel v prodlení; nový termín zařazení 2028.", "hn_akvizice", "caesar"],
   ["ShKH Dana vz. 77", "Dělostřelectvo", "nezveřejněno", "ČSSR", "old", "152 mm, nahradí je CAESAR.", "e15_vyzbroj", "dana"],
   ["SPYDER", "Protivzdušná obrana", "4 baterie", "Izrael / ČR", "ord", "Každá baterie 9 vozidel a 4 odpalovací zařízení. Vojskové zkoušky splněny, ostré střelby plán 10/2027, integrace do 2028. Česko je první zemí NATO s tímto systémem.", "ex_spyder", "spyder"],
   ["2K12 KUB", "Protivzdušná obrana", "4 baterie", "SSSR", "old", "25. plrp Strakonice, nahradí SPYDER.", "e15_vyzbroj", "kub"],
@@ -106,12 +131,54 @@ ACR.TECH = [
   ["L-159 ALCA", "Letectvo", "24", "ČR", "ok", "Lehký bitevník a cvičný letoun; dočasně v Náměšti. Dlouhodobě je mají nahradit drony.", "nv_caslav", "l159"],
   ["Embraer C-390", "Letectvo", "2", "Brazílie", "ord", "11,3 mld Kč. První přistál v Praze 6. 7. 2026, druhý 2027–2028.", "av_c390", "c390"],
   ["CASA C-295", "Letectvo", "4", "Španělsko", "ok", "Taktický transport, Kbely.", "wiki", "c295"],
-  ["UH-1Y Venom", "Vrtulníky", "10", "USA", "ok", "8 nakoupeno + 2 darem od USA.", "ct_h1", "venom"],
-  ["AH-1Z Viper", "Vrtulníky", "10", "USA", "ok", "4 nakoupeny + 6 darem od USA. Nahradily Mi-24/35.", "ct_h1", "viper"],
-  ["Mi-171Š", "Vrtulníky", "~16", "Rusko", "old", "Transportní; náhrada se připravuje.", "e15_vyzbroj", "mi171"],
+  ["UH-1Y Venom", "Vrtulníky", "10", "USA", "ok", "8 nakoupeno + 2 darem od USA. V červenci 2026 se jeden zřítil v Náměšti (1 mrtvá, 4 zranění); provoz H-1 obnoven od konce srpna.", "ctk_venom", "venom"],
+  ["AH-1Z Viper", "Vrtulníky", "10", "USA", "ok", "4 nakoupeny + 6 darem od USA. Nahradily Mi-24/35. Rotace ~100 vojáků v Polsku (Heli Unit).", "ct_h1", "viper"],
+  ["Mi-171Š", "Vrtulníky", "~16", "Rusko", "old", "Transportní; po modernizaci slouží nejméně do 2035, náhrada se připravuje.", "hn_akvizice", "mi171"],
   ["W-3A Sokol", "Vrtulníky", "~10", "Polsko", "ok", "Pátrání a záchrana, doprava.", "wiki", "w3a"],
-  ["CZ BREN 2 / CZ P-10", "Ruční zbraně", "—", "ČR", "ok", "Standardní útočná puška a pistole AČR.", "wiki", "bren"],
+  ["CZ BREN 2 / CZ P-10 C", "Ruční zbraně", "—", "ČR", "ok", "Standardní útočná puška a pistole AČR; podrobně v sekci Pěchotní výzbroj.", "vepozs_zbrane", "w_bren2"],
+  ["Airbus A319CJ", "Letectvo", "2", "EU", "ok", "Vládní letka od 2007; plán čtyř nových letadel (A319CJ, business jet, L-410), specifikace se zpracovávají.", "blesk_airbus", null],
   ["Drony (různé typy)", "Bezpilotní systémy", "3 000", "—", "ord", "Cíl do 2028, pět souběžných zakázek; typy a ceny nezveřejněny.", "sz_drony", null]
+];
+
+/* ---------- PĚCHOTNÍ VÝZBROJ ----------
+ * [zbraň, kategorie, ráže, původ, stav (ok|old), poznámka, zdroj, foto key]
+ * Počty kusů MO u ručních zbraní nezveřejňuje (kromě Minimi).
+ */
+ACR.INF = [
+  ["CZ BREN 2", "útočná puška", "5,56 × 45 mm NATO (i 7,62 × 39 mm)", "Česká zbrojovka", "ok", "Standardní útočná puška; nástupce CZ 805 BREN. Modulární, varianty s různou délkou hlavně.", "az_pechota", "w_bren2"],
+  ["CZ BREN 2 PPS", "přesná puška", "7,62 × 51 mm NATO", "Česká zbrojovka", "ok", "Pro přesné střelce v bojových jednotkách; prodlužuje účinný dostřel družstva.", "vepozs_zbrane", "w_bren2"],
+  ["CZ 805 BREN A1", "útočná puška", "5,56 × 45 mm NATO", "Česká zbrojovka", "ok", "Zavedena od 2011, postupně nahrazována verzí BREN 2.", "vepozs_zbrane", "w_805a1"],
+  ["CZ 805 G1", "podvěsný granátomet", "40 mm", "Česká zbrojovka", "ok", "Proti cílům v zákopech a za překážkami.", "vepozs_zbrane", "w_805g1"],
+  ["CZ P-10 C / F", "pistole", "9 × 19 mm", "Česká zbrojovka", "ok", "Základní služební pistole; doplňuje ji CZ 75 SP-01 Phantom.", "az_pechota", "w_p10"],
+  ["CZ Scorpion EVO 3 A1", "samopal", "9 × 19 mm", "Česká zbrojovka", "ok", "Osádky vozidel, speciální a policejní složky.", "az_pechota", "w_evo"],
+  ["FN Minimi (7,62 a 5,56)", "lehký kulomet", "7,62 × 51 / 5,56 × 45 mm", "FN Herstal (Belgie)", "ok", "Pořízeno 2021–2025 až 950 ks, z toho 12 ks 5,56 mm; nahrazuje UK vz. 59.", "czd_minimi", "w_minimi"],
+  ["M2 Browning", "těžký kulomet", "12,7 × 99 mm", "USA", "ok", "Na vozidlech a lafetách; dosluhují sovětské DŠK a NSV.", "az_pechota", null],
+  ["Carl Gustaf", "bezzákluzový kanon", "84 mm", "Saab (Švédsko)", "ok", "Používají mj. výsadkáři 43. výsadkového pluku.", "vepozs_zbrane", null],
+  ["RPG-7", "protitanková zbraň", "40 mm (granát nadráže)", "SSSR / licence", "old", "S optickým zaměřovačem, obsluha dvojice vojáků.", "vepozs_zbrane", null],
+  ["Spike LR", "protitanková řízená střela", "—", "Rafael (Izrael)", "ok", "Na Pandurech II s věží RCWS-30.", "czd_pandur", null],
+  ["Odstřelovací pušky (AI AWM, Sako TRG, Barrett M82, ZVI Falcon, CheyTac, Desert Tech HTI)", "odstřelovací a protimateriálové pušky", "7,62 mm až 12,7 mm", "různé", "ok", "Široké spektrum typů v malých počtech; dosluhují SVD Dragunov.", "az_pechota", "w_sniper"],
+  ["Sa vz. 58, UK vz. 59, Škorpion vz. 61", "starší zbraně", "7,62 mm / 7,65 mm", "ČSSR", "old", "Ve skladech a u záloh; ve výzbroji bojových útvarů nahrazeny.", "az_pechota", null]
+];
+
+/* ---------- TAKTIKA A DOKTRÍNA ---------- [titulek, text, zdroj] */
+ACR.TACTICS = [
+  ["Kolektivní obrana v rámci NATO", "Armáda se připravuje hlavně na boj v aliančním rámci. Do Modelu sil NATO vyčleňuje od 2027 až 11 000 osob, jednotky se certifikují podle aliančních standardů a cvičí v mnohonárodních divizích.", "az_mandat"],
+  ["Těžká brigáda pro operace vysoké intenzity", "7. mechanizovaná brigáda (Hranice) je jádrem těžkých sil: tanky Leopard, budoucí CV90 a Leopard 2A8. V 12/2025 prošla certifikací velení pro operace vysoké intenzity v rámci Mnohonárodní divize Severovýchod (Elbląg).", "mo_7mb"],
+  ["Rychlé nasazení a lehké síly", "4. brigáda rychlého nasazení (Žatec) s kolovými Pandury a výsadkovým plukem slouží pro rychlou reakci a pro mise; od 2017 je afilována k německé 10. tankové divizi při zachování českého velení.", "demagog_4brn"],
+  ["Teritoriální obrana a zálohy", "Od 10/2025 vzniká u každého krajského velitelství prapor územní obrany složený převážně z aktivních záloh: ochrana důležité infrastruktury, podpora při krizích a doplňování útvarů.", "az_jednotky"],
+  ["Drony, elektronický boj a zkušenosti z Ukrajiny", "Nová koncepce do 2040 zdůrazňuje rychlé přezbrojení a nové technologie; armáda plánuje 3 000 menších dronů pro bojové jednotky a buduje 533. prapor bezpilotních systémů a 532. prapor elektronického boje.", "hn_akvizice"]
+];
+
+/* ---------- SMLOUVY, ČLENSTVÍ A AFILACE ---------- [rok, název, typ, popis, zdroj (klíč nebo URL)] */
+ACR.TREATIES = [
+  ["1999", "Severoatlantická smlouva (NATO)", "aliance", "Česko členem od 12. 3. 1999; článek 5 o kolektivní obraně. Závazek 2 % HDP, od summitu v Haagu 2025 cíl 5 % do 2035.", "https://www.nato.int/cps/en/natohq/official_texts_17120.htm"],
+  ["2004", "Evropská unie – SBOP", "aliance", "Společná bezpečnostní a obranná politika EU, klauzule vzájemné pomoci (čl. 42 odst. 7 SEU), mise EUFOR, EUNAVFOR, EUMAM.", "https://www.consilium.europa.eu/cs/policies/defence-security/"],
+  ["2023", "Dohoda o obranné spolupráci s USA (DCA)", "bilaterální", "Upravuje postavení amerických vojáků a dodavatelů při pobytu v ČR, výcvik a logistiku; neznamená trvalou základnu. Ratifikace dokončena 16. 8. 2023.", "eu_dca"],
+  ["2017", "Afilace 4. brn k německé 10. tankové divizi", "afilace", "Deklarace o záměru v rámci Framework Nations Concept: společný výcvik a interoperabilita; brigáda zůstává pod českým velením a nasadit ji lze jen se souhlasem ČR.", "demagog_4brn"],
+  ["2025", "7. mb v rámci Mnohonárodní divize Severovýchod", "afilace", "Velitelství 7. mechanizované brigády certifikováno pro působení v divizi NATO MND-NE (Elbląg, Polsko).", "mo_7mb"],
+  ["2022", "Mnohonárodní bojové uskupení Slovensko", "mise", "ČR byla do 6/2024 vedoucí zemí, nyní druhý největší přispěvatel (Pandury z 42. mpr).", "https://mise.mo.gov.cz/aktualni-mise/slovensko/slovensko--234572/"],
+  ["2027–2028", "Mandát zahraničních operací", "mandát", "Až 1 600 vojáků na východním křídle NATO v devíti zemích, až 2 000 spojeneckých vojáků na území ČR (ne trvale).", "czd_mandat"],
+  ["—", "Formáty spolupráce", "regionální", "Visegrádská skupina, Slavkovský formát, Bukurešťská devítka a Středoevropská obranná spolupráce (CEDC).", "https://cs.wikipedia.org/wiki/Visegr%C3%A1dsk%C3%A1_skupina"]
 ];
 
 /* ---------- MODERNIZACE ---------- [období, název, popis, částka, poznámka, zdroj] */
@@ -133,18 +200,19 @@ ACR.PROJ = [
  * Prošlé položky (datum < dnes) se na webu skryjí automaticky.
  */
 ACR.EVENTS = [
-  ["2026-10-21", "21.–23. 10. 2026", "Future Forces Exhibition & Forum", "Praha, PVA Expo Letňany", "Mezinárodní veletrh a konference o obraně a bezpečnosti s účastí AČR a MO.", "ffef26", "akce", "potvrzeno"],
+  ["2026-10-23", "21.–23. 10. 2026", "Future Forces Exhibition & Forum", "Praha, PVA Expo Letňany", "530 vystavovatelů ze 70 zemí; poprvé představeno CV90 MkIV v české konfiguraci.", "mo_fff26", "akce", "potvrzeno"],
+  ["2026-10-30", "týden od 26. 10. 2026", "Vláda projedná KVAČR 2040", "Praha, Úřad vlády", "Koncepce výstavby armády do 2040, kterou 20. 10. vzala na vědomí Bezpečnostní rada státu.", "ctk_kvacr", "milnik", "ocekavano"],
   ["2026-10-28", "28. 10. 2026", "Den vzniku samostatného Československa", "Praha, Pražský hrad", "Státní svátek: jmenování generálů a vyznamenání prezidentem, slavnostní nástup Hradní stráže.", "zakon245", "vyroci", "potvrzeno", "hradni"],
   ["2026-11-11", "11. 11. 2026", "Den válečných veteránů", "celá republika, Praha – Vítkov", "Významný den; pietní akty AČR a sbírka Českého červeného kříže a spolků veteránů.", "zakon245", "vyroci", "potvrzeno"],
-  ["2026-12-31", "do konce 2026", "První CV90 MkIV pro 7. mb", "Švédsko / VOP CZ Šenov", "Armáda má v roce 2026 převzít prvních 10 vozidel CV90; jako první je dostává 74. mechanizovaný prapor.", "ed_cv90", "milnik", "potvrzeno", "cv90"],
-  ["2026-12-31", "do konce 2026", "Kompletní flotila 42 Leopardů 2A4", "73. tankový prapor, Přáslavice", "Dodávka posledních ze 14 dokoupených tanků.", "fo_2a4", "milnik", "potvrzeno", "leopard2a4"],
-  ["2027-04-01", "duben 2027", "CAESAR: začátek vojskových zkoušek", "13. dělostřelecký pluk, Jince", "Podle aktualizovaného harmonogramu po odstranění nedostatků dodavatelem; dokončení dodávek 6/2028.", "ed_caesar", "milnik", "ocekavano", "caesar"],
+  ["2026-12-31", "do konce 2026", "První CV90 MkIV pro 7. mb", "Švédsko / VOP CZ Šenov", "Plán: prvních 10 vozidel CV90 k vojskovým zkouškám v roce 2026; k 13. 10. žádné převzato. Jako první je dostane 74. mechanizovaný prapor.", "hn_akvizice", "milnik", "ocekavano", "cv90"],
+  ["2027-04-01", "duben 2027", "CAESAR: začátek vojskových zkoušek", "13. dělostřelecký pluk, Jince", "Podle harmonogramu po odstranění nedostatků dodavatelem; zařazení do výzbroje 2028.", "ed_caesar", "milnik", "ocekavano", "caesar"],
+  ["2027-01-01", "1. 1. 2027", "Nový mandát zahraničních operací", "východní křídlo NATO", "Strop klesá z 2 000 na 1 600 vojáků, nově i Finsko; příspěvek do Modelu sil NATO roste na 11 000.", "az_mandat", "milnik", "potvrzeno"],
   ["2027-05-26", "26.–28. 5. 2027", "IDET 2027", "Brno, Výstaviště", "Mezinárodní veletrh obranné a bezpečnostní techniky, souběžně PYROS a ISET.", "idet27", "akce", "potvrzeno", "spyder"],
   ["2027-06-15", "červen 2027", "Bahna – Den pozemního vojska", "Strašice, vojenský areál", "Největší ukázka pozemních sil pro veřejnost; koná se tradičně v červnu, termín 2027 zatím nezveřejněn.", "bahna26", "akce", "ocekavano"],
   ["2027-06-30", "30. 6. 2027", "Den ozbrojených sil ČR", "celá republika", "Významný den připomínající bitvu u Zborova a vznik ozbrojených sil.", "zakon245", "vyroci", "potvrzeno"],
   ["2027-09-18", "září 2027", "Dny NATO a Dny Vzdušných sil AČR", "Ostrava-Mošnov", "Největší bezpečnostní show v Evropě; koná se tradičně třetí víkend v září, termín 2027 zatím nezveřejněn.", "ct_natodays25", "akce", "ocekavano", "natodays"],
   ["2027-10-01", "říjen 2027", "SPYDER: první ostré střelby", "25. protiletadlový raketový pluk", "Plánované ostré střelby nového systému PVO; integrace do sítě do roku 2028.", "ex_spyder", "milnik", "ocekavano", "spyder"],
-  ["2027-12-31", "2027–2028", "Druhý Embraer C-390", "24. základna dopravního letectva, Kbely", "Dodávka druhého transportního letounu.", "av_c390", "milnik", "ocekavano", "c390"],
+  ["2027-12-30", "2027", "Druhý Embraer C-390", "24. základna dopravního letectva, Kbely", "Dodávka druhého transportního letounu.", "av_c390", "milnik", "ocekavano", "c390"],
   ["2027-12-31", "od 2027", "Gripeny: nová smlouva, 12 letounů", "21. zTL (dočasně Pardubice)", "Začíná prodloužený pronájem do 2035 se 12 letouny místo 14.", "fb_gripen", "milnik", "potvrzeno", "gripen"]
 ];
 
@@ -171,29 +239,46 @@ ACR.STRAT = [
 
 /* ---------- KONTROVERZE ---------- [závažnost (''|w|n), titulek, text, zdroj] */
 ACR.ISSUES = [
-  ["", "Rozpočet 2026: 2 % HDP, nebo 1,73 %?", "Kapitola MO má 154,8 mld Kč, asi 1,73 % HDP. Vláda vykazuje 184 mld Kč a 2,06 % díky obranným výdajům jiných resortů. Opozice tvrdí, že proti návrhu předchozí vlády bylo kráceno 21 mld Kč; prezident i opozice pochybují, že NATO tyto výdaje uzná.", "sz_drony"],
-  ["", "CAESAR: zaplaceno 7,2 mld, dodáno nic", "První čtyři houfnice měly přijít v dubnu 2026. Výrobce odstraňuje nedostatky, vojskové zkoušky nejdřív v dubnu 2027; ministerstvo jedná o penále, odstoupení od smlouvy označuje za krajní variantu.", "ed_caesar"],
-  ["w", "Průhlednost počtů", "V roce 2024 ministerstvo přestalo počty běžně zveřejňovat; data dnes vycházejí hlavně z odpovědí na žádosti o informace. Cíl 30 000 se v různých zdrojích vztahuje jednou k celému rezortu, jindy k armádě.", "sz_cisla"],
-  ["w", "Výměna náčelníka GŠ", "Od 1. 7. 2026 vede armádu genpor. Miroslav Hlaváč místo gen. Karla Řehky. Při květnovém hlasování vlády byl ministr Zůna (SPD) proti a šéf SPD Okamura vyjádřil výhrady.", "acr_gs"],
+  ["", "Ministr vs. armáda: šéf kybernetických sil", "Ministr Zůna nařídil náčelníkovi GŠ odvolat brig. gen. Radka Harateka, velitele informačních a kybernetických sil, kvůli operacím „Karel“ a „Volby 2025“. Generální štáb rozkaz nesplnil a Haratek podle mluvčího má důvěru náčelníka (15. 10. 2026).", "dn_haratek"],
+  ["", "Rozpočet 2027: rekord, ale 2,04 % HDP", "Návrh kapitoly MO 190,9 mld Kč je o 23 % vyšší než 2026, obranné výdaje ale dosahují jen 2,04 % HDP, zatímco haagský závazek NATO míří k 3,5 % jádrových výdajů do 2035. Ministr sám upozorňuje na zpoždění podepsaných zakázek.", "ed_rozp27"],
+  ["", "CAESAR: zaplaceno 7,2 mld, dodáno nic", "První čtyři houfnice měly přijít v dubnu 2026. Kontrolní zkoušky odhalily nedostatky (mj. elektromagnetické záření v kabinách), vojskové zkoušky nezačaly, zařazení se posouvá na 2028. Ministr dává přednost dodání před zrušením smlouvy.", "ct_caesar26"],
+  ["w", "Zrušený tendr na obrněnce za 25 mld", "Po osmi letech příprav MO zrušilo zakázku na 185 čtyřkolových obrněnců pro ženisty, zdravotníky, speciální síly a Vojenskou policii (až 24,7 mld Kč) z „ekonomických důvodů“. Nový tendr zatím není.", "ns_mrap"],
+  ["w", "Nábor: rekord, ale počty se liší", "Ministr hlásil téměř 3 000 nových vojáků (celý rezort), armáda samotná do 20. 8. přijala 2 394 a čistě přibylo 1 875. Premiér chce rychlejší růst než 32 000 vojáků do 2040.", "ir_nabor26"],
+  ["w", "Havárie Venomu v Náměšti", "V červenci 2026 se při přistání zřítil UH-1Y Venom, zemřela vojákyně a čtyři lidé byli zraněni. Provoz všech H-1 byl na měsíc pozastaven; policie případ prověřuje jako obecné ohrožení z nedbalosti.", "ctk_venom"],
   ["w", "Nákupy bez tendru", "F-35, Leopard 2A8 i CV90 pořízeny mezivládními dohodami nebo jednacím řízením. Kritici upozorňují na cenu a transparentnost, zastánci na rychlost a interoperabilitu.", "ctk_2a8"],
-  ["w", "Mezera v letectvu", "Rekonstrukce Čáslavi vyhnala letadla do Pardubic a Náměšti; Gripeny se zmenší na 12 kusů, než dorazí F-35 (v Česku od 2031).", "nv_caslav"],
-  ["n", "Aktivní záloha na polovině", "4 849 záložníků proti cíli 10 000; nábor se zdvojnásobil, ale naplněnost zůstává kolem 50 %. Debata o povinných cvičeních po vzoru severských a pobaltských zemí.", "az_info"],
-  ["n", "Podpora Ukrajiny", "Muniční iniciativa a dodávky techniky; nová vláda signalizuje změnu formy podpory.", "wiki"]
+  ["w", "Mezera v letectvu", "Rekonstrukce Čáslavi vyhnala letadla do Pardubic a Náměšti; Gripeny se po roce 2027 zmenší na 12 kusů, F-35 budou v Česku od 2031.", "nv_caslav"],
+  ["n", "Aktivní záloha", "Poslední zveřejněný stav 4 849 záložníků proti cíli 10 000 do 2030; nová koncepce podle ministra počítá až s 15 000. Od 10/2025 vzniká 14 praporů územní obrany u krajských velitelství.", "az_info26"],
+  ["n", "Podpora Ukrajiny", "Česko už na muniční iniciativu finančně nepřispívá, jen ji administrativně zajišťuje; počet přispívajících států klesl z 18 na 9. Od vzniku iniciativa dodala zhruba 4,4 milionu kusů velkorážové munice.", "e24_mi"]
 ];
 
 /* ---------- MÉDIA ---------- [skupina, název, url, poznámka] */
 ACR.MEDIA = [
-  ["Videa", "YouTube: Armáda České republiky", "https://www.youtube.com/results?search_query=Arm%C3%A1da+%C4%8Cesk%C3%A9+republiky", "oficiální kanál a reportáže"],
-  ["Videa", "CV90 pro AČR", "https://www.youtube.com/results?search_query=CV90+%C4%8Desk%C3%A1+arm%C3%A1da", "první vozidla, výroba ve VOP CZ"],
-  ["Videa", "Hradní stráž – střídání stráží", "https://www.youtube.com/results?search_query=Hradn%C3%AD+str%C3%A1%C5%BE+st%C5%99%C3%ADd%C3%A1n%C3%AD+str%C3%A1%C5%BE%C3%AD", ""],
-  ["Videa", "Dny NATO v Ostravě", "https://www.youtube.com/results?search_query=Dny+NATO+Ostrava+2026", "největší přehlídka techniky"],
-  ["Podcasty a zpravodajství", "Spotify: podcasty o AČR", "https://open.spotify.com/search/arm%C3%A1da%20%C4%8Desk%C3%A9%20republiky/podcasts", "vyhledávání"],
-  ["Podcasty a zpravodajství", "ČT24 – téma výzbroj", "https://ct24.ceskatelevize.cz/tema/vyzbroj-53633", ""],
-  ["Podcasty a zpravodajství", "Ekonomický deník – obrana", "https://ekonomickydenik.cz/", "podrobné zprávy o akvizicích"],
-  ["Podcasty a zpravodajství", "CZ Defence", "https://www.czdefence.eu/", "odborný magazín (EN)"],
+  ["Časopisy a magazíny", "A report – časopis MO (PDF 7–8/2026)", "https://mocr.mo.gov.cz/images/ar/ar7-8_2026.pdf", "celé vydání zdarma v PDF"],
+  ["Časopisy a magazíny", "A report 2/2026 (PDF)", "https://mocr.mo.gov.cz/images/ar/AR_2_26_final.pdf", "celé vydání zdarma v PDF"],
+  ["Časopisy a magazíny", "ATM – Armádní technický magazín", "https://www.atmonline.cz/", "měsíčník; tištěná a elektronická verze v předplatném vydavatele"],
+  ["Časopisy a magazíny", "Magnet Press – vydavatel ATM", "https://magnetpress.online/", "předplatné ATM a ročenek"],
+  ["Časopisy a magazíny", "Vojenské rozhledy", "https://www.vojenskerozhledy.cz/", "odborný časopis MO, články v PDF zdarma"],
+  ["Zpravodajské weby", "CZ Defence (česky)", "https://www.czdefence.cz/", "obrana a průmysl, zprávy z MO"],
+  ["Zpravodajské weby", "CZ Defence (anglicky)", "https://www.czdefence.com/", ""],
+  ["Zpravodajské weby", "Armádní noviny", "https://www.armadninoviny.cz/", "pozemní, letecká a námořní technika"],
+  ["Zpravodajské weby", "Armádní zpravodaj", "https://armadnizpravodaj.cz/", "události, výzbroj, historie"],
+  ["Zpravodajské weby", "ARMYmag", "https://www.armymag.cz/", ""],
+  ["Zpravodajské weby", "Ekonomický deník – obrana", "https://ekonomickydenik.cz/", "akvizice a rozpočet"],
+  ["Zpravodajské weby", "ČT24 – téma výzbroj", "https://ct24.ceskatelevize.cz/tema/vyzbroj-53633", ""],
+  ["Zpravodajské weby", "Valka.cz", "https://www.valka.cz/", "encyklopedie a fórum"],
   ["Oficiální weby", "Armáda ČR", "https://acr.mo.gov.cz/", ""],
   ["Oficiální weby", "Ministerstvo obrany", "https://mocr.mo.gov.cz/", ""],
+  ["Oficiální weby", "Vzdušné síly – 21. zTL Čáslav", "http://afbcaslav.mo.gov.cz/", "Gripeny, L-159"],
+  ["Oficiální weby", "Vzdušné síly – 22. zVrL Náměšť", "https://lznamest.mo.gov.cz/", "vrtulníky"],
+  ["Oficiální weby", "Vzdušné síly – 24. zDL Kbely", "http://zdl.mo.gov.cz/", "dopravní letectvo"],
+  ["Oficiální weby", "Velitelství pozemních sil", "https://vepozs.mo.gov.cz/", ""],
+  ["Oficiální weby", "Zahraniční mise AČR", "https://mise.mo.gov.cz/", ""],
   ["Oficiální weby", "Aktivní záloha", "https://aktivnizaloha.mo.gov.cz/", ""],
-  ["Oficiální weby", "Časopis A report 7–8/2026 (PDF)", "https://mocr.mo.gov.cz/images/ar/ar7-8_2026.pdf", ""],
-  ["Oficiální weby", "Pražský hrad", "https://www.hrad.cz/", "Hradní stráž"]
+  ["Oficiální weby", "Do armády – nábor", "https://doarmady.mo.gov.cz/", ""],
+  ["Oficiální weby", "Vojenský historický ústav", "https://www.vhu.cz/", "muzea, veteráni"],
+  ["Videa a podcasty", "YouTube: Armáda České republiky", "https://www.youtube.com/results?search_query=Arm%C3%A1da+%C4%8Cesk%C3%A9+republiky", "oficiální kanál a reportáže"],
+  ["Videa a podcasty", "YouTube: CV90 pro AČR", "https://www.youtube.com/results?search_query=CV90+%C4%8Desk%C3%A1+arm%C3%A1da", ""],
+  ["Videa a podcasty", "YouTube: Hradní stráž – střídání stráží", "https://www.youtube.com/results?search_query=Hradn%C3%AD+str%C3%A1%C5%BE+st%C5%99%C3%ADd%C3%A1n%C3%AD+str%C3%A1%C5%BE%C3%AD", ""],
+  ["Videa a podcasty", "Deník – Military podcast", "https://www.denik.cz/military-podcast/", ""],
+  ["Videa a podcasty", "Spotify: podcasty o AČR", "https://open.spotify.com/search/arm%C3%A1da%20%C4%8Desk%C3%A9%20republiky/podcasts", "vyhledávání"]
 ];

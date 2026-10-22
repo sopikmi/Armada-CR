@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Český zbrojní průmysl</title>
+<meta name="description" content="Český zbrojní průmysl a jeho kapacity: vývoz, největší firmy, výroba munice, státní podniky MO, zapojení do zakázek AČR a muniční iniciativa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="tabs" aria-label="Části webu">
+  <div class="wrap">
+    <a href="index.html">Armáda ČR</a><a href="mise.html">Zahraniční mise</a><a href="prumysl.html" aria-current="page">Zbrojní průmysl</a><a href="tyden/index.html">Archiv týdenních přehledů</a>
+  </div>
+</nav>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="lbl">Obranný průmysl České republiky · kapacity a čísla</div>
+      <h1>Zbrojní <span>průmysl</span></h1>
+      <p class="sub">Vývoz za více než 100 miliard korun, rostoucí výroba dělostřelecké munice a firmy, které dodávají české armádě i světu. Čísla s odkazem na zdroj a rok.</p>
+    </div>
+    <div class="sheet">LIST <b>03 / PRŮMYSL</b><br>STAV K <b data-updated></b><br>MĚNA <b>CZK / EUR</b></div>
+  </div>
+</header>
+<nav class="toc" aria-label="Obsah"><div class="wrap"><a href="#shrnuti">Shrnutí</a><a href="#cisla">Čísla</a><a href="#vyvoz">Vývoz</a><a href="#kapacity">Kapacity</a><a href="#firmy">Firmy</a><a href="#odkazy">Odkazy</a><a href="#zdroje">Zdroje</a></div></nav>
+<main>
+<section id="shrnuti"><div class="wrap">
+  <div class="sec-head"><span class="lbl">01</span><h2>Shrnutí</h2></div>
+  <div class="week">
+    <p class="intro-text">Český obranný průmysl zažívá od roku 2022 nejrychlejší růst od devadesátých let. Vývoz vojenského materiálu vzrostl z odhadem 49 miliard korun v roce 2023 na 112,6 miliardy v roce 2025 a téměř polovina z něj směřovala na Ukrajinu. Tahounem je dělostřelecká munice: skupina CSG zvyšuje výrobu velkorážových nábojů z 550 tisíc kusů v roce 2025 k 1,1 milionu v roce 2027 a STV Group zdvojnásobila tržby.</p>
+    <p>Odvětví podle Hospodářské komory zaměstnává přes 25 tisíc lidí, devět desetin produkce vyváží a v roce 2025 mělo tržby odhadem 160 až 180 miliard korun. Kromě velkých soukromých skupin (CSG, Colt CZ, STV Group, Aero Vodochody) hrají roli státní podniky ministerstva obrany VOP CZ, LOM Praha a VTÚ a státní Explosia, jediný velký domácí výrobce střelných prachů. Prach je zároveň úzkým hrdlem: poptávka převyšuje kapacitu a vláda zvažuje prodej Explosie strategickému investorovi.</p>
+    <p>Pro armádu je klíčové zapojení domácích firem do velkých zakázek: většina vozidel CV90 se vyrábí ve VOP CZ, SPYDER kompletovaly VTÚ a Retia, podvozky pro houfnice CAESAR dodává Tatra. Rizikem je závislost na jednom zákazníkovi (Ukrajina) a pokles financování muniční iniciativy, na kterou Česko od roku 2026 samo nepřispívá.</p>
+  </div>
+</div></section>
+
+<section id="cisla"><div class="wrap">
+  <div class="sec-head"><span class="lbl">02</span><h2>Odvětví v číslech</h2></div>
+  <div class="stats" id="kpi"></div>
+</div></section>
+
+<section id="vyvoz"><div class="wrap">
+  <div class="sec-head"><span class="lbl">03</span><h2>Vývoz vojenského materiálu</h2><span class="note">mld Kč, podle výročních zpráv MPO</span></div>
+  <div class="cols" style="margin-top:0">
+    <div><h3 style="margin-bottom:10px">Vývoz podle let</h3><div class="hbars" id="exp"></div><p class="small" style="margin-top:8px">Rok 2023 je dopočet z meziročního růstu o 86 % (ČTK), ne zveřejněný údaj.</p></div>
+    <div><h3 style="margin-bottom:10px">Hlavní destinace 2025</h3><div class="hbars" id="dest"></div><p class="small" style="margin-top:8px">„Ostatní“ = zbytek do celkových 112,6 mld Kč (dopočet).</p></div>
+  </div>
+</div></section>
+
+<section id="kapacity"><div class="wrap">
+  <div class="sec-head"><span class="lbl">04</span><h2>Kapacity a projekty</h2></div>
+  <div class="docs" id="cap"></div>
+</div></section>
+
+<section id="firmy"><div class="wrap">
+  <div class="sec-head"><span class="lbl">05</span><h2>Firmy</h2><span class="note">největší soukromé skupiny a státní podniky</span></div>
+  <div class="cards" id="firms"></div>
+</div></section>
+
+<section id="odkazy"><div class="wrap">
+  <div class="sec-head"><span class="lbl">06</span><h2>Odkazy</h2></div>
+  <div class="media"><div><span class="lbl">Instituce a akce</span><ul id="links"></ul></div></div>
+</div></section>
+
+<section id="zdroje"><div class="wrap">
+  <div class="sec-head"><span class="lbl">07</span><h2>Zdroje</h2></div>
+  <ol class="src-list" id="sources"></ol>
+</div></section>
+</main>
+<footer><div class="wrap">Data z veřejných zdrojů k <span data-updated></span>. Fotky: Wikimedia Commons, autoři a licence u každé fotky. <a href="https://github.com/sopikmi/Armada-CR">github.com/sopikmi/Armada-CR</a></div></footer>
+<script src="assets/prumysl-data.js"></script>
+<script src="assets/page.js"></script>
+<script>
+(function () {
+  const P = PAGE, $ = P.$, esc = P.esc, S = PRU.SOURCES, src = k => P.src(S, k);
+  const nf = n => String(n).replace(".", ",");
+  P.kpi($("#kpi"), PRU.KPI, S);
+  const bars = (rows, max) => rows.map(r => `<div class="hbar"><span>${esc(r[0])}</span><span class="t"><i style="width:${(r[1] / max * 100).toFixed(1)}%"></i></span><b class="mono">${nf(r[1])}</b></div>`).join("");
+  $("#exp").innerHTML = bars(PRU.EXPORT, 120);
+  $("#dest").innerHTML = bars(PRU.DEST, 55);
+  $("#cap").innerHTML = PRU.CAP.map(c => `<div class="doc"><b>${esc(c[0])}</b><span style="font-size:14px">${esc(c[1])}</span>${src(c[2])}</div>`).join("");
+  $("#links").innerHTML = PRU.LINKS.map(l => `<li><a href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])} ↗</a></li>`).join("");
+  $("#sources").innerHTML = Object.values(S).map(s => `<li><a href="${s[1]}" target="_blank" rel="noopener">${esc(s[0])}</a></li>`).join("");
+  P.ready.then(() => {
+    $("#firms").innerHTML = PRU.FIRMS.map(f => `<article class="card">${f[7] ? P.photoCard(f[7]) : ""}<h3>${esc(f[0])}</h3><div class="small">${esc(f[1])}</div><dl><dt>Kde</dt><dd>${esc(f[2])}</dd><dt>Výroba</dt><dd>${esc(f[3])}</dd><dt>Čísla</dt><dd>${esc(f[4])}</dd></dl><div class="small">${src(f[5])} · <a href="${f[6]}" target="_blank" rel="noopener">web firmy ↗</a></div></article>`).join("");
+  });
+})();
+</script>
+</body>
+</html>

@@ -96,6 +96,15 @@
   }));
   renderTech();
 
+  /* ---------- pěchotní výzbroj ---------- */
+  function renderInf() {
+    if (!$("#infbody")) return;
+    $("#infbody").innerHTML = ACR.INF.map(t => {
+      const lnk = t[7] ? photoLink(t[7]) : "";
+      return `<tr><td>${lnk || "—"}</td><td><b>${esc(t[0])}</b></td><td>${esc(t[1])}</td><td>${esc(t[2])}</td><td>${esc(t[3])}</td><td><span class="st ${t[4]}">${stLbl[t[4]]}</span></td><td>${esc(t[5])} ${src(t[6])}</td></tr>`;
+    }).join("");
+  }
+
   /* ---------- modernizace ---------- */
   $("#proj").innerHTML = ACR.PROJ.map(p => `<div class="p"><div><div class="yr">${esc(p[0])}</div><h3 style="margin-top:4px">${esc(p[1])}</h3></div><p style="font-size:14px">${esc(p[2])} ${src(p[5])}</p><div class="money">${esc(p[3])} ${p[3] !== "—" ? '<span style="font-size:13px">Kč</span>' : ""}<small>${esc(p[4])}</small></div></div>`).join("");
 
@@ -116,6 +125,9 @@
   const doc = (y, t, d, h) => `<div class="doc"><span class="y">${esc(y)}</span><b>${esc(t)}</b><span style="font-size:14px">${esc(d)}</span><a href="${h}" target="_blank" rel="noopener" style="font-size:13px">Otevřít ↗</a></div>`;
   $("#laws").innerHTML = ACR.LAWS.map(l => doc(l[0], l[1], l[2], "https://www.zakonyprolidi.cz/cs/" + l[3])).join("");
   $("#strat").innerHTML = ACR.STRAT.map(s => doc(s[0], s[1], s[2], s[3].startsWith("q:") ? g(s[3].slice(2)) : s[3])).join("");
+  const href = k => (k.startsWith("http") ? k : (ACR.SOURCES[k] || [, "#"])[1]);
+  if ($("#treaties")) $("#treaties").innerHTML = ACR.TREATIES.map(t => `<div class="doc"><span class="y">${esc(t[0])} · ${esc(t[2])}</span><b>${esc(t[1])}</b><span style="font-size:14px">${esc(t[3])}</span><a href="${href(t[4])}" target="_blank" rel="noopener" style="font-size:13px">zdroj ↗</a></div>`).join("");
+  if ($("#tactics")) $("#tactics").innerHTML = ACR.TACTICS.map(t => `<div class="doc"><b>${esc(t[0])}</b><span style="font-size:14px">${esc(t[1])}</span>${src(t[2])}</div>`).join("");
 
   /* ---------- kontroverze ---------- */
   $("#issues").innerHTML = ACR.ISSUES.map(i => `<div class="issue"><div class="sev ${i[0]}"></div><div><h3>${esc(i[1])}</h3><p class="prose" style="margin-top:4px;font-size:14px">${esc(i[2])} ${src(i[3])}</p></div></div>`).join("");
@@ -264,7 +276,7 @@
       $("#gallery").innerHTML = '<p class="empty">Fotky se právě stahují do repozitáře (GitHub Actions → „Stáhnout fotky z Wikimedia Commons“). Za pár minut obnovte stránku.</p>';
       return;
     }
-    const GAL = PHOTOS.filter(p => p.group !== "Akce");
+    const GAL = PHOTOS.filter(p => !["Akce", "Zahraniční mise", "Zbrojní průmysl"].includes(p.group));
     const keys = [...new Set(GAL.map(p => p.key))];
     const groups = [...new Set(GAL.map(p => p.group))];
     $("#gallery").innerHTML = `<p class="note">${keys.length} témat, ${GAL.length} fotek z Wikimedia Commons s volnou licencí. Náhled ukazuje hlavní fotku, po kliknutí další.</p>` +
@@ -282,6 +294,7 @@
       renderGallery(meta);
       renderTech();
       renderEvents();
+      renderInf();
       return fetch("data/posadky.json", {cache: "no-cache"}).then(r => r.json());
     })
     .then(initUnits)

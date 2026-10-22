@@ -1,6 +1,6 @@
 # Armáda ČR v mapě a číslech
 
-Přehled Armády České republiky z veřejných zdrojů: počty vojáků a aktivních záloh, organizační struktura,
+Přehled Armády České republiky z veřejných zdrojů, aktualizovaný každý týden: týdenní přehled, zahraniční mise, zbrojní průmysl, počty vojáků a aktivních záloh, organizační struktura,
 dislokace útvarů a vojenské újezdy na mapě, technika s fotkami, modernizační projekty, zákony,
 strategické dokumenty a kontroverze. Včetně Hradní stráže a Vojenské police.
 

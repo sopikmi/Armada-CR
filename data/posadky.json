@@ -1,6 +1,6 @@
 {
  "_info": "Útvary, zařízení a posádky AČR a rezortu MO. Stav 2025–2026. Každá položka má zdroj. coord_precision: kasarna = konkrétní objekt, obec = střed obce (přibližně). Pravidla úprav: AGENT.md.",
- "updated": "2026-10-08",
+ "updated": "2026-10-22",
  "items": [
   {
    "name": "Ministerstvo obrany ČR",
@@ -83,7 +83,7 @@
    "lat": 49.1951,
    "lon": 16.6068,
    "coord_precision": "obec",
-   "note": "Vzniklo 2019 jako Velitelství kybernetických sil a informačních operací (VeKySIO), od 2024 přejmenováno na VeInKyS; podřízeny 91. a 92. skupina.",
+   "note": "Vzniklo 2019 jako Velitelství kybernetických sil a informačních operací (VeKySIO), od 2024 přejmenováno na VeInKyS; podřízeny 91. a 92. skupina. Velitel brig. gen. Radek Haratek; v 10/2026 ministr Zůna nařídil jeho odvolání, GŠ rozkaz nesplnil.",
    "source": "https://www.lupa.cz/aktuality/cesti-kybervojaci-zacinali-jako-startup-dnes-jich-je-300-a-do-roku-2030-zvysi-pocty-na-600/"
   },
   {
@@ -181,7 +181,7 @@
    "lat": 49.4144,
    "lon": 14.6578,
    "coord_precision": "obec",
-   "note": "Mechanizovaný prapor na KBVP Pandur II.",
+   "note": "Mechanizovaný prapor na KBVP Pandur II. Od 6/2026 základ 9. úkolového uskupení na Slovensku (Lešť).",
    "source": "https://acr.mo.gov.cz/struktura/gs/velitelstvi-pozemnich-sil-acr-221600/",
    "photo": "pandur"
   },
@@ -245,7 +245,7 @@
    "lat": 49.589,
    "lon": 17.39,
    "coord_precision": "obec",
-   "note": "Jediný tankový prapor AČR (T-72M4CZ, Leopard 2A4; plán Leopard 2A8).",
+   "note": "Jediný tankový prapor AČR (T-72M4CZ, Leopard 2A4; plán Leopard 2A8). Od 7/2026 kompletní flotila 42 tanků Leopard 2A4.",
    "source": "https://acr.mo.gov.cz/struktura/gs/velitelstvi-pozemnich-sil-acr-221600/",
    "photo": "leopard2a4"
   },
@@ -358,7 +358,7 @@
    "lat": 49.5938,
    "lon": 17.2509,
    "coord_precision": "obec",
-   "note": "Ženijní prapor (podpora 7. mb).",
+   "note": "Ženijní prapor (podpora 7. mb). Od 7/2026 základ ženijního úkolového oddílu v Lotyšsku.",
    "source": "https://acr.mo.gov.cz/struktura/gs/velitelstvi-pozemnich-sil-acr-221600/"
   },
   {
@@ -454,7 +454,7 @@
    "lat": 49.4719,
    "lon": 17.1118,
    "coord_precision": "obec",
-   "note": "Hloubkový průzkum; v 2026 nábor mj. do roty HUMINT.",
+   "note": "Hloubkový průzkum; v 2026 nábor mj. do roty HUMINT. Od 7/2026 základ 8. úkolového uskupení v Litvě (Rukla).",
    "source": "https://acr.mo.gov.cz/struktura/gs/velitelstvi-pozemnich-sil-acr-221600/"
   },
   {
@@ -527,7 +527,7 @@
    "lat": 49.1658,
    "lon": 16.1247,
    "coord_precision": "kasarna",
-   "note": "Bitevní a transportní vrtulníky AH-1Z, UH-1Y, Mi-171Š. Od března 2026 zde dočasně i 24 letounů L-159.",
+   "note": "Bitevní a transportní vrtulníky AH-1Z, UH-1Y, Mi-171Š. Od března 2026 zde dočasně i 24 letounů L-159. V 7/2026 se při přistání zřítil UH-1Y Venom (1 mrtvá); jednotka Heli Unit (~100 vojáků, AH-1Z) střídavě působí v Polsku.",
    "source": "https://acr.mo.gov.cz/struktura/generalni-stab/velitelstvi-vzdusnych-sil-86864/",
    "photo": "viper"
   },
@@ -1735,6 +1735,198 @@
    "coord_precision": "obec",
    "note": "Část bývalého VÚ Brdy, kterou armáda využívá i po zrušení újezdu; veřejnosti nepřístupná. Výcvik 13. dělostřeleckého pluku.",
    "source": "https://www.armyweb.cz/clanek/tajemna-mista-utajene-vojenske-objekty-v-brdech"
+  },
+  {
+   "name": "111. prapor územní obrany",
+   "short": "111. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV hl. m. Praha",
+   "town": "Praha 7 – Holešovice",
+   "lat": 50.103,
+   "lon": 14.438,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "121. prapor územní obrany",
+   "short": "121. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Praha (Středočeský kraj)",
+   "town": "Praha 8 – Karlín",
+   "lat": 50.092,
+   "lon": 14.45,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "131. prapor územní obrany",
+   "short": "131. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Hradec Králové",
+   "town": "Hradec Králové",
+   "lat": 50.2092,
+   "lon": 15.8328,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "141. prapor územní obrany",
+   "short": "141. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Liberec",
+   "town": "Liberec",
+   "lat": 50.7671,
+   "lon": 15.0562,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "151. prapor územní obrany",
+   "short": "151. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Ústí nad Labem",
+   "town": "Ústí nad Labem",
+   "lat": 50.6607,
+   "lon": 14.0323,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "161. prapor územní obrany",
+   "short": "161. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Karlovy Vary",
+   "town": "Karlovy Vary",
+   "lat": 50.231,
+   "lon": 12.871,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "171. prapor územní obrany",
+   "short": "171. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Plzeň",
+   "town": "Plzeň",
+   "lat": 49.7384,
+   "lon": 13.3736,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "181. prapor územní obrany",
+   "short": "181. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV České Budějovice",
+   "town": "České Budějovice",
+   "lat": 48.9745,
+   "lon": 14.4743,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "191. prapor územní obrany",
+   "short": "191. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Jihlava",
+   "town": "Jihlava",
+   "lat": 49.3961,
+   "lon": 15.5912,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "201. prapor územní obrany",
+   "short": "201. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Pardubice",
+   "town": "Pardubice",
+   "lat": 50.0343,
+   "lon": 15.7812,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "211. prapor územní obrany",
+   "short": "211. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Ostrava",
+   "town": "Ostrava",
+   "lat": 49.8209,
+   "lon": 18.2625,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "221. prapor územní obrany",
+   "short": "221. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Olomouc",
+   "town": "Olomouc",
+   "lat": 49.5938,
+   "lon": 17.2509,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "231. prapor územní obrany",
+   "short": "231. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Zlín",
+   "town": "Zlín",
+   "lat": 49.2265,
+   "lon": 17.6707,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "241. prapor územní obrany",
+   "short": "241. pr ÚO",
+   "type": "teritorialni",
+   "parent": "KVV Brno",
+   "town": "Brno",
+   "lat": 49.1951,
+   "lon": 16.6068,
+   "coord_precision": "obec",
+   "note": "Prapor územní obrany složený převážně z aktivní zálohy, formuje se od 10/2025 při krajském vojenském velitelství.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "Centrum nasaditelných systémů AKIS",
+   "short": "CNS AKIS",
+   "type": "ostatni",
+   "parent": "AKIS",
+   "town": "Lipník nad Bečvou",
+   "lat": 49.527,
+   "lon": 17.586,
+   "coord_precision": "obec",
+   "note": "Nasaditelné komunikační a informační systémy; má i skupinu spojovacích prostředků aktivní zálohy.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
+  },
+  {
+   "name": "Centrum podpory operací – rota podpory operací",
+   "short": "CPO",
+   "type": "velitelstvi",
+   "parent": "VeOp",
+   "town": "Pardubice",
+   "lat": 50.038,
+   "lon": 15.779,
+   "coord_precision": "obec",
+   "note": "Podpora operací Velitelství pro operace, včetně roty aktivní zálohy.",
+   "source": "https://aktivnizaloha.mo.gov.cz/prehled-jednotek-az"
   }
  ]
 }
