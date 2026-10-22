@@ -11,11 +11,15 @@
    "fields": [
     [
      "Typ",
-     "Main battle tank"
+     "hlavní bojový tank"
     ],
     [
      "Původ",
-     "West Germany"
+     "Západní Německo"
+    ],
+    [
+     "Výrobce",
+     "KraussMaffei; Maschinenbau Kiel; Rheinmetall; Santa Bárbara Sistemas; Hägglunds AB; Contraves; Hellenic Vehicle Industry"
     ],
     [
      "Konstruktér",
@@ -27,7 +31,7 @@
     ],
     [
      "Výroba",
-     "1979–present"
+     "1979–dosud"
     ],
     [
      "Vyrobeno",
@@ -39,15 +43,15 @@
     ],
     [
      "Délka",
-     "2A4: 9.97 m (gun forward) 2A6: 10.97 m"
+     "2A4: 9.97 m (gun forward) ; 2A6: 10.97 m"
     ],
     [
      "Šířka",
-     "2A4: 3.7 m 2A6: 3.75 m"
+     "2A4: 3.7 m ; 2A6: 3.75 m"
     ],
     [
      "Výška",
-     "2A4: 2.8 m 2A6: 3 m"
+     "2A4: 2.8 m ; 2A6: 3 m"
     ],
     [
      "Pancéřování",
@@ -71,7 +75,7 @@
     ],
     [
      "Měrný výkon",
-     "2A6: 17.8 kW/t 2A7V: 16.6 kW/t"
+     "2A6: 17.8 kW/t ; 2A7V: 16.6 kW/t"
     ],
     [
      "Podvozek",
@@ -80,6 +84,10 @@
     [
      "Rychlost",
      "70 kph"
+    ],
+    [
+     "Dojezd",
+     "Road: 340 km; Cross country: 220 km; Average: 280 km"
     ]
    ]
   },
@@ -92,11 +100,11 @@
    "fields": [
     [
      "Typ",
-     "Main battle tank"
+     "hlavní bojový tank"
     ],
     [
      "Původ",
-     "Czech Republic"
+     "Česko"
     ],
     [
      "Konstruktér",
@@ -108,7 +116,7 @@
     ],
     [
      "Vyrobeno",
-     "27 T-72M4 CZ3 T-72M4 CZ-W3 VT-72M4 CZ"
+     "27 T-72M4 CZ; 3 T-72M4 CZ-W; 3 VT-72M4 CZ"
     ],
     [
      "Osádka",
@@ -140,7 +148,7 @@
     ],
     [
      "Sekundární výzbroj",
-     "7.62 mm PKMT coaxial machine gun, 12.7 mm NSVT AA machine gun on commander's ring-mount"
+     "7.62 mm PKMT coaxial machine gun,; 12.7 mm NSVT AA machine gun on commander's ring-mount"
     ],
     [
      "Motor",
@@ -173,11 +181,11 @@
    "fields": [
     [
      "Typ",
-     "Infantry fighting vehicle"
+     "bojové vozidlo pěchoty"
     ],
     [
      "Původ",
-     "Sweden"
+     "Švédsko"
     ],
     [
      "Výrobce",
@@ -193,7 +201,7 @@
     ],
     [
      "Výroba",
-     "1993–present"
+     "1993–dosud"
     ],
     [
      "Vyrobeno",
@@ -224,6 +232,14 @@
      "front against 30 mm APFSDS, all-round protection against 14.5 mm AP rounds, integration of Iron Fist APS"
     ],
     [
+     "Hlavní výzbroj",
+     "40 mm Bofors L/70 autocannon; or; 35 mm/50 Bushmaster autocannon (export models Mk III and Mk IV); or; 30 mm/40 Bushmaster autocannon (export model Mk I & Mk II); or; Cockerill XC-8 turret with 105 mm/120 mm cannon; or; 120 mm mortar"
+    ],
+    [
+     "Sekundární výzbroj",
+     "7.62 mm Ksp m/39 machine gun; or; 7.62 FN MAG machine gun; and; 6 × 76 mm grenade launchers; Spike LR anti-tank guided missile"
+    ],
+    [
      "Podvozek",
      "torsion bar or active suspension"
     ],
@@ -246,11 +262,11 @@
    "fields": [
     [
      "Typ",
-     "Infantry fighting vehicle"
+     "bojové vozidlo pěchoty"
     ],
     [
      "Původ",
-     "Soviet Union"
+     "SSSR"
     ],
     [
      "Výrobce",
@@ -258,7 +274,7 @@
     ],
     [
      "Výroba",
-     "1979–present"
+     "1979–dosud"
     ],
     [
      "Vyrobeno",
@@ -314,7 +330,7 @@
     ],
     [
      "Rychlost",
-     "65 km/h (road) 45 km/h (off-road) 7 km/h (water)"
+     "65 km/h (road); 45 km/h (off-road); 7 km/h (water)"
     ],
     [
      "Dojezd",
@@ -331,11 +347,11 @@
    "fields": [
     [
      "Typ",
-     "Armoured personnel carrier"
+     "obrněný transportér"
     ],
     [
      "Původ",
-     "Austria"
+     "Rakousko"
     ],
     [
      "Výrobce",
@@ -343,7 +359,7 @@
     ],
     [
      "Výroba",
-     "2001–present"
+     "2001–dosud"
     ],
     [
      "Osádka",
@@ -355,7 +371,7 @@
     ],
     [
      "Hmotnost",
-     "17.3 t (with minimal protection) or 22 t (with additional protection) *turret not included; 20.1 t (amphibious limit)"
+     "17.3 t (with minimal protection) or ; 22 t (with additional protection) *turret not included ; 20.1 t (amphibious limit)"
     ],
     [
      "Délka",
@@ -370,16 +386,24 @@
      "2080 mm"
     ],
     [
+     "Hlavní výzbroj",
+     "30 mm Mk44 Bushmaster II gun; or; TOW anti-tank guided missile; or; 105 mm Cockerill high-pressure gun; or; 7.62 mm FN MAG machine gun; or; 0.50 in (12.7 mm) M2 Browning heavy machine gun"
+    ],
+    [
+     "Sekundární výzbroj",
+     "7.62 mm FN MAG machine gun; or; 0.50 in (12.7 mm) M2 Browning heavy machine gun; or; Spike LR anti-tank guided missile"
+    ],
+    [
      "Motor",
-     "Cummins ISLe 450 HPCR, 8.9l; in-line 6 turbo-diesel engine"
+     "Cummins ISLe 450 HPCR, 8.9l ; in-line 6 turbo-diesel engine"
     ],
     [
      "Výkon",
-     "335 kW 1628 Nm"
+     "335 kW ; 1628 Nm"
     ],
     [
      "Rychlost",
-     "(road); ≤ (water)"
+     "105 km/h (road); ≤11 km/h (water)"
     ],
     [
      "Dojezd",
@@ -400,7 +424,7 @@
     ],
     [
      "Původ",
-     "France/Czech Republic"
+     "Francie/Česko"
     ],
     [
      "Výrobce",
@@ -408,7 +432,7 @@
     ],
     [
      "Výroba",
-     "2013-present"
+     "2013–dosud"
     ],
     [
      "Osádka",
@@ -420,7 +444,7 @@
     ],
     [
      "Hlavní výzbroj",
-     "Remote weapon station (varies by customer/requirement)"
+     "Remote weapon station ; (varies by customer/requirement)"
     ],
     [
      "Motor",
@@ -449,15 +473,15 @@
    "fields": [
     [
      "Typ",
-     "Self-propelled cannon"
+     "samohybné dělo"
     ],
     [
      "Původ",
-     "France"
+     "Francie"
     ],
     [
      "Výrobce",
-     "KNDS France"
+     "KNDS Francie"
     ],
     [
      "Vývoj",
@@ -465,7 +489,7 @@
     ],
     [
      "Výroba",
-     "2004–present"
+     "2004–dosud"
     ],
     [
      "Osádka",
@@ -501,7 +525,7 @@
     ],
     [
      "Rychlost",
-     "On-road: 100 km/hOff-road: 50 km/h"
+     "On-road: 100 km/h; Off-road: 50 km/h"
     ],
     [
      "Dojezd",
@@ -534,15 +558,19 @@
     ],
     [
      "Výrobce",
-     "ZTS Dubnica nad Váhom (SK)Excalibur Army (CZ)"
+     "ZTS Dubnica nad Váhom (SK); Excalibur Army (CZ)"
     ],
     [
      "Konstruktér",
      "Konštrukta Trenčín"
     ],
     [
+     "Vývoj",
+     "1976"
+    ],
+    [
      "Výroba",
-     "1980–present"
+     "1980–dosud"
     ],
     [
      "Vyrobeno",
@@ -566,15 +594,15 @@
     ],
     [
      "Výška",
-     "3.63 m(with AAMG)"
+     "3.63 m; (with AAMG)"
     ],
     [
      "Hlavní výzbroj",
-     "152 mm howitzer (approx. 36.6 calibre)(60 rounds)"
+     "152 mm howitzer (approx. 36.6 calibre); (60 rounds)"
     ],
     [
      "Sekundární výzbroj",
-     "12.7 mm DShK(2,000 rounds)"
+     "12.7 mm DShK; (2,000 rounds)"
     ],
     [
      "Motor",
@@ -643,7 +671,7 @@
     ],
     [
      "Původ",
-     "Israel"
+     "Izrael"
     ],
     [
      "Výrobce",
@@ -655,15 +683,15 @@
     ],
     [
      "Výroba",
-     "2005–present"
+     "2005–dosud"
     ],
     [
      "Hmotnost",
-     "105 kg (Python-5)118 kg (Derby)"
+     "105 kg (Python-5); 118 kg (Derby)"
     ],
     [
      "Délka",
-     "3.1 m (Python-5)3.62 m (Derby)"
+     "3.1 m (Python-5); 3.62 m (Derby)"
     ],
     [
      "Hlavní výzbroj",
@@ -675,11 +703,11 @@
     ],
     [
      "Dojezd",
-     "Python-5: 40 kmDerby: 80 km"
+     "Python-5: 40 km; Derby: 80 km"
     ],
     [
      "Navádění",
-     "Infrared homing and electro-optical imaging (Python-5)Active radar homing (Derby)"
+     "Infrared homing and electro-optical imaging (Python-5); Active radar homing (Derby)"
     ]
    ]
   },
@@ -696,7 +724,7 @@
     ],
     [
      "Původ",
-     "Soviet Union"
+     "SSSR"
     ],
     [
      "Výrobce",
@@ -716,7 +744,7 @@
     ],
     [
      "Vyrobeno",
-     "500 launchers, 10,000 missiles"
+     "500 launchers, 10,000 missilesNumbers produced"
     ],
     [
      "Hlavní výzbroj",
@@ -741,15 +769,15 @@
    "fields": [
     [
      "Typ",
-     "Short-range Air Defense (SHORAD)Man-portable air-defence system (MANPADS)"
+     "Short-range Air Defense (SHORAD); Man-portable air-defence system (MANPADS)"
     ],
     [
      "Původ",
-     "Sweden"
+     "Švédsko"
     ],
     [
      "Výrobce",
-     "Bofors Defence (1980s–2000) Saab Bofors Dynamics (since 2000)"
+     "Bofors Defence (1980s–2000); Saab Bofors Dynamics (since 2000)"
     ],
     [
      "Hmotnost",
@@ -765,7 +793,7 @@
     ],
     [
      "Rychlost",
-     "Mach 1.6 (Mark 0/1) Mach 2 (5 km in 12 seconds) (Mark 2/BOLIDE)"
+     "Mach 1.6 (Mark 0/1) ; Mach 2 (5 km in 12 seconds) (Mark 2/BOLIDE)"
     ],
     [
      "Dojezd",
@@ -838,7 +866,7 @@
     ],
     [
      "Max. rychlost (Mach)",
-     "2 (2 Mach) at (50,000 ft); 1.2 Mach at sea level"
+     "2 (2 Mach) at 15,240 (50,000 ft); 1.2 Mach at sea level"
     ],
     [
      "Bojový rádius (km)",
@@ -879,11 +907,11 @@
     ],
     [
      "První let",
-     "(F-35A)"
+     "2006 12 15 (F-35A)"
     ],
     [
      "Vyrobeno",
-     "1,375+"
+     "1,375+ 2026 October 1"
     ],
     [
      "Osádka",
@@ -924,7 +952,7 @@
    "fields": [
     [
      "Typ",
-     "*L-159A: Light combat aircraft; L-159T: Advanced jet trainer and light combat aircraft"
+     "*L-159A: lehký bojový letoun; L-159T: Advanced jet trainer and light combat aircraft"
     ],
     [
      "Výrobce",
@@ -1082,11 +1110,11 @@
    "fields": [
     [
      "Typ",
-     "Military transport aircraft"
+     "vojenský transportní letoun"
     ],
     [
      "Výrobce",
-     "CASAEADSAirbus Defence and SpaceIndonesian AerospaceTata Advanced Systems"
+     "CASA; EADS; Airbus Defence and Space; Indonesian Aerospace; Tata Advanced Systems"
     ],
     [
      "Zavedení",
@@ -1111,7 +1139,7 @@
    "fields": [
     [
      "Typ",
-     "Utility helicopter"
+     "víceúčelový vrtulník"
     ],
     [
      "Výrobce",
@@ -1152,7 +1180,7 @@
    "fields": [
     [
      "Typ",
-     "Attack helicopter"
+     "bitevní vrtulník"
     ],
     [
      "Výrobce",
@@ -1274,7 +1302,7 @@
     ],
     [
      "Zavedení",
-     "1987"
+     "198796"
     ],
     [
      "První let",
@@ -1282,7 +1310,7 @@
     ],
     [
      "Vyrobeno",
-     "149 (as of 2011)Lorencowicz, Wojciech. Pierwszy śmigłowiec Sokół w Ameryce Południowej (First Sokół helicopter in South America) in: Lotnictwo 2-3/2011, p. 30-32."
+     "149 (as of 2011)"
     ],
     [
      "Osádka",
@@ -1355,7 +1383,7 @@
     ],
     [
      "Vyrobeno",
-     "1,516"
+     "1,516 2025 5"
     ]
    ]
   },
@@ -1368,11 +1396,11 @@
    "fields": [
     [
      "Typ",
-     "Assault rifleCarbineBattle rifleDesignated marksman rifle"
+     "útočná puška; Carbine; Battle rifle; Designated marksman rifle"
     ],
     [
      "Původ",
-     "Czech Republic"
+     "Česko"
     ],
     [
      "Výrobce",
@@ -1384,27 +1412,27 @@
     ],
     [
      "Výroba",
-     "2009–present"
+     "2009–dosud"
     ],
     [
      "Hmotnost",
-     "3.6 kg3.15 kg (CZ 807)3.78 - 4.6 kg (CZ BREN 2 BR)"
+     "3.6 kg; 3.15 kg (CZ 807); 3.78 - 4.6 kg (CZ BREN 2 BR)"
     ],
     [
      "Délka",
-     "CZ 805 BREN A1:; (buttstock extended); (buttstock folded); CZ 805 BREN A2:; (buttstock extended); (buttstock folded); CZ 807:"
+     "CZ 805 BREN A1:; 875–930 mm (buttstock extended); 670 mm (buttstock folded); CZ 805 BREN A2:; 792–847 mm (buttstock extended); 582 mm (buttstock folded); CZ 807:; 833–927 mm"
     ],
     [
      "Délka hlavně",
-     "360 mm (CZ 805 BREN A1)277 mm (CZ 805 BREN A2)408 mm (CZ 807)407 mm (CZ BREN 2 BR)457 mm (CZ BREN 2 DMR)"
+     "360 mm (CZ 805 BREN A1); 277 mm (CZ 805 BREN A2); 408 mm (CZ 807); 407 mm (CZ BREN 2 BR); 457 mm (CZ BREN 2 DMR)"
     ],
     [
      "Dosah",
-     "500 m (CZ 805 BREN A1)400 m (CZ 805 BREN A2)450 m CZ 807 in 5.56×45mm NATO350 m CZ 807 in 7.62×39mm600 m (CZ BREN 2 BR)800 m (CZ BREN 2 DMR)"
+     "500 m (CZ 805 BREN A1); 400 m (CZ 805 BREN A2); 450 m CZ 807 in 5.56×45mm NATO; 350 m CZ 807 in 7.62×39mm; 600 m (CZ BREN 2 BR); 800 m (CZ BREN 2 DMR)"
     ],
     [
      "Náboj",
-     "5.56×45mm NATO.300 AAC Blackout7.62×39mm7.62×51mm NATO"
+     "5.56×45mm NATO; .300 AAC Blackout; 7.62×39mm; 7.62×51mm NATO"
     ],
     [
      "Princip",
@@ -1412,11 +1440,11 @@
     ],
     [
      "Kadence",
-     "760 (±100) rounds/min850 (±100) rounds/min (CZ BREN 2)800 (±100) rounds/min (CZ BREN 2 BR)"
+     "760 (±100) ran/min; 850 (±100) ran/min (CZ BREN 2); 800 (±100) ran/min (CZ BREN 2 BR)"
     ],
     [
      "Zásobování",
-     "30-round proprietary 5.56×45mm NATO detachable box magazine or STANAG magazines30-round proprietary 7.62×39mm detachable box magazine (CZ 807)25-round proprietary 7.62×51mm NATO detachable box magazine (CZ BREN 2 BR, CZ BREN 2 DMR)"
+     "30-round proprietary 5.56×45mm NATO detachable box magazine or STANAG magazines; 30-round proprietary 7.62×39mm detachable box magazine (CZ 807); 25-round proprietary 7.62×51mm NATO detachable box magazine (CZ BREN 2 BR, CZ BREN 2 DMR)"
     ],
     [
      "Mířidla",
@@ -1433,11 +1461,11 @@
    "fields": [
     [
      "Typ",
-     "Assault rifleCarbineBattle rifleDesignated marksman rifle"
+     "útočná puška; Carbine; Battle rifle; Designated marksman rifle"
     ],
     [
      "Původ",
-     "Czech Republic"
+     "Česko"
     ],
     [
      "Výrobce",
@@ -1449,27 +1477,27 @@
     ],
     [
      "Výroba",
-     "2009–present"
+     "2009–dosud"
     ],
     [
      "Hmotnost",
-     "3.6 kg3.15 kg (CZ 807)3.78 - 4.6 kg (CZ BREN 2 BR)"
+     "3.6 kg; 3.15 kg (CZ 807); 3.78 - 4.6 kg (CZ BREN 2 BR)"
     ],
     [
      "Délka",
-     "CZ 805 BREN A1:; (buttstock extended); (buttstock folded); CZ 805 BREN A2:; (buttstock extended); (buttstock folded); CZ 807:"
+     "CZ 805 BREN A1:; 875–930 mm (buttstock extended); 670 mm (buttstock folded); CZ 805 BREN A2:; 792–847 mm (buttstock extended); 582 mm (buttstock folded); CZ 807:; 833–927 mm"
     ],
     [
      "Délka hlavně",
-     "360 mm (CZ 805 BREN A1)277 mm (CZ 805 BREN A2)408 mm (CZ 807)407 mm (CZ BREN 2 BR)457 mm (CZ BREN 2 DMR)"
+     "360 mm (CZ 805 BREN A1); 277 mm (CZ 805 BREN A2); 408 mm (CZ 807); 407 mm (CZ BREN 2 BR); 457 mm (CZ BREN 2 DMR)"
     ],
     [
      "Dosah",
-     "500 m (CZ 805 BREN A1)400 m (CZ 805 BREN A2)450 m CZ 807 in 5.56×45mm NATO350 m CZ 807 in 7.62×39mm600 m (CZ BREN 2 BR)800 m (CZ BREN 2 DMR)"
+     "500 m (CZ 805 BREN A1); 400 m (CZ 805 BREN A2); 450 m CZ 807 in 5.56×45mm NATO; 350 m CZ 807 in 7.62×39mm; 600 m (CZ BREN 2 BR); 800 m (CZ BREN 2 DMR)"
     ],
     [
      "Náboj",
-     "5.56×45mm NATO.300 AAC Blackout7.62×39mm7.62×51mm NATO"
+     "5.56×45mm NATO; .300 AAC Blackout; 7.62×39mm; 7.62×51mm NATO"
     ],
     [
      "Princip",
@@ -1477,11 +1505,11 @@
     ],
     [
      "Kadence",
-     "760 (±100) rounds/min850 (±100) rounds/min (CZ BREN 2)800 (±100) rounds/min (CZ BREN 2 BR)"
+     "760 (±100) ran/min; 850 (±100) ran/min (CZ BREN 2); 800 (±100) ran/min (CZ BREN 2 BR)"
     ],
     [
      "Zásobování",
-     "30-round proprietary 5.56×45mm NATO detachable box magazine or STANAG magazines30-round proprietary 7.62×39mm detachable box magazine (CZ 807)25-round proprietary 7.62×51mm NATO detachable box magazine (CZ BREN 2 BR, CZ BREN 2 DMR)"
+     "30-round proprietary 5.56×45mm NATO detachable box magazine or STANAG magazines; 30-round proprietary 7.62×39mm detachable box magazine (CZ 807); 25-round proprietary 7.62×51mm NATO detachable box magazine (CZ BREN 2 BR, CZ BREN 2 DMR)"
     ],
     [
      "Mířidla",
@@ -1498,11 +1526,11 @@
    "fields": [
     [
      "Typ",
-     "Semi-automatic pistol"
+     "samonabíjecí pistole"
     ],
     [
      "Původ",
-     "Czech Republic"
+     "Česko"
     ],
     [
      "Výrobce",
@@ -1514,7 +1542,7 @@
     ],
     [
      "Výroba",
-     "2017-present"
+     "2017–dosud"
     ],
     [
      "Hmotnost",
@@ -1538,11 +1566,11 @@
     ],
     [
      "Náboj",
-     "9x19mm.40 S&W.380 Auto"
+     "9x19mm; .40 S&W; .380 Auto"
     ],
     [
      "Zásobování",
-     "12 rounds (.40 S&W) (P-10C) 15 rounds (9mm and .380) (P-10C)"
+     "12 rounds (.40 S&W) (P-10C) ; 15 rounds (9mm and .380) (P-10C)"
     ],
     [
      "Mířidla",
@@ -1559,11 +1587,11 @@
    "fields": [
     [
      "Typ",
-     "Submachine gun"
+     "samopal"
     ],
     [
      "Původ",
-     "Czech Republic"
+     "Česko"
     ],
     [
      "Výrobce",
@@ -1571,7 +1599,7 @@
     ],
     [
      "Výroba",
-     "2009–present"
+     "2009–dosud"
     ],
     [
      "Hmotnost",
@@ -1583,7 +1611,7 @@
     ],
     [
      "Délka hlavně",
-     "196 mm pistol,412 mm carbine/rifle"
+     "196 mm pistol,; 412 mm carbine/rifle"
     ],
     [
      "Šířka",
@@ -1603,7 +1631,7 @@
     ],
     [
      "Kadence",
-     "1150 rounds/min"
+     "1150 ran/min"
     ],
     [
      "Úsťová rychlost",
@@ -1628,15 +1656,15 @@
    "fields": [
     [
      "Typ",
-     "Light machine gunSquad automatic weapon"
+     "lehký kulomet; Squad automatic weapon"
     ],
     [
      "Původ",
-     "Belgium"
+     "Belgie"
     ],
     [
      "Výrobce",
-     "FN HerstalFN USAThales AustraliaBerettaBofors Carl GustavCaracal InternationalPindadSumitomo Heavy Industries"
+     "FN Herstal; FN USA; Thales Australia; Beretta; Bofors Carl Gustav; Caracal International; Pindad; Sumitomo Heavy Industries"
     ],
     [
      "Konstruktér",
@@ -1648,7 +1676,7 @@
     ],
     [
      "Výroba",
-     "1977–present"
+     "1977–dosud"
     ],
     [
      "Hmotnost",
@@ -1668,7 +1696,7 @@
     ],
     [
      "Dosah",
-     "300 - sight adjustments"
+     "300–1000 m sight adjustments"
     ],
     [
      "Náboj",
@@ -1680,7 +1708,7 @@
     ],
     [
      "Kadence",
-     "700–1,150 rounds/min"
+     "700–1,150 ran/min"
     ],
     [
      "Úsťová rychlost",
@@ -1705,15 +1733,15 @@
    "fields": [
     [
      "Typ",
-     "Heavy machine gun"
+     "těžký kulomet"
     ],
     [
      "Původ",
-     "United States"
+     "USA"
     ],
     [
      "Výrobce",
-     "Active; Fabrique Nationale; General Dynamics; Ohio Ordnance Works Inc.; U.S. Ordnance; Former; Manroy Engineering; Sabre Defence Industries; Colt's Patent Firearms Manufacturing Company; High Standard Firearms; Savage Arms Corporation; Buff"
+     "Active; Fabrique Nationale; General Dynamics; Ohio Ordnance Works Inc.; U.S. Ordnance; Former; Manroy Engineering; Sabre Defence Industries; Colt's Patent Firearms Manufacturing Company; High Standard Firearms; Savage Arms Corporation; Buffalo Arms Corporation"
     ],
     [
      "Konstruktér",
@@ -1725,7 +1753,7 @@
     ],
     [
      "Výroba",
-     "1921–present (M2HB/M2A1)"
+     "1921–dosud (M2HB/M2A1)"
     ],
     [
      "Vyrobeno",
@@ -1733,15 +1761,15 @@
     ],
     [
      "Hmotnost",
-     "(AN/M2); with tripod and traverse and elevation mechanism (T&E); 24 lb barrel weight"
+     "38 kg ; 28 kg (AN/M2); 58 kg with tripod and traverse and elevation mechanism (T&E); 24 lb barrel weight"
     ],
     [
      "Délka",
-     "1654 mm 1429 mm (AN/M2)"
+     "1654 mm ; 1429 mm (AN/M2)"
     ],
     [
      "Délka hlavně",
-     "1143 mm 910 mm (AN/M2)"
+     "1143 mm ; 910 mm (AN/M2)"
     ],
     [
      "Dosah",
@@ -1757,11 +1785,11 @@
     ],
     [
      "Kadence",
-     "450–600 rounds/min (M2HB); 750–850 rounds/min (AN/M2); 1,200–1,300 rounds/min (AN/M3). In 1939, H. Arnold sought a cyclic rate greater that 1000 rounds/minute. The T25E3 gun was standardized as M3, and 2,400 had been made by September 1945."
+     "450–600 ran/min (M2HB); 750–850 ran/min (AN/M2); 1,200–1,300 ran/min (AN/M3)"
     ],
     [
      "Úsťová rychlost",
-     "2910 ft/s (M33 ball), 78 ft from muzzle 3050 ft/s in manual"
+     "2910 ft/s (M33 ball), 78 ft from muzzle ; 3050 ft/s in manual"
     ],
     [
      "Max. dostřel",
@@ -1782,15 +1810,15 @@
    "fields": [
     [
      "Typ",
-     "Shoulder-fired recoilless rifle(crew-served multi-role infantry support gun)"
+     "Shoulder-fired recoilless rifle; (crew-served multi-role infantry support gun)"
     ],
     [
      "Původ",
-     "Sweden"
+     "Švédsko"
     ],
     [
      "Výrobce",
-     "Saab Bofors Dynamics (formerly Carl Gustafs Stads Gevärsfaktori), Howa (license)."
+     "Saab Bofors Dynamics (formerly Carl Gustafs Stads Gevärsfaktori), Howa (license)"
     ],
     [
      "Konstruktér",
@@ -1806,7 +1834,7 @@
     ],
     [
      "Hmotnost",
-     "M2: 14.2 kghttp://www.sadefensejournal.com/wp/?p=3977 Small Arms Defense Journal. \"THE NEW CARL-GUSTAF M4: LIGHTER–BETTER–SMARTER.\" 2 June 2017M3: 10 kg M4/M3A1: 6.6 kg"
+     "M2: 14.2 kg; M3: 10 kg; M4/M3A1: 6.6 kg"
     ],
     [
      "Délka",
@@ -1814,7 +1842,7 @@
     ],
     [
      "Dosah",
-     "* 350 to against moving vehiclesUser Handbook for the Gun, 84mm, INF, ATK, L14A1, Director of Army Equipment Policy. 1968. page 2; 500 m against stationary vehicles; 1000 m using smoke and high explosive rounds; 2500 m using rocket-boosted "
+     "* 350–400 m against moving vehicles; 500 m against stationary vehicles; 1000 m using smoke and high explosive rounds; 2500 m using rocket-boosted laser guided ammunition"
     ],
     [
      "Náboj",
@@ -1859,11 +1887,11 @@
     ],
     [
      "Původ",
-     "Soviet Union"
+     "SSSR"
     ],
     [
      "Výrobce",
-     "Bazalt and Degtyarev plant (Russia)"
+     "Bazalt and Degtyarev plant (Rusko)"
     ],
     [
      "Konstruktér",
@@ -1875,11 +1903,15 @@
     ],
     [
      "Výroba",
-     "1958–present"
+     "1958–dosud"
     ],
     [
      "Vyrobeno",
      "9,000,000+"
+    ],
+    [
+     "Hmotnost",
+     "6.3 kg (13.9 lb) (without a telescopic sight) 7 kg (15.4 lb) (with PGO-7)"
     ],
     [
      "Délka",
@@ -1898,8 +1930,16 @@
      "40 mm"
     ],
     [
+     "Úsťová rychlost",
+     "115 m/s (boost) 300 m/s (flight)"
+    ],
+    [
      "Max. dostřel",
-     "700 m (OG-7V) (self detonates at c. 920 m)"
+     "700 m (OG-7V) ; (self detonates at c. 920 m)"
+    ],
+    [
+     "Mířidla",
+     "PGO-7 (2.7×), UP-7V telescopic sight and 1PN51/1PN58 night vision sights Red dot reflex sight"
     ]
    ]
   },
@@ -1912,11 +1952,11 @@
    "fields": [
     [
      "Typ",
-     "Anti-tank guided missile"
+     "protitanková řízená střela"
     ],
     [
      "Původ",
-     "Israel"
+     "Izrael"
     ],
     [
      "Výrobce",
@@ -1936,15 +1976,15 @@
     ],
     [
      "Vyrobeno",
-     "40,000 (2023)(7,000 fired)"
+     "40,000 (2023); (7,000 fired)"
     ],
     [
      "Hmotnost",
-     "*Spike ER from Helicopter :; Missile Round:34 kg; Launcher:55 kg; Launcher + 4 Missiles:187 kg; Spike MR/LR from Tripod :; Missile Round:14 kg; Command & Launch Unit:5 kg; Tripod:2.8 kg; Battery:1 kg; Thermal Sight:4 kg; Spike SR :; Missile"
+     "*Spike ER from Helicopter :; Missile Round:; 34 kg; Launcher:; 55 kg; Launcher + 4 Missiles:; 187 kg; Spike MR/LR from Tripod :; Missile Round:; 14 kg; Command & Launch Unit:; 5 kg; Tripod:; 2.8 kg; Battery:; 1 kg; Thermal Sight:; 4 kg; Spike SR :; Missile Rou"
     ],
     [
      "Délka",
-     "Spike MR/LR :; Spike ER :"
+     "Spike MR/LR :; 1200 mm; Spike ER :; 1670 mm"
     ],
     [
      "Motor",
@@ -1952,7 +1992,7 @@
     ],
     [
      "Dosah",
-     "*Spike SR :50 -; Spike MR :200 -; Spike LR :200 -; Spike LR 2 :200 -; Spike ER :400 -; Spike ER 2 :400 -; Spike NLOS :Land: 600 -Air: 600 -"
+     "*Spike SR :; 50–1500 m; Spike MR :; 200–2500 m; Spike LR :; 200–4000 m; Spike LR 2 :; 200–5500 m; Spike ER :; 400–8000 m; Spike ER 2 :; 400–10000 m; Spike NLOS :; Land: 600–32000 m; Air: 600–50000 m"
     ],
     [
      "Kadence",
@@ -1981,7 +2021,7 @@
     ],
     [
      "Původ",
-     "United Kingdom"
+     "Spojené království"
     ],
     [
      "Výrobce",
@@ -2001,11 +2041,11 @@
     ],
     [
      "Dosah",
-     "1100 m (.300 Winchester Magnum)1500 m (.338 Lapua Magnum)"
+     "1100 m (.300 Winchester Magnum); 1500 m (.338 Lapua Magnum)"
     ],
     [
      "Náboj",
-     ".300 Winchester Magnum.338 Lapua Magnum"
+     ".300 Winchester Magnum; .338 Lapua Magnum"
     ],
     [
      "Úsťová rychlost",
@@ -2017,7 +2057,7 @@
     ],
     [
      "Mířidla",
-     "Detachable aperture type iron sightsDay or night optics"
+     "Detachable aperture type iron sights; Day or night optics"
     ]
    ]
   },
@@ -2030,11 +2070,11 @@
    "fields": [
     [
      "Typ",
-     "Sniper rifle"
+     "odstřelovací puška"
     ],
     [
      "Původ",
-     "Finland"
+     "Finsko"
     ],
     [
      "Výrobce",
@@ -2042,31 +2082,31 @@
     ],
     [
      "Vývoj",
-     "1989 (TRG-21 / TRG-41)1999 (TRG-22 / TRG-42)2011 (TRG M10)2024 (TRG-62 A1)"
+     "1989 (TRG-21 / TRG-41); 1999 (TRG-22 / TRG-42); 2011 (TRG M10); 2024 (TRG-62 A1)"
     ],
     [
      "Výroba",
-     "1989–1999 (TRG-21 / TRG-41)1999–present (TRG-22 / TRG-42)2011–present (TRG M10)2024–present (TRG-62 A1)"
+     "1989–1999 (TRG-21 / TRG-41); 1999–dosud (TRG-22 / TRG-42); 2011–dosud (TRG M10); 2024–dosud (TRG-62 A1)"
     ],
     [
      "Hmotnost",
-     "4.7 kg empty (TRG-22 black)4.9 kg empty (TRG-22 green/tan/dark earth)5.2 kg empty (TRG-22 fold. stock 510 mm barrel)5.4 kg empty (TRG-22 fold. stock 660 mm barrel)5.1 kg empty (TRG-42 black)5.3 kg empty (TRG-42 green/tan/dark earth)5.8 kg e"
+     "4.7 kg empty (TRG-22 black); 4.9 kg empty (TRG-22 green/tan/dark earth); 5.2 kg empty (TRG-22 fold. stock 510 mm barrel); 5.4 kg empty (TRG-22 fold. stock 660 mm barrel); 5.1 kg empty (TRG-42 black); 5.3 kg empty (TRG-42 green/tan/dark earth); 5.8 kg empty (TR"
     ],
     [
      "Délka",
-     "1000 mm (TRG-22 510 mm barrel)1150 mm (TRG-22)1020 mm (TRG-42 folded stock 510 mm barrel)1200 mm (TRG-42)"
+     "1000 mm (TRG-22 510 mm barrel); 1150 mm (TRG-22); 1020 mm (TRG-42 folded stock 510 mm barrel); 1200 mm (TRG-42)"
     ],
     [
      "Délka hlavně",
-     "510 mm (TRG-22 and TRG-42 folded stock)660 mm (TRG-22)690 mm (TRG-42))762 mm (TRG-62 A1)"
+     "510 mm (TRG-22 and TRG-42 folded stock); 660 mm (TRG-22); 690 mm (TRG-42)); 762 mm (TRG-62 A1)"
     ],
     [
      "Dosah",
-     "800 m (TRG-22 .308 Winchester)1100 m (TRG-42 .300 Winchester Magnum)1500 m (TRG-42 .338 Lapua Magnum)2000 m (TRG-62 A1 .375 CheyTac)"
+     "800 m (TRG-22 .308 Winchester); 1100 m (TRG-42 .300 Winchester Magnum); 1500 m (TRG-42 .338 Lapua Magnum); 2000 m (TRG-62 A1 .375 CheyTac)"
     ],
     [
      "Náboj",
-     ".260 Remington(TRG-22)6.5mm Creedmoor(TRG-22 A1).308 Winchester (7.62×51mm NATO)(TRG-21, TRG-22).300 Winchester Magnum(TRG-41, TRG-42).338 Lapua Magnum(TRG-41, TRG-42) .375 CheyTac (9.5×77mm) (TRG-62 A1)"
+     ".260 Remington; (TRG-22); 6.5mm Creedmoor; (TRG-22 A1); .308 Winchester (7.62×51mm NATO); (TRG-21, TRG-22); .300 Winchester Magnum; (TRG-41, TRG-42); .338 Lapua Magnum; (TRG-41, TRG-42); .375 CheyTac (9.5×77mm) (TRG-62 A1)"
     ],
     [
      "Princip",
@@ -2074,7 +2114,7 @@
     ],
     [
      "Zásobování",
-     "5-round detachable box magazine (.338 Lapua Magnum)7-round detachable box magazine (.300 Winchester Magnum and .375 CheyTac)10-round detachable box magazine (.308 Winchester)"
+     "5-round detachable box magazine (.338 Lapua Magnum); 7-round detachable box magazine (.300 Winchester Magnum and .375 CheyTac); 10-round detachable box magazine (.308 Winchester)"
     ],
     [
      "Mířidla",
@@ -2091,11 +2131,11 @@
    "fields": [
     [
      "Typ",
-     "Anti-materiel rifle"
+     "protimateriálová puška"
     ],
     [
      "Původ",
-     "United States"
+     "USA"
     ],
     [
      "Výrobce",
@@ -2111,7 +2151,7 @@
     ],
     [
      "Výroba",
-     "1982–present"
+     "1982–dosud"
     ],
     [
      "Hmotnost",
@@ -2135,7 +2175,7 @@
     ],
     [
      "Princip",
-     "Recoil-operatedrotating bolt"
+     "Recoil-operated; rotating bolt"
     ],
     [
      "Úsťová rychlost",
@@ -2160,11 +2200,11 @@
    "fields": [
     [
      "Typ",
-     "Assault rifle"
+     "útočná puška"
     ],
     [
      "Původ",
-     "Czechoslovakia"
+     "Československo"
     ],
     [
      "Výrobce",
@@ -2192,7 +2232,7 @@
     ],
     [
      "Délka",
-     "vz. 58 P:; vz. 58 V stock extended / stock folded; with bayonet fixed"
+     "vz. 58 P: 845 mm; vz. 58 V 845 mm stock extended / 636 mm stock folded; 1000 mm with bayonet fixed"
     ],
     [
      "Délka hlavně",
@@ -2200,7 +2240,7 @@
     ],
     [
      "Šířka",
-     "stock extended; stock folded"
+     "57 mm stock extended; 72 mm stock folded"
     ],
     [
      "Výška",
@@ -2220,11 +2260,11 @@
     ],
     [
      "Kadence",
-     "800 rounds/min"
+     "800 ran/min"
     ],
     [
      "Úsťová rychlost",
-     "705 m/sMuzzle energy: 1988 J"
+     "705 m/s; Muzzle energy: 1988 J"
     ],
     [
      "Max. dostřel",
@@ -2236,7 +2276,7 @@
     ],
     [
      "Mířidla",
-     "Open-type iron sights with sliding rear tangent and shrouded front post353 mm sight radius"
+     "Open-type iron sights with sliding rear tangent and shrouded front post; 353 mm sight radius"
     ]
    ]
   },
@@ -2253,7 +2293,7 @@
     ],
     [
      "První let",
-     "14 September 2015 (L-39CW)22 December 2018 (L-39NG)"
+     "14 September 2015 (L-39CW); 22 December 2018 (L-39NG)"
     ],
     [
      "Vyrobeno",
@@ -2310,11 +2350,15 @@
    "fields": [
     [
      "Typ",
-     "Main battle tank"
+     "hlavní bojový tank"
     ],
     [
      "Původ",
-     "West Germany"
+     "Západní Německo"
+    ],
+    [
+     "Výrobce",
+     "KraussMaffei; Maschinenbau Kiel; Rheinmetall; Santa Bárbara Sistemas; Hägglunds AB; Contraves; Hellenic Vehicle Industry"
     ],
     [
      "Konstruktér",
@@ -2326,7 +2370,7 @@
     ],
     [
      "Výroba",
-     "1979–present"
+     "1979–dosud"
     ],
     [
      "Vyrobeno",
@@ -2338,15 +2382,15 @@
     ],
     [
      "Délka",
-     "2A4: 9.97 m (gun forward) 2A6: 10.97 m"
+     "2A4: 9.97 m (gun forward) ; 2A6: 10.97 m"
     ],
     [
      "Šířka",
-     "2A4: 3.7 m 2A6: 3.75 m"
+     "2A4: 3.7 m ; 2A6: 3.75 m"
     ],
     [
      "Výška",
-     "2A4: 2.8 m 2A6: 3 m"
+     "2A4: 2.8 m ; 2A6: 3 m"
     ],
     [
      "Pancéřování",
@@ -2370,7 +2414,7 @@
     ],
     [
      "Měrný výkon",
-     "2A6: 17.8 kW/t 2A7V: 16.6 kW/t"
+     "2A6: 17.8 kW/t ; 2A7V: 16.6 kW/t"
     ],
     [
      "Podvozek",
@@ -2379,6 +2423,10 @@
     [
      "Rychlost",
      "70 kph"
+    ],
+    [
+     "Dojezd",
+     "Road: 340 km; Cross country: 220 km; Average: 280 km"
     ]
    ]
   }
