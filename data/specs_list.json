@@ -1,0 +1,158 @@
+{
+ "_info": "Seznam článků anglické Wikipedie pro technické parametry (workflow fetch-specs.yml → data/specs.json). key odpovídá poslednímu poli v ACR.TECH / ACR.INF.",
+ "items": [
+  {
+   "key": "leopard2",
+   "en": "Leopard 2",
+   "label": "Leopard 2 (obecně, údaje dle verze uvedené ve Wikipedii)"
+  },
+  {
+   "key": "t72cz",
+   "en": "T-72M4 CZ"
+  },
+  {
+   "key": "cv90",
+   "en": "CV90"
+  },
+  {
+   "key": "bmp2",
+   "en": "BMP-2",
+   "label": "BVP-2 (BMP-2)"
+  },
+  {
+   "key": "pandur2",
+   "en": "Pandur II"
+  },
+  {
+   "key": "titus",
+   "en": "Titus (vehicle)",
+   "label": "Tatra Titus"
+  },
+  {
+   "key": "caesar",
+   "en": "CAESAR self-propelled howitzer"
+  },
+  {
+   "key": "dana",
+   "en": "Vz. 77 DANA",
+   "label": "ShKH vz. 77 Dana"
+  },
+  {
+   "key": "spyder",
+   "en": "Spyder (air defense system)"
+  },
+  {
+   "key": "kub",
+   "en": "2K12 Kub"
+  },
+  {
+   "key": "rbs70",
+   "en": "RBS 70"
+  },
+  {
+   "key": "gripen",
+   "en": "Saab JAS 39 Gripen"
+  },
+  {
+   "key": "f35",
+   "en": "Lockheed Martin F-35 Lightning II"
+  },
+  {
+   "key": "l159",
+   "en": "Aero L-159 Alca"
+  },
+  {
+   "key": "c390",
+   "en": "Embraer C-390 Millennium"
+  },
+  {
+   "key": "c295",
+   "en": "Airbus C-295"
+  },
+  {
+   "key": "venom",
+   "en": "Bell UH-1Y Venom"
+  },
+  {
+   "key": "viper",
+   "en": "Bell AH-1Z Viper"
+  },
+  {
+   "key": "mi17",
+   "en": "Mil Mi-17",
+   "label": "Mi-171Š (Mi-17)"
+  },
+  {
+   "key": "w3",
+   "en": "PZL W-3 Sokół",
+   "label": "W-3A Sokol"
+  },
+  {
+   "key": "a319",
+   "en": "Airbus A319",
+   "label": "Airbus A319"
+  },
+  {
+   "key": "bren2",
+   "en": "CZ BREN 2"
+  },
+  {
+   "key": "bren805",
+   "en": "CZ 805 BREN"
+  },
+  {
+   "key": "p10",
+   "en": "CZ P-10 C"
+  },
+  {
+   "key": "evo3",
+   "en": "CZ Scorpion Evo 3"
+  },
+  {
+   "key": "minimi",
+   "en": "FN Minimi"
+  },
+  {
+   "key": "m2",
+   "en": "M2 Browning"
+  },
+  {
+   "key": "cg",
+   "en": "Carl Gustaf 8.4 cm recoilless rifle",
+   "label": "Carl Gustaf"
+  },
+  {
+   "key": "rpg7",
+   "en": "RPG-7"
+  },
+  {
+   "key": "spike",
+   "en": "Spike (missile)"
+  },
+  {
+   "key": "awm",
+   "en": "Accuracy International AWM"
+  },
+  {
+   "key": "trg",
+   "en": "Sako TRG"
+  },
+  {
+   "key": "m82",
+   "en": "Barrett M82"
+  },
+  {
+   "key": "vz58",
+   "en": "Sa vz. 58"
+  },
+  {
+   "key": "l39ng",
+   "en": "Aero L-39NG",
+   "label": "L-39 Skyfox"
+  },
+  {
+   "key": "leopard2a8",
+   "en": "Leopard 2A8"
+  }
+ ]
+}

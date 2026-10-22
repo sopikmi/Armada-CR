@@ -3,7 +3,7 @@ name: Stáhnout fotky z Wikimedia Commons
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, nahled]
     paths:
       - foto/queries.json
       - foto/candidates.json

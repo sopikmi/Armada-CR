@@ -1,0 +1,39 @@
+name: Stáhnout technické parametry z Wikipedie
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 5 * * 4"
+  push:
+    branches: [main, nahled]
+    paths:
+      - data/specs_list.json
+      - scripts/fetch_specs.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: specs
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install mwparserfromhell
+      - name: Parametry
+        run: python3 scripts/fetch_specs.py
+      - name: Uložit do repozitáře
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/specs.json
+          git diff --cached --quiet && echo "Beze změn" && exit 0
+          git commit -m "Parametry: aktualizace z Wikipedie"
+          git pull --rebase
+          git push
