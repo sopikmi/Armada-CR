@@ -4,7 +4,7 @@
  */
 window.ACR = {};
 
-ACR.UPDATED = "22. 10. 2026";
+ACR.UPDATED = "29. 10. 2026";
 
 ACR.SOURCES = {
   mo_pocty: ["MO ČR – odpověď na žádost o informace: počty vojáků (11/2025, PDF)", "https://statnisluzba.mo.gov.cz/sites/statnisluzba/files/2025-11/Po%C4%8Dty%20voj%C3%A1k%C5%AF.pdf"],
@@ -57,6 +57,11 @@ ACR.SOURCES = {
   demagog_4brn: ["Demagog.cz: 4. brn spolupracuje s německou tankovou divizí, podléhá českému velení", "https://demagog.cz/diskuze/ceska-brigada-rychleho-nasazeni-spolupracuje-s-nemeckou-tankovou-divizi-stale-ale-podleha-ceskemu-veleni"],
   mo_7mb: ["MO ČR (12/2025): 7. mb certifikována pro operace vysoké intenzity (MND-NE)", "https://acr.mo.gov.cz/en/ministry-of-defence/newsroom/news/7mechbde-passed-nato-tests--certified-to-control-high-intensity-operations--261764/"],
   eu_dca: ["EuroZprávy (16. 8. 2023): ratifikace obranné dohody s USA dokončena", "https://eurozpravy.cz/domaci/cesko-ma-platnou-obrannou-smlouvu-s-usa-proces-ratifikace-zavrsil-fiala.ejtyxa8i"],
+  ctk_cv90d: ["ČTK (27. 10. 2026): první CV90 až v příštím roce, smlouva na 4 systémy Spyder All-in-One", "https://www.ceskenoviny.cz/zpravy/zuna-dodavku-prvnich-vozidel-cv90-obdrzi-cesko-az-v-pristim-roce/2893872"],
+  dn_kvacr27: ["Deník N / ČTK (27. 10. 2026): vláda má koncepci projednat příští pondělí", "https://denikn.cz/minuta/2235540/"],
+  dn_kvacr_vydaje: ["Deník N (27. 10. 2026): koncepce – výdaje do konce volebního období nevzrostou, odklad protibalistické obrany", "https://denikn.cz/minuta/2234908/"],
+  dn_vydaje30: ["Deník N (23. 10. 2026): Zůna navrhl vládě nezvyšovat obranné výdaje, růst až od 2030", "https://denikn.cz/minuta/2230899/"],
+  ctk_gen26: ["ČTK (28. 10. 2026): Pavel jmenoval Hlaváče armádním generálem, povýšil 16 mužů", "https://www.ceskenoviny.cz/zpravy/pavel-jmenoval-hlavace-armadnim-generalem-celkem-povysil-16-muzu/2893208"],
   az_mandat: ["Armádní zpravodaj (3. 10. 2026): Česko sníží počet vojáků na východním křídle o 400", "https://armadnizpravodaj.cz/zpravodajstvi/cesko-snizi-pocet-vojaku-na-vychodnim-kridle-nato-o-400/"],
   czd_mandat: ["CZ Defence (16. 9. 2026): Výbor pro obranu řešil mandát zahraničních operací", "https://www.czdefence.cz/clanek/vybor-pro-obranu-resil-zahranicni-operace-akvizice-i-dalsi-smerovani-armady-klicovy-mandat-osobne-obhajoval-ministr-zuna"],
   e24_mi: ["Echo24 (28. 5. 2026): muniční iniciativa letos dodala půl milionu kusů", "https://m.echo24.cz/a/HPTeT/zpravy-svet-municni-inicativa-poslala-pul-milionu-kusu-munice-macinka"],
@@ -68,7 +73,7 @@ ACR.SOURCES = {
 ACR.KPI = [
   {lbl: "Vojáci z povolání – celý rezort", v: "30 097", d: "včetně Vojenského zpravodajství, Vojenské policie a Hradní stráže (údaj premiéra)", date: "k 1. 8. 2026", src: "ir_nabor26"},
   {lbl: "Vojáci v Armádě ČR", v: "26 407", d: "bez MO, VZ a dalších; v roce 2026 nastoupilo 2 394, odešlo 519, čistě +1 875", date: "k 20. 8. 2026", src: "ir_nabor26"},
-  {lbl: "Cíl KVAČR 2040", v: "32 000", d: "vojáků z povolání podle nové koncepce; vláda ji má projednat v týdnu od 26. 10. 2026", date: "koncepce 2040", src: "ed_kvacr", bar: [26407, 32000]},
+  {lbl: "Cíl KVAČR 2040", v: "32 000", d: "vojáků z povolání podle nové koncepce; vláda ji má podle ministra projednat v pondělí 2. 11. 2026", date: "koncepce 2040", src: "ed_kvacr", bar: [26407, 32000]},
   {lbl: "Aktivní záloha", v: "4 849", d: "poslední zveřejněný stav; cíl 10 000 do roku 2030, v roce 2026 cílová naplněnost 75 % u operačních útvarů a 44 % u teritoriálních sil", date: "k 1. 10. 2025", src: "mo_az", bar: [4849, 10000]},
   {lbl: "Nábor 2027 – plán", v: "3 550", d: "nových vojáků z povolání; rozpočet počítá s 33 044 místy vojáků", date: "návrh rozpočtu 2027", src: "ed_rozp27"},
   {lbl: "Rozpočet MO 2027 – návrh", v: "190,9 mld Kč", d: "o 36,1 mld Kč (23 %) více než 2026; obranné výdaje celkem 2,04 % HDP", date: "návrh 10/2026", src: "ed_rozp27"},
@@ -117,7 +122,7 @@ ACR.TECH = [
   ["Leopard 2A4", "Tanky", "42", "Německo / Švýcarsko", "ok", "28 jako kompenzace od Německa za tanky pro Ukrajinu, 14 dokoupeno (ex-švýcarské, ~161 mil. €). Flotila kompletní od 7/2026 u 73. tpr Přáslavice; k tomu 2 vyprošťovací Büffel 3.", "vepozs_2a4", "leopard2a4", "leopard2"],
   ["Leopard 2A8", "Tanky", "44", "Německo", "ord", "Smlouva 11. 9. 2025, 34,25 mld Kč s DPH. První tanky 2028, dodávky do 2031. S opcemi a podpůrnými verzemi 61–77 kusů.", "ctk_2a8", "leopard2a8", "leopard2a8"],
   ["T-72M4CZ", "Tanky", "~30", "ČR (modernizace)", "old", "Dosluhují, provozuschopná je jen část.", "e15_vyzbroj", "t72", "t72cz"],
-  ["CV90 MkIV", "Bojová vozidla", "246", "Švédsko / ČR", "ord", "59,7 mld Kč, 7 verzí; 39 kusů ze Švédska, 207 z VOP CZ. K 13. 10. 2026 žádné převzato; česká konfigurace poprvé představena na Future Forces Forum 21. 10. 2026. Zařazení kolem roku 2030.", "hn_akvizice", "cv90", "cv90"],
+  ["CV90 MkIV", "Bojová vozidla", "246", "Švédsko / ČR", "ord", "59,7 mld Kč, 7 verzí; 39 kusů ze Švédska, 207 z VOP CZ. Žádné převzato; česká konfigurace poprvé představena na Future Forces Forum 21. 10. 2026. Prvních 10 vozidel pro vojskové zkoušky se podle MO (27. 10. 2026) posouvá z roku 2026 do průběhu 2027, výrobce má hotových prvních 5. Zařazení kolem roku 2030 (HN, 13. 10.).", "ctk_cv90d", "cv90", "cv90"],
   ["BVP-2", "Bojová vozidla", "~200", "ČSSR", "old", "40 let stará vozidla, nahradí je CV90.", "e15_vyzbroj", "bvp2", "bmp2"],
   ["Pandur II 8×8", "Bojová vozidla", "127", "Rakousko / ČR", "ok", "107 z roku 2006 (72 bojových s věží RCWS-30) + 20 velitelských a spojovacích. Nemodernizují se; připravuje se náhrada až 250 vozidly (Pandur EVO, Patria, Boxer).", "hn_akvizice", "pandur", "pandur2"],
   ["Tatra Titus 6×6", "Bojová vozidla", "62", "ČR / Francie", "ok", "Velitelské, spojovací a dělostřelecké verze, dodáno do 6/2024.", "czd_pandur", "titus", "titus"],
@@ -244,6 +249,7 @@ ACR.PROJ = [
   ["2024 → 2026", "Leopard 2A4", "Přechodné řešení: 28 tanků od Německa jako kompenzace za pomoc Ukrajině a 14 dokoupených.", "~3,9 mld", "nákup 14 ks (161 mil. €)", "fo_2a4"],
   ["2021 → 2028", "CAESAR 8×8 CZ", "62 samohybných houfnic 155 mm na podvozku Tatra. Zaplaceno přes 7,2 mld Kč záloh, ani jeden kus dodán; jedná se o penále.", "10,3 mld", "celkem", "ed_caesar"],
   ["2021 → 2028", "SPYDER", "4 baterie PVO krátkého a středního dosahu, vozidla kompletována v Česku (VTÚ, Retia).", "~14 mld", "", "e15_vyzbroj"],
+  ["2026 → ?", "SPYDER All-in-One", "4 další systémy PVO; samostatná smlouva by podle MO (27. 10. 2026) mohla být podepsána na přelomu 2026/2027, projekt připraven za 11 měsíců.", "—", "nezveřejněno", "ctk_cv90d"],
   ["2025 → 2035", "Gripen – prodloužení", "Pronájem 12 letounů do 2035 jako most k F-35.", "16,7 mld", "+ ~4 mld modernizace", "fb_gripen"],
   ["2024 → 2028", "Embraer C-390", "2 střední transportní letouny, první dodán 7/2026.", "11,3 mld", "", "av_c390"],
   ["2026 → 2028", "Rekonstrukce Čáslavi", "Příprava základny pro F-35; až 1,6 mld Kč může uhradit NATO.", "5,33 mld", "bez DPH", "nv_caslav"],
@@ -256,10 +262,12 @@ ACR.PROJ = [
  */
 ACR.EVENTS = [
   ["2026-10-23", "21.–23. 10. 2026", "Future Forces Exhibition & Forum", "Praha, PVA Expo Letňany", "530 vystavovatelů ze 70 zemí; poprvé představeno CV90 MkIV v české konfiguraci.", "mo_fff26", "akce", "potvrzeno"],
-  ["2026-10-30", "týden od 26. 10. 2026", "Vláda projedná KVAČR 2040", "Praha, Úřad vlády", "Koncepce výstavby armády do 2040, kterou 20. 10. vzala na vědomí Bezpečnostní rada státu.", "ctk_kvacr", "milnik", "ocekavano"],
+  ["2026-11-02", "2. 11. 2026", "Vláda projedná KVAČR 2040", "Praha, Úřad vlády", "Koncepce výstavby armády do 2040 (20. 10. ji vzala na vědomí Bezpečnostní rada státu); termín podle ministra Zůny z 27. 10. Po schválení ji armáda představí na tiskové konferenci.", "dn_kvacr27", "milnik", "ocekavano"],
+  ["2026-11-06", "týden od 2. 11. 2026", "CV90: řídicí výbor posoudí zpoždění", "Švédsko", "Společný řídicí výbor projektu CV90 má posoudit posun dodávky prvních 10 vozidel do roku 2027.", "ctk_cv90d", "milnik", "ocekavano", "cv90"],
+  ["2026-12-31", "přelom 2026/2027", "SPYDER All-in-One: podpis smlouvy", "MO ČR", "Možný podpis smlouvy na čtyři další systémy PVO SPYDER All-in-One; cena nezveřejněna.", "ctk_cv90d", "milnik", "ocekavano", "spyder"],
   ["2026-10-28", "28. 10. 2026", "Den vzniku samostatného Československa", "Praha, Pražský hrad", "Státní svátek: jmenování generálů a vyznamenání prezidentem, slavnostní nástup Hradní stráže.", "zakon245", "vyroci", "potvrzeno", "hradni"],
   ["2026-11-11", "11. 11. 2026", "Den válečných veteránů", "celá republika, Praha – Vítkov", "Významný den; pietní akty AČR a sbírka Českého červeného kříže a spolků veteránů.", "zakon245", "vyroci", "potvrzeno"],
-  ["2026-12-31", "do konce 2026", "První CV90 MkIV pro 7. mb", "Švédsko / VOP CZ Šenov", "Plán: prvních 10 vozidel CV90 k vojskovým zkouškám v roce 2026; k 13. 10. žádné převzato. Jako první je dostane 74. mechanizovaný prapor.", "hn_akvizice", "milnik", "ocekavano", "cv90"],
+  ["2027-12-31", "v průběhu 2027", "První CV90 MkIV pro 7. mb", "Švédsko / VOP CZ Šenov", "Prvních 10 vozidel CV90 k vojskovým zkouškám mělo přijít v roce 2026; podle MO (27. 10. 2026) budou dodána v průběhu 2027, přesný termín ani důvod nezveřejněny. Jako první je dostane 74. mechanizovaný prapor.", "ctk_cv90d", "milnik", "ocekavano", "cv90"],
   ["2027-04-01", "duben 2027", "CAESAR: začátek vojskových zkoušek", "13. dělostřelecký pluk, Jince", "Podle harmonogramu po odstranění nedostatků dodavatelem; zařazení do výzbroje 2028.", "ed_caesar", "milnik", "ocekavano", "caesar"],
   ["2027-01-01", "1. 1. 2027", "Nový mandát zahraničních operací", "východní křídlo NATO", "Strop klesá z 2 000 na 1 600 vojáků, nově i Finsko; příspěvek do Modelu sil NATO roste na 11 000.", "az_mandat", "milnik", "potvrzeno"],
   ["2027-05-26", "26.–28. 5. 2027", "IDET 2027", "Brno, Výstaviště", "Mezinárodní veletrh obranné a bezpečnostní techniky, souběžně PYROS a ISET.", "idet27", "akce", "potvrzeno", "spyder"],
@@ -286,6 +294,7 @@ ACR.STRAT = [
   ["2023", "Bezpečnostní strategie ČR", "Vrcholný dokument; Rusko označeno za hlavní hrozbu.", "q:Bezpečnostní strategie České republiky 2023 pdf"],
   ["2023", "Obranná strategie ČR", "Ambice obrany a úroveň výdajů.", "q:Obranná strategie České republiky 2023 mo.gov.cz"],
   ["2019", "Koncepce výstavby AČR 2030 (KVAČR)", "Cílová struktura sil, těžká brigáda, 30 000 vojáků; průběžně aktualizována.", "q:Koncepce výstavby Armády České republiky 2030 pdf"],
+  ["2026", "Koncepce výstavby AČR 2040", "Aktualizace KVAČR s cílem 32 000 vojáků z povolání; 20. 10. 2026 ji vzala na vědomí Bezpečnostní rada státu, vláda ji má projednat 2. 11. 2026.", "q:Koncepce výstavby Armády České republiky 2040"],
   ["2026", "Dlouhodobý výhled pro obranu 2040", "Ministr Zůna avizoval dokončení v roce 2026.", "q:Dlouhodobý výhled pro obranu 2040"],
   ["2011", "Bílá kniha o obraně", "Audit stavu obrany po reformách; dodnes referenční bod.", "q:Bílá kniha o obraně 2011 pdf"],
   ["NATO", "Capability Targets (NDPP)", "Cíle schopností přidělené Aliancí v cyklu obranného plánování; z nich plyne potřeba 37 000+ vojáků. Podrobnosti jsou utajené.", "https://www.nato.int/cps/en/natohq/topics_49202.htm"],
@@ -294,6 +303,7 @@ ACR.STRAT = [
 
 /* ---------- KONTROVERZE ---------- [závažnost (''|w|n), titulek, text, zdroj] */
 ACR.ISSUES = [
+  ["", "Koncepce 2040 bez růstu výdajů", "Podle Deníku N (27. 10. 2026) koncepce, kterou ministr Zůna poslal vládě, varuje před kritickými nedostatky v obraně, zároveň ale počítá s tím, že vláda do konce volebního období nezvýší obranné výdaje, a odkládá mj. protibalistickou obranu. Zůna 23. 10. navrhl vládě usnesení, podle něhož mají výdaje růst až od roku 2030. Premiér Babiš kritiku označil za „dezinformace a nesmysly“.", "dn_kvacr_vydaje"],
   ["", "Ministr vs. armáda: šéf kybernetických sil", "Ministr Zůna nařídil náčelníkovi GŠ odvolat brig. gen. Radka Harateka, velitele informačních a kybernetických sil, kvůli operacím „Karel“ a „Volby 2025“. Generální štáb rozkaz nesplnil a Haratek podle mluvčího má důvěru náčelníka (15. 10. 2026).", "dn_haratek"],
   ["", "Rozpočet 2027: rekord, ale 2,04 % HDP", "Návrh kapitoly MO 190,9 mld Kč je o 23 % vyšší než 2026, obranné výdaje ale dosahují jen 2,04 % HDP, zatímco haagský závazek NATO míří k 3,5 % jádrových výdajů do 2035. Ministr sám upozorňuje na zpoždění podepsaných zakázek.", "ed_rozp27"],
   ["", "CAESAR: zaplaceno 7,2 mld, dodáno nic", "První čtyři houfnice měly přijít v dubnu 2026. Kontrolní zkoušky odhalily nedostatky (mj. elektromagnetické záření v kabinách), vojskové zkoušky nezačaly, zařazení se posouvá na 2028. Ministr dává přednost dodání před zrušením smlouvy.", "ct_caesar26"],

@@ -3,7 +3,7 @@
  * Pravidla úprav: AGENT.md.
  */
 window.PRU = {};
-PRU.UPDATED = "22. 10. 2026";
+PRU.UPDATED = "29. 10. 2026";
 
 PRU.SOURCES = {
   ctk_export: ["ČTK (5. 8. 2026): vývoz vojenského materiálu za 2025 stoupl o 22,7 %", "https://www.ceskenoviny.cz/zpravy/vyvoz-vojenskeho-materialu-z-cr-loni-stoupl-o-227-/2858868"],

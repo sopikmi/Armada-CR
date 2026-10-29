@@ -3,7 +3,7 @@
  * Pravidla úprav: AGENT.md. Nic nedomýšlej.
  */
 window.MISE = {};
-MISE.UPDATED = "22. 10. 2026";
+MISE.UPDATED = "29. 10. 2026";
 
 MISE.SOURCES = {
   lit: ["mise.mo.gov.cz: Litva", "https://mise.mo.gov.cz/aktualni-mise/lit/litva-243307/"],
