@@ -3,7 +3,7 @@
  * Pravidla úprav: AGENT.md.
  */
 window.PRU = {};
-PRU.UPDATED = "29. 10. 2026";
+PRU.UPDATED = "5. 11. 2026";
 
 PRU.SOURCES = {
   ctk_export: ["ČTK (5. 8. 2026): vývoz vojenského materiálu za 2025 stoupl o 22,7 %", "https://www.ceskenoviny.cz/zpravy/vyvoz-vojenskeho-materialu-z-cr-loni-stoupl-o-227-/2858868"],
@@ -17,6 +17,7 @@ PRU.SOURCES = {
   ed_aero: ["Ekonomický deník (8. 6. 2026): Aero – rekordní zisk táhne Skyfox", "https://ekonomickydenik.cz/aero-rekord-zisk-tahne-nebeska-liska/"],
   sz_explosia: ["Seznam Zprávy (3. 6. 2026): Explosia zdvojnásobila zisk", "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-vyrobce-vybusnin-explosia-zdvojnasobil-zisk-na-rekordnich-838-milionu-korun-307703"],
   sz_explosia2: ["Seznam Zprávy (9. 6. 2026): prodej Explosie zatím není na stole", "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-prodej-explosie-neni-na-stole-uklidnoval-havlicek-poslance-zatim-308188"],
+  mo_viper_sim: ["MO ČR (4. 11. 2026): LOM PRAHA plně převzal podporu simulátoru vrtulníků Viper", "https://www.mo.gov.cz/informacni-servis/zpravodajstvi/mene-zavislosti-na-zahranici--lom-praha-plne-prevzal-podporu-simulatoru-vrtulniku-viper-266697/"],
   mo_fff: ["MO ČR (21. 10. 2026): Future Forces Forum – exponáty státních podniků", "https://mocr.mo.gov.cz/informacni-servis/zpravodajstvi/praha-hosti-future-forces-forum--obranne-technologie-predstavuje-vice-nez-530-vystavovatelu-266518/"],
   ed_cv90: ["Ekonomický deník (28. 8. 2025): 207 CV90 vznikne v Česku", "https://ekonomickydenik.cz/ve-svedsku-39-bojovych-vozidel-cv90-207-v-cesku/"],
   e24_mi: ["Echo24 (28. 5. 2026): muniční iniciativa v roce 2026", "https://m.echo24.cz/a/HPTeT/zpravy-svet-municni-inicativa-poslala-pul-milionu-kusu-munice-macinka"],
@@ -46,7 +47,7 @@ PRU.FIRMS = [
   ["Aero Vodochody", "soukromý vlastník", "Odolena Voda", "cvičný a lehký bojový letoun L-39 Skyfox (L-39NG), díly pro Embraer C-390", "tržby 2025 ~6,5 mld Kč, zisk před zdaněním 512 mil. Kč; 14 dodaných Skyfoxů v roce 2025 (58 % tržeb)", "ed_aero", "https://www.aero.cz/", "i_skyfox"],
   ["Explosia", "100 % stát (MPO); zvažuje se prodej, zájem projevil i francouzský Eurenco", "Pardubice-Semtín", "střelné prachy a dělostřelecké náplně, výbušniny (Semtex)", "tržby 2025 3,0 mld Kč (+64 %), zisk 838 mil. Kč; poptávka převyšuje kapacitu, investice až 2 mld Kč; 698 zaměstnanců", "sz_explosia", "https://www.explosia.cz/", null],
   ["VOP CZ, s. p.", "státní podnik MO", "Šenov u Nového Jičína", "výroba 207 z 246 vozidel CV90 pro AČR, opravy a modernizace techniky, cisterna CAP Shadow", "—", "ed_cv90", "https://www.vop.cz/", null],
-  ["LOM PRAHA, s. p.", "státní podnik MO", "Praha-Malešice; Centrum leteckého výcviku Pardubice", "opravy vrtulníků a motorů, výcvik pilotů, simulátory (L-39 Skyfox s VR)", "—", "mo_fff", "https://www.lompraha.cz/", null],
+  ["LOM PRAHA, s. p.", "státní podnik MO", "Praha-Malešice; Centrum leteckého výcviku Pardubice", "opravy vrtulníků a motorů, výcvik pilotů, simulátory (L-39 Skyfox s VR); od 11/2026 plný servis simulátoru AH-1Z Viper v Náměšti nad Oslavou", "—", "mo_viper_sim", "https://www.lompraha.cz/", null],
   ["Vojenský technický ústav, s. p.", "státní podnik MO", "Praha-Kbely, Slavičín, Vyškov", "zkušebnictví, vývoj (dron BRUSMIN), kompletace SPYDER s firmou Retia", "—", "ex_spyder", "https://www.vtusp.cz/", null],
   ["Tatra Trucks / Tatra Defence Vehicle", "CSG", "Kopřivnice", "podvozky Tatra Force (i pro CAESAR CZ), Tatra Titus (s Nexterem)", "—", "hn_akv", "https://www.tatra.cz/", "i_tatra"],
   ["ERA", "Omnipol", "Pardubice", "pasivní sledovací systémy VERA-NG", "—", "", "https://www.era.aero/", "i_era"],
