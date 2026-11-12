@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05",
+ "generated": "2026-11-12",
  "source": "Wikipedie (CC BY-SA 4.0)",
  "items": {
   "leopard2": {
@@ -1396,7 +1396,7 @@
    "fields": [
     [
      "Typ",
-     "útočná puška; Carbine; Battle rifle; Designated marksman rifle"
+     "útočná puška; Carbine; CZ BREN 2 BR:; Battle rifle; CZ BREN 2 DMR:; Designated marksman rifle"
     ],
     [
      "Původ",
@@ -1416,7 +1416,7 @@
     ],
     [
      "Hmotnost",
-     "3.6 kg; 3.15 kg (CZ 807); 3.78 - 4.6 kg (CZ BREN 2 BR)"
+     "CZ 805 A1; 3.49 kg; CZ 805 A2; 3.41 kg; CZ 807:; 3.15 kg; CZ BREN 2 BR:; 3.78 - 4.6 kg"
     ],
     [
      "Délka",
@@ -1424,15 +1424,15 @@
     ],
     [
      "Délka hlavně",
-     "360 mm (CZ 805 BREN A1); 277 mm (CZ 805 BREN A2); 408 mm (CZ 807); 407 mm (CZ BREN 2 BR); 457 mm (CZ BREN 2 DMR)"
+     "CZ 805 BREN A1:; 360 mm; CZ 805 BREN A2:; 277 mm; CZ 807:; 408 mm; CZ BREN 2 BR; 407 mm; CZ BREN 2 DMR:; 457 mm"
     ],
     [
      "Dosah",
-     "500 m (CZ 805 BREN A1); 400 m (CZ 805 BREN A2); 450 m CZ 807 in 5.56×45mm NATO; 350 m CZ 807 in 7.62×39mm; 600 m (CZ BREN 2 BR); 800 m (CZ BREN 2 DMR)"
+     "CZ 805 BREN A1:; 500 m; CZ 805 BREN A2:; 400 m; CZ 807 in 5.56×45mm NATO:; 450 m; CZ 807 in 7.62×39mm:; 350 m; CZ BREN 2 BR:; 600 m; CZ BREN 2 DMR:; 800 m"
     ],
     [
      "Náboj",
-     "5.56×45mm NATO; .300 AAC Blackout (CZ BREN 3); 7.62×39mm (CZ 807, CZ BREN 2); 7.62×51mm NATO (CZ BREN 2 BR, CZ BREN 2 DMR)"
+     "5.56×45mm NATO; CZ BREN 3:; .300 AAC Blackout; CZ 807, CZ BREN 2:; 7.62×39mm; CZ BREN 2 BR/DMR:; 7.62×51mm NATO"
     ],
     [
      "Princip",
@@ -1440,7 +1440,7 @@
     ],
     [
      "Kadence",
-     "760 (±100) ran/min; 850 (±100) ran/min (CZ BREN 2); 800 (±100) ran/min (CZ BREN 2 BR)"
+     "760 (±100) ran/min; CZ BREN 2:; 850 (±100) ran/min; CZ BREN 2 BR:; 800 (±100) ran/min"
     ],
     [
      "Zásobování",
@@ -1461,7 +1461,7 @@
    "fields": [
     [
      "Typ",
-     "útočná puška; Carbine; Battle rifle; Designated marksman rifle"
+     "útočná puška; Carbine; CZ BREN 2 BR:; Battle rifle; CZ BREN 2 DMR:; Designated marksman rifle"
     ],
     [
      "Původ",
@@ -1481,7 +1481,7 @@
     ],
     [
      "Hmotnost",
-     "3.6 kg; 3.15 kg (CZ 807); 3.78 - 4.6 kg (CZ BREN 2 BR)"
+     "CZ 805 A1; 3.49 kg; CZ 805 A2; 3.41 kg; CZ 807:; 3.15 kg; CZ BREN 2 BR:; 3.78 - 4.6 kg"
     ],
     [
      "Délka",
@@ -1489,15 +1489,15 @@
     ],
     [
      "Délka hlavně",
-     "360 mm (CZ 805 BREN A1); 277 mm (CZ 805 BREN A2); 408 mm (CZ 807); 407 mm (CZ BREN 2 BR); 457 mm (CZ BREN 2 DMR)"
+     "CZ 805 BREN A1:; 360 mm; CZ 805 BREN A2:; 277 mm; CZ 807:; 408 mm; CZ BREN 2 BR; 407 mm; CZ BREN 2 DMR:; 457 mm"
     ],
     [
      "Dosah",
-     "500 m (CZ 805 BREN A1); 400 m (CZ 805 BREN A2); 450 m CZ 807 in 5.56×45mm NATO; 350 m CZ 807 in 7.62×39mm; 600 m (CZ BREN 2 BR); 800 m (CZ BREN 2 DMR)"
+     "CZ 805 BREN A1:; 500 m; CZ 805 BREN A2:; 400 m; CZ 807 in 5.56×45mm NATO:; 450 m; CZ 807 in 7.62×39mm:; 350 m; CZ BREN 2 BR:; 600 m; CZ BREN 2 DMR:; 800 m"
     ],
     [
      "Náboj",
-     "5.56×45mm NATO; .300 AAC Blackout (CZ BREN 3); 7.62×39mm (CZ 807, CZ BREN 2); 7.62×51mm NATO (CZ BREN 2 BR, CZ BREN 2 DMR)"
+     "5.56×45mm NATO; CZ BREN 3:; .300 AAC Blackout; CZ 807, CZ BREN 2:; 7.62×39mm; CZ BREN 2 BR/DMR:; 7.62×51mm NATO"
     ],
     [
      "Princip",
@@ -1505,7 +1505,7 @@
     ],
     [
      "Kadence",
-     "760 (±100) ran/min; 850 (±100) ran/min (CZ BREN 2); 800 (±100) ran/min (CZ BREN 2 BR)"
+     "760 (±100) ran/min; CZ BREN 2:; 850 (±100) ran/min; CZ BREN 2 BR:; 800 (±100) ran/min"
     ],
     [
      "Zásobování",
@@ -2200,7 +2200,7 @@
    "fields": [
     [
      "Typ",
-     "útočná puška"
+     "útočná puška, semi-automatic rifle, carbine"
     ],
     [
      "Původ",
@@ -2208,7 +2208,7 @@
     ],
     [
      "Výrobce",
-     "Česká zbrojovka Uherský Brod"
+     "Česká zbrojovka Uherský Brod, Czech Small Arms (CSA)"
     ],
     [
      "Konstruktér",
@@ -2220,7 +2220,7 @@
     ],
     [
      "Výroba",
-     "1959–1982"
+     "1959–1982 (original CZ military production); late 2000s–dosud (CSA production)"
     ],
     [
      "Vyrobeno",
@@ -2252,7 +2252,7 @@
     ],
     [
      "Náboj",
-     "7.62×39mm"
+     "7.62×39mm; 5.56×45mm NATO; .223 Remington; .222 Remington; .22 LR (conversion kits)"
     ],
     [
      "Princip",
