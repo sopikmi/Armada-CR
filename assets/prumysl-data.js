@@ -3,9 +3,10 @@
  * Pravidla úprav: AGENT.md.
  */
 window.PRU = {};
-PRU.UPDATED = "5. 11. 2026";
+PRU.UPDATED = "12. 11. 2026";
 
 PRU.SOURCES = {
+  hn_csg9m: ["Hospodářské noviny / ČTK (11. 11. 2026): CSG za tři čtvrtletí 2026 tržby +6,1 %, zakázky 18 mld €", "https://byznys.hn.cz/c1-67957910-strnadova-csg-zvysila-mezirocne-trzby-o-6-1-procenta-objem-zakazek-ji-stoupl-na-18-miliard-eur"],
   ctk_export: ["ČTK (5. 8. 2026): vývoz vojenského materiálu za 2025 stoupl o 22,7 %", "https://www.ceskenoviny.cz/zpravy/vyvoz-vojenskeho-materialu-z-cr-loni-stoupl-o-227-/2858868"],
   ctk_export24: ["ČTK (25. 7. 2025): vývoz za 2024 asi 91 mld Kč", "https://www.ceskenoviny.cz/zpravy/vyvoz-vojenskeho-materialu-z-cr-loni-mezirocne-stoupl-o-86/2702225"],
   mpo_zprava: ["MPO: Výroční zpráva o kontrole vývozu vojenského materiálu za rok 2024 (PDF)", "https://mpo.gov.cz/assets/cz/zahranicni-obchod/licencni-sprava/o-licencni-sprave/2025/9/Vyrocni-zprava-o-kontrole-vyvozu-vojenskeho-materialu--rucnich-zbrani-pro-civilni-pouziti-a-zbozi-a-technologii-dvojiho-uziti-v-CR-za-rok-2024_2.pdf"],
@@ -41,7 +42,7 @@ PRU.DEST = [["Ukrajina", 50.7], ["Nizozemsko", 11.7], ["Bulharsko", 10.7], ["Slo
 
 /* Firmy: [název, vlastník/skupina, sídlo a závody, obor a produkty, klíčová čísla, zdroj, web, foto key] */
 PRU.FIRMS = [
-  ["CSG (Czechoslovak Group)", "Michal Strnad; od 2026 na burze Euronext Amsterdam", "Praha; Excalibur Army (Šternberk), Tatra Trucks (Kopřivnice), MSM Group (Slovensko), Retia (Pardubice), Kinetic Group (USA), závody v Řecku", "dělostřelecká a tanková munice, houfnice DANA M2 a MORANA, nákladní vozy Tatra, radary, modernizace techniky, Pandur EVO", "tržby 2025 6,74 mld € (+71,7 %), EBITDA 1,78 mld €; munice 4,11 mld €; 1. pololetí 2026 tržby 3,25 mld €, z toho 17 % Ukrajina", "fio_csg", "https://www.czechoslovakgroup.cz/", "i_dana"],
+  ["CSG (Czechoslovak Group)", "Michal Strnad; od 2026 na burze Euronext Amsterdam", "Praha; Excalibur Army (Šternberk), Tatra Trucks (Kopřivnice), MSM Group (Slovensko), Retia (Pardubice), Kinetic Group (USA), závody v Řecku", "dělostřelecká a tanková munice, houfnice DANA M2 a MORANA, nákladní vozy Tatra, radary, modernizace techniky, Pandur EVO", "tržby 2025 6,74 mld € (+71,7 %), EBITDA 1,78 mld €; munice 4,11 mld €; 1. pololetí 2026 tržby 3,25 mld €, z toho 17 % Ukrajina; 1.–3. čtvrtletí 2026 tržby 4,76 mld € (+6,1 %), EBITDA 1,2 mld €, zakázkové portfolio rekordních 18 mld € (HN/ČTK 11. 11. 2026)", "fio_csg", "https://www.czechoslovakgroup.cz/", "i_dana"],
   ["Colt CZ Group", "kotovaná na pražské burze", "Uherský Brod (Česká zbrojovka), Vlašim (Sellier & Bellot), Colt (USA, Kanada)", "pušky CZ BREN 2, pistole CZ P-10, samopaly Scorpion EVO, malorážová munice", "tržby 2025 23,4 mld Kč (+4,6 %), čistý zisk 2,04 mld Kč; prodáno ~578 tis. zbraní", "ed_colt", "https://www.coltczgroup.com/", "i_cz"],
   ["STV Group", "soukromá skupina", "Praha; výroba munice", "dělostřelecká munice 155, 152 a 122 mm (vlastní kovaná těla střel), tanková munice 120 mm pro Leopard 2A4, 30 × 165 mm; munice pro CAESAR", "tržby 2025 24,4 mld Kč (2024: 11,6), čistý zisk 7,5 mld Kč", "ns_stv", "https://www.stvgroup.cz/", null],
   ["Aero Vodochody", "soukromý vlastník", "Odolena Voda", "cvičný a lehký bojový letoun L-39 Skyfox (L-39NG), díly pro Embraer C-390", "tržby 2025 ~6,5 mld Kč, zisk před zdaněním 512 mil. Kč; 14 dodaných Skyfoxů v roce 2025 (58 % tržeb)", "ed_aero", "https://www.aero.cz/", "i_skyfox"],

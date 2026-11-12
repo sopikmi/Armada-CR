@@ -4,7 +4,7 @@
  */
 window.ACR = {};
 
-ACR.UPDATED = "5. 11. 2026";
+ACR.UPDATED = "12. 11. 2026";
 
 ACR.SOURCES = {
   mo_pocty: ["MO ČR – odpověď na žádost o informace: počty vojáků (11/2025, PDF)", "https://statnisluzba.mo.gov.cz/sites/statnisluzba/files/2025-11/Po%C4%8Dty%20voj%C3%A1k%C5%AF.pdf"],
@@ -41,6 +41,8 @@ ACR.SOURCES = {
   ed_rozp27: ["Ekonomický deník (21. 10. 2026): rozpočet obrany 2027 – 190 miliard", "https://ekonomickydenik.cz/rozpocet-obrana-2027-zuna-190-miliard/"],
   ed_kvacr: ["Ekonomický deník (20. 5. 2026): Babiš není spokojen s vizí armády do 2040", "https://ekonomickydenik.cz/babis-neni-spokojen-s-vizi-armady-do-roku-2040/"],
   ctk_kvacr: ["ČTK (20. 10. 2026): Bezpečnostní rada projednala armádní koncepci", "https://www.ceskenoviny.cz/zpravy/bezpecnostni-rada-projednala-armadni-koncepci-pristi-tyden-ji-probere-vlada/2889964"],
+  ct_haratek: ["ČT24 / ČTK (9. 11. 2026): Zůna odvolal generála Haratka z velení kybernetických sil", "https://ct24.ceskatelevize.cz/clanek/domaci/zuna-odvolal-generala-haratka-z-veleni-kybernetickych-sil-379446"],
+  am_madr: ["ARMYmag (9. 11. 2026): jednotka radarů MADR prošla prověrkou, může se zapojit k jednotkám NATO", "https://www.armymag.cz/2026/11/cesti-vojaci-maji-za-sebou-narocnou-proverku-s-radary-se-nyni-mohou-zapojit-k-jednotkam-nato/"],
   dn_haratek: ["Deník N (15. 10. 2026): Odvolejte šéfa kybernetických sil, nařídil Zůna", "https://denikn.cz/2221268/odvolejte-sefa-kybernetickych-sil-naridil-zuna-podle-sefa-armady-ma-general-duveru-a-zustava/"],
   mo_fff26: ["MO ČR (21. 10. 2026): Praha hostí Future Forces Forum", "https://mocr.mo.gov.cz/informacni-servis/zpravodajstvi/praha-hosti-future-forces-forum--obranne-technologie-predstavuje-vice-nez-530-vystavovatelu-266518/"],
   hn_akvizice: ["Hospodářské noviny (13. 10. 2026): Akviziční dekáda mění výzbroj české armády", "https://archiv.hn.cz/c1-67944150-akvizicni-dekada-meni-vyzbroj-ceske-armady-po-stihackach-a-obrnencich-chce-transportery"],
@@ -314,7 +316,7 @@ ACR.STRAT = [
 ACR.ISSUES = [
   ["", "Koncepce 2040 bez růstu výdajů", "Podle Deníku N (27. 10. 2026) koncepce, kterou ministr Zůna poslal vládě, varuje před kritickými nedostatky v obraně, zároveň ale počítá s tím, že vláda do konce volebního období nezvýší obranné výdaje, a odkládá mj. protibalistickou obranu. Zůna 23. 10. navrhl vládě usnesení, podle něhož mají výdaje růst až od roku 2030. Premiér Babiš kritiku označil za „dezinformace a nesmysly“. Vláda koncepci schválila 2. 11. 2026.", "dn_kvacr_vydaje"],
   ["", "Financování koncepce 2040", "Podle koncepce Česko neplní zhruba 70 % aliančních cílů výstavby schopností a u nejnáročnějších zaostává o pět až deset let (ED, 2. 11. 2026). Do roku 2029 počítá s výdaji MO nejméně 2 % HDP, od 2030 s růstem na 3,5 % HDP v roce 2035 (První zprávy, 4. 11.). ODS spočítala, že oproti usnesení předchozí vlády přijde armáda do roku 2035 o 258 mld. Kč, a Černochová upozorňuje, že většina nových opatření protivzdušné a protidronové obrany je rozpočtově nekrytá.", "ed_cernochova40"],
-  ["", "Ministr vs. armáda: šéf kybernetických sil", "Ministr Zůna nařídil náčelníkovi GŠ odvolat brig. gen. Radka Harateka, velitele informačních a kybernetických sil, kvůli operacím „Karel“ a „Volby 2025“. Generální štáb rozkaz nesplnil a Haratek podle mluvčího má důvěru náčelníka (15. 10. 2026).", "dn_haratek"],
+  ["", "Ministr vs. armáda: šéf kybernetických sil", "Ministr Zůna nařídil náčelníkovi GŠ odvolat brig. gen. Radka Harateka, velitele informačních a kybernetických sil, kvůli operacím „Karel“ a „Volby 2025“. Generální štáb rozkaz tehdy nesplnil (15. 10. 2026). Dne 9. 11. 2026 ministr Haratka z funkce odvolal; od prosince bude poradcem náčelníka GŠ Miroslava Hlaváče. Podle Seznam Zpráv má nástupcem být plk. Ivan Mahr.", "ct_haratek"],
   ["", "Rozpočet 2027: rekord, ale 2,04 % HDP", "Návrh kapitoly MO 190,9 mld Kč je o 23 % vyšší než 2026, obranné výdaje ale dosahují jen 2,04 % HDP, zatímco haagský závazek NATO míří k 3,5 % jádrových výdajů do 2035. Ministr sám upozorňuje na zpoždění podepsaných zakázek.", "ed_rozp27"],
   ["", "CAESAR: zaplaceno 7,2 mld, dodáno nic", "První čtyři houfnice měly přijít v dubnu 2026. Kontrolní zkoušky odhalily nedostatky (mj. elektromagnetické záření v kabinách), vojskové zkoušky nezačaly, zařazení se posouvá na 2028. Ministr dává přednost dodání před zrušením smlouvy.", "ct_caesar26"],
   ["w", "Zrušený tendr na obrněnce za 25 mld", "Po osmi letech příprav MO zrušilo zakázku na 185 čtyřkolových obrněnců pro ženisty, zdravotníky, speciální síly a Vojenskou policii (až 24,7 mld Kč) z „ekonomických důvodů“. Nový tendr zatím není.", "ns_mrap"],
