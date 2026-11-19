@@ -3,7 +3,7 @@
  * Pravidla úprav: AGENT.md.
  */
 window.PRU = {};
-PRU.UPDATED = "12. 11. 2026";
+PRU.UPDATED = "19. 11. 2026";
 
 PRU.SOURCES = {
   hn_csg9m: ["Hospodářské noviny / ČTK (11. 11. 2026): CSG za tři čtvrtletí 2026 tržby +6,1 %, zakázky 18 mld €", "https://byznys.hn.cz/c1-67957910-strnadova-csg-zvysila-mezirocne-trzby-o-6-1-procenta-objem-zakazek-ji-stoupl-na-18-miliard-eur"],
@@ -24,6 +24,7 @@ PRU.SOURCES = {
   e24_mi: ["Echo24 (28. 5. 2026): muniční iniciativa v roce 2026", "https://m.echo24.cz/a/HPTeT/zpravy-svet-municni-inicativa-poslala-pul-milionu-kusu-munice-macinka"],
   respekt_mi: ["Respekt / ČTK (16. 2. 2026): 4,4 milionu kusů munice od vzniku iniciativy", "https://www.respekt.cz/informacni-servis/prezident-municni-iniciativa-od-sveho-vzniku-dodala-na-ukrajinu-4-4-milionu-kusu-munice-2026-02-16-12-27"],
   ex_spyder: ["Expats.cz (20. 9. 2026): SPYDER – vozidla kompletována v Česku", "https://www.expats.cz/czech-news/article/czechia-becomes-first-nato-country-to-deploy-israeli-spyder-air-defense"],
+  ed_cv90sv: ["Ekonomický deník (18. 11. 2026): zpoždění CV90, BAE nabízí VOP CZ další technologie; hospodaření VOP CZ", "https://ekonomickydenik.cz/zpozdeni-bvp-cv90-technologie-vycvik/"],
   hn_akv: ["Hospodářské noviny (13. 10. 2026): náhrada Pandurů – CSG, Patria se STV, Boxer", "https://archiv.hn.cz/c1-67944150-akvizicni-dekada-meni-vyzbroj-ceske-armady-po-stihackach-a-obrnencich-chce-transportery"]
 };
 
@@ -47,7 +48,7 @@ PRU.FIRMS = [
   ["STV Group", "soukromá skupina", "Praha; výroba munice", "dělostřelecká munice 155, 152 a 122 mm (vlastní kovaná těla střel), tanková munice 120 mm pro Leopard 2A4, 30 × 165 mm; munice pro CAESAR", "tržby 2025 24,4 mld Kč (2024: 11,6), čistý zisk 7,5 mld Kč", "ns_stv", "https://www.stvgroup.cz/", null],
   ["Aero Vodochody", "soukromý vlastník", "Odolena Voda", "cvičný a lehký bojový letoun L-39 Skyfox (L-39NG), díly pro Embraer C-390", "tržby 2025 ~6,5 mld Kč, zisk před zdaněním 512 mil. Kč; 14 dodaných Skyfoxů v roce 2025 (58 % tržeb)", "ed_aero", "https://www.aero.cz/", "i_skyfox"],
   ["Explosia", "100 % stát (MPO); zvažuje se prodej, zájem projevil i francouzský Eurenco", "Pardubice-Semtín", "střelné prachy a dělostřelecké náplně, výbušniny (Semtex)", "tržby 2025 3,0 mld Kč (+64 %), zisk 838 mil. Kč; poptávka převyšuje kapacitu, investice až 2 mld Kč; 698 zaměstnanců", "sz_explosia", "https://www.explosia.cz/", null],
-  ["VOP CZ, s. p.", "státní podnik MO", "Šenov u Nového Jičína", "výroba 207 z 246 vozidel CV90 pro AČR, opravy a modernizace techniky, cisterna CAP Shadow", "—", "ed_cv90", "https://www.vop.cz/", null],
+  ["VOP CZ, s. p.", "státní podnik MO", "Šenov u Nového Jičína", "výroba 207 z 246 vozidel CV90 pro AČR, opravy a modernizace techniky, cisterna CAP Shadow", "tržby 2025 1,08 mld Kč, čistý zisk 6,3 mil. Kč, ~550 zaměstnanců; BAE Systems Hägglunds navrhuje předat podniku další technologie CV90 (Ekonomický deník, 18. 11. 2026)", "ed_cv90", "https://www.vop.cz/", null],
   ["LOM PRAHA, s. p.", "státní podnik MO", "Praha-Malešice; Centrum leteckého výcviku Pardubice", "opravy vrtulníků a motorů, výcvik pilotů, simulátory (L-39 Skyfox s VR); od 11/2026 plný servis simulátoru AH-1Z Viper v Náměšti nad Oslavou", "—", "mo_viper_sim", "https://www.lompraha.cz/", null],
   ["Vojenský technický ústav, s. p.", "státní podnik MO", "Praha-Kbely, Slavičín, Vyškov", "zkušebnictví, vývoj (dron BRUSMIN), kompletace SPYDER s firmou Retia", "—", "ex_spyder", "https://www.vtusp.cz/", null],
   ["Tatra Trucks / Tatra Defence Vehicle", "CSG", "Kopřivnice", "podvozky Tatra Force (i pro CAESAR CZ), Tatra Titus (s Nexterem)", "—", "hn_akv", "https://www.tatra.cz/", "i_tatra"],

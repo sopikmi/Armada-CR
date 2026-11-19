@@ -1,6 +1,6 @@
 /* Vojenská muzea, VHÚ a databáze – data stránky muzea.html. Pravidla: AGENT.md. */
 window.MUZ = {};
-MUZ.UPDATED = "12. 11. 2026";
+MUZ.UPDATED = "19. 11. 2026";
 
 MUZ.SOURCES = {
   vhu: ["Vojenský historický ústav Praha – web", "https://www.vhu.cz/"],
